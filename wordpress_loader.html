@@ -1,0 +1,186 @@
+<!-- 
+ISTRUZIONI PER L'USO:
+Copia questo codice e incollalo nel file "footer.php" del tuo tema WordPress, 
+oppure utilizza un plugin come "WPCode" o "Header Footer Code Manager" per inserirlo nel footer di tutte le pagine.
+-->
+
+<!-- HTML DEL LOADER -->
+<div id="cp-full-screen-loader" class="cp-loader-overlay cp-hidden">
+    <div class="cp-loader-container">
+        <!-- SVG SPINNER (Simile a Lucide React Loader2) -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#b08d55"
+            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="cp-spinner">
+            <path d="M21 12a9 9 0 1 1-6.219-8.56"></path>
+        </svg>
+
+        <!-- TESTI -->
+        <p id="cp-loader-label" class="cp-loader-label">
+            Stiamo preparando la tua esperienza...
+        </p>
+        <p id="cp-loader-sublabel" class="cp-loader-sublabel">
+            Attendi qualche istante
+        </p>
+    </div>
+</div>
+
+<!-- STILI CSS -->
+<style>
+    /* Variabili colori (uguali al sito Next.js) */
+    :root {
+        --cp-gold: #b08d55;
+        --cp-bg: rgba(0, 0, 0, 0.7);
+        --cp-text: #E8E6D9;
+        --cp-subtext: rgba(232, 230, 217, 0.5);
+    }
+
+    /* Overlay fisso a tutto schermo */
+    .cp-loader-overlay {
+        position: fixed;
+        inset: 0;
+        z-index: 999999;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--cp-bg);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        transition: opacity 0.4s ease;
+    }
+
+    .cp-hidden {
+        opacity: 0;
+        pointer-events: none;
+        display: none !important;
+    }
+
+    .cp-loader-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        animation: cpFadeIn 0.5s ease-out forwards;
+    }
+
+    /* Spinner Animazione */
+    .cp-spinner {
+        width: 56px;
+        height: 56px;
+        color: var(--cp-gold);
+        animation: cpSpin 1s linear infinite;
+    }
+
+    /* Testi */
+    .cp-loader-label {
+        margin-top: 2rem;
+        font-size: 1.125rem;
+        /* 18px */
+        line-height: 1.75rem;
+        color: var(--cp-text);
+        letter-spacing: 0.1em;
+        text-align: center;
+        font-family: sans-serif;
+        /* O il tuo font se caricato su WP */
+        animation: cpSlideUp 0.5s ease-out forwards;
+        animation-delay: 0.2s;
+        opacity: 0;
+    }
+
+    .cp-loader-sublabel {
+        margin-top: 0.5rem;
+        font-size: 0.875rem;
+        /* 14px */
+        color: var(--cp-subtext);
+        letter-spacing: 0.05em;
+        font-family: sans-serif;
+        animation: cpSlideUp 0.5s ease-out forwards;
+        animation-delay: 0.4s;
+        opacity: 0;
+    }
+
+    /* Keyframes */
+    @keyframes cpSpin {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    @keyframes cpFadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes cpSlideUp {
+        from {
+            opacity: 0;
+            transform: translateY(10px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Responsive */
+    @media (min-width: 768px) {
+        .cp-loader-label {
+            font-size: 1.25rem;
+            /* 20px */
+        }
+    }
+</style>
+
+<!-- SCRIPT JS -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var loader = document.getElementById('cp-full-screen-loader');
+        var label = document.getElementById('cp-loader-label');
+        var sublabel = document.getElementById('cp-loader-sublabel');
+
+        // Rileva lingua (basic check su attributo HTML lang o URL)
+        var isEnglish = document.documentElement.lang.startsWith('en') || window.location.href.includes('/en/');
+
+        if (isEnglish) {
+            label.textContent = "Preparing your experience...";
+            sublabel.textContent = "Please wait a moment";
+        }
+
+        // Funzione per mostrare il loader
+        function showLoader() {
+            loader.classList.remove('cp-hidden');
+            loader.style.display = 'flex';
+        }
+
+        // LISTENER SUI FORM DI PRENOTAZIONE/PAGAMENTO
+        // MotoPress Hotel Booking form class solitamente è 'mphb-booking-form'
+        // WooCommerce checkout form è 'checkout'
+        var forms = document.querySelectorAll('form.mphb-booking-form, form.checkout, form#mphb-payment-form');
+
+        forms.forEach(function (form) {
+            form.addEventListener('submit', function (e) {
+                // Mostra loader solo se il form è valido (HTML5 validation)
+                if (form.checkValidity()) {
+                    showLoader();
+                }
+            });
+        });
+
+        // Fallback: se ci sono bottoni specifici di pagamento che non triggerano submit standard
+        var payButtons = document.querySelectorAll('#mphb_btn_confirm_booking, .mphb-confirm-reservation');
+        payButtons.forEach(function (btn) {
+            btn.addEventListener('click', function () {
+                // Breve delay per permettere validazione
+                setTimeout(showLoader, 100);
+            });
+        });
+    });
+</script>

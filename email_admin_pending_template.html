@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prenotazione in Attesa (Admin) - Ca' Perenzin</title>
+    <style type="text/css">
+        @font-face {
+            font-family: 'PPMonumentExtended';
+            src: url('https://caperenzin.it/wp-content/fonts/PPMonumentExtended-Regular.woff2') format('woff2');
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'PPMonumentExtended';
+            src: url('https://caperenzin.it/wp-content/fonts/PPMonumentExtended-Bold.woff2') format('woff2');
+            font-weight: 700;
+            font-style: bold;
+        }
+
+        @font-face {
+            font-family: 'MullerNext';
+            src: url('https://caperenzin.it/wp-content/fonts/MullerNextTrial-Regular.woff2') format('woff2');
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        /* --- STILI BASE E HACKS --- */
+        body,
+        #body_content,
+        #wrapper,
+        #template_container,
+        .wrapper {
+            background-color: #0c0c0c !important;
+            background: #0c0c0c !important;
+        }
+
+        /* Nascondi Header Standard WP */
+        #template_header,
+        #header_wrapper,
+        .header,
+        .mphb-email-header {
+            display: none !important;
+            visibility: hidden !important;
+            opacity: 0 !important;
+            height: 0 !important;
+            width: 0 !important;
+            overflow: hidden !important;
+            mso-hide: all;
+            border: none !important;
+        }
+
+        #template_footer,
+        #footer {
+            display: none !important;
+            height: 0 !important;
+            overflow: hidden !important;
+        }
+
+        /* EVITO DOPPIO BORDO */
+        #template_container {
+            border: none !important;
+            box-shadow: none !important;
+            background-color: transparent !important;
+        }
+
+        .content-table {
+            border: 2px solid #B08D55 !important;
+            border-radius: 20px !important;
+            overflow: hidden !important;
+            background-color: #141414 !important;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #0c0c0c;
+            color: #cccccc;
+            font-family: 'MullerNext', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            -webkit-text-size-adjust: none;
+            width: 100% !important;
+        }
+
+        table {
+            border-collapse: separate;
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+            background-color: transparent !important;
+            border-spacing: 0;
+        }
+
+        a {
+            color: #B08D55;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .monument {
+            font-family: 'PPMonumentExtended', 'Arial Black', sans-serif !important;
+            text-transform: uppercase;
+        }
+
+        .muller {
+            font-family: 'MullerNext', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .padding-mobile {
+                padding: 20px !important;
+            }
+
+            .content-table {
+                width: 100% !important;
+            }
+        }
+    </style>
+</head>
+
+<body style="margin: 0; padding: 0; background-color: #0c0c0c;">
+
+    <!-- Preheader -->
+    <div
+        style="display: none; font-size: 1px; color: #0c0c0c; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;">
+        Nuova prenotazione in attesa #%booking_id%.
+    </div>
+
+    <table class="wrapper-table" style="background-color: #0c0c0c; width: 100%;" border="0" cellspacing="0"
+        cellpadding="0">
+        <tbody>
+            <tr>
+                <td style="padding: 0;" align="center">
+
+                    <!-- CARD ADMIN -->
+                    <table class="content-table"
+                        style="background-color: #141414; border: 2px solid #B08D55; border-radius: 20px; width: 100%; overflow: hidden; border-collapse: separate;"
+                        border="0" cellspacing="0" cellpadding="0">
+                        <tbody>
+
+                            <!-- Header -->
+                            <tr>
+                                <td class="padding-mobile" style="padding: 40px 20px 20px 20px; text-align: center;"
+                                    align="center">
+                                    <h1 class="monument"
+                                        style="color: #666; font-size: 12px; margin: 0; font-weight: 800; font-family: 'PPMonumentExtended', sans-serif; letter-spacing: 2px;">
+                                        ADMIN NOTIFICATION
+                                    </h1>
+                                </td>
+                            </tr>
+
+                            <!-- Titolo Attesa -->
+                            <tr>
+                                <td class="padding-mobile" style="padding: 20px 40px 30px 40px; text-align: center;"
+                                    align="center">
+                                    <h2 class="monument"
+                                        style="color: #B08D55; font-size: 24px; margin: 0 0 20px 0; font-weight: 700; letter-spacing: 1px; font-family: 'PPMonumentExtended', sans-serif;">
+                                        IN ATTESA DI<br>APPROVAZIONE
+                                    </h2>
+                                    <p class="muller"
+                                        style="color: #aaaaaa; font-size: 16px; line-height: 1.6; margin: 0; max-width: 800px; display: inline-block; font-family: 'MullerNext', sans-serif;">
+                                        La prenotazione <strong>#%booking_id%</strong> è in attesa.
+                                    </p>
+
+                                    <!-- Pulsante Azione -->
+                                    <div style="margin-top: 30px;">
+                                        <a href="%booking_edit_link%"
+                                            style="background-color: #B08D55; color: #000000; padding: 12px 25px; text-decoration: none; border-radius: 4px; font-weight: 700; font-size: 14px; font-family: 'PPMonumentExtended', sans-serif; display: inline-block; letter-spacing: 1px;">
+                                            VISUALIZZA PRENOTAZIONE
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- Dati Ospite -->
+                            <tr>
+                                <td class="padding-mobile" style="padding: 0 5% 0 5%;">
+                                    <table border="0" width="100%" cellspacing="0" cellpadding="0">
+                                        <tbody>
+                                            <tr>
+                                                <td
+                                                    style="background-color: #0c0c0c; padding: 25px; border: 1px solid #333; border-radius: 10px;">
+                                                    <h3 class="monument"
+                                                        style="color: #666; font-size: 11px; letter-spacing: 2px; margin-top: 0; margin-bottom: 20px; border-bottom: 1px solid #333; padding-bottom: 10px; font-family: 'PPMonumentExtended', sans-serif;">
+                                                        CLIENTE
+                                                    </h3>
+                                                    <table width="100%" border="0" cellspacing="0" cellpadding="5"
+                                                        style="color: #ccc; font-size: 14px; font-family: 'MullerNext', sans-serif;">
+                                                        <tr>
+                                                            <td style="color: #888;" width="30%">Nome:</td>
+                                                            <td><strong>%customer_first_name%
+                                                                    %customer_last_name%</strong></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="color: #888;">Email:</td>
+                                                            <td><a href="mailto:%customer_email%"
+                                                                    style="color: #B08D55;">%customer_email%</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="color: #888;">Telefono:</td>
+                                                            <td>%customer_phone%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="color: #888;" valign="top">Nota:</td>
+                                                            <td style="font-style: italic;">%customer_note%</td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+
+                            <!-- Dettagli Soggiorno -->
+                            <tr>
+                                <td class="padding-mobile" style="padding: 30px 5% 40px 5%;">
+                                    <table border="0" width="100%" cellspacing="0" cellpadding="0">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <h3 class="monument"
+                                                        style="color: #B08D55; font-size: 13px; margin-bottom: 25px; border-bottom: 1px solid #333; padding-bottom: 10px; font-family: 'PPMonumentExtended', sans-serif;">
+                                                        DETTAGLI PRENOTAZIONE
+                                                    </h3>
+
+                                                    <table style="color: #dddddd; font-size: 15px; width: 100%;"
+                                                        border="0" cellspacing="0" cellpadding="12">
+                                                        <tbody>
+                                                            <tr style="background-color: #1a1a1a;">
+                                                                <td style="color: #888888; border-bottom: 1px solid #222;"
+                                                                    width="40%">Check-in:</td>
+                                                                <td style="border-bottom: 1px solid #222; color: #fff;">
+                                                                    %check_in_date%
+                                                                    <span
+                                                                        style="font-size: 12px; color: #666; display: block;">(dalle
+                                                                        %check_in_time%)</span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td
+                                                                    style="color: #888888; border-bottom: 1px solid #222;">
+                                                                    Check-out:</td>
+                                                                <td style="border-bottom: 1px solid #222; color: #fff;">
+                                                                    %check_out_date%
+                                                                    <span
+                                                                        style="font-size: 12px; color: #666; display: block;">(alle
+                                                                        %check_out_time%)</span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr style="background-color: #1a1a1a;">
+                                                                <td
+                                                                    style="color: #888888; border-bottom: 1px solid #222;">
+                                                                    Stanze:</td>
+                                                                <td
+                                                                    style="border-bottom: 1px solid #222; color: #fff; line-height: 1.6;">
+                                                                    %reserved_rooms_details%
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="monument"
+                                                                    style="color: #B08D55; padding-top: 30px; font-size: 14px; font-family: 'PPMonumentExtended', sans-serif;">
+                                                                    TOTALE PRENOTAZIONE:
+                                                                </td>
+                                                                <td class="monument"
+                                                                    style="padding-top: 30px; color: #B08D55; font-size: 24px; font-weight: 700; font-family: 'PPMonumentExtended', sans-serif;">
+                                                                    %booking_total_price%
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                    <!-- Footer Copyright -->
+                    <table border="0" width="100%" cellspacing="0" cellpadding="0">
+                        <tbody>
+                            <tr>
+                                <td style="padding: 20px 20px; color: #444444; font-size: 10px; letter-spacing: 1px; font-family: 'MullerNext', sans-serif;"
+                                    align="center">
+                                    MESSAGGIO DI SISTEMA CA' PERENZIN
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

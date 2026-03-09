@@ -1,0 +1,730 @@
+/* ============================================
+   CA'PERENZIN — CUSTOM CHECKOUT STYLING
+   Plugin: Simple Custom CSS and JS
+   Target: /conferma-della-prenotazione
+   ============================================ */
+
+/* --- GOOGLE FONT (simile a MullerNext) --- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* === VARIABILI === */
+:root {
+    --cp-bg: #0B0B0B;
+    --cp-fg: #E8E6D9;
+    --cp-gold: #B08D55;
+    --cp-gold-hover: #c9a56a;
+    --cp-border: #27272a;
+    --cp-secondary: #1f1f1f;
+    --cp-muted: #a1a1aa;
+    --cp-radius: 0.625rem;
+    --cp-error: #ef4444;
+    --cp-font: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* === PAGINA INTERA === */
+body.page-template-default,
+body.page-id-11 {
+    background-color: var(--cp-bg) !important;
+    color: var(--cp-fg) !important;
+    font-family: var(--cp-font) !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Nascondi header e footer WordPress (opzionale — decommenta se vuoi) */
+/*
+body.page-id-11 header,
+body.page-id-11 footer {
+    display: none !important;
+}
+*/
+
+/* === CONTAINER PRINCIPALE === */
+.mphb_sc_checkout-wrapper {
+    max-width: 1100px !important;
+    margin: 0 auto !important;
+    padding: 60px 24px !important;
+}
+
+/* === LAYOUT 2 COLONNE === */
+.mphb_sc_checkout-form {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    column-gap: 40px !important;
+    row-gap: 20px !important;
+    align-items: start !important;
+}
+
+/* --- PARTE ALTA --- */
+
+/* Sinistra: Dettagli prenotazione (spanna le righe dei prezzi) */
+.mphb-booking-details {
+    grid-column: 1 !important;
+    grid-row: 1 / span 2 !important;
+    height: 100% !important;
+}
+
+/* Destra: Ripartizione prezzi */
+.mphb-room-price-breakdown-wrapper {
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+    margin-bottom: 20px !important;
+}
+
+/* Destra (sotto ripartizione): Prezzo Totale */
+.mphb-total-price {
+    grid-column: 2 !important;
+    grid-row: 2 !important;
+    margin-top: 0 !important;
+}
+
+/* --- PARTE BASSA (Full Width) --- */
+
+/* Errori */
+.mphb-errors-wrapper {
+    grid-column: 1 / -1 !important;
+    grid-row: 3 !important;
+}
+
+/* Dati cliente */
+.mphb-customer-details {
+    grid-column: 1 / -1 !important;
+    grid-row: 4 !important;
+    margin-top: 40px !important;
+    padding-top: 40px !important;
+    border-top: 1px solid var(--cp-border) !important;
+}
+
+/* Griglia interna Form Cliente (2 colonne) */
+.mphb-customer-details {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 12px 24px !important;
+}
+
+/* Elementi full-width nel form cliente */
+.mphb-customer-details .mphb-customer-details-title,
+.mphb-customer-details .mphb-required-fields-tip,
+.mphb-customer-details .mphb-customer-note {
+    grid-column: 1 / -1 !important;
+}
+
+/* Campi specifici */
+.mphb-customer-name {
+    grid-column: 1 !important;
+}
+
+.mphb-customer-last-name {
+    grid-column: 2 !important;
+}
+
+.mphb-customer-email {
+    grid-column: 1 !important;
+}
+
+.mphb-customer-phone {
+    grid-column: 2 !important;
+}
+
+.mphb-customer-country {
+    grid-column: 1 !important;
+}
+
+/* Metodo pagamento */
+.mphb-checkout-section:has(.mphb-gateways-list),
+#mphb-billing-details {
+    grid-column: 1 / -1 !important;
+    grid-row: 5 !important;
+    margin-top: 20px !important;
+}
+
+/* Submit */
+.mphb_sc_checkout-submit-wrapper {
+    grid-column: 1 / -1 !important;
+    grid-row: 6 !important;
+    margin-top: 40px !important;
+}
+
+/* === LAYOUT 2 COLONNE === */
+.mphb_sc_checkout-form {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 20px !important;
+    align-items: start !important;
+}
+
+/* Riga 1 - Sinistra: Ripartizione prezzi */
+.mphb-room-price-breakdown-wrapper {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+}
+
+/* Riga 1 - Destra: Dettagli prenotazione */
+.mphb-booking-details {
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+}
+
+/* Prezzo totale sotto la ripartizione (sinistra) */
+.mphb-total-price {
+    grid-column: 1 !important;
+    grid-row: 2 !important;
+}
+
+/* Errori - full width */
+.mphb-errors-wrapper {
+    grid-column: 1 / -1 !important;
+}
+
+/* Form dati cliente - full width sotto, con griglia interna a 2 colonne */
+.mphb-customer-details {
+    grid-column: 1 / -1 !important;
+}
+
+/* Griglia interna per i campi del form cliente */
+.mphb-customer-details>.mphb-customer-details-title,
+.mphb-customer-details>.mphb-required-fields-tip {
+    grid-column: 1 / -1 !important;
+}
+
+/* I paragrafi dentro customer-details diventano griglia 2 colonne */
+.mphb-customer-details {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 4px 20px !important;
+}
+
+/* Titolo e tip su tutta la larghezza */
+.mphb-customer-details .mphb-customer-details-title {
+    grid-column: 1 / -1 !important;
+}
+
+.mphb-customer-details .mphb-required-fields-tip {
+    grid-column: 1 / -1 !important;
+}
+
+/* Nome a sinistra */
+.mphb-customer-name {
+    grid-column: 1 !important;
+}
+
+/* Cognome a destra */
+.mphb-customer-last-name {
+    grid-column: 2 !important;
+}
+
+/* Email a sinistra */
+.mphb-customer-email {
+    grid-column: 1 !important;
+}
+
+/* Telefono a destra */
+.mphb-customer-phone {
+    grid-column: 2 !important;
+}
+
+/* Paese a sinistra */
+.mphb-customer-country {
+    grid-column: 1 !important;
+}
+
+/* Note - full width */
+.mphb-customer-note {
+    grid-column: 1 / -1 !important;
+}
+
+/* Metodo pagamento - full width */
+.mphb-checkout-section:has(.mphb-gateways-list) {
+    grid-column: 1 / -1 !important;
+}
+
+/* Fallback per browser senza :has() — selettore per ID */
+#mphb-billing-details {
+    grid-column: 1 / -1 !important;
+}
+
+/* Submit wrapper - full width */
+.mphb_sc_checkout-submit-wrapper {
+    grid-column: 1 / -1 !important;
+}
+
+/* === TITOLO PAGINA === */
+.entry-title,
+.page-title,
+h1.entry-title {
+    font-family: var(--cp-font) !important;
+    color: var(--cp-gold) !important;
+    font-weight: 300 !important;
+    font-size: 2rem !important;
+    letter-spacing: 0.05em !important;
+    text-transform: uppercase !important;
+    text-align: center !important;
+    margin-bottom: 40px !important;
+    padding-bottom: 20px !important;
+    border-bottom: 1px solid var(--cp-border) !important;
+}
+
+/* === SEZIONI === */
+.mphb-checkout-section {
+    background: var(--cp-secondary) !important;
+    border: 1px solid var(--cp-border) !important;
+    border-radius: var(--cp-radius) !important;
+    padding: 28px !important;
+    margin-bottom: 20px !important;
+}
+
+/* === TITOLI SEZIONI (h3, h4) === */
+.mphb-booking-details-title,
+.mphb-customer-details-title,
+.mphb-gateway-chooser-title,
+.mphb-price-breakdown-title {
+    font-family: var(--cp-font) !important;
+    color: var(--cp-gold) !important;
+    font-weight: 500 !important;
+    font-size: 0.85rem !important;
+    letter-spacing: 0.12em !important;
+    text-transform: uppercase !important;
+    margin-bottom: 20px !important;
+    padding-bottom: 12px !important;
+    border-bottom: 1px solid var(--cp-border) !important;
+}
+
+/* === DATE CHECK-IN / CHECK-OUT === */
+.mphb-check-in-date,
+.mphb-check-out-date {
+    color: var(--cp-fg) !important;
+    font-size: 0.95rem !important;
+    padding: 8px 0 !important;
+    margin: 0 !important;
+}
+
+.mphb-check-in-date strong,
+.mphb-check-out-date strong {
+    color: var(--cp-muted) !important;
+    font-weight: 400 !important;
+    text-transform: uppercase !important;
+    font-size: 0.75rem !important;
+    letter-spacing: 0.08em !important;
+    display: block !important;
+    margin-bottom: 2px !important;
+}
+
+/* === DETTAGLI STANZA === */
+.mphb-room-details {
+    background: rgba(176, 141, 85, 0.06) !important;
+    border: 1px solid rgba(176, 141, 85, 0.15) !important;
+    border-radius: var(--cp-radius) !important;
+    padding: 20px !important;
+    margin-top: 16px !important;
+}
+
+.mphb-room-number {
+    font-family: var(--cp-font) !important;
+    color: var(--cp-fg) !important;
+    font-weight: 500 !important;
+    font-size: 0.9rem !important;
+}
+
+.mphb-room-type-title {
+    color: var(--cp-gold) !important;
+    font-weight: 500 !important;
+    font-size: 1.1rem !important;
+}
+
+/* === SELECT / DROPDOWN (Ospiti) === */
+.mphb_checkout-guests-chooser,
+.mphb_sc_checkout-guests-chooser,
+select {
+    background-color: var(--cp-bg) !important;
+    color: var(--cp-fg) !important;
+    border: 1px solid var(--cp-border) !important;
+    border-radius: var(--cp-radius) !important;
+    padding: 10px 14px !important;
+    font-family: var(--cp-font) !important;
+    font-size: 0.9rem !important;
+    cursor: pointer !important;
+    transition: border-color 0.2s ease !important;
+    -webkit-appearance: none !important;
+    appearance: none !important;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%23a1a1aa' viewBox='0 0 16 16'%3E%3Cpath d='M8 11L3 6h10l-5 5z'/%3E%3C/svg%3E") !important;
+    background-repeat: no-repeat !important;
+    background-position: right 12px center !important;
+    padding-right: 36px !important;
+}
+
+select:focus,
+select:hover {
+    border-color: var(--cp-gold) !important;
+    outline: none !important;
+    box-shadow: 0 0 0 2px rgba(176, 141, 85, 0.15) !important;
+}
+
+/* === TABELLA PREZZI === */
+.mphb-price-breakdown {
+    width: 100% !important;
+    border-collapse: separate !important;
+    border-spacing: 0 !important;
+    color: var(--cp-fg) !important;
+}
+
+.mphb-price-breakdown th,
+.mphb-price-breakdown td {
+    padding: 10px 0 !important;
+    border-bottom: 1px solid var(--cp-border) !important;
+    font-family: var(--cp-font) !important;
+    font-size: 0.9rem !important;
+    color: var(--cp-fg) !important;
+    background: transparent !important;
+}
+
+.mphb-price-breakdown th {
+    color: var(--cp-muted) !important;
+    font-weight: 400 !important;
+    text-align: left !important;
+}
+
+.mphb-table-price-column {
+    text-align: right !important;
+    font-weight: 500 !important;
+}
+
+.mphb-price-breakdown-total td,
+.mphb-price-breakdown-total th {
+    color: var(--cp-gold) !important;
+    font-weight: 600 !important;
+    font-size: 1rem !important;
+    border-bottom: none !important;
+    padding-top: 16px !important;
+}
+
+.mphb-currency {
+    color: inherit !important;
+}
+
+/* === FORM CAMPI CLIENTE === */
+.mphb-customer-details label {
+    color: var(--cp-muted) !important;
+    font-family: var(--cp-font) !important;
+    font-size: 0.8rem !important;
+    font-weight: 400 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.08em !important;
+    display: block !important;
+    margin-bottom: 6px !important;
+}
+
+.mphb-customer-details input[type="text"],
+.mphb-customer-details input[type="email"],
+.mphb-customer-details input[type="tel"],
+.mphb-customer-details textarea,
+.mphb-customer-details select {
+    width: 100% !important;
+    background-color: var(--cp-bg) !important;
+    color: var(--cp-fg) !important;
+    border: 1px solid var(--cp-border) !important;
+    border-radius: var(--cp-radius) !important;
+    padding: 12px 16px !important;
+    font-family: var(--cp-font) !important;
+    font-size: 0.95rem !important;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease !important;
+    box-sizing: border-box !important;
+}
+
+.mphb-customer-details input:focus,
+.mphb-customer-details textarea:focus,
+.mphb-customer-details select:focus {
+    border-color: var(--cp-gold) !important;
+    outline: none !important;
+    box-shadow: 0 0 0 3px rgba(176, 141, 85, 0.15) !important;
+}
+
+.mphb-customer-details input::placeholder,
+.mphb-customer-details textarea::placeholder {
+    color: var(--cp-muted) !important;
+    opacity: 0.5 !important;
+}
+
+.mphb-customer-details textarea {
+    min-height: 100px !important;
+    resize: vertical !important;
+}
+
+.mphb-customer-details p {
+    margin-bottom: 16px !important;
+}
+
+/* Asterisco required */
+.mphb-customer-details .required,
+abbr[title] {
+    color: var(--cp-gold) !important;
+    text-decoration: none !important;
+}
+
+.mphb-required-fields-tip {
+    color: var(--cp-muted) !important;
+    font-size: 0.8rem !important;
+    margin-bottom: 20px !important;
+}
+
+/* === GATEWAY PAGAMENTO === */
+.mphb-gateways-list {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.mphb-gateway {
+    background: var(--cp-bg) !important;
+    border: 1px solid var(--cp-border) !important;
+    border-radius: var(--cp-radius) !important;
+    padding: 16px 20px !important;
+    margin-bottom: 10px !important;
+    transition: border-color 0.2s ease, background-color 0.2s ease !important;
+    cursor: pointer !important;
+}
+
+.mphb-gateway:hover {
+    border-color: var(--cp-gold) !important;
+    background: rgba(176, 141, 85, 0.04) !important;
+}
+
+.mphb-gateway-title {
+    color: var(--cp-fg) !important;
+    font-family: var(--cp-font) !important;
+    font-weight: 500 !important;
+    font-size: 0.95rem !important;
+}
+
+.mphb-gateway-title input[type="radio"] {
+    accent-color: var(--cp-gold) !important;
+    margin-right: 10px !important;
+}
+
+.mphb-gateway-description {
+    color: var(--cp-muted) !important;
+    font-size: 0.85rem !important;
+    margin-top: 6px !important;
+    padding-left: 26px !important;
+}
+
+/* === PREZZO TOTALE === */
+.mphb-total-price {
+    background: linear-gradient(135deg, rgba(176, 141, 85, 0.12), rgba(176, 141, 85, 0.04)) !important;
+    border: 1px solid rgba(176, 141, 85, 0.3) !important;
+    border-radius: var(--cp-radius) !important;
+    padding: 20px 28px !important;
+    margin: 24px 0 !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+}
+
+.mphb-total-price strong,
+.mphb-total-price-field {
+    color: var(--cp-fg) !important;
+    font-size: 1rem !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.08em !important;
+}
+
+.mphb-total-price .mphb-price {
+    color: var(--cp-gold) !important;
+    font-size: 1.5rem !important;
+    font-weight: 700 !important;
+}
+
+/* === BOTTONE PRENOTA === */
+.mphb_sc_checkout-submit-wrapper {
+    text-align: center !important;
+    margin-top: 32px !important;
+}
+
+.mphb_sc_checkout-submit-wrapper input[type="submit"],
+.mphb_sc_checkout-submit-wrapper button,
+button.mphb-confirm-reservation {
+    background: var(--cp-gold) !important;
+    color: var(--cp-bg) !important;
+    border: none !important;
+    border-radius: var(--cp-radius) !important;
+    padding: 16px 48px !important;
+    font-family: var(--cp-font) !important;
+    font-size: 0.9rem !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.12em !important;
+    text-transform: uppercase !important;
+    cursor: pointer !important;
+    width: 100% !important;
+    transition: background-color 0.3s ease, transform 0.15s ease, box-shadow 0.3s ease !important;
+}
+
+.mphb_sc_checkout-submit-wrapper input[type="submit"]:hover,
+.mphb_sc_checkout-submit-wrapper button:hover,
+button.mphb-confirm-reservation:hover {
+    background: var(--cp-gold-hover) !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 6px 24px rgba(176, 141, 85, 0.25) !important;
+}
+
+.mphb_sc_checkout-submit-wrapper input[type="submit"]:active,
+.mphb_sc_checkout-submit-wrapper button:active {
+    transform: translateY(0) !important;
+}
+
+/* === ERRORI === */
+.mphb-errors-wrapper {
+    background: rgba(239, 68, 68, 0.1) !important;
+    border: 1px solid rgba(239, 68, 68, 0.3) !important;
+    border-radius: var(--cp-radius) !important;
+    padding: 16px 20px !important;
+    color: var(--cp-error) !important;
+    font-family: var(--cp-font) !important;
+    font-size: 0.9rem !important;
+}
+
+/* === PRELOADER/SPINNER === */
+.mphb-preloader {
+    border-color: var(--cp-border) !important;
+    border-top-color: var(--cp-gold) !important;
+}
+
+/* === LINK === */
+.mphb_sc_checkout-wrapper a {
+    color: var(--cp-gold) !important;
+    text-decoration: none !important;
+    transition: color 0.2s ease !important;
+}
+
+.mphb_sc_checkout-wrapper a:hover {
+    color: var(--cp-gold-hover) !important;
+}
+
+/* === NASCONDERE ELEMENTI SUPERFLUI === */
+.mphb-billing-fields-hidden {
+    display: none !important;
+}
+
+/* === GUEST NAME INPUT === */
+.mphb-guest-name-wrapper input {
+    background-color: var(--cp-bg) !important;
+    color: var(--cp-fg) !important;
+    border: 1px solid var(--cp-border) !important;
+    border-radius: var(--cp-radius) !important;
+    padding: 10px 14px !important;
+    font-family: var(--cp-font) !important;
+    font-size: 0.9rem !important;
+}
+
+.mphb-guest-name-wrapper input:focus {
+    border-color: var(--cp-gold) !important;
+    outline: none !important;
+    box-shadow: 0 0 0 3px rgba(176, 141, 85, 0.15) !important;
+}
+
+/* === PRICE BREAKDOWN EXPAND LINK === */
+.mphb-price-breakdown-expand {
+    color: var(--cp-gold) !important;
+    cursor: pointer !important;
+    font-size: 0.85rem !important;
+}
+
+/* === LABELS GENERICI === */
+.mphb-adults-chooser label,
+.mphb-room-details label {
+    color: var(--cp-muted) !important;
+    font-family: var(--cp-font) !important;
+    font-size: 0.8rem !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.08em !important;
+}
+
+/* === PAYMENT FEE === */
+.mphb-payment-fee {
+    color: var(--cp-muted) !important;
+    font-size: 0.85rem !important;
+    margin-top: 12px !important;
+}
+
+/* === SELECTION === */
+::selection {
+    background: var(--cp-gold) !important;
+    color: var(--cp-bg) !important;
+}
+
+/* === SCROLLBAR === */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--cp-bg);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--cp-gold);
+    border-radius: 10px;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+
+    /* Torna a 1 colonna su mobile */
+    .mphb_sc_checkout-form {
+        grid-template-columns: 1fr !important;
+    }
+
+    /* Reset posizioni griglia */
+    .mphb-booking-details,
+    .mphb-room-price-breakdown-wrapper,
+    .mphb-total-price,
+    .mphb-customer-details,
+    .mphb_sc_checkout-submit-wrapper {
+        grid-column: 1 !important;
+        grid-row: auto !important;
+    }
+
+    /* Form cliente torna a 1 colonna */
+    .mphb-customer-details {
+        grid-template-columns: 1fr !important;
+    }
+
+    .mphb-customer-name,
+    .mphb-customer-last-name,
+    .mphb-customer-email,
+    .mphb-customer-phone,
+    .mphb-customer-country,
+    .mphb-customer-note {
+        grid-column: 1 !important;
+    }
+
+    .mphb_sc_checkout-wrapper {
+        padding: 20px 16px !important;
+    }
+
+    .mphb-checkout-section {
+        padding: 20px 16px !important;
+    }
+
+    .entry-title,
+    h1.entry-title {
+        font-size: 1.5rem !important;
+    }
+
+    .mphb-total-price .mphb-price {
+        font-size: 1.25rem !important;
+    }
+}
+
+/* === STRIPE ELEMENTS (se usati) === */
+.StripeElement,
+.mphb-gateway-stripe .StripeElement {
+    background-color: var(--cp-bg) !important;
+    border: 1px solid var(--cp-border) !important;
+    border-radius: var(--cp-radius) !important;
+    padding: 12px 16px !important;
+    transition: border-color 0.2s ease !important;
+}
+
+.StripeElement--focus {
+    border-color: var(--cp-gold) !important;
+    box-shadow: 0 0 0 3px rgba(176, 141, 85, 0.15) !important;
+}

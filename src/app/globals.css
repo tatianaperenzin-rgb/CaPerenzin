@@ -1,0 +1,252 @@
+@import "tailwindcss";
+
+/* VARIANTI PER LE LINGUE */
+@custom-variant it (&:is(html[lang="it"] *));
+@custom-variant en (&:is(html[lang="en"] *));
+
+/* --- VARIABILI CSS --- */
+@layer base {
+  :root {
+    /* IL TUO ORO */
+    --gold: #b08d55;
+    --golden: #B08D55;
+
+    /* --- IL TEMA SCURO (DEFAULT) --- */
+
+    /* SFONDO NERO */
+    --background: #0B0B0B;
+
+    /* TESTO PANNA */
+    --foreground: #E8E6D9;
+
+    /* CARD E POPOVER (Li facciamo neri come lo sfondo) */
+    --card: #0B0B0B;
+    --card-foreground: #E8E6D9;
+
+    --popover: #0B0B0B;
+    --popover-foreground: #E8E6D9;
+
+    /* BOTTONI PRINCIPALI (Panna su sfondo nero) */
+    --primary: #E8E6D9;
+    --primary-foreground: #0B0B0B;
+
+    /* ELEMENTI SECONDARI (Un grigio molto scuro per staccare appena dal nero) */
+    --secondary: #1f1f1f;
+    --secondary-foreground: #E8E6D9;
+
+    /* ELEMENTI DISABILITATI/MUTED */
+    --muted: #1f1f1f;
+    --muted-foreground: #a1a1aa;
+    /* Grigio medio per testi secondari */
+
+    --accent: #1f1f1f;
+    --accent-foreground: #E8E6D9;
+
+    --destructive: #7f1d1d;
+    /* Rosso scuro per errori */
+    --destructive-foreground: #E8E6D9;
+
+    /* BORDI (Grigio scuro sottile, per non disturbare il nero) */
+    --border: #27272a;
+    --input: #27272a;
+    --ring: #b08d55;
+    /* Ring color Oro quando clicchi gli input */
+
+    --radius: 0.625rem;
+
+    /* GRAFICI SHADCN (Standard) */
+    --chart-1: oklch(0.488 0.243 264.376);
+    --chart-2: oklch(0.696 0.17 162.48);
+    --chart-3: oklch(0.769 0.188 70.08);
+    --chart-4: oklch(0.627 0.265 303.9);
+    --chart-5: oklch(0.645 0.246 16.439);
+
+    /* SIDEBAR */
+    --sidebar: #0B0B0B;
+    --sidebar-foreground: #E8E6D9;
+    --sidebar-primary: #E8E6D9;
+    --sidebar-primary-foreground: #0B0B0B;
+    --sidebar-accent: #1f1f1f;
+    --sidebar-accent-foreground: #E8E6D9;
+    --sidebar-border: #27272a;
+    --sidebar-ring: #b08d55;
+  }
+
+  /* DARK MODE 
+     Dato che il tuo sito è GIA' scuro di base, 
+     copiamo le stesse regole anche qui per sicurezza */
+  .dark {
+    --background: #0B0B0B;
+    --foreground: #E8E6D9;
+    --card: #0B0B0B;
+    --card-foreground: #E8E6D9;
+    --popover: #0B0B0B;
+    --popover-foreground: #E8E6D9;
+    --primary: #E8E6D9;
+    --primary-foreground: #0B0B0B;
+    --secondary: #1f1f1f;
+    --secondary-foreground: #E8E6D9;
+    --muted: #1f1f1f;
+    --muted-foreground: #a1a1aa;
+    --accent: #1f1f1f;
+    --accent-foreground: #E8E6D9;
+    --destructive: #7f1d1d;
+    --destructive-foreground: #E8E6D9;
+    --border: #27272a;
+    --input: #27272a;
+    --ring: #b08d55;
+    --sidebar: #0B0B0B;
+    --sidebar-foreground: #E8E6D9;
+    --sidebar-primary: #E8E6D9;
+    --sidebar-primary-foreground: #0B0B0B;
+    --sidebar-accent: #1f1f1f;
+    --sidebar-accent-foreground: #E8E6D9;
+    --sidebar-border: #27272a;
+    --sidebar-ring: #b08d55;
+  }
+}
+
+/* --- CONFIGURAZIONE TEMA TAILWIND --- */
+@theme inline {
+  /* I TUOI BREAKPOINTS */
+  --breakpoint-xs: 430px;
+  --breakpoint-3xl: 1920px;
+  --breakpoint-4xl: 2400px;
+
+  /* I TUOI COLORI */
+  --color-gold: var(--gold);
+  --color-golden: var(--golden);
+
+  /* MAPPING COLORI SHADCN */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+
+  /* RAGGI BORDI (RADIUS) */
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+}
+
+/* --- STILI BASE --- */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* --- UTILITIES & FONTS --- */
+@layer utilities {
+  .font-muller {
+    font-family: var(--font-MullerNext), sans-serif;
+  }
+
+  .font-monument {
+    font-family: var(--font-PPMonumentExtended), sans-serif;
+  }
+}
+
+/* --- ANIMAZIONI TUE --- */
+@keyframes textIntro {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+    max-height: 0
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    max-height: 100px;
+  }
+}
+
+.animateDelay {
+  animation: textIntro 0.8s ease-in-out forwards;
+}
+
+/* --- SCROLLBAR CUSTOMIZATION --- */
+
+/* Width */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--gold);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #d4af7a;
+}
+
+/* Firefox support */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--gold) var(--background);
+}
+
+/* --- TEXT SELECTION --- */
+::selection {
+  background: var(--gold);
+  color: var(--background);
+}
+
+/* Selection on Gold Backgrounds */
+.bg-gold ::selection,
+.bg-golden ::selection {
+  background: var(--background);
+  color: var(--gold);
+}

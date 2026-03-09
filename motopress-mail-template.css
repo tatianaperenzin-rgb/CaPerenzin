@@ -1,0 +1,137 @@
+/* ============================================
+   CA'PERENZIN — SUCCESS PAGE (RICEVUTA STYLE)
+   Target: page-id-14
+   Layout: Centratura Totale + Tabella Elegante
+   ============================================ */
+
+/* 1. CENTRATURA GEOMETRICA PERFETTA */
+/* Forza tutti i contenitori WordPress a occupare l'intero schermo */
+body.page-id-14,
+body.page-id-14 #content,
+body.page-id-14 .page-content {
+    height: 100dvh !important;
+    min-height: 100dvh !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    /* Centra verticale */
+    align-items: center !important;
+    /* Centra orizzontale */
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: var(--cp-bg) !important;
+}
+
+/* Nascondi Header e Footer per focus assoluto */
+body.page-id-14 header,
+body.page-id-14 footer {
+    display: none !important;
+}
+
+/* 2. LA CARD (IL BOX RICEVUTA) */
+body.page-id-14 .mphb_sc_booking_confirmation {
+    width: 90% !important;
+    max-width: 750px !important;
+    background: var(--cp-card-bg) !important;
+    border: 1px solid var(--cp-border) !important;
+    border-radius: var(--cp-radius) !important;
+    padding: 45px !important;
+    /* Spazio generoso dai bordi della card */
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6) !important;
+}
+
+/* 3. MESSAGGIO DI SUCCESSO */
+.mphb-payment-messages {
+    text-align: center !important;
+    margin-bottom: 35px !important;
+}
+
+.mphb-payment-messages p {
+    color: var(--cp-gold) !important;
+    font-size: 1.3rem !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.02em !important;
+}
+
+/* 4. STILE TABELLA DETTAGLI (Ripristinato) */
+.mphb-booking-details-section {
+    margin-bottom: 30px !important;
+}
+
+.mphb-booking-details-title {
+    color: var(--cp-gold) !important;
+    font-size: 0.85rem !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.12em !important;
+    margin-bottom: 15px !important;
+    padding-left: 5px !important;
+}
+
+/* Righe della tabella */
+ul.mphb-booking-details {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border-top: 1px solid var(--cp-border) !important;
+}
+
+ul.mphb-booking-details li {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 14px 15px !important;
+    /* Più pixel ai testi per non toccare i bordi */
+    border-bottom: 1px solid var(--cp-border) !important;
+    font-size: 0.95rem !important;
+}
+
+/* Allineamento e colori testi */
+ul.mphb-booking-details li .label {
+    color: var(--cp-muted) !important;
+    font-weight: 400 !important;
+}
+
+ul.mphb-booking-details li .value {
+    color: var(--cp-fg) !important;
+    font-weight: 500 !important;
+    text-align: right !important;
+}
+
+/* 5. EVIDENZA PREZZO FINALE */
+.booking-price {
+    background: rgba(176, 141, 85, 0.05) !important;
+}
+
+.booking-price .value {
+    color: var(--cp-gold) !important;
+    font-size: 1.2rem !important;
+    font-weight: 700 !important;
+}
+
+/* 6. LINK ALLOGGIO E INFO EXTRA */
+.accommodations,
+.mphb-payment-instructions {
+    text-align: center !important;
+    margin-top: 25px !important;
+    font-size: 0.85rem !important;
+    color: var(--cp-muted) !important;
+}
+
+.accommodations a {
+    color: var(--cp-gold) !important;
+    text-decoration: none !important;
+    font-weight: 500 !important;
+}
+
+/* RESPONSIVE MOBILE */
+@media (max-width: 600px) {
+    body.page-id-14 .mphb_sc_booking_confirmation {
+        padding: 30px 20px !important;
+        /* Leggermente meno spazio su mobile */
+    }
+
+    ul.mphb-booking-details li {
+        padding: 12px 10px !important;
+        font-size: 0.85rem !important;
+    }
+}

@@ -1,0 +1,1488 @@
+{
+    "assetUi": {
+        "viewDitails": "esplora la camera",
+        "descriptionOpen": "Apri Descrizione",
+        "descriptionClose": "Chiudi Descrizione",
+        "night": "Notte",
+        "nextRoom": "Camera Succ.",
+        "gallery": "Guarda le foto",
+        "exit": "Uscita",
+        "entryRoom": "Scopri la Camera",
+        "experience": "Esperienze",
+        "readMore": "Leggi di più",
+        "readLess": "Leggi di meno",
+        "tips": "Tips",
+        "tipsBack": "Tips",
+        "navigatorBeB": {
+            "id": "nav",
+            "label": "Naviga verso il B&B",
+            "gMaps": "https://www.google.com/maps/dir/?api=1&destination=Località+Rive+di+S.+Pietro,+10,+31020+Tarzo+TV&dir_action=navigate",
+            "loadingText": "Stiamo calcolando il percorso per il tuo viaggio..."
+        },
+        "goHome": "Torna alla Home",
+        "notFoundText": "Sembra che tu abbia bussato alla porta sbagliata... o forse questa stanza è ancora segreta!",
+        "splashScreen": {
+            "title": "Ca' Perenzin",
+            "text": "La tua esperienza rilassante è in preparazione"
+        }
+    },
+    "menu": {
+        "home": "Home",
+        "wakeUp": "Il Risveglio",
+        "room": "Le Camere",
+        "experience": "Le Esperienze",
+        "contact": "Contatti"
+    },
+    "hero": {
+        "BeBname": "Ca'Perenzin",
+        "heroIntroOne": "Il silenzio qui non è vuoto. È una presenza.",
+        "heroIntroTwo": "Lasciate il rumore della città al cancello e datevi il tempo di ritrovare il vostro ritmo naturale.",
+        "ctaHome": "Respirare",
+        "heroOpen": {
+            "headline": "L'arte perduta di fermarsi.",
+            "content": "Nessun orario, nessuna notifica, nessuna fretta. Solo tu, il tuo ritmo e la natura.",
+            "textLeft": "Il lusso non è nelle cose, ma nella presenza."
+        },
+        "srcDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1771152468/caperenzin.home.desk_rqefja.jpg",
+        "srcMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1771156182/caperenzin.home.phone_pxccu6.jpg",
+        "srcAlt": ""
+    },
+    "__TEXT.BOOKING__": "",
+    "--------------------------": "",
+    "prenota": "Prenota",
+    "cerca": "Cerca",
+    "ospiti": "Ospiti",
+    "checkInOut": "Arrivo & Partenza",
+    "---------------------------": "",
+    "__TEXT.SECTION__A__": "",
+    "----------------------------": "",
+    "hedlineA": "Lascia il mondo fuori.",
+    "btnA": "Spegni il rumore",
+    "btnApop": "Riattiva il Rumore",
+    "textApop": "Arriverete con il rumore della città ancora addosso. Il primo impatto sarà quasi uno shock: niente auto, niente sirene, solo una bolla dove il tempo sembra essersi fermato. Datevi due ore. È il tempo che serve al vostro respiro per sincronizzarsi con il ritmo delle colline. Poi, accadrà la magia: smetterete di correre e inizierete a sentire.",
+    "-----------------------------": "",
+    "__TEXT.SECTION__B__": "",
+    "------------------------------": "",
+    "textSectionB": "Il vero lusso è fermarsi a guardare qualcosa che cambia sempre, senza muoversi mai. Il cuore pulsante di Ca'Perenzin è il suo focolare. Non troverete schermi accesi o rumori di fondo, ma solo la luce calda della fiamma che ridisegna le ombre della stanza.",
+    "textSectionBtwo": "",
+    "---------------------------------": "",
+    "__TEXT.SECTION__D__": "",
+    "-----------------------------------": "",
+    "headlineD": "Toccare il Silenzio",
+    "subHeadlineD": "Molti temono il buio delle colline. Cosa faremo senza le luci della città?",
+    "ctaBtnD": "Scoprite come cambia il buio",
+    "btnDone": "L'infinito",
+    "btnDtwo": "L'argento",
+    "btnDthird": "Il Ritmo",
+    "noteD": "Non vi annoierete. Imparerete di nuovo a parlare sottovoce e a tenervi per mano.",
+    "meteoView": {
+        "star": {
+            "headline": "L'infinito",
+            "content": "La risposta è sopra di voi. Senza inquinamento luminoso, il cielo torna ad essere quello degli antichi: un tappeto di stelle così nitido che vi sembrerà di caderci dentro.",
+            "srcVideo": "https://res.cloudinary.com/de124cxny/video/upload/v1773045959/starSky2_upwkjb.mp4"
+        },
+        "moon": {
+            "headline": "L'argento",
+            "content": "Nelle notti di luna piena, la valle si illumina di una luce argentea così potente che potrete camminare senza torce.",
+            "srcVideo": "https://res.cloudinary.com/de124cxny/video/upload/v1773045956/moon_yo8ych.mp4"
+        },
+        "rain": {
+            "headline": "Il Ritmo",
+            "content": "È lì che il rifugio diventa tana. Il suono dell'acqua sul tetto diventa una ninna nanna ipnotica, un ritmo che concilia il sonno più profondo che abbiate mai fatto.",
+            "srcVideo": "https://res.cloudinary.com/de124cxny/video/upload/v1773045962/rain_gdbas7.mp4"
+        }
+    },
+    "sectionE": {
+        "upTitle": "DALL'ORTO ALLA TAVOLA",
+        "title": "Risveglio Gourmet a km0",
+        "srcDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1771156401/caperenzin.space.desk_ggk9og.jpg",
+        "srcMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1771156400/caperenzin.space.mobile_gacpvb.jpg",
+        "srcAlt": "Colazione km0"
+    },
+    "sectionF": {
+        "paragraphOne": "Nessun 'bip' elettronico. Il vostro risveglio ha un solo suono: il gorgoglio lento della Moka che sale. E ha un solo profumo: quello della torta appena sfornata, che sa di burro, di zucchero e di pazienza.",
+        "paragraphTwo": "Nella saletta, il caminetto non è un arredo, è un compagno. Il suo calore non è l'aria secca di un condizionatore, ma un abbraccio che vi avvolge le spalle. È la colazione di quando eravate bambini. Semplice, fatta in casa, infinitamente buona."
+    },
+    "sectionG": {
+        "headline": "La verità è friabile",
+        "content": {
+            "paragraphOne": "Non troverete nulla che non abbia toccato la terra delle nostre colline. La mattina inizia con la consistenza imperfetta e sincera delle nostre crostate, impastate a mano mentre voi ancora dormite.",
+            "paragraphTwo": "Assaporate la 'Madre Terra' : uova che sanno di sole, frutta che segue solo il calendario delle stagioni e i formaggi di Perenzin  che raccontano storie antiche. È un gusto pulito, sano, privo di conservanti.",
+            "paragraphThree": "È il sapore onesto di una volta, quello che nutre non solo il corpo, ma la memoria."
+        },
+        "label": {
+            "one": "Formaggi Perenzin",
+            "two": "Stagionale",
+            "three": "Uova Km0",
+            "four": "Torte Fatte in casa"
+        },
+        "scrImgDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1771152914/caperenzin.colazione_twl0a5.jpg",
+        "scrImgPhone": "",
+        "scrAlt": "img",
+        "readMore": "Leggi di più",
+        "readLess": "Leggi di meno"
+    },
+    "sectionH": {
+        "headline": "Il calore del tempo lento",
+        "content": {
+            "paragraphOne": "Nelle mattine in cui fuori l'aria punge, qui dentro il tempo rallenta fino a fermarsi. La nostra saletta con caminetto  non è un semplice spazio: è un rifugio nel rifugio. Immaginate il crepitio della legna come unica colonna sonora.",
+            "paragraphTwo": "Il calore che vi colora le guance. Un infuso di energia positiva  tra le mani. È un lusso primitivo e raro: godersi il silenzio mentre il fuoco danza, sentendosi finalmente al sicuro, protetti dal mondo intero."
+        },
+        "labelBtn": "Riserva la tua colazione",
+        "scrImgDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1771153268/caperenzine.breakfast.fire_refvz2.jpg",
+        "scrImgPhone": "",
+        "scrAlt": "img",
+        "readMore": "Leggi di più",
+        "readLess": "Leggi di meno"
+    },
+    "sectionI": {
+        "headline": "Oltre il cancello un mondo magico.",
+        "srcDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1771156793/caperenzine.outHome.desk_knxvwt.jpg",
+        "srcMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1771156792/caperenzine.outHome.phone_apgajf.jpg",
+        "srcAlt": "Mondo Magico"
+    },
+    "sectionL": {
+        "content": "Per capire queste colline, non basta guardarle dal finestrino: dovete respirarle. Sentite i profumi dell'erba tagliata, il cambio di temperatura all'ombra di un bosco,  il suono della ghiaia sotto le ruote. Con le nostre E-Bike, le salite diventano dolci pianure e il paesaggio vi entra dentro. Il vero lusso? Nessuna logistica."
+    },
+    "sectionM": {
+        "cardOne": {
+            "headline": "Adrenalina e Vette",
+            "pill": {
+                "fisrt": "Acqua",
+                "second": "Vento",
+                "third": "Roccia"
+            },
+            "content": "Dai laghi di Revine dove si vola col kitesurf, fino ai boschi antichi del Cansiglio e le vette delle Dolomiti. Per chi cerca il respiro profondo della fatica felice.",
+            "labelBtn": "Esplora i sentieri",
+            "scrImg": "https://res.cloudinary.com/de124cxny/image/upload/v1773048867/surf_cardSize_hnlufd.jpg",
+            "altImg": ""
+        },
+        "cardTwo": {
+            "headline": "Tesori Nascosti",
+            "pill": {
+                "fisrt": "Guide introvabili",
+                "second": "Posti Segreti"
+            },
+            "content": "Borghi medievali come Cison e Follina, castelli millenari e punti panoramici segreti come la Panchina Gigante. Vi sveleremo gli angoli che solo i locali conoscono.",
+            "labelBtn": "Alla Scoperta",
+            "scrImg": "https://res.cloudinary.com/de124cxny/image/upload/v1773048903/lion_cardSize_vyjx48.jpg",
+            "altImg": ""
+        },
+        "cardThree": {
+            "headline": "Anima e Gusto",
+            "pill": {
+                "fisrt": "Prosecco",
+                "second": "Cantine Perenzin"
+            },
+            "content": "Non solo Prosecco. Un viaggio tra le cantine storiche, i formaggi premiati di Perenzin e le piccole botteghe artigiane. Per chi vuole assaggiare la storia di queste colline.",
+            "labelBtn": "Goditi i Piaceri",
+            "scrImg": "https://res.cloudinary.com/de124cxny/image/upload/v1773048900/soulTeast_cardSize_ev0rz3.jpg",
+            "altImg": ""
+        }
+    },
+    "sectionN": {
+        "headline": "Lontani dal mondo, vicini a tutto.",
+        "subHeadline": "Clicca per pianificare il viaggio",
+        "scrImgPhone": "https://res.cloudinary.com/de124cxny/image/upload/v1773049081/infoTravel_img_Phone_r3uon7.jpg",
+        "scrImgDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1773049085/infTravel_img_Desk_n7oity.jpg",
+        "altImg": "",
+        "labelBtn": [
+            {
+                "id": "A",
+                "label": "Aeroporti: TSF e VCE comodamente",
+                "infoBox": {
+                    "title": "Atterraggio",
+                    "buttons": [
+                        {
+                            "id": "Aeroporto Treviso",
+                            "info": {
+                                "title": "La rotta rapida con Airlink",
+                                "text": "L'aeroporto Canova è piccolissimo e comodissimo. Appena usciti dal terminal, cercate il Treviso Airlink (il bus di colore rosso). È un servizio dedicato che vi porta direttamente in Stazione Centrale senza fermate intermedie. Una volta in treno, sarete a Conegliano in soli 15 minuti.",
+                                "infoBtn": [
+                                    {
+                                        "id": "bus",
+                                        "label": "Ticket Airlink",
+                                        "urlWebSite": "https://www.trenitalia.com/it/regionale/collegamenti-regionale/treviso-airlink.html"
+                                    },
+                                    {
+                                        "id": "train",
+                                        "label": "Orari Treni",
+                                        "urlWebSite": "https://www.trenitalia.com/it.html"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "Aeroporto Venezia",
+                            "info": {
+                                "title": "La via più fluida dalla Laguna",
+                                "text": "Dall'Aeroporto Marco Polo, evitate di entrare a Venezia isola. Il segreto è prendere la navetta ATVO Fly Bus diretta alla stazione di Venezia Mestre (Terraferma). Da lì, i treni per Conegliano partono ogni 20 minuti e vi portano a destinazione in meno di mezz'ora.",
+                                "infoBtn": [
+                                    {
+                                        "id": "bus",
+                                        "label": "Orari Navetta ATVO",
+                                        "urlWebSite": "https://www.atvo.it/it-ticketonline.html"
+                                    },
+                                    {
+                                        "id": "train",
+                                        "label": "Orari Treni",
+                                        "urlWebSite": "https://www.trenitalia.com/it.html"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "B",
+                "label": "Lifestyle a Treviso in 25 min",
+                "infoBox": {
+                    "title": "IL SALOTTO D'ACQUA",
+                    "text": "Spesso sottovalutata, Treviso è un gioiello di canali e portici affrescati che noi locali amiamo profondamente. È la meta perfetta per un pomeriggio di relax:",
+                    "dotList": [
+                        "Cosa fare: Perdetevi tra i canali dei Buranelli, fate shopping nelle boutique del centro e gustate il vero Tiramisù (nato qui!).",
+                        "Come andare: Dimenticate l'auto e i parcheggi. Dalla stazione di Conegliano parte un treno ogni 20 minuti circa. In meno di mezz'ora sarete in centro, pronti per l'aperitivo."
+                    ],
+                    "buttons": [
+                        {
+                            "id": "tips",
+                            "label": "Arrivato in treno?",
+                            "text": "Se la vostra città di partenza non ha un diretto per Conegliano, Treviso Centrale è uno snodo comodissimo. I collegamenti con Conegliano sono rapidi e frequenti fino a tarda sera.",
+                            "infoBtn": [
+                                {
+                                    "id": "train",
+                                    "label": "Orari Treni",
+                                    "urlWebSite": "https://www.trenitalia.com/it.html"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "C",
+                "label": "Magia a Venezia in 45 min",
+                "infoBox": {
+                    "title": "VENEZIA SENZA PENSIERI",
+                    "text": "Molti turisti commettono l'errore di andare a Venezia in auto, finendo intrappolati nel traffico e pagando cifre folli per i parcheggi di Piazzale Roma. La strategia vincente è partire da qui:",
+                    "dotList": [
+                        "La mossa giusta: Lasciate l'auto comodamente alla stazione di Conegliano (a 15 min da noi).",
+                        "Il viaggio: Godetevi 45 minuti di relax in treno.",
+                        "L'arrivo magico: Scenderete alla stazione di Santa Lucia, che si affaccia direttamente sul Canal Grande. Nessun bus, nessun trasbordo. Siete già dentro la cartolina"
+                    ],
+                    "buttons": [
+                        {
+                            "id": "tips",
+                            "label": "Il trucco dell'orario",
+                            "text": "Prendete il treno regionale veloce delle 9:02 o 9:30. Arriverete con la luce perfetta del mattino, evitando la calca dei pendolari dell'alba. E per il ritorno? I treni viaggiano fino a tarda sera, godetevi la cena lì.",
+                            "infoBtn": [
+                                {
+                                    "id": "train",
+                                    "label": "Orari Treni",
+                                    "urlWebSite": "https://www.trenitalia.com/it.html"
+                                },
+                                {
+                                    "id": "park",
+                                    "label": "Mappa Parcheggio",
+                                    "urlWebSite": "https://www.parkopedia.it/parcheggi/stazione_ferroviaria_conegliano/?arriving=202602050630&leaving=202602050830"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "D",
+                "label": "Stazione: 15 min dal B&B",
+                "infoBox": {
+                    "title": "LO SNODO DI CONEGLIANO",
+                    "text": "La stazione di Conegliano è il vero hub logistico della zona. A soli 15 minuti di auto dal B&B, è servita da tutti i treni principali (Regionali Veloci e Frecce).",
+                    "dotList": [
+                        "Parcheggio: Ampio e comodo proprio di fronte ai binari.",
+                        "Transfer: Non avete l'auto? I taxi sono sempre disponibili nel piazzale, oppure chiedeteci il contatto del nostro autista di fiducia."
+                    ],
+                    "infoBtn": [
+                        {
+                            "id": "station",
+                            "label": "Naviga verso Stazione",
+                            "gMaps": "https://www.google.com/maps/dir/?api=1&destination=Stazione+di+Conegliano&destination_place_id=ChIJ4-jUegQVeUcRbERFwj1p6lA&dir_action=navigate"
+                        },
+                        {
+                            "id": "home",
+                            "label": "Naviga verso B&B",
+                            "gMaps": "https://www.google.com/maps/dir/?api=1&destination=Località+Rive+di+S.+Pietro,+10,+31020+Tarzo+TV&dir_action=navigate"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "sectionO": {
+        "headline": "Ca'Perenzin",
+        "adress": "Località Rive di S. Pietro, 10, 31020 Tarzo TV",
+        "pIva": "P.iva 04668120266",
+        "CIN": "[CIN code]",
+        "titleSocial": "Segui il nostro ritmo su",
+        "urlIG": "",
+        "urlFB": "",
+        "cell": "+39 3333597947",
+        "cellTwo": "+39 3486497297",
+        "mail": "info@caperenzin.it",
+        "menu": [
+            "Camere",
+            "Esperienze",
+            "Prenota"
+        ],
+        "labelBtn": "Naviga verso il B&B",
+        "cookie": "Cookie Policy",
+        "policy": "Privacy Policy",
+        "terms": "Termini & Regole della Casa",
+        "copyright": "Ca'Perenzin. Tutti i diritti riservati.",
+        "agency": "DigitalMediaSolutions",
+        "design": "Elia Schneider",
+        "regionalText": "[regional Text]"
+    },
+    "contacts": {
+        "headline": "Il Filo diretto",
+        "subHeadline": "Siamo in ascolto",
+        "content": "Che sia per pianificare una sorpresa, chiedere dettagli sulla strada o semplicemente per un saluto prima dell'arrivo, siamo qui. A Ca'Perenzin non rispondono call center. Risponde la famiglia.",
+        "buttons": [
+            {
+                "id": "whatsApp",
+                "label": " Scrivici su WhatsApp",
+                "nuber": "+39 3333597947"
+            },
+            {
+                "id": "cell",
+                "label": "3333597947"
+            }
+        ],
+        "ctaMail": "Preferisci un'email classica?",
+        "mailBtn": {
+            "id": "mail",
+            "label": " Compila il modulo "
+        },
+        "infoBox": {
+            "adress": "Località Rive di S. Pietro, 10, 31020 Tarzo TV",
+            "btn": {
+                "id": "maps",
+                "label": "Naviga verso il B&B"
+            }
+        }
+    },
+    "form": {
+        "name": "Il vostro nome",
+        "mail": "La vostra e-mail",
+        "phone": "Il vostro numero",
+        "message": "Raccontateci i vostri desideri",
+        "gdpr": "Ho letto la Privacy Policy e acconsento al trattamento dei dati.",
+        "send": "Manda alla Famiglia",
+        "success": "Messaggio Inviato",
+        "homeBtn": "Torna alla Home",
+        "error": "Errore",
+        "textError": "Qualcosa è andato storto nei nostri server.",
+        "newTry": "Riprova a inviare"
+    },
+    "dataRooms": [
+        {
+            "id": "roomOne",
+            "slug": "heartroom",
+            "roomName": "Heart Room",
+            "roomSubName": "Il ritmo della condivisione",
+            "carousellContent": "La nostra dimora più alta, con soffitti in legno che scaldano l'atmosfera. Spazi generosi e vista dominante sul Visentin, per riunire chi ami in un unico abbraccio.",
+            "infoPills": [
+                {
+                    "idOne": "person",
+                    "labelOne": "2 Persone",
+                    "idTwo": "room",
+                    "labelTwo": "1 Camera"
+                },
+                {
+                    "id": "wifi",
+                    "label": "Wi-fi"
+                },
+                {
+                    "id": "view",
+                    "label": "Monte Visentin "
+                },
+                {
+                    "id": "floor",
+                    "label": "Parquet Rovere"
+                },
+                {
+                    "id": "mq",
+                    "label": "20"
+                }
+            ],
+            "service": {
+                "id": "service",
+                "label": "Tutti i servizi",
+                "service": [
+                    "Tv satellitare",
+                    "Phone",
+                    "Mini-Bar",
+                    "Cassa Forte",
+                    "Bollitore",
+                    "Telefono",
+                    "Aria Condizionata",
+                    "Riscaldamento"
+                ]
+            },
+            "description": "Il cuore è l'organo che non riposa mai, quello che dà ritmo alla vita. Questa stanza è stata disegnata con lo stesso principio: essere il centro vitale del vostro soggiorno. Più ampia e generosa negli spazi, la Heart Room è pensata per la condivisione. È il luogo dove le risate rimbalzano sulle pareti, dove ci si ritrova a fine giornata per raccontarsi le scoperte fatte tra le colline. Qui l'architettura favorisce l'unione senza sacrificare la libertà di movimento. È uno spazio caldo, vibrante, dove sentirsi famiglia — in qualunque modo voi definiate questa parola.",
+            "price": "120",
+            "feedback": {
+                "label": "Dicono di Noi",
+                "headline": "Ca'Perenzin",
+                "content": "Questa stanza è ancora una pagina bianca. Il silenzio è intatto, la luce attende. Siate voi i primi a scrivere l'inizio di questa storia.",
+                "quote": "— La vostra esperienza, presto qui."
+            },
+            "gallery": [
+                {
+                    "id": 0,
+                    "bkMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1773045374/LB243852_ec3kgf.jpg",
+                    "bkDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1773045373/LB243855_jgyqph.jpg",
+                    "alt": ""
+                },
+                {
+                    "id": 1,
+                    "bkMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1773045868/heart_ph_04_jbquxc.jpg",
+                    "bkDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1773045371/LB243865_ttvykh.jpg",
+                    "alt": ""
+                },
+                 {
+                    "id": 2,
+                    "bkMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1773045372/LB243871_txfy8e.jpg",
+                    "bkDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1773045371/LB243870_w0nt4y.jpg",
+                    "alt": ""
+                },
+                 {
+                    "id": 3,
+                    "bkMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1773045870/heart_ph_03_j4zsqz.jpg",
+                    "bkDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1773045372/LB243857_vq7y9i.jpg",
+                    "alt": ""
+                },
+                 {
+                    "id": 4,
+                    "bkMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1773045372/LB243861_rjhcw5.jpg",
+                    "bkDesk": "",
+                    "alt": ""
+                },
+                 {
+                    "id": 5,
+                    "bkMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1773045866/heart_ph_02_azj29o.jpg",
+                    "bkDesk": "",
+                    "alt": ""
+                }
+            ],
+            "icsUrl": "https://caperenzin.it/?feed=mphb.ics&accommodation_id=25",
+            "motopressId": "25",
+            "wpTypeId": "24"
+        },
+        {
+            "id": "roomTwo",
+            "slug": "breathroom",
+            "roomName": "Breath Room",
+            "roomSubName": "Il respiro della luce",
+            "carousellContent": "Un'alcova esposta a est. Svegliarsi con il primo sole che accarezza il legno naturale. Ideale per chi cerca chiarezza mentale.",
+            "infoPills": [
+                {
+                    "idOne": "person",
+                    "labelOne": "3 Persone",
+                    "idTwo": "room",
+                    "labelTwo": "1 Camera"
+                },
+                {
+                    "id": "wifi",
+                    "label": "Wi-fi"
+                },
+                {
+                    "id": "mq",
+                    "label": "22"
+                },
+                {
+                    "id": "view",
+                    "label": "Vigneti & Monte Visentin "
+                },
+                {
+                    "id": "floor",
+                    "label": "Parquet Rovere"
+                }
+            ],
+            "service": {
+                "id": "service",
+                "label": "Tutti i servizi",
+                "service": [
+                    "Tv satellitare",
+                    "Phone",
+                    "Mini-Bar",
+                    "Cassa Forte",
+                    "Bollitore",
+                    "Telefono",
+                    "Aria Condizionata",
+                    "Riscaldamento"
+                ]
+            },
+            "description": "C'è un momento preciso, appena prima che il mondo si svegli, in cui l'aria ha un profumo diverso. La Breath Room è stata disegnata per catturare quell'istante. Esposta per accogliere la prima luce del giorno, questa stanza non è solo un luogo dove dormire, ma uno spazio per espandere il torace e rallentare il battito. \n\nQui i colori sono chiari, i tessuti impalpabili e il confine tra interno ed esterno sfuma. È l'alcova perfetta per chi cerca chiarezza mentale, per chi vuole iniziare la giornata con un respiro profondo, pulito, assoluto.",
+            "price": "120",
+            "feedback": {
+                "label": "Dicono di Noi",
+                "headline": "Ca'Perenzin",
+                "content": "Questa stanza è ancora una pagina bianca. Il silenzio è intatto, la luce attende. Siate voi i primi a scrivere l'inizio di questa storia.",
+                "quote": "— La vostra esperienza, presto qui."
+            },
+            "gallery": [
+                {
+                    "id": 0,
+                    "bkMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1773045333/LB243889_l3y8av.jpg",
+                    "bkDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1773045333/LB243888_l50qvt.jpg",
+                    "alt": ""
+                },
+                {
+                    "id": 1,
+                    "bkMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1773045332/LB243882_dtyolt.jpg",
+                    "bkDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1773045335/LB243880_rk2dje.jpg",
+                    "alt": ""
+                },
+               
+                {
+                    "id": 2,
+                    "bkMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1773045334/LB243884_uziseq.jpg",
+                    "bkDesk": "",
+                    "alt": ""
+                },
+                 {
+                    "id": 3,
+                    "bkMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1773045763/breath_ph_04_yx0bcj.jpg",
+                    "bkDesk": "",
+                    "alt": ""
+                }
+            ],
+            "icsUrl": "https://caperenzin.it/?feed=mphb.ics&accommodation_id=19",
+            "motopressId": "19",
+            "wpTypeId": "17"
+        },
+        {
+            "id": "roomThree",
+            "slug": "soulroom",
+            "roomName": "Soul Room",
+            "roomSubName": "L'eco del silenzio",
+            "carousellContent": "Al piano terra, a contatto diretto con la materia. Un rifugio spogliato del superfluo tecnologico, pensato per una disconnessione digitale totale e un sonno profondo.",
+            "infoPills": [
+                {
+                    "idOne": "person",
+                    "labelOne": "2 Persone",
+                    "idTwo": "room",
+                    "labelTwo": "1 Camera"
+                },
+                {
+                    "id": "wifi",
+                    "label": "Wi-fi"
+                },
+                {
+                    "id": "view",
+                    "label": "Monte Visentin "
+                },
+                {
+                    "id": "floor",
+                    "label": "Parquet Rovere"
+                },
+                {
+                    "id": "extra",
+                    "label": "Accessibile"
+                },
+                {
+                    "id": "mq",
+                    "label": "14"
+                }
+            ],
+            "service": {
+                "id": "service",
+                "label": "Tutti i servizi",
+                "service": [
+                    "Tv satellitare",
+                    "Phone",
+                    "Mini-Bar",
+                    "Cassa Forte",
+                    "Bollitore",
+                    "Telefono",
+                    "Aria Condizionata",
+                    "Riscaldamento"
+                ]
+            },
+            "description": "Ci sono luoghi fatti per guardare fuori, e altri disegnati per guardare dentro. La Soul Room appartiene a questa seconda, rara categoria. È uno spazio raccolto, denso, dove il mondo esterno smette di bussare alla porta. Qui l'architettura si fa abbraccio: materiali caldi, acustica ovattata e un'atmosfera che invita naturalmente alla calma. È la stanza perfetta per chi ha bisogno di fermarsi. Per leggere quel libro che aspetta da mesi, per scrivere, o semplicemente per ritrovare quella voce interiore che la routine quotidiana ha coperto di rumore.",
+            "price": "120",
+            "feedback": {
+                "label": "Dicono di Noi",
+                "headline": "Ca'Perenzin",
+                "content": "Questa stanza è ancora una pagina bianca. Il silenzio è intatto, la luce attende. Siate voi i primi a scrivere l'inizio di questa storia.",
+                "quote": "— La vostra esperienza, presto qui."
+            },
+            "gallery": [
+                {
+                    "id": 0,
+                    "bkMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1773045905/soul_ph_02_hl7rju.jpg",
+                    "bkDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1773045385/LB243835_hf1efm.jpg",
+                    "alt": ""
+                },
+                {
+                    "id": 1,
+                    "bkMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1773045386/LB243846_stgcov.jpg",
+                    "bkDesk": "",
+                    "alt": ""
+                },
+                {
+                    "id": 2,
+                    "bkMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1773045385/LB243844_m5x275.jpg",
+                    "bkDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1773045385/LB243840_b05nha.jpg",
+                    "alt": ""
+                }
+            ],
+            "icsUrl": "https://caperenzin.it/?feed=mphb.ics&accommodation_id=21",
+            "motopressId": "21",
+            "wpTypeId": "20"
+        },
+        {
+            "id": "roomFour",
+            "slug": "blessingroom",
+            "roomName": "Blessing Room",
+            "roomSubName": "Lo spazio senza confini",
+            "carousellContent": "Libertà di movimento e assenza di barriere architettoniche. Una suite tripla luminosa al piano terra, dove il comfort abbraccia ogni esigenza della famiglia.",
+            "infoPills": [
+                {
+                    "idOne": "person",
+                    "labelOne": "3 Persone",
+                    "idTwo": "room",
+                    "labelTwo": "1 Camera"
+                },
+                {
+                    "id": "wifi",
+                    "label": "Wi-fi"
+                },
+                {
+                    "id": "view",
+                    "label": "Vigneti Monte Visentin "
+                },
+                {
+                    "id": "floor",
+                    "label": "Parquet Rovere"
+                },
+                {
+                    "id": "mq",
+                    "label": "19"
+                }
+            ],
+            "service": {
+                "id": "service",
+                "label": "Tutti i servizi",
+                "service": [
+                    "Tv satellitare",
+                    "Phone",
+                    "Mini-Bar",
+                    "Cassa Forte",
+                    "Bollitore",
+                    "Telefono",
+                    "Aria Condizionata",
+                    "Riscaldamento"
+                ]
+            },
+            "description": "Ci sono luoghi fatti per guardare fuori, e altri disegnati per guardare dentro. La Soul Room appartiene a questa seconda, rara categoria. È uno spazio raccolto, denso, dove il mondo esterno smette di bussare alla porta. Qui l'architettura si fa abbraccio: materiali caldi, acustica ovattata e un'atmosfera che invita naturalmente alla calma. È la stanza perfetta per chi ha bisogno di fermarsi. Per leggere quel libro che aspetta da mesi, per scrivere, o semplicemente per ritrovare quella voce interiore che la routine quotidiana ha coperto di rumore.",
+            "price": "120",
+            "feedback": {
+                "label": "Dicono di Noi",
+                "headline": "Ca'Perenzin",
+                "content": "Questa stanza è ancora una pagina bianca. Il silenzio è intatto, la luce attende. Siate voi i primi a scrivere l'inizio di questa storia.",
+                "quote": "— La vostra esperienza, presto qui."
+            },
+            "gallery": [
+                {
+                    "id": 0,
+                    "bkMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1773045317/LB243896_bow23q.jpg",
+                    "bkDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1773045317/LB243897_omysl3.jpg",
+                    "alt": ""
+                },
+                {
+                    "id": 1,
+                    "bkMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1773045318/LB244133_hy9gfw.jpg",
+                    "bkDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1773045317/LB244134_llmijw.jpg",
+                    "alt": ""
+                },
+                {
+                    "id": 2,
+                    "bkMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1773045321/LB243931_ekcd2w.jpg",
+                    "bkDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1773045323/LB243926_osii1u.jpg",
+                    "alt": ""
+                },
+                {
+                    "id": 3,
+                    "bkMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1773045623/belssing_ph_01_ulmvqn.jpg",
+                    "bkDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1773045318/LB243902_gtq1yu.jpg",
+                    "alt": ""
+                }
+            ],
+            "icsUrl": "https://caperenzin.it/?feed=mphb.ics&accommodation_id=23",
+            "motopressId": "23",
+            "wpTypeId": "22"
+        }
+        
+    ],
+    "experiences": {
+        "headline": "Mappa delle Meraviglie",
+        "buttons": [
+            {
+                "id": "sport",
+                "label": "Adrenalina e Vette",
+                "experience": [
+                    {
+                        "id": "surf",
+                        "headline": "KiteSurf ai laghi",
+                        "pillsInfo": [
+                            {
+                                "id": "car",
+                                "label": "30 min"
+                            },
+                            {
+                                "id": "place",
+                                "label": "Lago di Santa Croce"
+                            },
+                            {
+                                "id": "webSite",
+                                "label": "Sito Web",
+                                "urlWebSite": "https://scuolakitevkc.it/"
+                            },
+                            {
+                                "id": "maps",
+                                "label": "Naviga",
+                                "gMaps": "https://www.google.com/maps/dir/?api=1&destination=Lago+di+Santa+Croce"
+                            }
+                        ],
+                        "content": "Qui l'orologio non serve, basta sentire l'aria. Puntuale ogni pomeriggio, il vento termico trasforma questo specchio d'acqua turchese in un'arena di adrenalina pura. Il Lago di Santa Croce è la palestra naturale dei kitesurfer: acqua piatta, vento costante e le vette dell'Alpago che vi fanno da cornice. Che siate esperti pronti a saltare o principianti che vogliono imparare a volare sull'acqua, questa è la vostra meta.",
+                        "tips": {
+                            "contentOne": "Il vento migliore si alza solitamente dopo le 13:00.",
+                            "contentTwo": "La scuola VKC si trova nella zona di Farra d'Alpago/Poiatte, ottima per noleggio attrezzatura."
+                        },
+                        "srcDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1773045521/surf_img_Desk_hcqocr.jpg",
+                        "srcMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1773045503/surf_img_Phone_qygvek.jpg",
+                        "srcAlt": ""
+                    },
+                    {
+                        "id": "golf",
+                        "headline": "Swing tra le nuvole",
+                        "pillsInfo": [
+                            {
+                                "id": "car",
+                                "label": "40 min"
+                            },
+                            {
+                                "id": "hole",
+                                "label": "18 Buche"
+                            },
+                            {
+                                "id": "place",
+                                "label": "Cansiglio"
+                            },
+                            {
+                                "id": "webSite",
+                                "label": "Sito Web",
+                                "urlWebSite": "https://www.golfcansiglio.com/"
+                            },
+                            {
+                                "id": "maps",
+                                "label": "Naviga",
+                                "gMaps": "https://www.google.com/maps/dir/?api=1&destination=Golf+Club+Cansiglio"
+                            }
+                        ],
+                        "content": "Dimenticate i campi da golf curati come giardini urbani. Qui si gioca con la natura selvaggia. A 1000 metri di quota, il Golf Club Cansiglio è considerato uno dei percorsi di montagna più belli d'Europa. Un tracciato 'Links' naturale dove le buche si nascondono tra le doline carsiche e i fairway sono muraglie di faggi secolari. L'aria è frizzante anche ad agosto, il silenzio è rotto solo dal suono del driver. Una sfida tecnica per i giocatori, una passeggiata nella bellezza per gli accompagnatori.",
+                        "tips": {
+                            "contentOne": "Solo stagione estiva (Maggio - Ottobre)",
+                            "contentTwo": "Richiesto abbigliamento polo/golf (è un club storico e rispettato)"
+                        },
+                        "srcDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1773045510/golf_img_Desk_knohpt.jpg",
+                        "srcMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1773045506/golf_img_Phone_ma7xts.jpg",
+                        "srcAlt": ""
+                    },
+                    {
+                        "id": "traking",
+                        "headline": "Il battito alpino",
+                        "pillsInfo": [
+                            {
+                                "id": "type",
+                                "label": "Trekking"
+                            },
+                            {
+                                "id": "bike",
+                                "label": "E-Bike"
+                            },
+                            {
+                                "id": "unesco",
+                                "label": "Dolomiti UNESCO"
+                            },
+                            {
+                                "id": "webSite",
+                                "label": "Sito Web",
+                                "urlWebSite": "https://dolomitibeat.it/"
+                            },
+                            {
+                                "id": "maps",
+                                "label": "Naviga",
+                                "gMaps": "https://www.google.com/maps/dir/?api=1&destination=Dolomiti+Beat"
+                            }
+                        ],
+                        "content": "La montagna non va solo guardata, va ascoltata. Dolomiti Beat è il vostro passpartout per le vette. Un team di guide professioniste pronte ad accompagnarvi dove i sentieri normali non arrivano: dalle foreste millenarie del Cansiglio alle guglie delle Dolomiti. Che sia un trekking all'alba, una ciaspolata sotto la luna piena o un'uscita adrenalinica in E-Bike, con loro l'esplorazione è sicura, raccontata e indimenticabile. Non servono mappe, solo la voglia di camminare.",
+                        "tips": {
+                            "contentOne": "Hanno un calendario fisso ma organizzano anche uscite private su richiesta",
+                            "contentTwo": " Spesso forniscono loro ciaspole o bastoncini"
+                        },
+                        "srcDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1773045514/alpi_img_Desk_myaanc.jpg",
+                        "srcMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1773045497/alpi_img_Phone_qxj9lo.jpg",
+                        "srcAlt": ""
+                    },
+                    {
+                        "id": "banch",
+                        "headline": "Il gigante giallo",
+                        "pillsInfo": [
+                            {
+                                "id": "car",
+                                "label": "20 min"
+                            },
+                            {
+                                "id": "traking",
+                                "label": "20 min"
+                            },
+                            {
+                                "id": "place",
+                                "label": "Revine Lago"
+                            },
+                            {
+                                "id": "webSite",
+                                "label": "Sito Web",
+                                "urlWebSite": "https://bigbenchcommunityproject.org/"
+                            },
+                            {
+                                "id": "maps",
+                                "label": "Naviga",
+                                "gMaps": "https://www.google.com/maps/dir/?api=1&destination=Panchina+Gigante+181+Revine+Lago"
+                            }
+                        ],
+                        "content": "Tornare bambini per un istante. Questa è la promessa della Big Bench #181, un'enorme panchina giallo-sole affacciata sui due laghi di Revine. Sedersi qui, con le gambe a penzoloni che non toccano terra, cambia la prospettiva sul mondo. Sotto di voi, lo specchio d'acqua; di fronte, l'anfiteatro delle Prealpi. Il consiglio dell'esperto: Nelle giornate limpide, aguzzate la vista verso le colline a ovest: potreste scorgere il profilo del monte dove riposa il Leone Alato che avete appena visitato.",
+                        "tips": {
+                            "contentOne": "Se gli ospiti hanno il 'Passaporto Big Bench', possono farsi mettere il timbro nei locali del paese.",
+                            "contentTwo": " Perfetto per l'orario aperitivo (portandosi una bottiglia nello zaino)"
+                        },
+                        "srcDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1773045501/bench_img_Desk_mc0y1y.jpg",
+                        "srcMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1773045500/bench_img_Phone_bkljin.jpg",
+                        "srcAlt": ""
+                    },
+                    {
+                        "id": "lake",
+                        "headline": "Lo specchio delle Prealpi",
+                        "pillsInfo": [
+                            {
+                                "id": "car",
+                                "label": "15 min"
+                            },
+                            {
+                                "id": "place",
+                                "label": "Revine Lago"
+                            },
+                            {
+                                "id": "maps",
+                                "label": "Naviga",
+                                "gMaps": "https://www.google.com/maps/dir/?api=1&destination=Revine+Lago"
+                            }
+                        ],
+                        "content": "Mentre le vette sfidano il cielo, i Laghi di Revine lo riflettono. Due gemelli d'acqua di origine glaciale dove il tempo rallenta. Qui l'esperienza è doppia: potete noleggiare un pedalò e tuffarvi nelle acque balneabili, oppure viaggiare nel tempo visitando il Parco Archeologico del Livelet, un villaggio su palafitte sospeso sull'acqua come 6000 anni fa. Il luogo perfetto per un picnic vista lago, lontano dalla folla.",
+                        "tips": {
+                            "contentOne": "Noleggiate un pedalò al tramonto per vedere le montagne tingersi di rosa dall'acqua."
+                        },
+                        "srcDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1773045517/lake_img_Desk_unw2ve.jpg",
+                        "srcMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1773045496/lake_img_Phone_wmg55t.jpg",
+                        "srcAlt": ""
+                    }
+                ]
+            },
+            {
+                "id": "culture",
+                "label": "Tesori Nascosti",
+                "experience": [
+                    {
+                        "id": "woodLion",
+                        "headline": "Il guardiano di legno",
+                        "pillsInfo": [
+                            {
+                                "id": "car",
+                                "label": "20 min"
+                            },
+                            {
+                                "id": "traking",
+                                "label": "30 min"
+                            },
+                            {
+                                "id": "place",
+                                "label": "Farra di Soligo"
+                            },
+                            {
+                                "id": "webSite",
+                                "label": "Sito Web",
+                                "urlWebSite": "https://collineconeglianovaldobbiadene.it/il-leone-alato-di-marco-martalar/"
+                            },
+                            {
+                                "id": "maps",
+                                "label": "Naviga",
+                                "gMaps": "https://www.google.com/maps/dir/?api=1&destination=Leone+Alato+Di+Marco+Martalar"
+                            }
+                        ],
+                        "content": "Dove la tempesta ha distrutto, l'arte ha ricostruito. Sulla cima del Monte Simoni vi aspetta il Leone Alato più grande del mondo, scolpito interamente con il legno degli alberi abbattuti dal ciclone Vaia. Non è solo una statua, è un pellegrinaggio. Si raggiunge attraverso un sentiero ripido tra le vigne, ma la ricompensa è doppia: trovarsi faccia a faccia con la maestosità di 1500 frammenti di legno e dominare l'intero arco delle colline UNESCO con un solo sguardo.",
+                        "tips": {
+                            "contentOne": " Ideale al tramonto per la luce dorata sul legno.",
+                            "contentTwo": "Servono scarpe da ginnastica/trekking (sentiero sterrato)"
+                        },
+                        "srcDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1773045541/woodLion_img_Desk_mm1gro.jpg",
+                        "srcMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1773045526/woodLion2_img_Phone_wku5f7.jpg",
+                        "srcAlt": ""
+                    },
+                    {
+                        "id": "mill",
+                        "headline": "La cartolina vivente",
+                        "pillsInfo": [
+                            {
+                                "id": "car",
+                                "label": "25 min"
+                            },
+                            {
+                                "id": "mill",
+                                "label": "Mulinoi Storico"
+                            },
+                            {
+                                "id": "place",
+                                "label": "Refrontolo"
+                            },
+                            {
+                                "id": "webSite",
+                                "label": "Sito Web",
+                                "urlWebSite": "https://www.molinettodellacroda.it/"
+                            },
+                            {
+                                "id": "maps",
+                                "label": "Naviga",
+                                "gMaps": "https://www.google.com/maps/dir/?api=1&destination=Molinetto+della+Croda"
+                            }
+                        ],
+                        "content": "Sembra un dipinto, ma è tutto vero. Il Molinetto della Croda è un gioiello di architettura rurale del 1600, scavato nella nuda roccia e accarezzato da una cascata. Qui il tempo ha il ritmo lento della macina in pietra che, ancora oggi, trasforma il mais in farina dorata. È il luogo dove la fatica dei mugnai è diventata poesia. Visitarlo significa entrare nel cuore antico delle nostre colline, tra il profumo della farina e il suono dell'acqua.",
+                        "tips": {
+                            "contentOne": "Spesso vendono la farina macinata in loco",
+                            "contentTwo": "Da qui partono sentieri naturalistici molto belli lungo il torrente Lierza"
+                        },
+                        "srcDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1773045531/mill_img_Desk_tkoe1v.jpg",
+                        "srcMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1773045508/mill_img_Phone_vgtmqx.jpg",
+                        "srcAlt": ""
+                    },
+                    {
+                        "id": "spa",
+                        "headline": "SPA Castel Brando",
+                        "pillsInfo": [
+                            {
+                                "id": "car",
+                                "label": "25 min"
+                            },
+                            {
+                                "id": "spa",
+                                "label": "SPA"
+                            },
+                            {
+                                "id": "place",
+                                "label": "Cison di Valmarino"
+                            },
+                            {
+                                "id": "webSite",
+                                "label": "Sito Web",
+                                "urlWebSite": "https://www.castelbrando.it/spa-wellness/"
+                            },
+                            {
+                                "id": "maps",
+                                "label": "Naviga",
+                                "gMaps": "https://www.google.com/maps/dir/?api=1&destination=princess+spa+scstel+brando"
+                            }
+                        ],
+                        "content": "Immaginate di immergervi nell'acqua calda circondati da mura millenarie. La Princess SPA di CastelBrando non è un semplice centro benessere, ma un viaggio nel tempo. Situata all'interno di uno dei castelli più antichi d'Europa, offre 2.000 mq di relax dove la storia incontra il vapore: antichi bagni romani, saune, piscina nuoto controcorrente e una grotta di sale himalayano. Qui non vi rilassate solo come ospiti, ma come nobili della corte.",
+                        "tips": {
+                            "contentOne": "Spesso è organizzato in slot da 3h 30'",
+                            "contentTwo": "Esiste anche una 'Spa Suite' privata per coppie"
+                        },
+                        "srcDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1773045524/spa_img_Desk_g3tqar.jpg",
+                        "srcMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1773045495/spa_img_Phone_u6dba9.jpg",
+                        "srcAlt": ""
+                    },
+                    {
+                        "id": "church",
+                        "headline": "Il Chiostro del Silenzio",
+                        "pillsInfo": [
+                            {
+                                "id": "car",
+                                "label": "30 min"
+                            },
+                            {
+                                "id": "spirit",
+                                "label": "Spiritualità"
+                            },
+                            {
+                                "id": "place",
+                                "label": "Follina"
+                            },
+                            {
+                                "id": "webSite",
+                                "label": "Sito Web",
+                                "urlWebSite": "https://www.abbaziasantamariafollina.it/"
+                            },
+                            {
+                                "id": "maps",
+                                "label": "Naviga",
+                                "gMaps": "https://www.google.com/maps/dir/?api=1&destination=Follina"
+                            }
+                        ],
+                        "content": "Se il silenzio avesse una forma architettonica, sarebbe il chiostro di Follina. In questo capolavoro cistercense del XII secolo, la pietra sembra essere stata ricamata come un merletto. Camminare lungo il quadriportico, osservando il gioco di luce tra le colonne tutte diverse una dall'altra, è una forma di meditazione in movimento. Un luogo dove il tempo si ferma, perfetto per ritrovare quella pace interiore che spesso cerchiamo invano altrove.",
+                        "tips": {
+                            "contentOne": "Aperta tutti i giorni (7:00-12:00 / 14:30-19:00)'",
+                            "contentTwo": "La visita al chiostro e alla basilica è solitamente gratuita"
+                        },
+                        "srcDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1773045540/abbey_img_Desk_pfbd65.jpg",
+                        "srcMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1773045520/abbey_img_Phone_ji19po.jpg",
+                        "srcAlt": ""
+                    },
+                    {
+                        "id": "sanSalvatore",
+                        "headline": "Il Gigante dei Colli",
+                        "pillsInfo": [
+                            {
+                                "id": "car",
+                                "label": "25 min"
+                            },
+                            {
+                                "id": "story",
+                                "label": "Storia & Panorama"
+                            },
+                            {
+                                "id": "place",
+                                "label": "Susegana"
+                            },
+                            {
+                                "id": "webSite",
+                                "label": "Sito Web",
+                                "urlWebSite": "https://www.castellosansalvatore.it/"
+                            },
+                            {
+                                "id": "maps",
+                                "label": "Naviga",
+                                "gMaps": "https://www.google.com/maps/dir/?api=1&destination=Castello+di+San+Salvatore&destination_place_id=ChIJk6YRqQU-eUcR6odaUKX0TMg&dir_action=navigate"
+                            }
+                        ],
+                        "content": "Storia & Panorama Susegana Sito Web Naviga Domina l'orizzonte da quasi mille anni. San Salvatore non è solo un castello, è una fortezza viva della famiglia Collalto. Una doppia cinta muraria abbraccia palazzi e giardini sospesi, offrendo un tuffo nella storia e una vista che, nelle giornate limpide, arriva fino a Venezia.",
+                        "tips": {
+                            "contentOne": "Verificate le aperture: è una dimora privata visitabile solo in date specifiche o su prenotazione.",
+                            "contentTwo": "Se chiuso, la Cantina Conte Collalto ai piedi della rocca vi accoglierà con la stessa nobiltà."
+                        },
+                        "srcDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1773045534/sanSalvatore_img_Desk_b4ksyo.jpg",
+                        "srcMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1773045505/sanSalvatore_img_Phone_kkkntc.jpg",
+                        "srcAlt": ""
+                    }
+                ]
+            },
+            {
+                "id": "food",
+                "label": "Anima e Gusto",
+                "experience": [
+                    {
+                        "id": "perenzin",
+                        "headline": "L'oro Bianco",
+                        "pillsInfo": [
+                            {
+                                "id": "car",
+                                "label": "10 min"
+                            },
+                            {
+                                "id": "chees",
+                                "label": "Cheese Experience"
+                            },
+                            {
+                                "id": "place",
+                                "label": "San Pietro di Feletto"
+                            },
+                            {
+                                "id": "webSite",
+                                "label": "Sito Web",
+                                "urlWebSite": "https://perperenzin.it"
+                            },
+                            {
+                                "id": "maps",
+                                "label": "Naviga",
+                                "gMaps": "https://www.google.com/maps/dir/?api=1&destination=PER+Bottega+%26+Cheese+Bar&destination_place_id=ChIJA1XhA0QUeUcRBDSm-0Ca6mc"
+                            }
+                        ],
+                        "content": "Se il formaggio è una religione, questo è il suo santuario. Da cinque generazioni, i Perenzin trasformano il latte in arte premiata a livello mondiale. Dimenticate la vecchia latteria: il 'PER' è un Cheese Bar moderno dove l'assaggio è un viaggio sensoriale. Qui un formaggio emoziona quanto un grande vino.",
+                        "tips": {
+                            "contentOne": "Spesso vendono la farina macinata in loco",
+                            "contentTwo": "Da qui partono sentieri naturalistici molto belli lungo il torrente Lierza"
+                        },
+                        "srcDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1773045543/perenzin_img_Desk_bgtwcx.jpg",
+                        "srcMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1773045523/perenzin_img_Phone_yxnpfh.jpg",
+                        "srcAlt": ""
+                    },
+                    {
+                        "id": "mondragone",
+                        "headline": "L'Anima del Vino",
+                        "pillsInfo": [
+                            {
+                                "id": "car",
+                                "label": "10 min"
+                            },
+                            {
+                                "id": "wine",
+                                "label": "Wine Experience"
+                            },
+                            {
+                                "id": "place",
+                                "label": "Corbanese di Tarzo"
+                            },
+                            {
+                                "id": "webSite",
+                                "label": "Sito Web",
+                                "urlWebSite": "https://www.mondragonevini.it/"
+                            },
+                            {
+                                "id": "maps",
+                                "label": "Naviga",
+                                "gMaps": "https://www.google.com/maps/dir/?api=1&destination=Mondragone+Vini+Azienda+Agricola+Antoniazzi+Dario+Tarzo"
+                            }
+                        ],
+                        "content": "10 min Cantina & Degustazione Tarzo Sito Web Naviga Non si viene qui solo per bere, ma per capire. La famiglia Antoniazzi coltiva vigne eroiche su pendenze impossibili per regalarvi un Prosecco DOCG che ha carattere da vendere. La loro cantina è un salotto vetrato immerso nel verde, dove il vino viene raccontato con passione. Un'esperienza di gusto che spiega, meglio di mille parole, cosa significa 'viticoltura eroica'.",
+                        "tips": {
+                            "contentOne": "Da non perdere i loro salumi d'oca e l'Oca in onto, vero presidio Slow Food.",
+                            "contentTwo": "Chiedete di assaggiare anche i loro rossi, rari per queste zone."
+                        },
+                        "srcDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1773045538/mondragone_img_Desk_ildbnl.jpg",
+                        "srcMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1773045519/mondragone_img_Phone_qgz33a.jpg",
+                        "srcAlt": ""
+                    },
+                    {
+                        "id": "capiadera",
+                        "headline": "Il Salotto di Pietra",
+                        "pillsInfo": [
+                            {
+                                "id": "car",
+                                "label": "7 min"
+                            },
+                            {
+                                "id": "farmhouse",
+                                "label": "Agriturismo Chic"
+                            },
+                            {
+                                "id": "place",
+                                "label": "Nogarolo di Tarzo"
+                            },
+                            {
+                                "id": "webSite",
+                                "label": "Sito Web",
+                                "urlWebSite": "https://www.capiadera.com/"
+                            },
+                            {
+                                "id": "maps",
+                                "label": "Naviga",
+                                "gMaps": "https://www.google.com/maps/dir/?api=1&destination=Azienda+Agricola+Ca'+Piadera&destination_place_id=ChIJIfKMxKIReUcR688Td2D24BQ"
+                            }
+                        ],
+                        "content": "7 min Agriturismo Chic Nogarolo di Tarzo Sito Web Naviga Un casale del 1800 che ha cambiato pelle. Ca' Piadera unisce la pietra viva di Nogarolo a un design contemporaneo e raffinato. Qui la cucina veneta indossa l'abito della festa: pasta tirata a mano e sapori dell'orto serviti con un'eleganza che sorprende. È il rifugio perfetto per chi cerca la sostanza della tradizione, ma non vuole rinunciare allo stile.",
+                        "tips": {
+                            "contentOne": "D'estate prenotate nel 'brolo' per cenare tra i filari",
+                            "contentTwo": "Provate i loro cicchetti gourmet con il Prosecco della casa."
+                        },
+                        "srcDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1773045537/caPiadera_img_Desk_lruf9a.jpg",
+                        "srcMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1773045511/caPiadera_img_Phone_iavvwt.jpg",
+                        "srcAlt": ""
+                    },
+                    {
+                        "id": "aiPini",
+                        "headline": "Il Custode del Fuoco",
+                        "pillsInfo": [
+                            {
+                                "id": "car",
+                                "label": "7 min"
+                            },
+                            {
+                                "id": "tradition",
+                                "label": "Tradizione Veneta"
+                            },
+                            {
+                                "id": "place",
+                                "label": "Tarzo Centro"
+                            },
+                            {
+                                "id": "webSite",
+                                "label": "Sito Web",
+                                "urlWebSite": "https://albergoaipini.it/"
+                            },
+                            {
+                                "id": "maps",
+                                "label": "Naviga",
+                                "gMaps": "https://www.google.com/maps/dir/?api=1&destination=Albergo+ai+Pini&destination_place_id=ChIJZbBHzgYReUcR7ysQT5BvFt0"
+                            }
+                        ],
+                        "content": "Dal 1919, questo è il punto fermo della cucina locale. Ai Pini non si seguono le mode, si onora la memoria. Il cuore della sala è l'antico camino a vista (larin), dove la carne viene ancora cotta sulla brace viva sotto i vostri occhi. È il ristorante della domenica in famiglia, dei sapori che rassicurano: dalla soppressa con polenta al baccalà, fino alle grigliate miste che profumano di legna. Un luogo onesto, dove l'ospitalità è gestita dalla stessa famiglia da tre generazioni.",
+                        "tips": {
+                            "contentOne": "Se amate la carne, la loro grigliata cotta al camino è imprescindibile (chiedete un tavolo vicino al fuoco d'inverno).",
+                            "contentTwo": "Nella bella stagione, prenotate sotto il pergolato esterno: si mangia al fresco con una vista rilassante sulle colline."
+                        },
+                        "srcDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1773045529/aiPini_img_Desk_aszsq7.jpg",
+                        "srcMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1773045502/aiPini_img_Phone_mzbdvt.jpg",
+                        "srcAlt": ""
+                    },
+                    {
+                        "id": "OsteriaSenzOste",
+                        "headline": "Il Padrone Invisibile",
+                        "pillsInfo": [
+                            {
+                                "id": "car",
+                                "label": "40 min"
+                            },
+                            {
+                                "id": "experience",
+                                "label": "Esperienza Iconica"
+                            },
+                            {
+                                "id": "place",
+                                "label": "Valdobbiadene"
+                            },
+                            {
+                                "id": "webSite",
+                                "label": "Sito Web",
+                                "urlWebSite": "https://www.osteriasenzoste.it/"
+                            },
+                            {
+                                "id": "maps",
+                                "label": "Naviga",
+                                "gMaps": "https://www.google.com/maps/dir/?api=1&destination=Osteria+Senz%27Oste&destination_place_id=ChIJxVtdWDgfeUcR9gCSgUHIPqQ&dir_action=navigate"
+                            }
+                        ],
+                        "content": "Esperienza Iconica! Qui il padrone di casa è il paesaggio. In questo casolare arroccato tra le vigne più preziose del mondo (il Cartizze), vige l'antica regola della fiducia. Entrate, vi servite da soli prendendo una bottiglia e un tagliere dal frigo, lasciate l'offerta nella cassa e uscite a godervi lo spettacolo. Non ci sono sedie assegnate: il vostro tavolo è un tronco d'albero o un filare di vite affacciato sull'infinito. È l'apoteosi della libertà veneta: pane, vino e un orizzonte che toglie il fiato.",
+                        "tips": {
+                            "contentOne": "Il parcheggio è a valle: preparatevi a una breve ma ripida passeggiata in salita tra le vigne",
+                            "contentTwo": "Il momento migliore è l'ora d'oro del tramonto, quando le colline del Cartizze si tingono letteralmente di luce."
+                        },
+                        "srcDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1773045532/osteria_img_Desk_ukn8mw.jpg",
+                        "srcMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1773045507/osteria_img_Phone_kdmsml.jpg",
+                        "srcAlt": ""
+                    }
+                ]
+            }
+        ]
+    },
+    "privacy": {
+        "title": "Informativa sulla Privacy",
+        "updated": "Ultimo aggiornamento il 13-feb-2026 | Data di entrata in vigore 13-feb-2026",
+        "intro": [
+            "Questa Informativa sulla Privacy descrive le politiche di Ca'Perenzin, Località Rive di S. Pietro 10, Treviso 31020, Italia, email: tatiana.perenzin@gmail.com, telefono: +39 3333597947 sulla raccolta, l'uso e la divulgazione delle tue informazioni che raccogliamo quando utilizzi il nostro sito web ( https://caperenzin.it ) (il “Servizio”). Accedendo o utilizzando il Servizio, acconsenti alla raccolta, all'uso e alla divulgazione delle tue informazioni in conformità con questa Informativa sulla Privacy. Se non acconsenti allo stesso, ti preghiamo di non accedere o utilizzare il Servizio.",
+            "Potremmo modificare questa Informativa sulla Privacy in qualsiasi momento senza alcun preavviso e pubblicheremo l'Informativa sulla Privacy rivista sul Servizio. La Politica rivista sarà efficace 180 giorni dopo la pubblicazione della Politica rivista nel Servizio e il tuo accesso continuato o l'uso del Servizio dopo tale periodo costituirà la tua accettazione dell'Informativa sulla Privacy rivista. Ti consigliamo quindi di rivedere periodicamente questa pagina."
+        ],
+        "sections": [
+            {
+                "title": "Informazioni che Raccogliamo:",
+                "content": "Raccoglieremo ed elaboreremo le seguenti informazioni personali su di te:",
+                "list": [
+                    "Nome",
+                    "Email",
+                    "Cellulare",
+                    "Indirizzo",
+                    "Informazioni di Pagamento",
+                    "Date di prenotazione",
+                    "Richieste speciali"
+                ]
+            },
+            {
+                "title": "Come Utilizziamo le Tue Informazioni:",
+                "content": "Utilizzeremo le informazioni che raccogliamo su di te per i seguenti scopi:",
+                "list": [
+                    "Marketing / Promozionale",
+                    "Elaborazione pagamenti",
+                    "Supporto",
+                    "Informazioni amministrative",
+                    "Gestione ordini clienti",
+                    "Protezione del sito"
+                ],
+                "extraContent": "Se volessimo utilizzare le tue informazioni per qualsiasi altro scopo, ti chiederemo il consenso e utilizzeremo le tue informazioni solo dopo aver ricevuto il tuo consenso e poi, solo per lo scopo(i) per cui concedi il consenso a meno che non siamo tenuti a fare diversamente per legge."
+            },
+            {
+                "title": "Come Condividiamo le Tue Informazioni:",
+                "content": "Non trasferiremo le tue informazioni personali a terzi senza chiedere il tuo consenso, tranne in circostanze limitate come descritto di seguito:",
+                "list": [
+                    "Analisi (Analytics)",
+                    "Servizi di recupero pagamenti",
+                    "Raccolta ed elaborazione dati"
+                ],
+                "extraContent": "Richiediamo a tali terze parti di utilizzare le informazioni personali che trasferiamo a loro solo per lo scopo per cui sono state trasferite e di non conservarle per un periodo più lungo di quanto richiesto per adempiere a detto scopo. Potremmo anche divulgare le tue informazioni personali per quanto segue: (1) per rispettare la legge applicabile, regolamenti, ordini del tribunale o altri processi legali; (2) per far rispettare i tuoi accordi con noi, inclusa questa Informativa sulla Privacy; o (3) per rispondere a reclami che il tuo uso del Servizio viola diritti di terzi. Se il Servizio o la nostra azienda viene fusa o acquisita con un'altra azienda, le tue informazioni saranno uno degli asset trasferiti al nuovo proprietario."
+            },
+            {
+                "title": "Conservazione delle Tue Informazioni:",
+                "content": "Conserveremo le tue informazioni personali con noi per 10 anni o per tutto il tempo necessario per soddisfare gli scopi per cui sono state raccolte come descritto in questa Informativa sulla Privacy. Potremmo dover conservare determinate informazioni per periodi più lunghi come la tenuta dei registri / rendicontazione in conformità con la legge applicabile o per altri motivi legittimi come l'applicazione dei diritti legali, la prevenzione delle frodi, ecc. Le informazioni anonime residue e le informazioni aggregate, nessuna delle quali identifica te (direttamente o indirettamente), possono essere conservate a tempo indeterminato."
+            },
+            {
+                "title": "I Tuoi Diritti:",
+                "content": "A seconda della legge applicabile, potresti avere il diritto di accedere e rettificare o cancellare i tuoi dati personali o ricevere una copia dei tuoi dati personali, limitare o opporsi all'elaborazione attiva dei tuoi dati, chiederci di condividere (portare) le tue informazioni personali a un'altra entità, ritirare qualsiasi consenso che ci hai fornito per elaborare i tuoi dati, il diritto di presentare un reclamo a un'autorità statutaria e altri diritti che potrebbero essere rilevanti ai sensi delle leggi applicabili. Per esercitare questi diritti, puoi scriverci a tatiana.perenzin@gmail.com. Risponderemo alla tua richiesta in conformità con la legge applicabile.",
+                "extraContent": "Tieni presente che se non ci consenti di raccogliere o elaborare le informazioni personali richieste o ritiri il consenso per elaborare le stesse per gli scopi richiesti, potresti non essere in grado di accedere o utilizzare i servizi per i quali le tue informazioni sono state richieste."
+            },
+            {
+                "title": "Cookie, ecc.",
+                "content": "Per saperne di più su come utilizziamo questi e le tue scelte in relazione a queste tecnologie di tracciamento, ti preghiamo di fare riferimento alla nostra Cookie Policy.",
+                "link": {
+                    "text": "Cookie Policy.",
+                    "url": "https://caperenzin.it"
+                }
+            },
+            {
+                "title": "Sicurezza:",
+                "content": "La sicurezza delle tue informazioni è importante per noi e utilizzeremo misure di sicurezza ragionevoli per prevenire la perdita, l'abuso o l'alterazione non autorizzata delle tue informazioni sotto il nostro controllo. Tuttavia, dati i rischi intrinseci, non possiamo garantire la sicurezza assoluta e di conseguenza, non possiamo assicurare o garantire la sicurezza di qualsiasi informazione che ci trasmetti e lo fai a tuo rischio e pericolo."
+            },
+            {
+                "title": "Link di Terze Parti e Uso delle Tue Informazioni:",
+                "content": "Il nostro Servizio può contenere link ad altri siti web che non sono gestiti da noi. Questa Informativa sulla Privacy non affronta la politica sulla privacy e altre pratiche di terze parti, inclusa qualsiasi terza parte che gestisce qualsiasi sito web o servizio che potrebbe essere accessibile via link sul Servizio. Ti consigliamo vivamente di rivedere l'informativa sulla privacy di ogni sito che visiti. Non abbiamo alcun controllo e non ci assumiamo alcuna responsabilità per il contenuto, le politiche sulla privacy o le pratiche di siti o servizi di terze parti."
+            },
+            {
+                "title": "Reclami / Responsabile della Protezione dei Dati:",
+                "content": "Se hai domande o dubbi sull'elaborazione delle tue informazioni disponibili con noi, puoi inviare un'email al nostro Responsabile dei Reclami presso Ca'Perenzin, Località Rive di S. Pietro 10, email: tatiana.perenzin@gmail.com. Risponderemo ai tuoi dubbi in conformità con la legge applicabile."
+            }
+        ],
+        "footer": "Informativa sulla Privacy generata con CookieYes."
+    },
+    "terms": {
+        "title": "TERMS AND CONDITIONS",
+        "updated": "Last updated February 13, 2026",
+        "intro": [
+            "AGREEMENT TO OUR LEGAL TERMS",
+            "We are Ca'Perenzin (\"Company,\" \"we,\" \"us,\" \"our\"), a company registered in Italy at Località Rive di S. Pietro 10, Tarzo, Treviso 31020. Our VAT number is 04668120266.",
+            "We operate the website https://caperenzin.it (the \"Site\"), as well as any other related products and services that refer or link to these legal terms (the \"Legal Terms\") (collectively, the \"Services\").",
+            "Ca' Perenzin offre servizi di alloggio e pernottamento. Il sito web permette agli utenti di consultare la disponibilità delle camere, prenotare soggiorni e gestire i servizi extra relativi all'ospitalità",
+            "You can contact us by phone at (+39)3333597947, email at info@caperenzin.it, or by mail to Località Rive di S. Pietro 10, Tarzo, Treviso 31020, Italy.",
+            "These Legal Terms constitute a legally binding agreement made between you, whether personally or on behalf of an entity (\"you\"), and Ca'Perenzin, concerning your access to and use of the Services. You agree that by accessing the Services, you have read, understood, and agreed to be bound by all of these Legal Terms. IF YOU DO NOT AGREE WITH ALL OF THESE LEGAL TERMS, THEN YOU ARE EXPRESSLY PROHIBITED FROM USING THE SERVICES AND YOU MUST DISCONTINUE USE IMMEDIATELY.",
+            "Supplemental terms and conditions or documents that may be posted on the Services from time to time are hereby expressly incorporated herein by reference. We reserve the right, in our sole discretion, to make changes or modifications to these Legal Terms from time to time. We will alert you about any changes by updating the \"Last updated\" date of these Legal Terms, and you waive any right to receive specific notice of each such change. It is your responsibility to periodically review these Legal Terms to stay informed of updates. You will be subject to, and will be deemed to have been made aware of and to have accepted, the changes in any revised Legal Terms by your continued use of the Services after the date such revised Legal Terms are posted.",
+            "All users who are minors in the jurisdiction in which they reside (generally under the age of 18) must have the permission of, and be directly supervised by, their parent or guardian to use the Services. If you are a minor, you must have your parent or guardian read and agree to these Legal Terms prior to you using the Services.",
+            "We recommend that you print a copy of these Legal Terms for your records."
+        ],
+        "sections": [
+            {
+                "title": "1. OUR SERVICES",
+                "content": "The information provided when using the Services is not intended for distribution to or use by any person or entity in any jurisdiction or country where such distribution or use would be contrary to law or regulation or which would subject us to any registration requirement within such jurisdiction or country. Accordingly, those persons who choose to access the Services from other locations do so on their own initiative and are solely responsible for compliance with local laws, if and to the extent local laws are applicable.\nThe Services are not tailored to comply with industry-specific regulations (Health Insurance Portability and Accountability Act (HIPAA), Federal Information Security Management Act (FISMA), etc.), so if your interactions would be subjected to such laws, you may not use the Services. You may not use the Services in a way that would violate the Gramm-Leach-Bliley Act (GLBA)."
+            },
+            {
+                "title": "2. INTELLECTUAL PROPERTY RIGHTS",
+                "content": "Our intellectual property\nWe are the owner or the licensee of all intellectual property rights in our Services, including all source code, databases, functionality, software, website designs, audio, video, text, photographs, and graphics in the Services (collectively, the \"Content\"), as well as the trademarks, service marks, and logos contained therein (the \"Marks\").\nOur Content and Marks are protected by copyright and trademark laws (and various other intellectual property rights and unfair competition laws) and treaties in the United States and around the world.\nThe Content and Marks are provided in or through the Services \"AS IS\" for your internal business purpose only.\nYour use of our Services\nSubject to your compliance with these Legal Terms, including the \"PROHIBITED ACTIVITIES\" section below, we grant you a non-exclusive, non-transferable, revocable license to:\naccess the Services; and\ndownload or print a copy of any portion of the Content to which you have properly gained access,\nsolely for your internal business purpose.\nExcept as set out in this section or elsewhere in our Legal Terms, no part of the Services and no Content or Marks may be copied, reproduced, aggregated, republished, uploaded, posted, publicly displayed, encoded, translated, transmitted, distributed, sold, licensed, or otherwise exploited for any commercial purpose whatsoever, without our express prior written permission.\nIf you wish to make any use of the Services, Content, or Marks other than as set out in this section or elsewhere in our Legal Terms, please address your request to: tatiana.perenzin@gmail.com. If we ever grant you the permission to post, reproduce, or publicly display any part of our Services or Content, you must identify us as the owners or licensors of the Services, Content, or Marks and ensure that any copyright or proprietary notice appears or is visible on posting, reproducing, or displaying our Content.\nWe reserve all rights not expressly granted to you in and to the Services, Content, and Marks.\nAny breach of these Intellectual Property Rights will constitute a material breach of our Legal Terms and your right to use our Services will terminate immediately.\nYour submissions\nPlease review this section and the \"PROHIBITED ACTIVITIES\" section carefully prior to using our Services to understand the (a) rights you give us and (b) obligations you have when you post or upload any content through the Services.\nSubmissions: By directly sending us any question, comment, suggestion, idea, feedback, or other information about the Services (\"Submissions\"), you agree to assign to us all intellectual property rights in such Submission. You agree that we shall own this Submission and be entitled to its unrestricted use and dissemination for any lawful purpose, commercial or otherwise, without acknowledgment or compensation to you.\nYou are responsible for what you post or upload: By sending us Submissions through any part of the Services you:\nconfirm that you have read and agree with our \"PROHIBITED ACTIVITIES\" and will not post, send, publish, upload, or transmit through the Services any Submission that is illegal, harassing, hateful, harmful, defamatory, obscene, bullying, abusive, discriminatory, threatening to any person or group, sexually explicit, false, inaccurate, deceitful, or misleading;\nto the extent permissible by applicable law, waive any and all moral rights to any such Submission;\nwarrant that any such Submission are original to you or that you have the necessary rights and licenses to submit such Submissions and that you have full authority to grant us the above-mentioned rights in relation to your Submissions; and\nwarrant and represent that your Submissions do not constitute confidential information.\nYou are solely responsible for your Submissions and you expressly agree to reimburse us for any and all losses that we may suffer because of your breach of (a) this section, (b) any third party’s intellectual property rights, or (c) applicable law."
+            },
+            {
+                "title": "3. USER REPRESENTATIONS",
+                "content": "By using the Services, you represent and warrant that: (1) you have the legal capacity and you agree to comply with these Legal Terms; (2) you are not a minor in the jurisdiction in which you reside, or if a minor, you have received parental permission to use the Services; (3) you will not access the Services through automated or non-human means, whether through a bot, script or otherwise; (4) you will not use the Services for any illegal or unauthorized purpose; and (5) your use of the Services will not violate any applicable law or regulation.\nIf you provide any information that is untrue, inaccurate, not current, or incomplete, we have the right to suspend or terminate your account and refuse any and all current or future use of the Services (or any portion thereof)."
+            },
+            {
+                "title": "4. PURCHASES AND PAYMENT",
+                "content": "We accept the following forms of payment:\n- Visa\n- Mastercard\n- American Express\n- Discover\n- PayPal\nYou agree to provide current, complete, and accurate purchase and account information for all purchases made via the Services. You further agree to promptly update account and payment information, including email address, payment method, and payment card expiration date, so that we can complete your transactions and contact you as needed. Sales tax will be added to the price of purchases as deemed required by us. We may change prices at any time. All payments shall be in Euros.\nYou agree to pay all charges at the prices then in effect for your purchases and any applicable shipping fees, and you authorize us to charge your chosen payment provider for any such amounts upon placing your order. We reserve the right to correct any errors or mistakes in pricing, even if we have already requested or received payment.\nWe reserve the right to refuse any order placed through the Services. We may, in our sole discretion, limit or cancel quantities purchased per person, per household, or per order. These restrictions may include orders placed by or under the same customer account, the same payment method, and/or orders that use the same billing or shipping address. We reserve the right to limit or prohibit orders that, in our sole judgment, appear to be placed by dealers, resellers, or distributors."
+            },
+            {
+                "title": "5. POLICY",
+                "content": "All sales are final and no refund will be issued."
+            },
+            {
+                "title": "6. PROHIBITED ACTIVITIES",
+                "content": "You may not access or use the Services for any purpose other than that for which we make the Services available. The Services may not be used in connection with any commercial endeavors except those that are specifically endorsed or approved by us.\nAs a user of the Services, you agree not to:\nSystematically retrieve data or other content from the Services to create or compile, directly or indirectly, a collection, compilation, database, or directory without written permission from us.\nTrick, defraud, or mislead us and other users, especially in any attempt to learn sensitive account information such as user passwords.\nCircumvent, disable, or otherwise interfere with security-related features of the Services, including features that prevent or restrict the use or copying of any Content or enforce limitations on the use of the Services and/or the Content contained therein.\nDisparage, tarnish, or otherwise harm, in our opinion, us and/or the Services.\nUse any information obtained from the Services in order to harass, abuse, or harm another person.\nMake improper use of our support services or submit false reports of abuse or misconduct.\nUse the Services in a manner inconsistent with any applicable laws or regulations.\nEngage in unauthorized framing of or linking to the Services.\nUpload or transmit (or attempt to upload or to transmit) viruses, Trojan horses, or other material, including excessive use of capital letters and spamming (continuous posting of repetitive text), that interferes with any party’s uninterrupted use and enjoyment of the Services or modifies, impairs, disrupts, alters, or interferes with the use, features, functions, operation, or maintenance of the Services.\nEngage in any automated use of the system, such as using scripts to send comments or messages, or using any data mining, robots, or similar data gathering and extraction tools.\nDelete the copyright or other proprietary rights notice from any Content.\nAttempt to impersonate another user or person or use the username of another user.\nUpload or transmit (or attempt to upload or to transmit) any material that acts as a passive or active information collection or transmission mechanism, including without limitation, clear graphics interchange formats (\"gifs\"), 1×1 pixels, web bugs, cookies, or other similar devices (sometimes referred to as \"spyware\" or \"passive collection mechanisms\" or \"pcms\").\nInterfere with, disrupt, or create an undue burden on the Services or the networks or services connected to the Services.\nHarass, annoy, intimidate, or threaten any of our employees or agents engaged in providing any portion of the Services to you.\nAttempt to bypass any measures of the Services designed to prevent or restrict access to the Services, or any portion of the Services.\nCopy or adapt the Services' software, including but not limited to Flash, PHP, HTML, JavaScript, or other code.\nExcept as permitted by applicable law, decipher, decompile, disassemble, or reverse engineer any of the software comprising or in any way making up a part of the Services.\nExcept as may be the result of standard search engine or Internet browser usage, use, launch, develop, or distribute any automated system, including without limitation, any spider, robot, cheat utility, scraper, or offline reader that accesses the Services, or use or launch any unauthorized script or other software.\nUse a buying agent or purchasing agent to make purchases on the Services.\nMake any unauthorized use of the Services, including collecting usernames and/or email addresses of users by electronic or other means for the purpose of sending unsolicited email, or creating user accounts by automated means or under false pretenses.\nUse the Services as part of any effort to compete with us or otherwise use the Services and/or the Content for any revenue-generating endeavor or commercial enterprise.\nMake speculative, false, or fraudulent bookings."
+            },
+            {
+                "title": "7. USER GENERATED CONTRIBUTIONS",
+                "content": "The Services does not offer users to submit or post content. We may provide you with the opportunity to create, submit, post, display, transmit, perform, publish, distribute, or broadcast content and materials to us or on the Services, including but not limited to text, writings, video, audio, photographs, graphics, comments, suggestions, or personal information or other material (collectively, \"Contributions\"). Contributions may be viewable by other users of the Services and through third-party websites. As such, any Contributions you transmit may be treated in accordance with the Services' Privacy Policy. When you create or make available any Contributions, you thereby represent and warrant that:\nThe creation, distribution, transmission, public display, or performance, and the accessing, downloading, or copying of your Contributions do not and will not infringe the proprietary rights, including but not limited to the copyright, patent, trademark, trade secret, or moral rights of any third party.\nYou are the creator and owner of or have the necessary licenses, rights, consents, releases, and permissions to use and to authorize us, the Services, and other users of the Services to use your Contributions in any manner contemplated by the Services and these Legal Terms.\nYou have the written consent, release, and/or permission of each and every identifiable individual person in your Contributions to use the name or likeness of each and every such identifiable individual person to enable inclusion and use of your Contributions in any manner contemplated by the Services and these Legal Terms.\nYour Contributions are not false, inaccurate, or misleading.\nYour Contributions are not unsolicited or unauthorized advertising, promotional materials, pyramid schemes, chain letters, spam, mass mailings, or other forms of solicitation.\nYour Contributions are not obscene, lewd, lascivious, filthy, violent, harassing, libelous, slanderous, or otherwise objectionable (as determined by us).\nYour Contributions do not ridicule, mock, disparage, intimidate, or abuse anyone.\nYour Contributions are not used to harass or threaten (in the legal sense of those terms) any other person and to promote violence against a specific person or class of people.\nYour Contributions do not violate any applicable law, regulation, or rule.\nYour Contributions do not violate the privacy or publicity rights of any third party.\nYour Contributions do not violate any applicable law concerning child pornography, or otherwise intended to protect the health or well-being of minors.\nYour Contributions do not include any offensive comments that are connected to race, national origin, gender, sexual preference, or physical handicap.\nYour Contributions do not otherwise violate, or link to material that violates, any provision of these Legal Terms, or any applicable law or regulation.\nAny use of the Services in violation of the foregoing violates these Legal Terms and may result in, among other things, termination or suspension of your rights to use the Services."
+            },
+            {
+                "title": "8. CONTRIBUTION LICENSE",
+                "content": "You and Services agree that we may access, store, process, and use any information and personal data that you provide following the terms of the Privacy Policy and your choices (including settings).\nBy submitting suggestions or other feedback regarding the Services, you agree that we can use and share such feedback for any purpose without compensation to you.\nWe do not assert any ownership over your Contributions. You retain full ownership of all of your Contributions and any intellectual property rights or other proprietary rights associated with your Contributions. We are not liable for any statements or representations in your Contributions provided by you in any area on the Services. You are solely responsible for your Contributions to the Services and you expressly agree to exonerate us from any and all responsibility and to refrain from any legal action against us regarding your Contributions."
+            },
+            {
+                "title": "9. THIRD-PARTY WEBSITES AND CONTENT",
+                "content": "The Services may contain (or you may be sent via the Site) links to other websites (\"Third-Party Websites\") as well as articles, photographs, text, graphics, pictures, designs, music, sound, video, information, applications, software, and other content or items belonging to or originating from third parties (\"Third-Party Content\"). Such Third-Party Websites and Third-Party Content are not investigated, monitored, or checked for accuracy, appropriateness, or completeness by us, and we are not responsible for any Third-Party Websites accessed through the Services or any Third-Party Content posted on, available through, or installed from the Services, including the content, accuracy, offensiveness, opinions, reliability, privacy practices, or other policies of or contained in the Third-Party Websites or the Third-Party Content. Inclusion of, linking to, or permitting the use or installation of any Third-Party Websites or any Third-Party Content does not imply approval or endorsement thereof by us. If you decide to leave the Services and access the Third-Party Websites or to use or install any Third-Party Content, you do so at your own risk, and you should be aware these Legal Terms no longer govern. You should review the applicable terms and policies, including privacy and data gathering practices, of any website to which you navigate from the Services or relating to any applications you use or install from the Services. Any purchases you make through Third-Party Websites will be through other websites and from other companies, and we take no responsibility whatsoever in relation to such purchases which are exclusively between you and the applicable third party. You agree and acknowledge that we do not endorse the products or services offered on Third-Party Websites and you shall hold us blameless from any harm caused by your purchase of such products or services. Additionally, you shall hold us blameless from any losses sustained by you or harm caused to you relating to or resulting in any way from any Third-Party Content or any contact with Third-Party Websites."
+            },
+            {
+                "title": "10. SERVICES MANAGEMENT",
+                "content": "We reserve the right, but not the obligation, to: (1) monitor the Services for violations of these Legal Terms; (2) take appropriate legal action against anyone who, in our sole discretion, violates the law or these Legal Terms, including without limitation, reporting such user to law enforcement authorities; (3) in our sole discretion and without limitation, refuse, restrict access to, limit the availability of, or disable (to the extent technologically feasible) any of your Contributions or any portion thereof; (4) in our sole discretion and without limitation, notice, or liability, to remove from the Services or otherwise disable all files and content that are excessive in size or are in any way burdensome to our systems; and (5) otherwise manage the Services in a manner designed to protect our rights and property and to facilitate the proper functioning of the Services."
+            },
+            {
+                "title": "11. PRIVACY POLICY",
+                "content": "We care about data privacy and security. Please review our Privacy Policy: http://caperenzin.it/policy. By using the Services, you agree to be bound by our Privacy Policy, which is incorporated into these Legal Terms. Please be advised the Services are hosted in Italy. If you access the Services from any other region of the world with laws or other requirements governing personal data collection, use, or disclosure that differ from applicable laws in Italy, then through your continued use of the Services, you are transferring your data to Italy, and you expressly consent to have your data transferred to and processed in Italy."
+            },
+            {
+                "title": "12. TERM AND TERMINATION",
+                "content": "These Legal Terms shall remain in full force and effect while you use the Services. WITHOUT LIMITING ANY OTHER PROVISION OF THESE LEGAL TERMS, WE RESERVE THE RIGHT TO, IN OUR SOLE DISCRETION AND WITHOUT NOTICE OR LIABILITY, DENY ACCESS TO AND USE OF THE SERVICES (INCLUDING BLOCKING CERTAIN IP ADDRESSES), TO ANY PERSON FOR ANY REASON OR FOR NO REASON, INCLUDING WITHOUT LIMITATION FOR BREACH OF ANY REPRESENTATION, WARRANTY, OR COVENANT CONTAINED IN THESE LEGAL TERMS OR OF ANY APPLICABLE LAW OR REGULATION. WE MAY TERMINATE YOUR USE OR PARTICIPATION IN THE SERVICES OR DELETE ANY CONTENT OR INFORMATION THAT YOU POSTED AT ANY TIME, WITHOUT WARNING, IN OUR SOLE DISCRETION.\nIf we terminate or suspend your account for any reason, you are prohibited from registering and creating a new account under your name, a fake or borrowed name, or the name of any third party, even if you may be acting on behalf of the third party. In addition to terminating or suspending your account, we reserve the right to take appropriate legal action, including without limitation pursuing civil, criminal, and injunctive redress."
+            },
+            {
+                "title": "13. MODIFICATIONS AND INTERRUPTIONS",
+                "content": "We reserve the right to change, modify, or remove the contents of the Services at any time or for any reason at our sole discretion without notice. However, we have no obligation to update any information on our Services. We also reserve the right to modify or discontinue all or part of the Services without notice at any time. We will not be liable to you or any third party for any modification, price change, suspension, or discontinuance of the Services.\nWe cannot guarantee the Services will be available at all times. We may experience hardware, software, or other problems or need to perform maintenance related to the Services, resulting in interruptions, delays, or errors. We reserve the right to change, revise, update, suspend, discontinue, or otherwise modify the Services at any time or for any reason without notice to you. You agree that we have no liability whatsoever for any loss, damage, or inconvenience caused by your inability to access or use the Services during any downtime or discontinuance of the Services. Nothing in these Legal Terms will be construed to obligate us to maintain and support the Services or to supply any corrections, updates, or releases in connection therewith."
+            },
+            {
+                "title": "14. GOVERNING LAW",
+                "content": "These Legal Terms are governed by and interpreted following the laws of Italy, and the use of the United Nations Convention of Contracts for the International Sales of Goods is expressly excluded. If your habitual residence is in the EU, and you are a consumer, you additionally possess the protection provided to you by obligatory provisions of the law in your country to residence. Ca'Perenzin and yourself both agree to submit to the non-exclusive jurisdiction of the courts of Treviso , which means that you may make a claim to defend your consumer protection rights in regards to these Legal Terms in Italy, or in the EU country in which you reside."
+            },
+            {
+                "title": "15. DISPUTE RESOLUTION",
+                "content": "The European Commission provides information on consumer redress, including a list of dispute resolution bodies by country, which you can access. If you would like to bring this subject to our attention, please contact us."
+            },
+            {
+                "title": "16. CORRECTIONS",
+                "content": "There may be information on the Services that contains typographical errors, inaccuracies, or omissions, including descriptions, pricing, availability, and various other information. We reserve the right to correct any errors, inaccuracies, or omissions and to change or update the information on the Services at any time, without prior notice."
+            },
+            {
+                "title": "17. DISCLAIMER",
+                "content": "THE SERVICES ARE PROVIDED ON AN AS-IS AND AS-AVAILABLE BASIS. YOU AGREE THAT YOUR USE OF THE SERVICES WILL BE AT YOUR SOLE RISK. TO THE FULLEST EXTENT PERMITTED BY LAW, WE DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED, IN CONNECTION WITH THE SERVICES AND YOUR USE THEREOF, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. WE MAKE NO WARRANTIES OR REPRESENTATIONS ABOUT THE ACCURACY OR COMPLETENESS OF THE SERVICES' CONTENT OR THE CONTENT OF ANY WEBSITES OR MOBILE APPLICATIONS LINKED TO THE SERVICES AND WE WILL ASSUME NO LIABILITY OR RESPONSIBILITY FOR ANY (1) ERRORS, MISTAKES, OR INACCURACIES OF CONTENT AND MATERIALS, (2) PERSONAL INJURY OR PROPERTY DAMAGE, OF ANY NATURE WHATSOEVER, RESULTING FROM YOUR ACCESS TO AND USE OF THE SERVICES, (3) ANY UNAUTHORIZED ACCESS TO OR USE OF OUR SECURE SERVERS AND/OR ANY AND ALL PERSONAL INFORMATION AND/OR FINANCIAL INFORMATION STORED THEREIN, (4) ANY INTERRUPTION OR CESSATION OF TRANSMISSION TO OR FROM THE SERVICES, (5) ANY BUGS, VIRUSES, TROJAN HORSES, OR THE LIKE WHICH MAY BE TRANSMITTED TO OR THROUGH THE SERVICES BY ANY THIRD PARTY, AND/OR (6) ANY ERRORS OR OMISSIONS IN ANY CONTENT AND MATERIALS OR FOR ANY LOSS OR DAMAGE OF ANY KIND INCURRED AS A RESULT OF THE USE OF ANY CONTENT POSTED, TRANSMITTED, OR OTHERWISE MADE AVAILABLE VIA THE SERVICES. WE DO NOT WARRANT, ENDORSE, GUARANTEE, OR ASSUME RESPONSIBILITY FOR ANY PRODUCT OR SERVICE ADVERTISED OR OFFERED BY A THIRD PARTY THROUGH THE SERVICES, ANY HYPERLINKED WEBSITE, OR ANY WEBSITE OR MOBILE APPLICATION FEATURED IN ANY BANNER OR OTHER ADVERTISING, AND WE WILL NOT BE A PARTY TO OR IN ANY WAY BE RESPONSIBLE FOR MONITORING ANY TRANSACTION BETWEEN YOU AND ANY THIRD-PARTY PROVIDERS OF PRODUCTS OR SERVICES. AS WITH THE PURCHASE OF A PRODUCT OR SERVICE THROUGH ANY MEDIUM OR IN ANY ENVIRONMENT, YOU SHOULD USE YOUR BEST JUDGMENT AND EXERCISE CAUTION WHERE APPROPRIATE."
+            },
+            {
+                "title": "18. LIMITATIONS OF LIABILITY",
+                "content": "IN NO EVENT WILL WE OR OUR DIRECTORS, EMPLOYEES, OR AGENTS BE LIABLE TO YOU OR ANY THIRD PARTY FOR ANY DIRECT, INDIRECT, CONSEQUENTIAL, EXEMPLARY, INCIDENTAL, SPECIAL, OR PUNITIVE DAMAGES, INCLUDING LOST PROFIT, LOST REVENUE, LOSS OF DATA, OR OTHER DAMAGES ARISING FROM YOUR USE OF THE SERVICES, EVEN IF WE HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. NOTWITHSTANDING ANYTHING TO THE CONTRARY CONTAINED HEREIN, OUR LIABILITY TO YOU FOR ANY CAUSE WHATSOEVER AND REGARDLESS OF THE FORM OF THE ACTION, WILL AT ALL TIMES BE LIMITED TO THE AMOUNT PAID, IF ANY, BY YOU TO US. CERTAIN US STATE LAWS AND INTERNATIONAL LAWS DO NOT ALLOW LIMITATIONS ON IMPLIED WARRANTIES OR THE EXCLUSION OR LIMITATION OF CERTAIN DAMAGES. IF THESE LAWS APPLY TO YOU, SOME OR ALL OF THE ABOVE DISCLAIMERS OR LIMITATIONS MAY NOT APPLY TO YOU, AND YOU MAY HAVE ADDITIONAL RIGHTS."
+            },
+            {
+                "title": "19. INDEMNIFICATION",
+                "content": "You agree to defend, indemnify, and hold us harmless, including our subsidiaries, affiliates, and all of our respective officers, agents, partners, and employees, from and against any loss, damage, liability, claim, or demand, including reasonable attorneys’ fees and expenses, made by any third party due to or arising out of: (1) use of the Services; (2) breach of these Legal Terms; (3) any breach of your representations and warranties set forth in these Legal Terms; (4) your violation of the rights of a third party, including but not limited to intellectual property rights; or (5) any overt harmful act toward any other user of the Services with whom you connected via the Services. Notwithstanding the foregoing, we reserve the right, at your expense, to assume the exclusive defense and control of any matter for which you are required to indemnify us, and you agree to cooperate, at your expense, with our defense of such claims. We will use reasonable efforts to notify you of any such claim, action, or proceeding which is subject to this indemnification upon becoming aware of it."
+            },
+            {
+                "title": "20. USER DATA",
+                "content": "We will maintain certain data that you transmit to the Services for the purpose of managing the performance of the Services, as well as data relating to your use of the Services. Although we perform regular routine backups of data, you are solely responsible for all data that you transmit or that relates to any activity you have undertaken using the Services. You agree that we shall have no liability to you for any loss or corruption of any such data, and you hereby waive any right of action against us arising from any such loss or corruption of such data."
+            },
+            {
+                "title": "21. ELECTRONIC COMMUNICATIONS, TRANSACTIONS, AND SIGNATURES",
+                "content": "Visiting the Services, sending us emails, and completing online forms constitute electronic communications. You consent to receive electronic communications, and you agree that all agreements, notices, disclosures, and other communications we provide to you electronically, via email and on the Services, satisfy any legal requirement that such communication be in writing. YOU HEREBY AGREE TO THE USE OF ELECTRONIC SIGNATURES, CONTRACTS, ORDERS, AND OTHER RECORDS, AND TO ELECTRONIC DELIVERY OF NOTICES, POLICIES, AND RECORDS OF TRANSACTIONS INITIATED OR COMPLETED BY US OR VIA THE SERVICES. You hereby waive any rights or requirements under any statutes, regulations, rules, ordinances, or other laws in any jurisdiction which require an original signature or delivery or retention of non-electronic records, or to payments or the granting of credits by any means other than electronic means."
+            },
+            {
+                "title": "22. CALIFORNIA USERS AND RESIDENTS",
+                "content": "If any complaint with us is not satisfactorily resolved, you can contact the Complaint Assistance Unit of the Division of Consumer Services of the California Department of Consumer Affairs in writing at 1625 North Market Blvd., Suite N 112, Sacramento, California 95834 or by telephone at (800) 952-5210 or (916) 445-1254."
+            },
+            {
+                "title": "23. MISCELLANEOUS",
+                "content": "These Legal Terms and any policies or operating rules posted by us on the Services or in respect to the Services constitute the entire agreement and understanding between you and us. Our failure to exercise or enforce any right or provision of these Legal Terms shall not operate as a waiver of such right or provision. These Legal Terms operate to the fullest extent permissible by law. We may assign any or all of our rights and obligations to others at any time. We shall not be responsible or liable for any loss, damage, delay, or failure to act caused by any cause beyond our reasonable control. If any provision or part of a provision of these Legal Terms is determined to be unlawful, void, or unenforceable, that provision or part of the provision is deemed severable from these Legal Terms and does not affect the validity and enforceability of any remaining provisions. There is no joint venture, partnership, employment or agency relationship created between you and us as a result of these Legal Terms or use of the Services. You agree that these Legal Terms will not be construed against us by virtue of having drafted them. You hereby waive any and all defenses you may have based on the electronic form of these Legal Terms and the lack of signing by the parties hereto to execute these Legal Terms."
+            },
+            {
+                "title": "24. TOURIST TAX:",
+                "content": "The tourist tax is not included in the total price and must be paid in cash upon arrival, according to local municipal regulations."
+            },
+            {
+                "title": "25. CHECK-IN/CHECK-OUT:",
+                "content": "Check-in is available from 3:00 PM to 8:00 PM. Check-out must be completed by 10:30 AM."
+            },
+            {
+                "title": "26. PETS:",
+                "content": "Pets are welcome but must be supervised at all times. Any damage caused by pets will be the sole responsibility of the owner."
+            },
+            {
+                "title": "27. SMOKING:",
+                "content": "Smoking is strictly prohibited inside the rooms and common indoor areas."
+            },
+            {
+                "title": "28. EXTRA SERVICES:",
+                "content": "Use of cradles or extra beds must be requested and confirmed in advance."
+            },
+            {
+                "title": "29. CONTACT US",
+                "content": "In order to resolve a complaint regarding the Services or to receive further information regarding use of the Services, please contact us at:\n\nCa'Perenzin\nLocalità Rive di S. Pietro 10\nTarzo, Treviso 31020\nItaly\nPhone: (+39)3333597947\ninfo@caperenzin.it"
+            }
+        ],
+        "footer": "This Terms and Conditions was created using Termly's Terms and Conditions Generator"
+    }
+}
