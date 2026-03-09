@@ -9,7 +9,8 @@ export async function GET(request) {
 
     try {
         // Le consumer key/secret vanno passate come query params, NON come Basic Auth
-        const apiUrl = `https://caperenzin.it/wp-json/mphb/v1/rates?consumer_key=${ck}&consumer_secret=${cs}`;
+        const baseUrl = process.env.NEXT_PUBLIC_WP_URL || 'https://admin.caperenzin.it';
+        const apiUrl = `${baseUrl}/wp-json/mphb/v1/rates?consumer_key=${ck}&consumer_secret=${cs}`;
 
         const res = await fetch(apiUrl, {
             cache: 'no-store' // Prezzi sempre aggiornati

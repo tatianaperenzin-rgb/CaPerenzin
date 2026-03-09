@@ -23,7 +23,8 @@ export async function GET(request) {
 
     try {
         // === STEP 1: Fetch la pagina della stanza per ottenere il nonce di ricerca ===
-        const roomPageRes = await fetch(`https://caperenzin.it/accommodation/${slug}/`, {
+        const baseUrl = process.env.NEXT_PUBLIC_WP_URL || 'https://admin.caperenzin.it';
+        const roomPageRes = await fetch(`${baseUrl}/accommodation/${slug}/`, {
             cache: 'no-store',
             headers: {
                 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
@@ -67,7 +68,7 @@ export async function GET(request) {
         }
 
         // === STEP 2: Fetch la pagina dei risultati per ottenere il form di prenotazione ===
-        const resultsUrl = `https://caperenzin.it/risultati-di-ricerca?mphb-checkout-nonce=${searchNonce}&_wp_http_referer=${encodeURIComponent(referer)}&mphb_room_type_id=${roomTypeId}&mphb_check_in_date=${checkIn}&mphb_check_out_date=${checkOut}&mphb_adults=${adults}&mphb_children=${children}`;
+        const resultsUrl = `${baseUrl}/risultati-di-ricerca?mphb-checkout-nonce=${searchNonce}&_wp_http_referer=${encodeURIComponent(referer)}&mphb_room_type_id=${roomTypeId}&mphb_check_in_date=${checkIn}&mphb_check_out_date=${checkOut}&mphb_adults=${adults}&mphb_children=${children}`;
 
         console.log("[wp-booking] Fetching risultati:", resultsUrl);
 
@@ -79,7 +80,7 @@ export async function GET(request) {
             headers: {
                 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
                 'Cookie': cookies,
-                'Referer': `https://caperenzin.it/accommodation/${slug}/`
+                'Referer': `${baseUrl}/accommodation/${slug}/`
             }
         });
 

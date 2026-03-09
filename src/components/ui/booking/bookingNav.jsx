@@ -23,6 +23,7 @@ export default function BookingNav({ dictionary, lang, bookNavOpen, setBookNavOp
 
     const handleBook = async () => {
         console.log("[BookingNav] Clicked Book. Date:", date, "Room:", room ? room.roomName : "Generic Search");
+        const baseUrl = process.env.NEXT_PUBLIC_WP_URL || 'https://admin.caperenzin.it';
 
         if (!date?.from || !date?.to) {
             console.warn("[BookingNav] Dates missing!");
@@ -95,13 +96,13 @@ export default function BookingNav({ dictionary, lang, bookNavOpen, setBookNavOp
                 } else {
                     // Fallback: vai ai risultati di ricerca
                     console.warn("[BookingNav] Form checkout non trovato, fallback ricerca")
-                    window.open(`https://caperenzin.it/ricerca/`, '_blank')
+                    window.open(`${baseUrl}/ricerca/`, '_blank')
                     setIsLoading(false)
                 }
 
             } catch (error) {
                 console.error("[BookingNav] Errore:", error)
-                window.open(`https://caperenzin.it/ricerca/`, '_blank')
+                window.open(`${baseUrl}/ricerca/`, '_blank')
                 setIsLoading(false)
             }
 
