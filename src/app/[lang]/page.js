@@ -27,7 +27,6 @@ export async function generateMetadata({ params }) {
   const dictionary = await getDictionary(lang)
 
   return {
-    title: dictionary.hero.heroOpen.headline,
     description: dictionary.hero.heroIntroTwo,
     alternates: {
       canonical: `/${lang}`,

@@ -10,7 +10,7 @@ export default function SectionG({ dictionary, lang }) {
     const [isOpen, setIsOpen] = useState(null)
     const handelClick = () => setIsOpen(!isOpen)
 
-    const classText = "font-muller text-sm xs:text-base md:pe-28 lg:pe-7 xl:pe-37 2xl:pe-50"
+    const classText = "font-muller text-sm xs:text-base md:pe-28 lg:pe-7 xl:pe-0 2xl:pe-50"
     const pillClass = " font-muller font-bold shadow-md"
 
     return (
@@ -30,14 +30,14 @@ export default function SectionG({ dictionary, lang }) {
 
 
                     {/* CONTENT */}
-                    <div className="flex-flex-col
+                    <div className="flex-flex-col 
                                     pe-6
                                     ">
 
                         {/* TITLE */}
                         <h2 className="font-black text-background text-balance
                                     w-80 xs:w-100 md:w-170 lg:w-fit 2xl:w-150
-                                    text-3xl xs:text-4xl md:text-5xl lg:text-5xl xl:text-7xl
+                                    text-3xl xs:text-4xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl
                                     lg:pt-60 xl:pt-40 2xl:pt-70">
                             {dictionary.headline}
                         </h2>

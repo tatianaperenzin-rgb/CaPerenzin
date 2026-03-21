@@ -11,7 +11,7 @@ export default function SectionH({ dictionary, lang }) {
     const [isOpen, setIsOpen] = useState(null)
     const handelClick = () => setIsOpen(!isOpen)
 
-    const classText = "font-muller text-sm xs:text-base md:pe-7 lg:pe-0 lg:ps-7 xl:ps-20 2xl:ps-50 lg:text-right"
+    const classText = "font-muller text-sm xs:text-base md:pe-7 lg:pe-0 lg:ps-7 xl:ps-0 2xl:ps-50 lg:text-right"
 
     return (
         // AGGIUNTO: w-screen (o min-w-full) e flex-shrink-0
@@ -47,7 +47,7 @@ export default function SectionH({ dictionary, lang }) {
                         {/* TITLE */}
                         <h2 className="font-black text-background text-balance 
                                     w-75 xs:w-110 md:w-150 lg:w-fit 2xl:w-full 2xl:ps-40
-                                     text-3xl xs:text-4xl md:text-5xl lg:text-5xl xl:text-7xl
+                                     text-3xl xs:text-4xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl
                                     lg:pt-55 xl:pt-30 2xl:pt-50
                                     lg:text-right">
                             {dictionary.headline}

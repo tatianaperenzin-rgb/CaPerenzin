@@ -114,7 +114,7 @@ export default function IsActive({ dictionary, exp, lang, experienceLibrary, cla
                 onClick={hendelClick} />
 
             {/* DINAMIC CONTENT__ HEADLINE _ CONTENTE _ TIPS */}
-            <div className="flex flex-col p-4 z-20 h-svh pt-25 xs:pt-30 xl:pt-45 pb-35 justify-between xl:justify-start">
+            <div className="flex flex-col p-4 z-20 h-svh pt-25 xs:pt-30 xl:pt-30 pb-35 justify-between xl:justify-start">
 
                 <div className="flex flex-col">
                     {/* HEADLINE */}

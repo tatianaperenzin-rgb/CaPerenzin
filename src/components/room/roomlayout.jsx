@@ -398,7 +398,7 @@ export default function RoomLayout({ dictionary, dataRoom, lang, expandBookNav }
                     {/* --- PRIMA BOOKING NAV (Quella centrale che sparisce) --- */}
                     {/* FIX: Usiamo isInGoldZone. Se scendo, questa sparisce SEMPRE, anche se chiudo il carrello sotto. */}
                     <motion.div
-                        className="flex flex-col px-5 xs:px-7 md:px-30 gap-3 w-full absolute bottom-37 xs:bottom-53 md:bottom-20 left-1/2 -translate-x-1/2 justify-center lg:hidden z-99"
+                        className="flex flex-col px-5  xs:px-7 md:px-30 gap-3 w-full absolute bottom-10 xs:bottom-53 md:bottom-20 left-1/2 -translate-x-1/2 justify-center lg:hidden z-99"
                         animate={{
                             opacity: isInGoldZone ? 0 : 1,
                             pointerEvents: isInGoldZone ? "none" : "auto"
@@ -431,7 +431,7 @@ export default function RoomLayout({ dictionary, dataRoom, lang, expandBookNav }
                 {/* --- SECONDA BOOKING NAV (Il Carrello Gold) --- */}
                 <div
                     ref={goldRef}
-                    className="flex flex-col justify-end w-full h-screen snap-start z-40 rounded-3xl xl:rounded-[40px] pointer-events-none lg:hidden"
+                    className="flex flex-col justify-end w-full h-200 snap-start z-40 rounded-3xl xl:rounded-[40px] pointer-events-none lg:hidden"
                 >
                     {/* Sfondo Gold Separato */}
                     <motion.div

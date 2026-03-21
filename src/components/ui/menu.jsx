@@ -46,7 +46,7 @@ export default function Menu({ setIsOpen, dictionary, dataRooms, lang, hero }) {
 
     const RoomList = () => {
         return (
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-2">
+            <div className="grid grid-cols-1 2xl:grid-cols-2  gap-2 xl:ms-10 2xl:ms-30">
                 {dataRooms && dataRooms.map((item, i) => (
                     <Link key={i} href={`/${lang}/camere/${item.slug}`} onClick={() => setIsOpen(false)}>
                         <div
@@ -55,7 +55,7 @@ export default function Menu({ setIsOpen, dictionary, dataRooms, lang, hero }) {
                             onMouseLeave={() => setBgImage(defaultBk)}
                         >
                             <RiDoorLockFill />
-                            <p className="text-xs xs:text-sm md:text-base lg:font-medium lg:text-base xl:text-lg w-fit">
+                            <p className="text-xs xs:text-sm md:text-base lg:font-medium lg:text-base xl:text-md 2xl:text-lg w-fit text-nowrap">
                                 {item.roomName}
                             </p>
                         </div>
@@ -71,13 +71,13 @@ export default function Menu({ setIsOpen, dictionary, dataRooms, lang, hero }) {
         <div className="flex  w-full h-dvh fixed top-0 left-0 pointer-events-auto bg-background">
             <BubbleFrame className="h-dvh" bubbleClass="items-center xl:items-end " color="bg-gold" >
 
-                <div className="flex w-full flex-col  gap-7 xl:gap-0 p-5 mt-15">
+                <div className="flex w-full flex-col  gap-7 xl:gap-0 p-5 mt-15 bg">
 
                     <p className="hidden lg:flex font-black md:text-3xl lg:text-4xl xl:text-4xl 2xl:text-4xl absolute top-5 left-5">{hero.BeBname}</p>
                     <div className="flex flex-col xl:flex-row xl:items-end xl:gap-30">
                         {/* HOME + COMTACT(desk) */}
 
-                        <div className="flex flex-col">
+                        <div className="flex flex-col bg">
                             <Link href={`/${lang}`} onClick={() => setIsOpen(false)}>
 
                                 <p className="font-black text-5xl xs:text-7xl py-5 xl:py-0 hover:text-white transition-colors duration-300">
@@ -95,7 +95,7 @@ export default function Menu({ setIsOpen, dictionary, dataRooms, lang, hero }) {
                         {/* MENU */}
                         <div className="flex w-full">
 
-                            <div className="flex flex-col gap-2 lg:w-1/2 ">
+                            <div className="flex flex-col gap-2 lg:w-fit ">
                                 <Link href={`/${lang}/#breakfast`} onClick={() => setIsOpen(false)}>
                                     <div className="flex items-center gap-2">
 
@@ -141,7 +141,7 @@ export default function Menu({ setIsOpen, dictionary, dataRooms, lang, hero }) {
                             </div>
 
                             {/* ROOM LIST ON HOVER DESKTOP */}
-                            <div className={`hidden lg:flex flex-col gap-2 lg:w-1/2 transition-opacity duration-500  justify-end
+                            <div className={`hidden lg:flex flex-col gap-2 lg:w-1/2 transition-opacity duration-500  justify-end 
                                   ${!roomList ? "opacity-0 pointer-events-none" : "opacity-100 pointer-events-auto"}`}
                                 onMouseEnter={handleMouseEnter}
                                 onMouseLeave={handleMouseLeave}
