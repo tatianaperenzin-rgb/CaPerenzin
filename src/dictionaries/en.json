@@ -1281,80 +1281,86 @@
         ]
     },
     "privacy": {
-        "title": "Privacy Policy",
-        "updated": "Last Updated On 13-Feb-2026 | Effective Date 13-Feb-2026",
+        "title": "PRIVACY NOTICE",
+        "updated": "Last updated March 21, 2026",
         "intro": [
-            "This Privacy Policy describes the policies of Ca'Perenzin, Località Rive di S. Pietro 10, Treviso 31020, Italy, email: tatiana.perenzin@gmail.com, phone: +39 3333597947 on the collection, use and disclosure of your information that we collect when you use our website ( https://caperenzin.it ). (the “Service”). By accessing or using the Service, you are consenting to the collection, use and disclosure of your information in accordance with this Privacy Policy. If you do not consent to the same, please do not access or use the Service.",
-            "We may modify this Privacy Policy at any time without any prior notice to you and will post the revised Privacy Policy on the Service. The revised Policy will be effective 180 days from when the revised Policy is posted in the Service and your continued access or use of the Service after such time will constitute your acceptance of the revised Privacy Policy. We therefore recommend that you periodically review this page."
+            "This Privacy Notice for Ca'Perenzin (\"we,\" \"us,\" or \"our\"), describes how and why we might access, collect, store, use, and/or share (\"process\") your personal information when you use our services (\"Services\"), including when you:",
+            "Questions or concerns? Reading this Privacy Notice will help you understand your privacy rights and choices. We are responsible for making decisions about how your personal information is processed. If you do not agree with our policies and practices, please do not use our Services."
         ],
         "sections": [
             {
-                "title": "Information We Collect:",
-                "content": "We will collect and process the following personal information about you:",
+                "title": "SUMMARY OF KEY POINTS",
+                "content": "This summary provides key points from our Privacy Notice, but you can find out more details about any of these topics by clicking the link following each key point or by using our table of contents below to find the section you are looking for.",
                 "list": [
-                    "Name",
-                    "Email",
-                    "Mobile",
-                    "Address",
-                    "Payment Info",
-                    "Booking dates",
-                    "Special requests"
+                    "What personal information do we process? When you visit, use, or navigate our Services, we may process personal information depending on how you interact with us and the Services, the choices you make, and the products and features you use.",
+                    "Do we process any sensitive personal information? Some of the information may be considered \"special\" or \"sensitive\" in certain jurisdictions, for example your racial or ethnic origins, sexual orientation, and religious beliefs. We do not process sensitive personal information.",
+                    "Do we collect any information from third parties? We may collect information from public databases, marketing partners, social media platforms, and other outside sources.",
+                    "How do we process your information? We process your information to provide, improve, and administer our Services, communicate with you, for security and fraud prevention, and to comply with law. We may also process your information for other purposes with your consent. We process your information only when we have a valid legal reason to do so.",
+                    "In what situations and with which parties do we share personal information? We may share information in specific situations and with specific third parties.",
+                    "What are your rights? Depending on where you are located geographically, the applicable privacy law may mean you have certain rights regarding your personal information.",
+                    "How do you exercise your rights? The easiest way to exercise your rights is by submitting a data subject access request, or by contacting us. We will consider and act upon any request in accordance with applicable data protection laws.",
+                    "Want to learn more about what we do with any information we collect? Review the Privacy Notice in full."
                 ]
             },
             {
-                "title": "How We Use Your Information:",
-                "content": "We will use the information that we collect about you for the following purposes:",
+                "title": "1. WHAT INFORMATION DO WE COLLECT?",
+                "content": "Personal information you disclose to us\nIn Short: We collect personal information that you provide to us.\nWe collect personal information that you voluntarily provide to us when you register on the Services, express an interest in obtaining information about us or our products and Services, when you participate in activities on the Services, or otherwise when you contact us.\nSensitive Information. We do not process sensitive information.\nAll personal information that you provide to us must be true, complete, and accurate, and you must notify us of any changes to such personal information.\n\nInformation automatically collected\nIn Short: Some information — such as your Internet Protocol (IP) address and/or browser and device characteristics — is collected automatically when you visit our Services.\nWe automatically collect certain information when you visit, use, or navigate the Services. This information does not reveal your specific identity (like your name or contact information) but may include device and usage information, such as your IP address, browser and device characteristics, operating system, language preferences, referring URLs, device name, country, location, information about how and when you use our Services, and other technical information. This information is primarily needed to maintain the security and operation of our Services, and for our internal analytics and reporting purposes.\nLike many businesses, we also collect information through cookies and similar technologies."
+            },
+            {
+                "title": "2. HOW DO WE PROCESS YOUR INFORMATION?",
+                "content": "In Short: We process your information to provide, improve, and administer our Services, communicate with you, for security and fraud prevention, and to comply with law. We may also process your information for other purposes with your consent.\nWe process your personal information for a variety of reasons, depending on how you interact with our Services."
+            },
+            {
+                "title": "3. WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?",
+                "content": "In Short: We may share information in specific situations described in this section and/or with the following third parties.\nWe may need to share your personal information in the following situations:",
                 "list": [
-                    "Marketing/ Promotional",
-                    "Processing payment",
-                    "Support",
-                    "Administration info",
-                    "Manage customer order",
-                    "Site protection"
-                ],
-                "extraContent": "If we want to use your information for any other purpose, we will ask you for consent and will use your information only on receiving your consent and then, only for the purpose(s) for which grant consent unless we are required to do otherwise by law."
+                    "Business Transfers. We may share or transfer your information in connection with, or during negotiations of, any merger, sale of company assets, financing, or acquisition of all or a portion of our business to another company.",
+                    "Affiliates. We may share your information with our affiliates, in which case we will require those affiliates to honor this Privacy Notice. Affiliates include our parent company and any subsidiaries, joint venture partners, or other companies that we control or that are under common control with us.",
+                    "Business Partners. We may share your information with our business partners to offer you certain products, services, or promotions."
+                ]
             },
             {
-                "title": "How We Share Your Information:",
-                "content": "We will not transfer your personal information to any third party without seeking your consent, except in limited circumstances as described below:",
-                "list": [
-                    "Analytics",
-                    "Payment recovery services",
-                    "Data collection & process"
-                ],
-                "extraContent": "We require such third party’s to use the personal information we transfer to them only for the purpose for which it was transferred and not to retain it for longer than is required for fulfilling the said purpose. We may also disclose your personal information for the following: (1) to comply with applicable law, regulation, court order or other legal process; (2) to enforce your agreements with us, including this Privacy Policy; or (3) to respond to claims that your use of the Service violates any third-party rights. If the Service or our company is merged or acquired with another company, your information will be one of the assets that is transferred to the new owner."
+                "title": "4. DO WE USE COOKIES AND OTHER TRACKING TECHNOLOGIES?",
+                "content": "In Short: We may use cookies and other tracking technologies to collect and store your information.\nWe may use cookies and similar tracking technologies (like web beacons and pixels) to gather information when you interact with our Services. Some online tracking technologies help us maintain the security of our Services, prevent crashes, fix bugs, save your preferences, and assist with basic site functions.\nWe also permit third parties and service providers to use online tracking technologies on our Services for analytics and advertising, including to help manage and display advertisements, to tailor advertisements to your interests, or to send abandoned shopping cart reminders (depending on your communication preferences). The third parties and service providers use their technology to provide advertising about products and services tailored to your interests which may appear either on our Services or on other websites.\nSpecific information about how we use such technologies and how you can refuse certain cookies is set out in our Cookie Notice."
             },
             {
-                "title": "Retention Of Your Information:",
-                "content": "We will retain your personal information with us for 10 years or for as long as we need it to fulfill the purposes for which it was collected as detailed in this Privacy Policy. We may need to retain certain information for longer periods such as record-keeping / reporting in accordance with applicable law or for other legitimate reasons like enforcement of legal rights, fraud prevention, etc. Residual anonymous information and aggregate information, neither of which identifies you (directly or indirectly), may be stored indefinitely."
+                "title": "5. HOW DO WE HANDLE YOUR SOCIAL LOGINS?",
+                "content": "In Short: If you choose to register or log in to our Services using a social media account, we may have access to certain information about you.\nOur Services offer you the ability to register and log in using your third-party social media account details (like your Facebook or X logins). Where you choose to do this, we will receive certain profile information about you from your social media provider. The profile information we receive may vary depending on the social media provider concerned, but will often include your name, email address, friends list, and profile picture, as well as other information you choose to make public on such a social media platform.\nWe will use the information we receive only for the purposes that are described in this Privacy Notice or that are otherwise made clear to you on the relevant Services. Please note that we do not control, and are not responsible for, other uses of your personal information by your third-party social media provider. We recommend that you review their privacy notice to understand how they collect, use, and share your personal information, and how you can set your privacy preferences on their sites and apps."
             },
             {
-                "title": "Your Rights:",
-                "content": "Depending on the law that applies, you may have a right to access and rectify or erase your personal data or receive a copy of your personal data, restrict or object to the active processing of your data, ask us to share (port) your personal information to another entity, withdraw any consent you provided to us to process your data, a right to lodge a complaint with a statutory authority and such other rights as may be relevant under applicable laws. To exercise these rights, you can write to us at tatiana.perenzin@gmail.com. We will respond to your request in accordance with applicable law.",
-                "extraContent": "Do note that if you do not allow us to collect or process the required personal information or withdraw the consent to process the same for the required purposes, you may not be able to access or use the services for which your information was sought."
+                "title": "6. IS YOUR INFORMATION TRANSFERRED INTERNATIONALLY?",
+                "content": "In Short: We may transfer, store, and process your information in countries other than your own.\nOur servers are located in Italy. Regardless of your location, please be aware that your information may be transferred to, stored by, and processed by us in our facilities and in the facilities of the third parties with whom we may share your personal information (see \"WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?\" above), including facilities in and other countries.\nIf you are a resident in the European Economic Area (EEA), United Kingdom (UK), or Switzerland, then these countries may not necessarily have data protection laws or other similar laws as comprehensive as those in your country. However, we will take all necessary measures to protect your personal information in accordance with this Privacy Notice and applicable law."
             },
             {
-                "title": "Cookies, etc.",
-                "content": "To learn more about how we use these and your choices in relation to these tracking technologies, please refer to our Cookie Policy.",
-                "link": {
-                    "text": "Cookie Policy.",
-                    "url": "https://caperenzin.it"
-                }
+                "title": "7. HOW LONG DO WE KEEP YOUR INFORMATION?",
+                "content": "In Short: We keep your information for as long as necessary to fulfill the purposes outlined in this Privacy Notice unless otherwise required by law.\nWe will only keep your personal information for as long as it is necessary for the purposes set out in this Privacy Notice, unless a longer retention period is required or permitted by law (such as tax, accounting, or other legal requirements).\nWhen we have no ongoing legitimate business need to process your personal information, we will either delete or anonymize such information, or, if this is not possible (for example, because your personal information has been stored in backup archives), then we will securely store your personal information and isolate it from any further processing until deletion is possible."
             },
             {
-                "title": "Security:",
-                "content": "The security of your information is important to us and we will use reasonable security measures to prevent the loss, misuse or unauthorized alteration of your information under our control. However, given the inherent risks, we cannot guarantee absolute security and consequently, we cannot ensure or warrant the security of any information you transmit to us and you do so at your own risk."
+                "title": "8. DO WE COLLECT INFORMATION FROM MINORS?",
+                "content": "In Short: We do not knowingly collect data from or market to children under 18 years of age.\nWe do not knowingly collect, solicit data from, or market to children under 18 years of age, nor do we knowingly sell such personal information. By using the Services, you represent that you are at least 18 or that you are the parent or guardian of such a minor and consent to such minor dependent’s use of the Services. If we learn that personal information from users less than 18 years of age has been collected, we will deactivate the account and take reasonable measures to promptly delete such data from our records. If you become aware of any data we may have collected from children under age 18, please contact us at info@caperenzin.it."
             },
             {
-                "title": "Third Party Links & Use Of Your Information:",
-                "content": "Our Service may contain links to other websites that are not operated by us. This Privacy Policy does not address the privacy policy and other practices of any third parties, including any third party operating any website or service that may be accessible via a link on the Service. We strongly advise you to review the privacy policy of every site you visit. We have no control over and assume no responsibility for the content, privacy policies or practices of any third party sites or services."
+                "title": "9. WHAT ARE YOUR PRIVACY RIGHTS?",
+                "content": "In Short: You may review, change, or terminate your account at any time, depending on your country, province, or state of residence.\nWithdrawing your consent: If we are relying on your consent to process your personal information, which may be express and/or implied consent depending on the applicable law, you have the right to withdraw your consent at any time. You can withdraw your consent at any time by contacting us by using the contact details provided in the section \"HOW CAN YOU CONTACT US ABOUT THIS NOTICE?\" below.\nHowever, please note that this will not affect the lawfulness of the processing before its withdrawal nor, when applicable law allows, will it affect the processing of your personal information conducted in reliance on lawful processing grounds other than consent.\nAccount Information: If you would at any time like to review or change the information in your account or terminate your account, you can. Upon your request to terminate your account, we will deactivate or delete your account and information from our active databases. However, we may retain some information in our files to prevent fraud, troubleshoot problems, assist with any investigations, enforce our legal terms and/or comply with applicable legal requirements."
             },
             {
-                "title": "Grievance / Data Protection Officer:",
-                "content": "If you have any queries or concerns about the processing of your information that is available with us, you may email our Grievance Officer at Ca'Perenzin, Località Rive di S. Pietro 10, email: tatiana.perenzin@gmail.com. We will address your concerns in accordance with applicable law."
+                "title": "10. CONTROLS FOR DO-NOT-TRACK FEATURES",
+                "content": "Most web browsers and some mobile operating systems and mobile applications include a Do-Not-Track (\"DNT\") feature or setting you can activate to signal your privacy preference not to have data about your online browsing activities monitored and collected. At this stage, no uniform technology standard for recognizing and implementing DNT signals has been finalized. As such, we do not currently respond to DNT browser signals or any other mechanism that automatically communicates your choice not to be tracked online. If a standard for online tracking is adopted that we must follow in the future, we will inform you about that practice in a revised version of this Privacy Notice."
+            },
+            {
+                "title": "11. DO WE MAKE UPDATES TO THIS NOTICE?",
+                "content": "In Short: Yes, we will update this notice as necessary to stay compliant with relevant laws.\nWe may update this Privacy Notice from time to time. The updated version will be indicated by an updated \"Revised\" date at the top of this Privacy Notice. If we make material changes to this Privacy Notice, we may notify you either by prominently posting a notice of such changes or by directly sending you a notification. We encourage you to review this Privacy Notice frequently to be informed of how we are protecting your information."
+            },
+            {
+                "title": "12. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?",
+                "content": "If you have questions or comments about this notice, you may contact us by post at:\n\nCa'Perenzin\nLocalità Rive di S. Pietro 10\nTarzo, Treviso 31020\nItaly\nPhone: (+39)3333597947"
+            },
+            {
+                "title": "13. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?",
+                "content": "Based on the applicable laws of your country, you may have the right to request access to the personal information we collect from you, details about how we have processed it, correct inaccuracies, or delete your personal information. You may also have the right to withdraw your consent to our processing of your personal information. These rights may be limited in some circumstances by applicable law. To request to review, update, or delete your personal information, please fill out and submit a data subject access request."
             }
         ],
-        "footer": "Privacy Policy generated with CookieYes."
+        "footer": ""
     },
     "terms": {
         "title": "TERMS AND CONDITIONS",
@@ -1489,5 +1495,87 @@
             }
         ],
         "footer": "This Terms and Conditions was created using Termly's Terms and Conditions Generator"
+    },
+    "cookie": {
+        "title": "COOKIE POLICY",
+        "updated": "Last updated March 21, 2026",
+        "intro": [
+            "This Cookie Policy explains how Ca'Perenzin (\"Company,\" \"we,\" \"us,\" and \"our\") uses cookies and similar technologies to recognize you when you visit our website at https://caperenzin.it (\"Website\"). It explains what these technologies are and why we use them, as well as your rights to control our use of them.",
+            "In some cases we may use cookies to collect personal information, or that becomes personal information if we combine it with other information."
+        ],
+        "sections": [
+            {
+                "title": "What are cookies?",
+                "content": "Cookies are small data files that are placed on your computer or mobile device when you visit a website. Cookies are widely used by website owners in order to make their websites work, or to work more efficiently, as well as to provide reporting information.",
+                "extraContent": "Cookies set by the website owner (in this case, Ca'Perenzin) are called \"first-party cookies.\" Cookies set by parties other than the website owner are called \"third-party cookies.\" Third-party cookies enable third-party features or functionality to be provided on or through the website (e.g., advertising, interactive content, and analytics). The parties that set these third-party cookies can recognize your computer both when it visits the website in question and also when it visits certain other websites."
+            },
+            {
+                "title": "Why do we use cookies?",
+                "content": "We use first- and third-party cookies for several reasons. Some cookies are required for technical reasons in order for our Website to operate, and we refer to these as \"essential\" or \"strictly necessary\" cookies. Other cookies also enable us to track and target the interests of our users to enhance the experience on our Online Properties. Third parties serve cookies through our Website for advertising, analytics, and other purposes. This is described in more detail below."
+            },
+            {
+                "title": "How can I control cookies?",
+                "content": "You have the right to decide whether to accept or reject cookies. You can exercise your cookie rights by setting your preferences in the Cookie Preference Center. The Cookie Preference Center allows you to select which categories of cookies you accept or reject. Essential cookies cannot be rejected as they are strictly necessary to provide you with services.",
+                "extraContent": "The Cookie Preference Center can be found in the notification banner and on our Website. If you choose to reject cookies, you may still use our Website though your access to some functionality and areas of our Website may be restricted. You may also set or amend your web browser controls to accept or refuse cookies."
+            },
+            {
+                "title": "Essential website cookies:",
+                "content": "These cookies are strictly necessary to provide you with services available through our Website and to use some of its features, such as access to secure areas.",
+                "list": [
+                    "Name: TERMLY_API_CACHE | Purpose: Used to store visitor’s consent result in order to improve performance of the consent banner. | Provider: caperenzin.it",
+                    "Name: csrf_token | Purpose: Protects against hacking and malicious actors. | Provider: caperenzin.it"
+                ]
+            },
+            {
+                "title": "Performance and functionality cookies:",
+                "content": "These cookies are used to enhance the performance and functionality of our Website but are non-essential to their use. However, without these cookies, certain functionality (like videos) may become unavailable.",
+                "list": [
+                    "Name: _cfuvid | Purpose: This cookie is set by Cloudflare to enhance security and performance. It helps identify trusted web traffic and ensures a secure browsing experience for users. | Provider: .app.termly.io"
+                ]
+            },
+            {
+                "title": "Analytics and customization cookies:",
+                "content": "These cookies collect information that is used either in aggregate form to help us understand how our Website is being used or how effective our marketing campaigns are, or to help us customize our Website for you.",
+                "list": [
+                    "Name: s7 | Purpose: Gather data regarding site usage and user behavior on the website. | Provider: caperenzin.it"
+                ]
+            },
+            {
+                "title": "How can I control cookies on my browser?",
+                "content": "As the means by which you can refuse cookies through your web browser controls vary from browser to browser, you should visit your browser's help menu for more information. The following is information about how to manage cookies on the most popular browsers:",
+                "list": [
+                    "Chrome",
+                    "Internet Explorer",
+                    "Firefox",
+                    "Safari",
+                    "Edge",
+                    "Opera"
+                ],
+                "extraContent": "In addition, most advertising networks offer you a way to opt out of targeted advertising. If you would like to find out more information, please visit: Digital Advertising Alliance, Digital Advertising Alliance of Canada, European Interactive Digital Advertising Alliance."
+            },
+            {
+                "title": "What about other tracking technologies, like web beacons?",
+                "content": "Cookies are not the only way to recognize or track visitors to a website. We may use other, similar technologies from time to time, like web beacons (sometimes called \"tracking pixels\" or \"clear gifs\"). These are tiny graphics files that contain a unique identifier that enables us to recognize when someone has visited our Website or opened an email including them. This allows us, for example, to monitor the traffic patterns of users from one page within a website to another, to deliver or communicate with cookies, to understand whether you have come to the website from an online advertisement displayed on a third-party website, to improve site performance, and to measure the success of email marketing campaigns. In many instances, these technologies are reliant on cookies to function properly, and so declining cookies will impair their functioning."
+            },
+            {
+                "title": "Do you use Flash cookies or Local Shared Objects?",
+                "content": "Websites may also use so-called \"Flash Cookies\" (also known as Local Shared Objects or \"LSOs\") to, among other things, collect and store information about your use of our services, fraud prevention, and for other site operations.",
+                "extraContent": "If you do not want Flash Cookies stored on your computer, you can adjust the settings of your Flash player to block Flash Cookies storage using the tools contained in the Website Storage Settings Panel. You can also control Flash Cookies by going to the Global Storage Settings Panel and following the instructions... Please note that setting the Flash Player to restrict or limit acceptance of Flash Cookies may reduce or impede the functionality of some Flash applications."
+            },
+            {
+                "title": "Do you serve targeted advertising?",
+                "content": "Third parties may serve cookies on your computer or mobile device to serve advertising through our Website. These companies may use information about your visits to this and other websites in order to provide relevant advertisements about goods and services that you may be interested in. They may also employ technology that is used to measure the effectiveness of advertisements. They can accomplish this by using cookies or web beacons to collect information about your visits to this and other sites in order to provide relevant advertisements about goods and services of potential interest to you. The information collected through this process does not enable us or them to identify your name, contact details, or other details that directly identify you unless you choose to provide these."
+            },
+            {
+                "title": "How often will you update this Cookie Policy?",
+                "content": "We may update this Cookie Policy from time to time in order to reflect, for example, changes to the cookies we use or for other operational, legal, or regulatory reasons. Please therefore revisit this Cookie Policy regularly to stay informed about our use of cookies and related technologies.",
+                "extraContent": "The date at the top of this Cookie Policy indicates when it was last updated."
+            },
+            {
+                "title": "Where can I get further information?",
+                "content": "If you have any questions about our use of cookies or other technologies, please email us at tatiana.perenzin@gmail.com or by post to: Ca'Perenzin, Tarzo, Treviso 31020, Italy. Phone: (+39)3333597947"
+            }
+        ],
+        "footer": ""
     }
 }

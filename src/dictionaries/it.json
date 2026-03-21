@@ -1272,80 +1272,86 @@
         ]
     },
     "privacy": {
-        "title": "Informativa sulla Privacy",
-        "updated": "Ultimo aggiornamento il 13-feb-2026 | Data di entrata in vigore 13-feb-2026",
+        "title": "INFORMATIVA SULLA PRIVACY",
+        "updated": "Ultimo aggiornamento il 21 Marzo 2026",
         "intro": [
-            "Questa Informativa sulla Privacy descrive le politiche di Ca'Perenzin, Località Rive di S. Pietro 10, Treviso 31020, Italia, email: tatiana.perenzin@gmail.com, telefono: +39 3333597947 sulla raccolta, l'uso e la divulgazione delle tue informazioni che raccogliamo quando utilizzi il nostro sito web ( https://caperenzin.it ) (il “Servizio”). Accedendo o utilizzando il Servizio, acconsenti alla raccolta, all'uso e alla divulgazione delle tue informazioni in conformità con questa Informativa sulla Privacy. Se non acconsenti allo stesso, ti preghiamo di non accedere o utilizzare il Servizio.",
-            "Potremmo modificare questa Informativa sulla Privacy in qualsiasi momento senza alcun preavviso e pubblicheremo l'Informativa sulla Privacy rivista sul Servizio. La Politica rivista sarà efficace 180 giorni dopo la pubblicazione della Politica rivista nel Servizio e il tuo accesso continuato o l'uso del Servizio dopo tale periodo costituirà la tua accettazione dell'Informativa sulla Privacy rivista. Ti consigliamo quindi di rivedere periodicamente questa pagina."
+            "Questa Informativa sulla Privacy per Ca'Perenzin (\"noi\", \"ci\" o \"nostro\"), descrive come e perché potremmo accedere, raccogliere, conservare, utilizzare e/o condividere (\"elaborare\") i tuoi dati personali quando utilizzi i nostri servizi (\"Servizi\"), incluso quando interagisci con noi:",
+            "Domande o dubbi? La lettura di questa Informativa sulla Privacy ti aiuterà a comprendere i tuoi diritti e le tue scelte in materia di privacy. Siamo responsabili di prendere decisioni su come vengono elaborati i tuoi dati personali. Se non sei d'accordo con le nostre politiche e pratiche, ti preghiamo di non utilizzare i nostri Servizi."
         ],
         "sections": [
             {
-                "title": "Informazioni che Raccogliamo:",
-                "content": "Raccoglieremo ed elaboreremo le seguenti informazioni personali su di te:",
+                "title": "SINTESI DEI PUNTI CHIAVE",
+                "content": "Questa sintesi fornisce i punti chiave della nostra Informativa sulla Privacy, ma puoi trovare maggiori dettagli su ciascuno di questi argomenti cliccando sui link successivi o utilizzando il nostro indice qui sotto per trovare la sezione che cerchi.",
                 "list": [
-                    "Nome",
-                    "Email",
-                    "Cellulare",
-                    "Indirizzo",
-                    "Informazioni di Pagamento",
-                    "Date di prenotazione",
-                    "Richieste speciali"
+                    "Quali informazioni personali elaboriamo? Quando visiti, utilizzi o navighi nei nostri Servizi, potremmo elaborare le tue informazioni personali a seconda di come interagisci con noi e con i Servizi, delle scelte che fai e dei prodotti e delle funzionalità che utilizzi.",
+                    "Elaboriamo informazioni personali sensibili? Alcune delle informazioni potrebbero essere considerate \"speciali\" o \"sensibili\" in determinate giurisdizioni, ad esempio le tue origini razziali o etniche, l'orientamento sessuale e le credenze religiose. Non elaboriamo informazioni personali sensibili.",
+                    "Raccogliamo informazioni da terze parti? Potremmo raccogliere informazioni da database pubblici, partner di marketing, piattaforme di social media e altre fonti esterne.",
+                    "Come elaboriamo le tue informazioni? Elaboriamo le tue informazioni per fornire, migliorare e amministrare i nostri Servizi, comunicare con te, per la sicurezza e la prevenzione delle frodi, e per conformarci alla legge. Potremmo anche elaborare le tue informazioni per altri scopi con il tuo consenso. Elaboriamo le tue informazioni solo quando abbiamo una valida ragione legale per farlo.",
+                    "In quali situazioni e con chi condividiamo i dati personali? Potremmo condividere le informazioni in circostanze specifiche e con terze parti specifiche.",
+                    "Quali sono i tuoi diritti? A seconda di dove ti trovi geograficamente, la legge sulla privacy applicabile potrebbe indicare che hai determinati diritti sui tuoi dati personali.",
+                    "Come eserciti i tuoi diritti? Il modo più semplice per esercitare i tuoi diritti è inviare una richiesta d'accesso ai dati personali, o contattandoci. Esamineremo e agiremo su qualsiasi richiesta in conformità alle leggi applicabili in materia di protezione dei dati.",
+                    "Vuoi saperne di più su cosa facciamo delle informazioni che raccogliamo? Consulta integralmente l'Informativa sulla Privacy."
                 ]
             },
             {
-                "title": "Come Utilizziamo le Tue Informazioni:",
-                "content": "Utilizzeremo le informazioni che raccogliamo su di te per i seguenti scopi:",
+                "title": "1. QUALI INFORMAZIONI RACCOGLIAMO?",
+                "content": "Informazioni personali fornite volontariamente da te\nIn Breve: Raccogliamo le informazioni personali che ci fornisci tu.\nRaccogliamo le informazioni personali forniteci volontariamente quando ti registri sui Servizi, quando manifesti la volontà di avere ulteriori info su di noi, i nostri Servizi e prodotti, quando partecipi alle attività inerenti i Servizi, o comunichi diversamente con noi.\nInformazioni sensibili. Non elaboriamo informazioni sensibili.\nTutte le informazioni personali fornite devono essere veritiere, complete e precise; è tua responsabilità segnalarci qualsivoglia modifica riguardo ad esse.\n\nInformazioni raccolte automaticamente\nIn Breve: Alcune informazioni — come il tuo indirizzo IP e/o le caratteristiche del tuo browser e dispositivo — vengono raccolte automaticamente quando visiti i nostri Servizi.\nRaccogliamo in maniera del tutto automatica certe tipologie di informazioni quando visiti, usi o navighi all'interno dei Servizi. Tali info non ti identificano specificamente (non contengono, ad esempio, nomi o contatti) ma possono riguardare credenziali d'utilizzo, il tuo indirizzo di protocollo Internet (IP), caratteristiche legate a browser o dispositivo, linguaggio del sistema operativo, referring URL, nome del dispositivo, il tuo Paese o altre info generiche su quando, in che modo e a che ora utilizzi il nostro sito web. I fini di una raccolta simile includono sicurezza, andamento e reportistica dei nostri Servizi.\nCome molte imprese, raccogliamo le informazioni anche tramite l'utilizzo dei cookie e tecnologie simili."
+            },
+            {
+                "title": "2. COME ELABORIAMO LE TUE INFORMAZIONI?",
+                "content": "In Breve: Elaboriamo le tue informazioni per fornire, migliorare e amministrare i nostri Servizi, comunicare con te, per la sicurezza e la prevenzione delle frodi, e per conformarci alla legge. Potremmo anche elaborare le tue informazioni per altri scopi con il tuo consenso.\nElaboriamo i tuoi dati personali per una serie di motivi, a seconda di com'è la tua interazione con i nostri Servizi."
+            },
+            {
+                "title": "3. QUANDO E CON CHI CONDIVIDIAMO I DATI PERSONALI?",
+                "content": "In Breve: Potremmo condividere le informazioni in circostanze limitate descritte nella presente sezione e/o con i seguenti soggetti di terze parti.\nPotremmo dover condividere o gestire le tue informazioni nei seguenti specifici contesti:",
                 "list": [
-                    "Marketing / Promozionale",
-                    "Elaborazione pagamenti",
-                    "Supporto",
-                    "Informazioni amministrative",
-                    "Gestione ordini clienti",
-                    "Protezione del sito"
-                ],
-                "extraContent": "Se volessimo utilizzare le tue informazioni per qualsiasi altro scopo, ti chiederemo il consenso e utilizzeremo le tue informazioni solo dopo aver ricevuto il tuo consenso e poi, solo per lo scopo(i) per cui concedi il consenso a meno che non siamo tenuti a fare diversamente per legge."
+                    "Trasferimenti aziendali. Potremmo condividere oppure cedere i tuoi dati in vista o in occasione di fusioni aziendali, compravendite, finanziamenti, fallimenti o acquisizioni – sia assolute, sia in percentuale – condotte a favore di enti operanti nel nostro e in altri settori.",
+                    "Affiliati. Potremmo condividere i tuoi dati con le nostre società affiliate. Esse sono naturalmente soggette a rispettare gli stessi accordi vincolanti indicati in quest'Informativa della Privacy. Tra gli affiliati si annoverano la società capogruppo, eventuali società subordinate facenti parte o meno di unioni d'impresa ma poste sotto lo stesso blocco dirigenziale, che hanno controllo o che sottostanno al controllo congiunto con noi.",
+                    "Partner aziendali. Potremmo condividere le info sensibili con eventuali Partner in modo che ti vengano offerti prodotti, servizi o promozioni di interesse."
+                ]
             },
             {
-                "title": "Come Condividiamo le Tue Informazioni:",
-                "content": "Non trasferiremo le tue informazioni personali a terzi senza chiedere il tuo consenso, tranne in circostanze limitate come descritto di seguito:",
-                "list": [
-                    "Analisi (Analytics)",
-                    "Servizi di recupero pagamenti",
-                    "Raccolta ed elaborazione dati"
-                ],
-                "extraContent": "Richiediamo a tali terze parti di utilizzare le informazioni personali che trasferiamo a loro solo per lo scopo per cui sono state trasferite e di non conservarle per un periodo più lungo di quanto richiesto per adempiere a detto scopo. Potremmo anche divulgare le tue informazioni personali per quanto segue: (1) per rispettare la legge applicabile, regolamenti, ordini del tribunale o altri processi legali; (2) per far rispettare i tuoi accordi con noi, inclusa questa Informativa sulla Privacy; o (3) per rispondere a reclami che il tuo uso del Servizio viola diritti di terzi. Se il Servizio o la nostra azienda viene fusa o acquisita con un'altra azienda, le tue informazioni saranno uno degli asset trasferiti al nuovo proprietario."
+                "title": "4. UTILIZZIAMO COOKIE E ALTRE TECNOLOGIE DI TRACCIAMENTO?",
+                "content": "In Breve: Possiamo usare cookie e altre forme di tracking per raccogliere o conservare tue info sensibili.\nPossiamo utilizzare web beacons, cookie o tecnologie assimilabili che immagazzinano dati quando gli utenti sono soliti interagire col nostro Servizio. Queste strategie mirano alla prevenzione di errori, sicurezza, corretto sviluppo della pagina, oltre che a ricordarsi i settaggi richiesti dall'utenza.\nAmmettiamo peraltro l'ingresso in terze parti qualora un'altra società fornitrice usufruisse delle sopracitate funzioni. Includiamo pure messaggi pubblicitari o suggerimenti che ci dicano cos'è e in quale misura l'interessato è invogliato a comprare; l'identificazione andrà poi a visualizzarsi su altri domignini ed entro l'interesse che si desidera colpire.\nSpecifiche più precise sul tema e consigli atti al rifiuto della ricezione cookie sono meglio chiariti nell'Informativa sui Cookie (Cookie Notice)."
             },
             {
-                "title": "Conservazione delle Tue Informazioni:",
-                "content": "Conserveremo le tue informazioni personali con noi per 10 anni o per tutto il tempo necessario per soddisfare gli scopi per cui sono state raccolte come descritto in questa Informativa sulla Privacy. Potremmo dover conservare determinate informazioni per periodi più lunghi come la tenuta dei registri / rendicontazione in conformità con la legge applicabile o per altri motivi legittimi come l'applicazione dei diritti legali, la prevenzione delle frodi, ecc. Le informazioni anonime residue e le informazioni aggregate, nessuna delle quali identifica te (direttamente o indirettamente), possono essere conservate a tempo indeterminato."
+                "title": "5. COME GESTIAMO GLI ACCESSI DAI SOCIAL MEDIA?",
+                "content": "In Breve: Se scegli di iscriverti ai Servizi tramite social, potremmo appropriarci dei vari account da te inseriti e delle eventuali info inserite.\nPuoi regolarmente sottoscriverti da social (Facebook, X, ecc.). Qualora acconsentissi, riporteremmo le informazioni che il gestore in questione renderà esaminabili dai tuoi consensi (che includono non solo le identità generiche come mail e profili ma anche amicizie, fotografie, contatti).\nTali input non vengono inviati senza il permesso, che verrà per questo indicato dalla presente e in sede separata al momento in cui l'user li utilizzerà a discapito d'altro metodo. Raccomandiamo altresì che, non essendo Ca'Perenzin portatrice e responsabile di tale gestione informativa dei terzi, si visualizzi la documentazione offerta dal social prescelto e d'operare il meglio che il vostro arbitrio voglia, tra preferenze varie o specifiche d'app che sono presenti o da apposito tool integrato."
             },
             {
-                "title": "I Tuoi Diritti:",
-                "content": "A seconda della legge applicabile, potresti avere il diritto di accedere e rettificare o cancellare i tuoi dati personali o ricevere una copia dei tuoi dati personali, limitare o opporsi all'elaborazione attiva dei tuoi dati, chiederci di condividere (portare) le tue informazioni personali a un'altra entità, ritirare qualsiasi consenso che ci hai fornito per elaborare i tuoi dati, il diritto di presentare un reclamo a un'autorità statutaria e altri diritti che potrebbero essere rilevanti ai sensi delle leggi applicabili. Per esercitare questi diritti, puoi scriverci a tatiana.perenzin@gmail.com. Risponderemo alla tua richiesta in conformità con la legge applicabile.",
-                "extraContent": "Tieni presente che se non ci consenti di raccogliere o elaborare le informazioni personali richieste o ritiri il consenso per elaborare le stesse per gli scopi richiesti, potresti non essere in grado di accedere o utilizzare i servizi per i quali le tue informazioni sono state richieste."
+                "title": "6. I TUOI DATI VENGONO TRASFERITI ALL'ESTERO?",
+                "content": "In Breve: Potremmo trasferire, memorizzare o elaborare le tue informazioni oltre i confini del tuo paese.\nI nostri server sono in Italia. A prescindere dalla tua locazione odierna, ricordiamo all'utenza che eventuali info sensibili viaggiano a mezzo di entità da te gestite o da gestori internazionali. (Vedi \"QUANDO E CON CHI CONDIVIDIAMO I DATI PERSONALI?\").\nSe si ha residenza in un eventuale territorio soggetto alla EEA o nel Regno Unito, in Svizzera come altrove, ribadiamo la garanzia al corretto trattamento nel rispetto delle regole globalizzate."
             },
             {
-                "title": "Cookie, ecc.",
-                "content": "Per saperne di più su come utilizziamo questi e le tue scelte in relazione a queste tecnologie di tracciamento, ti preghiamo di fare riferimento alla nostra Cookie Policy.",
-                "link": {
-                    "text": "Cookie Policy.",
-                    "url": "https://caperenzin.it"
-                }
+                "title": "7. PER QUANTO TEMPO CONSERVIAMO I TUOI DATI?",
+                "content": "In Breve: Salviamo i tuoi dati solo per il tempo che ne abbisogna se non vi subentra altrimenti uno stampo legale maggiore.\nI tuoi dati stazionano attuando le richieste delineate in Informativa se un documento superiore d'esigenza amministrativa o penale / fiscale non si fa strada per esulare dal canone pattuito.\nSubentrando un nulla di fatto commerciale o di profitto attreo per elaborare codeste info sensibili verranno rase o resi in incognito; qualora non vi ci si potesse adempiere nel breve si isolerà dai nostri archivi prima d'ogni sorta logica finché permessa non diventi."
             },
             {
-                "title": "Sicurezza:",
-                "content": "La sicurezza delle tue informazioni è importante per noi e utilizzeremo misure di sicurezza ragionevoli per prevenire la perdita, l'abuso o l'alterazione non autorizzata delle tue informazioni sotto il nostro controllo. Tuttavia, dati i rischi intrinseci, non possiamo garantire la sicurezza assoluta e di conseguenza, non possiamo assicurare o garantire la sicurezza di qualsiasi informazione che ci trasmetti e lo fai a tuo rischio e pericolo."
+                "title": "8. ESTRAPOLIAMO DATI DAI MINORI?",
+                "content": "In Breve: Non accogliamo minori d'anni 18, né di prassi ci sottomettiamo alla cessione che il loro uso esprime.\nIl consenso degli under 18 non ci giunge perché ce ne vietiamo con cognizione lo sfrutatto a vantaggio d'economia; usufrendo di voi stessi ammettete automaticamente il maggiore d'età od altrimenti i genitoriali / tutor preposti e garanti. S'accorgerci e d'attestare ciò ne andasse d'account disabilitati od un azzeramento della spanna dati immagazzinato nel lasso, se i presupposti palesassero l'inganno ce l'obblighiamo assai tempestivamente per e limitatamente l'uso. (info@caperenzin.it per segnalare eventuali mancanze di supervisione al riguardo)."
             },
             {
-                "title": "Link di Terze Parti e Uso delle Tue Informazioni:",
-                "content": "Il nostro Servizio può contenere link ad altri siti web che non sono gestiti da noi. Questa Informativa sulla Privacy non affronta la politica sulla privacy e altre pratiche di terze parti, inclusa qualsiasi terza parte che gestisce qualsiasi sito web o servizio che potrebbe essere accessibile via link sul Servizio. Ti consigliamo vivamente di rivedere l'informativa sulla privacy di ogni sito che visiti. Non abbiamo alcun controllo e non ci assumiamo alcuna responsabilità per il contenuto, le politiche sulla privacy o le pratiche di siti o servizi di terze parti."
+                "title": "9. QUALI SONO I TUOI DIRITTI SULLA SCELTA SULLA PRIVACY?",
+                "content": "In Breve: In base alle opzioni globali e a quelle consentite dai legami, potrete chiudere il contenzioso sull'identità che preferite e rivedere account.\nRitiro consensi vari: Come v'hanno accenato, per quanto sanzionato nei dettami legali non inficerà sull'elabo in corso e a venire fuorviando un limite antecedente. Il processo continua sul binario prefissato prima seppur da contatti non diretti.\nInfo Profilo Account: Per revisionare / cessazioni complete che prenderemo per attive chiuderemo con forza o oscureremo d'imperversa dai DB ogni dato associabile eccetto previene contro indagini / anti frode d'ufficio."
             },
             {
-                "title": "Reclami / Responsabile della Protezione dei Dati:",
-                "content": "Se hai domande o dubbi sull'elaborazione delle tue informazioni disponibili con noi, puoi inviare un'email al nostro Responsabile dei Reclami presso Ca'Perenzin, Località Rive di S. Pietro 10, email: tatiana.perenzin@gmail.com. Risponderemo ai tuoi dubbi in conformità con la legge applicabile."
+                "title": "10. COMANDO CONTRO I DISPOSITIVI DO-NOT-TRACK",
+                "content": "La maggior parte dei nuovi browser web adoperano una modalità (DNT). Poiché uno standard non ha preso appieno la scena si disconosce tal risposta / rinvio. Se ometterla diventasse vitale v'aggiorneremo nel resoconto od in sede disposta tra l'amministrativo o le note della medesima Informativa e delle sezioni cui v'affacciano a precluderci o sapersi informati bene."
+            },
+            {
+                "title": "11. POSSIAMO REVISIONARE QUEST'INFORMATIVA?",
+                "content": "In Breve: Certamente sì — restiamo ancorati con pertinenza ed all'attivo per sottostare alla legge vigente.\nCon diciture revisionate, e data su questo scritto ne notificheremo le entrate per tempo e con discrepanza a seconda o dalla tipologia rilevante prima del suo uso in scala — Vi esortiamo allo studio che apporta il nostro sistema su codesta facciata e a tutelarvene gli effetti di garanzia."
+            },
+            {
+                "title": "12. COME METTERSI IN CONTATTO CON NOI IN MERITO A QUESTA INFORMATIVA?",
+                "content": "Qualsiasi perplessità vi s'affacci od anche dubbi su diciture qui redatte veniamo sempre ad incontravi per dirimerli a:\n\nCa'Perenzin\nLocalità Rive di S. Pietro 10\nTarzo, Treviso 31020\nItalia\nTelefono: (+39)3333597947"
+            },
+            {
+                "title": "13. COME REVISIONARE, AGGIORNARE O ELIMINARE I DATI CHE ABBIAMO RACCOLTO?",
+                "content": "Se si potesse richiamando la legge a voi attinente sul circondariale territoriale potete avere voce in capitolo o la rimozione / il chiarimento d'inaccurate o al ritiro sull'attivo di certe diciture da chi far le spunte su base che noi non tollereremo vizi a procedere. E' una richiesta cui è bene inoltrar con cura tramite i metodi prediletti in data soggetta o per le prassi ad uso od in costume legale a form / mail d'info generiche."
             }
         ],
-        "footer": "Informativa sulla Privacy generata con CookieYes."
+        "footer": ""
     },
     "terms": {
         "title": "TERMS AND CONDITIONS",
@@ -1480,5 +1486,87 @@
             }
         ],
         "footer": "This Terms and Conditions was created using Termly's Terms and Conditions Generator"
+    },
+    "cookie": {
+        "title": "COOKIE POLICY",
+        "updated": "Ultimo aggiornamento il 21 Marzo 2026",
+        "intro": [
+            "La presente Cookie Policy spiega come Ca'Perenzin (\"Società\", \"noi\", \"ci\" e \"nostro\") utilizza i cookie e tecnologie simili per riconoscerti quando visiti il nostro sito web su https://caperenzin.it (\"Sito web\"). Spiega cosa sono queste tecnologie e perché le usiamo, oltre ai tuoi diritti di controllarne l'uso da parte nostra.",
+            "In alcuni casi potremmo usare i cookie per raccogliere informazioni personali, o che diventano informazioni personali se le combiniamo con altre informazioni."
+        ],
+        "sections": [
+            {
+                "title": "Cosa sono i cookie?",
+                "content": "I cookie sono piccoli file di dati che vengono posizionati sul tuo computer o dispositivo mobile quando visiti un sito web. I cookie sono ampiamente usati dai proprietari dei siti web per farli funzionare, o farli funzionare in modo più efficiente, nonché per fornire informazioni di reportistica.",
+                "extraContent": "I cookie impostati dal proprietario del sito web (in questo caso, Ca'Perenzin) sono chiamati \"cookie di prima parte\". I cookie impostati da parti diverse dal proprietario del sito web sono chiamati \"cookie di terza parte\". I cookie di terza parte consentono di fornire caratteristiche o funzionalità di terze parti sul o attraverso il sito web (ad es., pubblicità, contenuti interattivi e analisi). Le parti che impostano questi cookie di terza parte possono riconoscere il tuo computer sia quando visita il sito web in questione sia quando visita certi altri siti web."
+            },
+            {
+                "title": "Perché usiamo i cookie?",
+                "content": "Usiamo cookie di prima e terza parte per diversi motivi. Alcuni cookie sono richiesti per motivi tecnici per far funzionare il nostro Sito web, e ci riferiamo a questi come cookie \"essenziali\" o \"strettamente necessari\". Altri cookie ci consentono anche di tracciare e mirare agli interessi dei nostri utenti per migliorare l'esperienza sulle nostre Proprietà Online. Terze parti servono cookie attraverso il nostro Sito web per scopi pubblicitari, analitici e altri. Questo è descritto in maggior dettaglio di seguito."
+            },
+            {
+                "title": "Come posso controllare i cookie?",
+                "content": "Hai il diritto di decidere se accettare o rifiutare i cookie. Puoi esercitare i tuoi diritti sui cookie impostando le tue preferenze nel Centro Preferenze Cookie. Il Centro Preferenze Cookie ti permette di selezionare quali categorie di cookie accetti o rifiuti. I cookie essenziali non possono essere rifiutati poiché sono strettamente necessari per fornirti i servizi.",
+                "extraContent": "Il Centro Preferenze Cookie si trova nel banner di notifica e sul nostro Sito web. Se scegli di rifiutare i cookie, potrai ancora usare il nostro Sito web sebbene l'accesso ad alcune funzionalità e aree del nostro Sito web potrebbe essere limitato. Puoi anche impostare o modificare i controlli del tuo browser web per accettare o rifiutare i cookie."
+            },
+            {
+                "title": "Cookie del sito web essenziali:",
+                "content": "Questi cookie sono strettamente necessari per fornirti i servizi disponibili attraverso il nostro Sito web e per utilizzare alcune delle sue funzionalità, come l'accesso ad aree sicure.",
+                "list": [
+                    "Nome: TERMLY_API_CACHE | Scopo: Usato per memorizzare il risultato del consenso del visitatore per migliorare le prestazioni del banner del consenso. | Fornitore: caperenzin.it",
+                    "Nome: csrf_token | Scopo: Protegge contro l'hacking e attori malintenzionati. | Fornitore: caperenzin.it"
+                ]
+            },
+            {
+                "title": "Cookie di performance e funzionalità:",
+                "content": "Questi cookie sono usati per migliorare le prestazioni e le funzionalità del nostro Sito web ma non sono essenziali per il loro uso. Tuttavia, senza questi cookie, alcune funzionalità (come i video) potrebbero diventare non disponibili.",
+                "list": [
+                    "Nome: _cfuvid | Scopo: Questo cookie è impostato da Cloudflare per migliorare la sicurezza e le prestazioni. Aiuta a identificare le visualizzazioni web affidabili e assicura un'esperienza di navigazione sicura per gli utenti. | Fornitore: .app.termly.io"
+                ]
+            },
+            {
+                "title": "Cookie di analisi e personalizzazione:",
+                "content": "Questi cookie raccolgono informazioni che vengono utilizzate in forma aggregata per aiutarci a capire come viene utilizzato il nostro Sito web o quanto siano efficaci le nostre campagne di marketing, o per aiutarci a personalizzare il nostro Sito web per te.",
+                "list": [
+                    "Nome: s7 | Scopo: Raccoglie dati sull'uso del sito e sul comportamento dell'utente sul sito web. | Fornitore: caperenzin.it"
+                ]
+            },
+            {
+                "title": "Come posso controllare i cookie sul mio browser?",
+                "content": "Poiché i mezzi tramite i quali puoi rifiutare i cookie attraverso i controlli del tuo browser web variano da browser a browser, dovresti visitare il menu di aiuto del tuo browser per maggiori informazioni. Di seguito ci sono le informazioni su come gestire i cookie sui browser più popolari:",
+                "list": [
+                    "Chrome",
+                    "Internet Explorer",
+                    "Firefox",
+                    "Safari",
+                    "Edge",
+                    "Opera"
+                ],
+                "extraContent": "Inoltre, la maggior parte dei network pubblicitari ti offre un modo per disattivare la pubblicità mirata. Se desideri saperne di più, ti preghiamo di visitare le seguenti pagine: Digital Advertising Alliance, Digital Advertising Alliance of Canada, European Interactive Digital Advertising Alliance."
+            },
+            {
+                "title": "E le altre tecnologie di tracciamento, come i web beacon?",
+                "content": "I cookie non sono l'unico modo per riconoscere o tracciare i visitatori di un sito web. Di tanto in tanto potremmo usare altre tecnologie simili, come i web beacon (a volte chiamati \"pixel di tracciamento\" o \"clear gif\"). Si tratta di piccoli file grafici che contengono un identificatore univoco che ci permette di riconoscere quando qualcuno ha visitato il nostro Sito web o ha aperto una nostra email. Questo ci permette, per esempio, di monitorare i flussi di traffico degli utenti da una pagina all'altra del sito, di consegnare o comunicare con i cookie, di capire se sei arrivato sul sito da un annuncio online mostrato su un sito web di terzi, di migliorare le prestazioni del sito e misurare il successo delle campagne email di marketing. In molti casi, queste tecnologie dipendono dai cookie per funzionare correttamente, perciò il rifiuto dei cookie altererà il loro funzionamento."
+            },
+            {
+                "title": "Usate i cookie di Flash o i Local Shared Objects (LSO)?",
+                "content": "I siti web possono anche usare i cosiddetti \"Flash Cookie\" (noti anche come Local Shared Objects o \"LSO\") per raccogliere e conservare informazioni sul tuo uso dei nostri servizi, prevenzione di frodi, e per altre operazioni del sito.",
+                "extraContent": "Se non vuoi che i Flash Cookie vengano archiviati sul tuo computer, puoi modificare le impostazioni del tuo Flash player per bloccare l'archiviazione dei Flash Cookie utilizzando gli strumenti nel Pannello di Configurazione per la Memorizzazione nel Sito Web. Puoi anche controllare i Flash Cookies andando sul Pannello di Configurazione per la Memorizzazione Globale e seguendo le istruzioni... Ti preghiamo di notare che limitare o vietare l'uso dei Flash Cookie potrebbe ridurre o impedire il corretto funzionamento di alcune applicazioni Flash."
+            },
+            {
+                "title": "Vengono mostrati annunci pubblicitari mirati?",
+                "content": "Le terze parti possono posizionare dei cookie sul tuo computer o dispositivo mobile per offrirti pubblicità mirata tramite il nostro Sito Web. Queste società potrebbero usare le tue informazioni riguardo le tue visite in questo e altri siti al fine di fornirti annunci rilevanti su beni e servizi che potrebbero interessarti. Le informazioni raccolte attraverso questo processo non consentono a noi o a loro di identificare il tuo nome, recapiti o altri dettagli di identificazione a meno che non tu decida di fornirli tu stesso."
+            },
+            {
+                "title": "Ogni quanto aggiornerete questa Cookie Policy?",
+                "content": "Possiamo aggiornare questa Cookie Policy di tanto in tanto al fine di riflettere, per esempio, modifiche ai cookie in uso o per altre ragioni operative, legali o regolamentari. Per questo motivo, ti invitiamo a visitare la presente Cookie Policy regolarmente per rimanere informato sul nostro uso dei cookie e tecnologie collegate.",
+                "extraContent": "La data in cima a questa Cookie Policy indica l'ultimo aggiornamento."
+            },
+            {
+                "title": "Dove posso ricevere maggiori informazioni?",
+                "content": "Se hai altre domande sull'uso dei cookie o di altre tecnologie, ti preghiamo di contattarci all'indirizzo email tatiana.perenzin@gmail.com o via posta all'indirizzo: Ca'Perenzin, Tarzo, Treviso 31020, Italia. Telefono: (+39)3333597947"
+            }
+        ],
+        "footer": ""
     }
 }

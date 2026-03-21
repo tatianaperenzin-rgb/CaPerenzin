@@ -1,23 +1,22 @@
 import { getDictionary } from '@/lib/dictionary';
 import Link from 'next/link';
 
-
 export async function generateMetadata({ params }) {
     const { lang } = await params;
     const dictionary = await getDictionary(lang);
     return {
-        title: dictionary.privacy.title,
+        title: dictionary.cookie.title,
         description: dictionary.hero.heroIntroOne,
         alternates: {
-            canonical: `/${lang}/policy`,
+            canonical: `/${lang}/cookie`,
         }
     }
 }
 
-export default async function Policy({ params }) {
+export default async function CookiePage({ params }) {
     const { lang } = await params;
     const dictionary = await getDictionary(lang);
-    const content = dictionary.privacy;
+    const content = dictionary.cookie;
 
     return (
         <section className="bg-black min-h-screen pt-32 pb-20 px-5 md:px-20 text-white">
@@ -52,7 +51,7 @@ export default async function Policy({ params }) {
 
                             {/* Section Content */}
                             {section.content && (
-                                <p className="mb-4 whitespace-pre-line">
+                                <p className="mb-4">
                                     {section.content}
                                 </p>
                             )}
@@ -87,11 +86,9 @@ export default async function Policy({ params }) {
                     ))}
 
                     {/* FOOTER */}
-                    {content.footer && (
-                        <div className="mt-16 pt-8 border-t border-gray-800 text-xs text-gray-500">
-                            {content.footer}
-                        </div>
-                    )}
+                    <div className="mt-16 pt-8 border-t border-gray-800 text-xs text-gray-500">
+                        {content.footer}
+                    </div>
 
                 </div>
             </div>

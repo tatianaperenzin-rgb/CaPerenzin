@@ -154,9 +154,9 @@ export default function SectionO({ dictionary, lang, bookingDictionary }) {
 
                         {/* POLICY BTN */}
                         <div className="flex flex-col">
-                            <p className={policyClass}>
+                            <Link href={`/${lang}/cookie`} target="_blank" className={`${policyClass} hover:text-gold transition-all duration-300 block`}>
                                 {dictionary.cookie}
-                            </p>
+                            </Link>
                             <Link href={`/${lang}/policy`} target="_blank" className={`${policyClass} hover:text-gold transition-all duration-300 block`}>
                                 {dictionary.policy}
                             </Link>
@@ -201,9 +201,9 @@ export default function SectionO({ dictionary, lang, bookingDictionary }) {
 
                 {/* POLICY BTN */}
                 <div className="flex flex-col">
-                    <p className={policyClass}>
+                    <Link href={`/${lang}/cookie`} target="_blank" className={`${policyClass} hover:text-gold transition-all duration-300 block`}>
                         {dictionary.cookie}
-                    </p>
+                    </Link>
                     <Link href={`/${lang}/policy`} target="_blank" className={`${policyClass} hover:text-gold transition-all duration-300 block`}>
                         {dictionary.policy}
                     </Link>
@@ -307,9 +307,10 @@ export default function SectionO({ dictionary, lang, bookingDictionary }) {
 
                             {/* POLICY BTN */}
                             <div className="flex flex-col text-right xl:pe-3">
-                                <p className={policyClass}>
+                                <Link href={`/${lang}/cookie`} target="_blank" className={`${policyClass} hover:text-gold transition-all duration-300 block`}>
                                     {dictionary.cookie}
-                                </p>
+                                </Link>
+
                                 <Link href={`/${lang}/policy`} target="_blank" className={`${policyClass} hover:text-gold transition-all duration-300 block`}>
                                     {dictionary.policy}
                                 </Link>
