@@ -72,7 +72,7 @@ export default async function CookiePage({ params }) {
                                 <p className="mt-4">
                                     {section.extraContent}
                                 </p>
-                            )}
+                            )};
 
                             {/* Link (if exists, e.g. Cookie Policy) */}
                             {section.link && (
