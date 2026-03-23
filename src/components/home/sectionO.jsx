@@ -71,15 +71,15 @@ export default function SectionO({ dictionary, lang, bookingDictionary }) {
 
 
     return (
-        <footer className="flex flex-col h-[100vh] mt-20 rounded-3xl xl:rounded-[40px] lg:h-dvh relative z-30 bg-background p-7 justify-end gap-15 md:p-20 pb-15 xs:pb-30">
+        <footer className="flex flex-col [@media(max-width:376px)]:h-[140vh] [@media(max-width:380px)]:h-[120vh] h-[110vh] xxs:h-[100vh] xs:h-[100vh] mt-20 rounded-3xl xl:rounded-[40px] lg:h-dvh relative z-30 bg-background p-7 justify-end gap-15 md:p-20 pb-5 xs:pb-7 sticky top-0">
 
-            <div className="flex flex-col md:w-fit xl:hidden ">
-                <MasterTitle className="py-7  xl:text-9xl" tag="div">
+            <div className="flex flex-col md:w-fit xl:hidden bg-amber-200/10 ">
+                <MasterTitle className="py-7 md:py-0 xl:text-9xl" tag="div">
                     {dictionary?.headline}
                 </MasterTitle>
 
                 {/* LAYOUT SMARTPHONE */}
-                <div className="flex md:mt-40 justify-between">
+                <div className="flex justify-between  md:pt-10">
 
                     <div className="flex flex-col gap-5">
 
@@ -113,7 +113,7 @@ export default function SectionO({ dictionary, lang, bookingDictionary }) {
                                 {dictionary.CIN}
                             </p>
 
-                            <p className={`${textClass}`}>
+                            <p className={`hidden xl:flex ${textClass}`}>
                                 {dictionary.regionalText}
                             </p>
                         </div>
@@ -185,7 +185,7 @@ export default function SectionO({ dictionary, lang, bookingDictionary }) {
 
 
             {/* CONTINUE LAYOUT SMARTPHONE */}
-            <div className="flex flex-col gap-10 md:hidden">
+            <div className="flex flex-col gap-10 md:hidden ">
                 {/* SOCIAL */}
                 <div className="flex flex-col gap-3">
                     <p className="xs:text-xl">
@@ -215,6 +215,11 @@ export default function SectionO({ dictionary, lang, bookingDictionary }) {
                 {/* COPIRIGHT */}
                 <div className={`flex flex-col ${textClass}`}>
 
+
+                    <p className={`  ${textClass}`}>
+                        {dictionary.regionalText}
+                    </p>
+
                     <p className={copyright}>
                         <DataLive dictionary={dictionary} />
                     </p>
@@ -229,10 +234,12 @@ export default function SectionO({ dictionary, lang, bookingDictionary }) {
 
             {/* LAYOUT ONLY DESK */}
 
-            <div className="hidden xl:flex flex-col w-fit ">
-                <MasterTitle className="py-7  xl:text-9xl 2xl:text-[170px]" tag="div">
-                    {dictionary.headline}
-                </MasterTitle>
+            <div className="hidden xl:flex flex-col w-full  ">
+                <div className="w-full flex items-center justify-center">
+                    <MasterTitle className="py-7 text-[190px]  xl:text-[130px]  2xl:text-[160px]" tag="div">
+                        {dictionary.headline}
+                    </MasterTitle>
+                </div>
 
 
                 <div className="flex md:mt-40 justify-between">

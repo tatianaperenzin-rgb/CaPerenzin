@@ -56,17 +56,17 @@ export function DateRangeSelector({ className, date, setDate, placeholder, lang,
                         <CalendarIcon className="mt-[-2px]" />
                         {date?.from ? (
                             date.to ? (
-                                <span className="text-xs xs:text-sm  ">
+                                <span className="text-xs xs:text-sm truncate w-30">
                                     {format(date.from, "dd MMM", { locale: currentLocale })} -{" "}
                                     {format(date.to, "dd MMM", { locale: currentLocale })}
                                 </span>
                             ) : (
-                                <span className="text-xs xs:text-sm ">
+                                <span className="text-xs xs:text-sm truncate w-30">
                                     {format(date.from, "dd MMM yyyy", { locale: currentLocale })}
                                 </span>
                             )
                         ) : (
-                            <span className="text-xs">
+                            <span className="text-xs truncate w-10 xxs:w-30 xs:w-auto" >
                                 {dictionary?.checkInOut || "Date"}
                             </span>
                         )}

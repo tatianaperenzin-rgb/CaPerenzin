@@ -81,9 +81,9 @@ export default function NavBar({ isOpen: controlledIsOpen, setIsOpen: controlled
 
                         style={disableMenuOverlay ? {} : { animationDelay: '2000ms' }}>
 
-                        <div className={`${(isMenu || pathname?.includes("contatti") || experienceActive || roomInfoActive) ? "pointer-events-none" : ""}`}>
+                        <div className={`${(isMenu || experienceActive || roomInfoActive) ? "pointer-events-none" : ""}`}>
                             <Link href={`/${lang}`}>
-                                <Logo className={`w-[40px] h-[40px] xl:w-[50px] xl:h-[50px] transition-opacity duration-300 ${(isMenu || pathname?.includes("contatti") || experienceActive || roomInfoActive || isLargeView) ? "opacity-0" : "opacity-100"}`} />
+                                <Logo className={`w-[40px] h-[40px] xl:w-[50px] xl:h-[50px] transition-opacity duration-300 ${(isMenu || experienceActive || roomInfoActive || isLargeView) ? "opacity-0" : "opacity-100"}`} />
                             </Link>
                         </div>
 
@@ -104,7 +104,7 @@ export default function NavBar({ isOpen: controlledIsOpen, setIsOpen: controlled
                             )}
  */}
                             {/* MENU BTN */}
-                            <div className={`flex gap-12 xs:gap-13 ${bubbleTest ? "lg:hidden" : ""}`}>
+                            <div className={`flex gap-12 xs:gap-13 ${bubbleTest ? "lg:hidden" : ""} ${roomInfoActive ? "hidden xxs:flex" : ""}`}>
                                 <button onClick={toggleMenu}
                                     className={`flex rounded-full items-center gap-2 cursor-pointer
                                     shrink-0 h-10 xs:h-11

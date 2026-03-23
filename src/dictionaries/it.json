@@ -112,9 +112,9 @@
         },
         "label": {
             "one": "Formaggi Perenzin",
-            "two": "Stagionale",
-            "three": "Uova Km0",
-            "four": "Torte Fatte in casa"
+            
+            "two": "Uova Km0",
+            "three": "Torte Fatte in casa"
         },
         "scrImgDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1771152914/caperenzin.colazione_twl0a5.jpg",
         "scrImgPhone": "",

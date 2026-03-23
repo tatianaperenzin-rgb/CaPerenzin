@@ -19,6 +19,8 @@ import { useSearchParams } from "next/navigation"
 
 export default function Experience({ dictionary, exp, lang }) {
 
+    const heroRef = useRef(null)
+
     const { setExperienceActive, isMenuOpen } = useUI()
 
     const icon = {
@@ -60,6 +62,15 @@ export default function Experience({ dictionary, exp, lang }) {
         }
     }, [wrapperRef])
 
+    useEffect(() => {
+
+        document.body.style.overflow = "hidden"
+        return () => {
+            document.body.style.overflow = ''
+        }
+
+    }, [heroRef])
+
     const hendelClick = (id) => {
         setIsActive(id)
         setIsOpen(false)
@@ -73,7 +84,7 @@ export default function Experience({ dictionary, exp, lang }) {
 
     function TypeExp({ className }) {
         return (
-            <div className={`flex flex-col xl:flex-row gap-2 md:gap-3 lg:gap-3   ${className}`}>
+            <div className={`flex flex-col xl:flex-row gap-2 md:gap-3 lg:gap-3    ${className}`}>
                 {exp.buttons.map((item, i) => {
                     const { activeClass } = BtnActive(isActive, item.id)
                     const isItemActive = isActive === item.id
@@ -105,55 +116,55 @@ export default function Experience({ dictionary, exp, lang }) {
 
 
     return (
-        <>
 
-            <div className={`flex flex-col w-full h-svh lg:h-dvh justify-center items-center relative `}>
-                <div className="flex flex-col gap-17 lg:gap-30 2xl:gap-37 ">
 
-                    {/* HEADLINE ENTRY */}
-                    <MasterTitle className={`
+        <div ref={heroRef} className={`flex flex-col w-full  h-dvh lg:h-dvh justify-center items-center relative overflow-x-hidden overflow-y-hidden `}>
+            <div className="flex flex-col h-fit gap-17 lg:gap-30 2xl:gap-37 ">
+
+                {/* HEADLINE ENTRY */}
+                <MasterTitle className={`
                         w-min whitespace-normal leading-relax lg:leading-none
                         ${!isActive ? "" : "hidden"}`}>
-                        {exp.headline.replace("Mappa ", "Mappa\u00A0")}
-                    </MasterTitle>
+                    {exp.headline.replace("Mappa ", "Mappa\u00A0")}
+                </MasterTitle>
 
-                    {/* BUTTONS STATE */}
-                    {!isActive ? (
-                        <TypeExp />
-                    ) : (
-                        <>
-                            {/* PHONE */}
-                            <div ref={wrapperRef} className={`xl:hidden block flex-col gap-3 w-fit  absolute top-7 left-5 md:top-9 md:left-7 2xl:left-8 z-999
+                {/* BUTTONS STATE */}
+                {!isActive ? (
+                    <TypeExp />
+                ) : (
+                    <>
+                        {/* PHONE */}
+                        <div ref={wrapperRef} className={`xl:hidden block flex-col gap-3  w-fit  absolute top-7 left-5 md:top-9 md:left-7 2xl:left-8 z-999
                             transition-all duration-300
                             ${isMenuOpen ? "opacity-0 pointer-events-none" : "opacity-100 pointer-events-auto"}
                             `}>
-                                <BtnBase onClick={toggleExp} iconStart={BsStars}>
-                                    {dictionary.assetUi.experience}
-                                </BtnBase>
-                                {isOpen && (<TypeExp className="absolute top-20 left-0" />)}
-                            </div>
-                            {/* DESKTOP */}
-                            <div className={`hidden xl:flex flex-col gap-3 w-fit  absolute
+                            <BtnBase onClick={toggleExp} iconStart={BsStars}>
+                                {dictionary.assetUi.experience}
+                            </BtnBase>
+                            {isOpen && (<TypeExp className="absolute top-20 left-0" />)}
+                        </div>
+                        {/* DESKTOP */}
+                        <div className={`hidden xl:flex flex-col gap-3 w-fit  absolute
                             top-6.5 left-5
                             md:top-9 md:left-7
-                            xl:top-10 xl:left-8
+                            xl:top-10 xl:left-8 
                             2xl:top-11 
                             z-999
                             transition-all duration-300
                             ${isMenuOpen ? "opacity-0 pointer-events-none" : "opacity-100 pointer-events-auto"}
                             `}>
-                                <TypeExp />
-                            </div>
+                            <TypeExp />
+                        </div>
 
-                        </>
-                    )}
-                </div >
-
-                {/* HEADLINE + INFO + CAROUSELL */}
-                {activeExperience && <IsActive className={!isOpen ? "" : "blur-sm pointer-events-none"} dictionary={dictionary} exp={exp} lang={lang} experienceLibrary={activeExperience} />}
+                    </>
+                )}
             </div >
 
+            {/* HEADLINE + INFO + CAROUSELL */}
+            {activeExperience && <IsActive className={!isOpen ? "" : "blur-sm pointer-events-none"} dictionary={dictionary} exp={exp} lang={lang} experienceLibrary={activeExperience} />}
+        </div >
 
-        </>
+
+
     )
 }

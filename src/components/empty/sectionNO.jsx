@@ -63,15 +63,15 @@ export default function BubbleTest({ dictionary, lang }) {
     const opacity = useTransform(smoothProgress, [0, CLOSING_THRESHOLD], [1, 0.1]);
 
     return (
-        <div className="relative w-full">
+        <div className="relative h-full">
 
 
             {/* --- SEZIONE 2: Il Blocco Colorato (Sticky Container) --- */}
             {/* Usiamo un container sticky che occupa tutto lo schermo */}
-            <div className="h-[110vh] sticky top-0 overflow-hidden z-0">
+            <div className="h-dvh sticky top-0 overflow-hidden z-0">
                 {/* Questo è il blocco che verrà animato */}
                 {/* Contenitore interno fisso - Allineato in alto (items-start) */}
-                <div className="w-full h-screen absolute top-0 left-0 flex items-start justify-center">
+                <div className="w-full h-dvh absolute left-0 flex items-start justify-center">
 
                     {/* Rettangolo con bordi arrotondati che si chiude in altezza */}
                     <motion.div
@@ -85,7 +85,7 @@ export default function BubbleTest({ dictionary, lang }) {
                         {/* Contenuto del box che rimane fisso. 
                                      Usiamo un'altezza fissa calcolata (100vh - padding verticale) 
                                      perché l'altezza del genitore cambia. */}
-                        <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center">
+                        <div className="w-full h-full flex flex-col justify-center">
                             <SectionN
                                 dictionary={dictionary.sectionN}
                                 lang={lang}
@@ -104,8 +104,8 @@ export default function BubbleTest({ dictionary, lang }) {
             {/* Deve avere uno z-index superiore per coprire o interagire visivamente */}
             <section
                 ref={nextSectionRef}
-                className="relative z-10 min-h-screen 
-                           mnt-0 xs:mt-10 "
+                className="relative z-10 min-h-screen
+                           mt-50  "
             >
                 {/* BACKGROUND che appare/scompare */}
                 <div

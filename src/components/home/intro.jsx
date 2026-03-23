@@ -75,8 +75,7 @@ export default function Intro({ dictionary, lang }) {
                 {/* SECOND TEXT UNDER TITLE */}
                 <p className={`text-center font-muller text-balance
                         mt-10 lg:mt-6
-                        it:w-80 it:xs:w-90 it:md:w-xl it:lg:w-180 it:xl:w-auto 
-                        en:w-70 en:xs:w-100 en:md:w-xl en:lg:w-220  en:xl:w-auto 
+                        
                         text-sm xs:text-base md:text-xl it:lg:text-lg it:xl:text-lg
                         en:lg:text-xl it:2xl:text-2xl en:2xl:text-2xl
                         max-h-0 overflow-hidden opacity-0
@@ -87,7 +86,7 @@ export default function Intro({ dictionary, lang }) {
                     {dictionary.hero.heroIntroTwo}
                 </p>
 
-                {/* CONTENT AFTER BRA (btn respira) */}
+                {/* CONTENT AFTER  (btn respira) */}
                 <AnimatePresence>
                     {isLargeView && (
                         <motion.div

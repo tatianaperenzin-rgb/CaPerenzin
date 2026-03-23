@@ -46,7 +46,7 @@ export default function ControlsHome({ dictionaty, lang, totalRoom, onNext, onBa
                         {/* FRECCIA SU e num */}
                         <div className="flex lg:flex-col justify-center items-center">
                             <BtnBase
-                                className="bg-transparent"
+                                className="bg-transparent shadow-none"
                                 onClick={onNext}
                             >
                                 <IoMdArrowRoundUp size={40} className="text-gold hidden md:block" />
@@ -67,7 +67,7 @@ export default function ControlsHome({ dictionaty, lang, totalRoom, onNext, onBa
                                 {totalRoom}
                             </p>
                             <BtnBase
-                                className="bg-transparent"
+                                className="bg-transparent shadow-none"
                                 onClick={onBack}
                             >
                                 <IoMdArrowRoundDown size={40} className="text-gold hidden md:block" />

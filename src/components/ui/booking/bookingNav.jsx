@@ -180,7 +180,7 @@ export default function BookingNav({ dictionary, lang, bookNavOpen, setBookNavOp
                 </div>
             ) : (
                 <div className={`flex bg-current rounded-full items-center gap-2 justify-center
-                            w-auto 
+                            w-fit
                             px-6 py-0.5
                                     xs:py-2 xs:px-8
                     

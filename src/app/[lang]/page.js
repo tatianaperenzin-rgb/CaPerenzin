@@ -17,8 +17,6 @@ import SectionM from "@/components/home/sectionM"
 import SectionN from "@/components/home/sectionN"
 import SectionO from "@/components/home/sectionO"
 import SectionNO from "@/components/empty/sectionNO"
-
-
 import SplashScreen from "@/components/ui/splashScreen"
 
 

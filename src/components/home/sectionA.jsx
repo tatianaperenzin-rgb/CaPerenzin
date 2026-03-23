@@ -114,7 +114,7 @@ export default function SectionA({ dictionary, lang }) {
             ref={sectionRef}
             className={`
                 relative flex w-full lg:h-dvh justify-center items-center overflow-x-hidden z-10
-                pointer-events-none transition-all duration-500 scroll-mt-0
+                pointer-events-none transition-all duration-500 scroll-mt-0 bg-background
                 ${popOpen ? "h-dvh" : "h-170 xs:h-190 md:h-200 lg:h-dvh"}
             `}
         >
@@ -134,7 +134,7 @@ export default function SectionA({ dictionary, lang }) {
                         damping: 20
                     }}
                 >
-                    <MasterTitle className="w-min" tag="h2">
+                    <MasterTitle className="w-min lg:text-7xl xl:text-7xl 2xl:text-8xl" tag="h2">
                         {lang === "it"
                             ? dictionary.hedlineA.replace("Lascia il", "Lascia\u00A0il")
                             : dictionary.hedlineA.replace("Leave the", "Leave\u00A0the")
@@ -170,8 +170,8 @@ export default function SectionA({ dictionary, lang }) {
                                         fixed inset-0 w-full h-svh lg:h-dvh bg-black/50 
                                         lg:absolute z-50 top-0 left-0 flex items-center
                                         justify-center xl:justify-end
-                                        bg-transparent pt-70 lg:p-0
-                                        lg:ms-80 xl:ms-11
+                                        bg-transparent pt-70 xs:pt-40 md:pt-70 lg:p-0
+                                        lg:ms-70 xl:ms-11
                                     `}
                                 >
                                     <div

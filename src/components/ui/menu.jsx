@@ -71,29 +71,29 @@ export default function Menu({ setIsOpen, dictionary, dataRooms, lang, hero }) {
         <div className="flex  w-full h-dvh fixed top-0 left-0 pointer-events-auto bg-background">
             <BubbleFrame className="h-dvh" bubbleClass="items-center xl:items-end " color="bg-gold" >
 
-                <div className="flex w-full flex-col  gap-7 xl:gap-0 p-5 mt-15 bg">
+                <div className="flex w-full flex-col h-full  gap-7  p-5 justify-center lg:justify-end ">
 
-                    <p className="hidden lg:flex font-black md:text-3xl lg:text-4xl xl:text-4xl 2xl:text-4xl absolute top-5 left-5">{hero.BeBname}</p>
-                    <div className="flex flex-col xl:flex-row xl:items-end xl:gap-30">
+                    <p className="flex font-black text-sm xxs:text-xl xs:text-2xl mt-2 md:text-3xl lg:text-4xl xl:text-4xl 2xl:text-4xl absolute top-5 left-5">{hero.BeBname}</p>
+                    <div className="flex flex-col lg:flex-row lg:gap-10 xl:items-end xl:gap-30">
                         {/* HOME + COMTACT(desk) */}
 
-                        <div className="flex flex-col bg">
+                        <div className="flex flex-col ">
                             <Link href={`/${lang}`} onClick={() => setIsOpen(false)}>
 
-                                <p className="font-black text-5xl xs:text-7xl py-5 xl:py-0 hover:text-white transition-colors duration-300">
+                                <p className="font-black text-5xl xs:text-7xl py-5 lg:py-0 hover:text-white transition-colors duration-300">
                                     {dictionary.home}
                                 </p>
                             </Link>
 
                             <Link href={`/${lang}/contatti`} onClick={() => setIsOpen(false)}>
-                                <p className="font-bold text-4xl xs:text-5xl mt-5 hidden xl:block hover:text-white transition-colors duration-300">
+                                <p className="font-bold text-4xl xs:text-5xl mt-5 hidden lg:block hover:text-white transition-colors duration-300">
                                     {dictionary.contact}
                                 </p>
                             </Link>
                         </div>
 
                         {/* MENU */}
-                        <div className="flex w-full">
+                        <div className="flex w-full  items-end">
 
                             <div className="flex flex-col gap-2 lg:w-fit ">
                                 <Link href={`/${lang}/#breakfast`} onClick={() => setIsOpen(false)}>
@@ -131,7 +131,7 @@ export default function Menu({ setIsOpen, dictionary, dataRooms, lang, hero }) {
 
                                 <Link href={`/${lang}/experiences`} onClick={() => setIsOpen(false)}>
                                     <div className="flex items-center gap-2">
-                                        <p className={textClass}>
+                                        <p className={`text-nowrap ${textClass}`}>
                                             {dictionary.experience}
                                         </p>
                                         <BsArrowDownRightCircle className="" />
@@ -141,7 +141,7 @@ export default function Menu({ setIsOpen, dictionary, dataRooms, lang, hero }) {
                             </div>
 
                             {/* ROOM LIST ON HOVER DESKTOP */}
-                            <div className={`hidden lg:flex flex-col gap-2 lg:w-1/2 transition-opacity duration-500  justify-end 
+                            <div className={`hidden lg:flex flex-col gap-2 lg:w-1/2 transition-opacity duration-500  justify-end lg:ms-20
                                   ${!roomList ? "opacity-0 pointer-events-none" : "opacity-100 pointer-events-auto"}`}
                                 onMouseEnter={handleMouseEnter}
                                 onMouseLeave={handleMouseLeave}
@@ -152,7 +152,7 @@ export default function Menu({ setIsOpen, dictionary, dataRooms, lang, hero }) {
                         </div>
                     </div>
 
-                    <div className="relative flex w-full h-50 xs:h-70  md:h-80 xl:h-100 md:my-10 lg:my-0 bg-gold rounded-3xl xl:rounded-[40px] overflow-hidden xl:mt-20 ">
+                    <div className="shadow-sm lg:shadow-lg relative flex w-full h-30 xxs:h-50 xs:h-60  md:h-80 lg:h-60 xl:h-100 md:my-10 lg:my-0 bg-gold rounded-xl xs:rounded-2xl md:rounded-3xl xl:rounded-[40px] overflow-hidden xl:mt-0 ">
                         <AnimatePresence mode="popLayout">
                             <motion.div
                                 key={bgImage}
@@ -160,21 +160,24 @@ export default function Menu({ setIsOpen, dictionary, dataRooms, lang, hero }) {
                                 animate={{ opacity: 1 }}
                                 exit={{ opacity: 0 }}
                                 transition={{ duration: 0.3 }}
-                                className="absolute inset-0 w-full h-full"
+                                className="absolute inset-0 w-full h-full bg"
                             >
+
                                 <Image
                                     src={bgImage}
                                     fill
                                     alt="menu image"
                                     className="object-cover"
                                 />
+                                {/* OVERLAY NERO */}
+                                <div className="absolute inset-0 bg-black/20 z-10 pointer-events-none" />
                             </motion.div>
                         </AnimatePresence>
                     </div>
 
                     {/* CONTACT modile */}
                     <Link href={`/${lang}/contatti`} onClick={() => setIsOpen(false)}>
-                        <p className="font-bold text-4xl xs:text-5xl mt-5 xl:hidden">
+                        <p className="font-bold text-4xl xs:text-5xl mt-5 lg:hidden">
                             {dictionary.contact}
                         </p>
                     </Link>

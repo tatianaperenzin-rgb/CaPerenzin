@@ -4,7 +4,7 @@ import { cn } from "@/lib/utility"
 export default function InfoPill({ children, className, href, IconStart, iconClassName, ...props }) {
 
 
-    const baseClass = cn(`flex py-2 xs:py-2 md:py-1.5
+    const baseClass = cn(`flex py-1.5 xs:py-2 md:py-1.5
                         px-3 xs:px-4 shadow-lg
                         rounded-full bg-foreground
                         gap-2 

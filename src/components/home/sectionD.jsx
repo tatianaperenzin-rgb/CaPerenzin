@@ -94,20 +94,23 @@ export default function SectionD({ dictionary, lang, className }) {
                             justify-center items-center overflow-hidden
                             ${className}`)}>
 
-            {/* LOGICA DI SCAMBIO VISTA */}
+
             {!activeId ? (
                 // =================================================
                 //  VISTA ZERO (MENU) - Se activeId è NULL
                 // =================================================
                 <div className="flex flex-col w-full h-full justify-center 
                                 px-10 xs:px-14 md:px-20 lg:px-30 2xl:px-50
-                                gap-40 animate-fade-in">
+                                gap-20 xxs:gap-40 animate-fade-in">
 
                     {/* BLOCK HEADLINE */}
-                    <div className="flex flex-col gap-7">
-                        <div className="flex">
-                            <MasterTitle className="2xl:text-8xl" tag="h2">
-                                {dictionary.headlineD}
+                    <div className="flex flex-col gap-7 ">
+                        <div className="flex w-min">
+                            <MasterTitle className="text-[30px] 2xl:text-8xl xs:text-5xl md:text-7xl lg:text-7xl xl:text-8xl" tag="h2">
+                                {lang === "it"
+                                    ? dictionary.headlineD.replace("Toccare il", "Toccare\u00A0il")
+                                    : dictionary.headlineD.replace("Touching the", "Touching\u00A0the")
+                                }
                             </MasterTitle>
                         </div>
                         <p className="text-xs
@@ -129,8 +132,8 @@ export default function SectionD({ dictionary, lang, className }) {
                     />
 
                     {/* NOTE (Visibile solo nel menu) */}
-                    <p className="flex items-center text-center absolute bottom-5 left-0 w-full justify-center
-                                  text-[9px] xs:text-[12px] md:text-xs px-15 text-gold opacity-50">
+                    <p className="flex items-center text-center absolute bottom-5 left-0 w-full justify-center text-balance
+                                  text-[10px] xxs:-[7px] xs:text-[12px] md:text-xs px-15 md:px-30 text-gold opacity-50">
                         {dictionary.noteD}
                     </p>
                 </div>

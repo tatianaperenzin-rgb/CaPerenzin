@@ -81,10 +81,10 @@ export default function BubbleTest({ dictionary, lang }) {
 
             {/* --- SEZIONE 2: Il Blocco Colorato (Sticky Container) --- */}
             {/* Usiamo un container sticky che occupa tutto lo schermo */}
-            <div className="h-[110vh] sticky top-0 overflow-hidden z-0">
+            <div className="h-dvh sticky top-0 overflow-hidden z-0">
                 {/* Questo è il blocco che verrà animato */}
                 {/* Contenitore interno fisso - Allineato in alto (items-start) */}
-                <div className="w-full h-screen absolute top-0 left-0 flex items-start justify-center">
+                <div className="w-full h-dvh absolute top-0 left-0 flex items-start justify-center">
 
                     {/* Rettangolo con bordi arrotondati che si chiude in altezza */}
                     <motion.div

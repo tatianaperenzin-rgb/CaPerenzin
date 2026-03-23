@@ -79,10 +79,10 @@ export default function HorizontalScroll({ children }) {
             whileInView={{ opacity: 1 }}
             viewport={{ once: false, amount: 0.1 }}
             transition={{ duration: 0.8 }}
-            className="w-full relative"
+            className="w-full relative h-dvh"
             style={{ height: `${containerHeight}px` }}
         >
-            <div className="sticky top-0 h-screen w-full overflow-hidden flex items-center">
+            <div className="sticky top-0 h-dvh w-full overflow-hidden flex items-center">
                 <div
                     ref={sliderRef}
                     className="flex w-fit h-full will-change-transform"

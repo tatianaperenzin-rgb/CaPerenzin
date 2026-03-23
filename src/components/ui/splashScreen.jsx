@@ -13,9 +13,15 @@ export default function SplashScreen({ dictionary }) {
         // if (hasShown) {
         //     setShow(false)
         // } else {
-        // Lock and show
+        // Lock and show both the body and the html level to forcefully prevent lateral native scrollbars
         document.body.style.overflow = "hidden"
+        document.documentElement.style.overflow = "hidden"
         // }
+
+        return () => {
+            document.body.style.overflow = ""
+            document.documentElement.style.overflow = ""
+        }
     }, [])
 
     const handleComplete = () => {
@@ -23,8 +29,9 @@ export default function SplashScreen({ dictionary }) {
         setTimeout(() => {
             setShow(false)
             document.body.style.overflow = ""
+            document.documentElement.style.overflow = ""
             sessionStorage.setItem("splashShown", "true")
-        }, 300)
+        }, 270)
     }
 
     return (
@@ -35,9 +42,9 @@ export default function SplashScreen({ dictionary }) {
                     initial={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
                     transition={{ duration: 1, ease: "easeInOut" }}
-                    className="fixed inset-0 z-99999 flex flex-col items-center justify-center bg-background text-foreground"
+                    className="fixed inset-0 z-99999 flex flex-col items-center justify-center bg-background text-foreground overflow-hidden"
                 >
-                    <div className="flex flex-col items-center gap-6">
+                    <div className="flex flex-col items-center gap-6 overflow-hidden">
                         <div className="relative">
                             <MasterTitle className="opacity-30 text-foreground">
                                 {dictionary.assetUi.splashScreen.title}
@@ -55,7 +62,7 @@ export default function SplashScreen({ dictionary }) {
                             </motion.div>
                         </div>
 
-                        <p className="text-xs md:text-sm text-foreground/70 tracking-widest text-center uppercase">
+                        <p className="px-7 xxs:px-20 text-balance text-[10px] md:text-sm text-foreground/70 tracking-widest text-center uppercase overflow-hidden">
                             {dictionary.assetUi.splashScreen.text}
                         </p>
 

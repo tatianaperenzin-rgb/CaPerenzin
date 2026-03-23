@@ -55,35 +55,35 @@ export default function ContactPage({ dictionary, lang, dictionarySectionO, dict
 
                 {/* BOX TEXT E DATA */}
                 <div className="flex flex-col 
-                            h-[90vh] md:h-dvh 
+                            h-screen md:h-dvh 
                             w-full lg:w-1/2
-                            gap-20 xs:gap-30 
+                            gap-10 xxs:gap-30 lg:gap-10 2xl:gap-20 
                             p-7 md:ps-28 lg:ps-15
-                             
+                            pt-20 xxs:pt-0 lg:pt-27 2xl:pt-0
                             justify-center">
 
-                    <div>
+                    <div className="">
                         <MasterTitle
                             className="w-min
-                                        text-4xl xs:text-5xl md:text-6xl xl:text-7xl 2xl:text-8xl"
+                                        text-3xl xxs:text-5xl md:text-6xl lg:text-6xl 2xl:text-7xl"
                         >
                             {dictionary.headline}
                         </MasterTitle>
 
                         <p
-                            className="font-bold text-lg xs:text-xl md:text-3xl xl:text-2xl pt-3"
+                            className="font-bold text-lg xs:text-xl md:text-3xl lg:text-2xl pt-3"
                         >{dictionary.subHeadline}</p>
 
                         <p
-                            className="font-muller
-                                    py-7 text-balance md:pe-20 
+                            className="font-muller 
+                                    py-7 text-balance md:pe-20 lg:pe-0 xl:pe-20 
                                     text-xs xs:text-base md:text-lg lg:text-sm xl:text-base"
                         >{dictionary.content}</p>
 
                         <div className="flex flex-wrap gap-3
                                     xs:gap-4
-                                    xs:mt-10
-                                    pe-20">
+                                    xs:mt-10 lg:mt-0
+                                    pe-20 lg:pe-0">
                             {dictionary.buttons.map((item, i) => {
 
                                 const icons = extra[item.id]
@@ -116,8 +116,8 @@ export default function ContactPage({ dictionary, lang, dictionarySectionO, dict
                         </div>
                     </div>
 
-                    <div className="flex flex-col gap-7">
-                        <h2 className="font-bold text-balance it:w-min it:xl:w-170 text-2xl xs:text-4xl">
+                    <div className="flex flex-col gap-7 ">
+                        <h2 className="font-bold text-balance it:w-min it:lg:w-120 text-xl xxs:text-4xl lg:text-3xl">
                             {dictionary.ctaMail}
                         </h2>
                         <div>

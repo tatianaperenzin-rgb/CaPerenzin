@@ -114,16 +114,16 @@ export default function IsActive({ dictionary, exp, lang, experienceLibrary, cla
                 onClick={hendelClick} />
 
             {/* DINAMIC CONTENT__ HEADLINE _ CONTENTE _ TIPS */}
-            <div className="flex flex-col p-4 z-20 h-svh pt-25 xs:pt-30 xl:pt-30 pb-35 justify-between xl:justify-start">
+            <div className="flex flex-col p-4 z-20 h-svh pt-25 xs:pt-30 lg:pt-20 xl:pt-30 pb-35 justify-between xl:justify-start">
 
                 <div className="flex flex-col">
                     {/* HEADLINE */}
-                    <MasterTitle className="text-balance leading-tight md:text-6xl lg:text-7xl xl:text-6xl 2xl:text-7xl">
+                    <MasterTitle className="text-balance leading-tight md:text-6xl w-[90%] xl:w-[70%]  lg:text-6xl xl:text-6xl 2xl:text-7xl">
                         {!isActive ? experienceLibrary.experience[0].headline : dataExperience?.headline}
                     </MasterTitle>
 
                     {/* INFO PILLS */}
-                    <div className="flex flex-wrap gap-2 mt-7">
+                    <div className="flex flex-wrap gap-2 md:gap-4 mt-7 md:w-[65%] lg:w-full">
                         {dataExperience?.pillsInfo.map((item, i) => {
                             const isMap = item.id === 'maps';
                             const url = item.urlWebSite || item.gMaps;
@@ -191,7 +191,7 @@ export default function IsActive({ dictionary, exp, lang, experienceLibrary, cla
                 </div>
 
                 {/* CONTENT DESKTOP */}
-                <div className="hidden xl:flex flex-col xl:w-2/5 2xl:w-1/3 mt-18 ">
+                <div className="hidden xl:flex flex-col md:[47%] lg:w-[48%] xl:w-[57%] 2xl:w-[45%] mt-18">
                     {/* TEXT CONTENT */}
                     <p className={`font-muller`}>
                         {dataExperience.content}

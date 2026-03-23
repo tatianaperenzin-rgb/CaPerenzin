@@ -10,7 +10,7 @@ export default function SectionG({ dictionary, lang }) {
     const [isOpen, setIsOpen] = useState(null)
     const handelClick = () => setIsOpen(!isOpen)
 
-    const classText = "font-muller text-sm xs:text-base md:pe-28 lg:pe-7 xl:pe-0 2xl:pe-50"
+    const classText = "font-muller  md:pe-28 lg:pe-7 xl:pe-0 2xl:pe-50 text-xs xxs:text-sm xs:text-base w-ful  xxs:w-[85%] xs:w-full"
     const pillClass = " font-muller font-bold shadow-md"
 
     return (
@@ -19,30 +19,34 @@ export default function SectionG({ dictionary, lang }) {
         <section className="w-full h-full lg:h-dvh  flex flex-col lg:flex-row justify-center items-center gap-5  p-2 md:p-5">
 
             {/* CARD ONE  TEXT */}
-            <div className={`flex w-full h-fit md:h-1/2 lg:h-full lg:w-1/2 bg-gold rounded-3xl xl:rounded-[40px]
+            <div className={`flex w-full lg:w-1/2 bg-gold rounded-3xl xl:rounded-[40px]
                             p-7 md:p-15 lg:p-10
                             transition-all duration-300 ease-in-out
-                            ${isOpen ? "h-[85%] lg:h-full" : "h-1/2 lg:h-full"}`}>
+                            ${isOpen ? "h-full lg:h-full" : "h-[80%] md:h-[45%] lg:h-full"}`}>
 
-                <div className={`flex flex-col
-                                ${isOpen ? "gap-7 md:justify-between" : "justify-between"}
+                <div className={`flex flex-col 
+                                ${isOpen ? "gap-7  md:gap-10 justify-end  md:justify-between" : "justify-end  md:justify-around lg:justify-end "}
                                 `}>
 
 
                     {/* CONTENT */}
-                    <div className="flex-flex-col 
-                                    pe-6
+                    <div className="flex flex-col 
+                                    pe-6 justify-end lg:justify-center xl:justify-end xl:pb-20
                                     ">
 
                         {/* TITLE */}
                         <h2 className="font-black text-background text-balance
-                                    w-80 xs:w-100 md:w-170 lg:w-fit 2xl:w-150
+                                    
                                     text-3xl xs:text-4xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl
-                                    lg:pt-60 xl:pt-40 2xl:pt-70">
-                            {dictionary.headline}
+                                    ">
+                            {lang === "it"
+                                ? dictionary.headline.replace("La Verita", "La\u0A00verita")
+                                : dictionary.headline.replace("Truthis", "Truth\u0A00is")
+                            }
+
                         </h2>
 
-                        <p className={`pt-7 text-balance md:pt-10 ${classText}`}>{dictionary.content.paragraphOne}</p>
+                        <p className={`pt-7 md:pt-10  xs:text-balance ${classText}`}>{dictionary.content.paragraphOne}</p>
 
                         {/* CONTENT OPEN ONLY TABLET E DESK */}
                         <p className={`pt-3 text-balance hidden md:flex ${classText}`}>{dictionary.content.paragraphTwo}</p>
@@ -56,36 +60,52 @@ export default function SectionG({ dictionary, lang }) {
                                             transition-all duration-300
                                             ease-in-out
                                             delay-500
+                                            w-[85%]
                                             ${isOpen ? "opacity-100" : "opacity-0"}
                                             ${classText}
                             `}>
-                                <p className="text-balance">{dictionary.content.paragraphTwo}</p>
-                                <p className="pt-7 text-balance"
+                                <p className={classText}>{dictionary.content.paragraphTwo}</p>
+                                <p className={`pt-7 text-balance ${classText}`}
                                 >{dictionary.content.paragraphThree}</p>
                             </div>
                         )}
 
                         {/* BUTTON */}
-                        <button className="flex items-center gap-3 py-7 text-background md:hidden text-xs xs:text-sm" onClick={handelClick}>
+                        <button className={`flex items-center gap-3 py-7 text-background md:hidden text-xs xs:text-sm
+                                           
+                                            `}
+
+                            onClick={handelClick}>
                             {isOpen ? dictionary.readLess : dictionary.readMore}
-                            <BsArrowRight className={`transition-transform duration-300 ${isOpen ? "rotate-180" : "rotate-0"}`} />
+                            <BsArrowRight className={`transition-transform duration-300 ${isOpen ? "rotate-180" : "rotate-0 "}`} />
                         </button>
+
+                        {/* PILLS */}
+                        <div className="max-lg:[@media(max-height:668px)]:hidden flex flex-wrap gap-2 w-full md:w-full mt-3 xxs:mt-7 xs:mt-12">
+                            <InfoPill className={pillClass}>{dictionary.label.one}</InfoPill>
+                            <InfoPill className={pillClass}>{dictionary.label.two}</InfoPill>
+                            <InfoPill className={pillClass}>{dictionary.label.three}</InfoPill>
+
+                        </div>
+
 
                     </div>
 
                     {/* PILLS */}
-                    <div className="flex flex-wrap gap-2 pe-18 xs:pe-38 lg:pe-0 md:mt-10 xl:pe-40 2xl:pe-0 font-muller">
+                    <div className="hidden max-lg:[@media(max-height:668px)]:hidden  flex-wrap gap-2 w-full md:w-full  ">
                         <InfoPill className={pillClass}>{dictionary.label.one}</InfoPill>
                         <InfoPill className={pillClass}>{dictionary.label.two}</InfoPill>
                         <InfoPill className={pillClass}>{dictionary.label.three}</InfoPill>
-                        <InfoPill className={pillClass}>{dictionary.label.four}</InfoPill>
+
                     </div>
                 </div>
 
             </div>
 
             {/* CARD TWO IMG */}
-            <div className="relative overflow-hidden flex w-full h-1/2 lg:h-full lg:w-1/2 bg-amber-900/60 rounded-3xl xl:rounded-[40px]">
+            <div className={`relative overflow-hidden flex w-full lg:h-full lg:w-1/2 bg-amber-900/60 rounded-3xl xl:rounded-[40px]
+                        ${isOpen ? "h-[20%] xxs:h-[30%] xs:h-[40%]" : "h-[60%] xxs:h-[80%] md:h-[65%]"}
+                `}>
                 <SmartBackground
                     srcDesktop={dictionary?.scrImgDesk}
                     srcMobile={dictionary?.scrImgPhone}

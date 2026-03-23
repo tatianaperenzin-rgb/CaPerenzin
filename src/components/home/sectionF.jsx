@@ -9,12 +9,12 @@ export default function SectionF({ dictionary, lang }) {
         <section className={`w-full flex justify-center items-center 
                         mt-[-0] 2xl:mt-0
                         mb-20
-                        h-[105vh] lg:h-dvh `}>
+                        h-[80vh] xxs:h-[80vh] xs:h-[90vh] md:h-[65vh] lg:h-dvh `}>
             <div className={`w-full max-w-7xl
-                            px-12 xs:px13 md:px-30 xl:px-45 2xl:px-20`}>
+                            px-12 xxs:px-20 xs:px-15 md:px-30 lg:px-55 xl:px-57 2xl:px-25`}>
 
                 <TextReveal className={`text-white font-bold  text-balance
-                                        text-lg xs:text-xl 2xl:text-2xl
+                                        text-xs xxs:text-base xs:text-lg md:text-lg  lg:text-lg xl:text-lg 2xl:text-2xl
                                         whitespace-pre-wrap
                                     `}
                     startOffset="0.4">

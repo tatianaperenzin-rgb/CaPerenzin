@@ -7,15 +7,15 @@ import { motion } from "framer-motion"
 
 export default function SectionI({ dictionary, lang, startAnimation }) {
     return (
-        <BubbleFrame id="magic" color="bg-transparent" tag="section">
+        <BubbleFrame id="magic" color="bg-transparent" tag="section" bubbleClass={`h-[50%] lg:h-full`}>
             <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: startAnimation ? 1 : 0 }}
                 transition={{ duration: 0.6, ease: "easeInOut", delay: startAnimation ? 0.8 : 0 }}
-                className="absolute inset-0 w-full h-full z-0"
+                className="absolute inset-0 lg:h-full z-0"
             >
                 <SmartBackround
-                    srcMobile={dictionary.srcMobile}
+                    srcMobile={dictionary.srcDesk}
                     srcDesktop={dictionary.srcDesk}
                     alt={dictionary.srcAlt}
                 />
@@ -26,9 +26,9 @@ export default function SectionI({ dictionary, lang, startAnimation }) {
                 transition={{ duration: 0.6, ease: "easeInOut", delay: startAnimation ? 0.8 : 0 }}
                 className="flex w-full bg-black/70 inset-0 absolute top-0 left-0"
             />
-            <section className="flex w-full h-[60vh] lg:h-dvh items-center justify-center z-20">
-                <div className="flex">
-                    <MasterTitle className="text-balance w-min whitespace-normal
+            <section className="flex w-full h-full lg:h-dvh items-center justify-center z-20">
+                <div className="flex ">
+                    <MasterTitle className="text-balance w-min whitespace-normal 
                                     text-4xl xs:text-5xl md:text-7xl lg:text-8xl xl:text-8xl 2xl:text-9xl" tag="h2">
                         {lang === "it"
                             ? dictionary.headline.replace("un mondo", "un\u00A0mondo")

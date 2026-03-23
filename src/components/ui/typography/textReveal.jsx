@@ -35,7 +35,7 @@ export default function TextReveal({ children, className }) {
         <p
             ref={container}
             // Rimosso 'will-change-transform' dal container padre (meglio sui figli)
-            className={`flex flex-wrap leading-tight ${className}`}
+            className={`flex flex-wrap leading-tight text-balance ${className}`}
         >
             {/* OTTIMIZZAZIONE 3: Rimosso isMounted. Il testo renderizza subito occupando spazio, niente Layout Shift */}
             {words.map((word, i) => {
@@ -60,16 +60,16 @@ const Word = ({ children, progress, range }) => {
     const opacity = useTransform(progress, range, [0.1, 1])
 
     return (
-        <span className="relative mr-2 lg:mr-3 mt-1 lg:mt-2 h-fit xs:py-1 xs:px-[1px]">
+        <span className="relative mr-2 lg:mr-3 mt-1 lg:mt-2 h-fit xs:py-1 xs:px-[1px] text-balance">
             {/* Testo Ombra (Statico) - Mantiene lo spazio e dà l'effetto "non attivo" */}
-            <span className="absolute text-gold opacity-10 select-none pointer-events-none">
+            <span className="absolute text-gold opacity-10 select-none pointer-events-none text-balance">
                 {children}
             </span>
 
             {/* Testo Animato (Overlay) */}
             <motion.span
                 style={{ opacity }}
-                className="relative inline-block text-current will-change-opacity" // Assicurati del colore del testo attivo
+                className="relative inline-block text-current will-change-opacity text-balance" // Assicurati del colore del testo attivo
             >
                 {children}
             </motion.span>

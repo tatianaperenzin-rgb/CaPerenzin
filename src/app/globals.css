@@ -109,7 +109,8 @@
 /* --- CONFIGURAZIONE TEMA TAILWIND --- */
 @theme inline {
   /* I TUOI BREAKPOINTS */
-  --breakpoint-xs: 430px;
+  --breakpoint-xxs: 420px;
+  --breakpoint-xs: 527px;
   --breakpoint-3xl: 1920px;
   --breakpoint-4xl: 2400px;
 

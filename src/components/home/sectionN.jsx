@@ -77,8 +77,8 @@ export default function SectionN({ dictionary, lang }) {
         // Controlliamo se questo item ha sotto-menu (come A) o è diretto (come D)
         const hasSubButtons = activeItem.infoBox.buttons && activeItem.infoBox.buttons.length > 0
 
-        const headlineClass = "font-bold text-md mb-5 mt-2 md:mt-3 it:pe-12 en:pe-0"
-        const textClass = "font-muller text-balance text-xs xs:text-base md:text-md leading-5 py-1"
+        const headlineClass = "font-bold text-md mb-5 mt-2 md:mt-3 "
+        const textClass = "font-muller text-balance text-[11px] xxs:text-sm xs:text-base md:text-md leading-5 py-1"
         const textClassName = "font-muller text-base"
         const textClassNameSmall = "font-muller group-hover:text-foreground transition-all duration-300"
 
@@ -92,7 +92,7 @@ export default function SectionN({ dictionary, lang }) {
         const logOutClass = "mb-5 mt-2 rotate-180 cursor-pointer hover:text-background transition-all duration-300"
 
         return (
-            <div className="flex w-full h-fit bg-gold shadow-xl backdrop-blur-lg rounded-3xl xl:rounded-[40px] items-center justify-center p-5 relative">
+            <div className="flex w-full  h-fit bg-gold shadow-xl backdrop-blur-lg rounded-3xl xl:rounded-[40px] items-center justify-center p-5 relative">
 
 
                 {/* LAYOUT ONLY A first slide */}
@@ -141,7 +141,7 @@ export default function SectionN({ dictionary, lang }) {
                                             {activeSubItem?.info?.text}
                                         </p>
 
-                                        <div className="flex gap-2 mt-7">
+                                        <div className="flex flex-wrap gap-2 mt-7">
                                             {activeSubItem?.info?.infoBtn?.map((item) => {
                                                 const icon = extra[item.id]
                                                 return (
@@ -264,8 +264,8 @@ export default function SectionN({ dictionary, lang }) {
 
 
     return (
-        <section className="flex w-full h-full lg:h-full items-center justify-center sticky top-0">
-            <BubbleFrame bubbleClass="h-[97vh] p-5 xs:p-8 md:p-17 lg:p-15 xl:p-20 sticky top-0">
+        <section className="flex w-full h-dvh lg:h-full items-center justify-center sticky top-0">
+            <BubbleFrame divBubbleCls={`h-dvh`} bubbleClass="p-5 xs:p-8 md:p-17 lg:p-15 xl:p-20 sticky top-0">
                 <SmartBackground
                     srcDesktop={dictionary.scrImgDesk}
                     srcMobile={dictionary.scrImgPhone}
@@ -273,66 +273,66 @@ export default function SectionN({ dictionary, lang }) {
                 />
                 <div className="absolute top-0 left-0 inset-0 z-1 flex w-full h-full bg-black/40" />
                 {/* HEADLINE E BUTTON */}
-                <div className="flex flex-col w-full h-full lg:w-1/2 lg:justify-between relative z-10 gap-3">
+                <div className={`flex flex-col w-full h-full lg:w-1/2 justify-between relative z-10 gap-3 lg:justify-end xl:justify-center  `}>
+                    <div className={`flex flex-col  gap-7 lg:gap-17 xl:gap-16 h-full xl:h-[55vh]  ${activeId ? "xl:justify-between" : "justify-center xl:justify-center "}`}>
+                        {/* HEADLINE */}
 
-                    {/* HEADLINE */}
-                    <div>
                         <h2 className={`font-black 
 
                                              ${!activeId
-                                ? "mt-50 xs:mt-60  lg:mt-0 font-black  text-4xl xs:text-5xl md:text-6xl xl:text-7xl  text-balance lg:w-200 xl:text-wrap it:xl:w-200 en:xl:w-200"
-                                : "text-lg mt-0 xs:mt-20  lg:mt-0  xs:text-[30px] it:w-[190px] en:w-50 it:xs:w-80 en:xs:w-85 it:md:w-120 en:md:w-130 en:lg:w-170 it:xl:w-200 en:xl:w-200 xs:text-5xl md:text-5xl lg:text-6xl xl:text-7xl "}
+                                ? "mt-0 xs:mt-60 lg:mt-0  font-black  text-4xl xs:text-5xl md:text-6xl xl:text-[50px] 2xl:text-7xl  text-balance lg:w-200 xl:text-wrap it:xl:w-130 it:2xl:w-200 en:xl:w-200"
+                                : "mt-20  xs:mt-20 xl:mt-0 [@media(max-width:376px)]:hidden leading-none xs:flex text-2xl xxs:text-[25px]  xs:text-[40px] it:w-50 en:w-50 it:xxs:w-100 it:xs:w-100 en:xs:w-85 it:md:w-120 en:md:w-130 it:lg:w-100 en:lg:w-170 it:xl:w-130 it:2xl:w-190 en:xl:w-200 md:text-5xl lg:text-6xl  xl:text-[50px] 2xl:text-7xl "}
                                         `}>
                             {dictionary.headline}
                         </h2>
-                        <p className="font-muller py-3 hidden
-                                        text-lg xs:text-xl md:text-2xl
-                                        ">
-                            {dictionary.subHeadline}
-                        </p>
-                    </div>
 
-                    {/* BOX BUTTON  */}
-                    <div className=" mt-7 ">
-                        {dictionary.labelBtn.map((item, index) => {
-                            const asset = extra[item.id]
-                            const icon = asset ? asset.icon : null;
 
-                            return (
-                                <div key={item.id} className="flex">
 
-                                    <BtnBase
-                                        className={`my-2
+                        {/* BOX BUTTON  */}
+                        <div className={` ${activeId ? "flex xl:flex-col [@media(max-width:669px)]:flex gap-1 xl:gap-0 mt-15 xxs:mt-0 xs:mt-0" : ""}`}>
+                            {dictionary.labelBtn.map((item, index) => {
+                                const asset = extra[item.id]
+                                const icon = asset ? asset.icon : null;
+
+                                return (
+                                    <div key={item.id} className="flex ">
+
+                                        <BtnBase
+                                            className={`my-2
                                                     ${activeId === item.id ? "bg-gold" : null}
+                                                
                                                 `}
-                                        btnClass="shadow-md hover:bg-gold h-9"
+                                            btnClass="shadow-md hover:bg-gold h-9"
 
-                                        iconStart={icon}
-                                        textClassName={`text-[10px] xs:text-xs lg:text-xs group-hover:text-foreground  ${activeId === item.id ? "text-white" : null}`}
-                                        iconClassName={`${activeId === item.id ? "text-forefround" : null}`}
-                                        onClick={() => handleOpen(item.id)}
-                                    >
+                                            iconStart={icon}
+                                            textClassName={`text-[10px] xs:text-xs lg:text-xs group-hover:text-foreground
+                                                    ${activeId && activeId !== item.id ? "hidden xl:flex" : "block"}
+                                                    ${activeId === item.id ? "text-white max-xl:truncate max-w-15 xs:max-w-40 xl:max-w-none" : ""}`}
+                                            iconClassName={`${activeId === item.id ? "text-foreground" : ""}`}
+                                            onClick={() => handleOpen(item.id)}
+                                        >
 
-                                        {item.label}
-                                    </BtnBase>
+                                            {item.label}
+                                        </BtnBase>
 
-                                </div>
-                            )
-                        })}
+                                    </div>
+                                )
+                            })}
 
+                        </div>
                     </div>
 
-                    {/* INFO BOX */}
-                    <div className="lg:hidden flex h-full justify-center items-center">
+
+                    <div className="lg:hidden flex">
                         {activeId && <InfoBox />}
                     </div>
 
-
-
                 </div>
                 {/* BOOKNAV E INFOBOX */}
-                <div className="hidden lg:flex w-full h-full lg:w-1/2 relative z-10 items-end">
-                    {activeId && <InfoBox />}
+                <div className="hidden lg:flex w-full lg:w-1/2 lg:ps-20 xl:ps-0  relative z-10 items-end xl:items-center">
+                    <div className="xl:h-[55vh] flex items-end w-full">
+                        {activeId && <InfoBox />}
+                    </div>
                 </div>
 
             </BubbleFrame>
