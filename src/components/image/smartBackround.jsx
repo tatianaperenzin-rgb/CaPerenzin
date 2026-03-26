@@ -2,20 +2,26 @@
 
 import { getImageProps } from "next/image"
 
-export default function SmartBackground({ srcMobile, srcDesktop, alt = "Sfondo", className = "" }) {
+export default function SmartBackground({ srcMobile, srcDesktop, alt = "Sfondo", className = "", priority = false }) {
 
-    const common = { alt, fill: true, sizes: "100vw" }
+    // Ottimizzazioni per alleggerire le immagini
+    const common = { 
+        alt, 
+        fill: true, 
+        sizes: "(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw",
+        quality: 65 
+    }
 
     // Fallback: se manca il mobile, usiamo il desktop
     const mobileValues = srcMobile || srcDesktop
 
     // Prepara l'immagine per il MOBILE
     const {
-        props: { srcSet: mobileSrcSet, ...rest }
+        props: { srcSet: mobileSrcSet, fetchPriority: mobileFetchPriority, ...rest }
     } = getImageProps({
         ...common,
         src: mobileValues,
-        priority: true // Importante per l'immagine Hero
+        priority
     })
 
     // Prepara l'immagine per il DESKTOP
@@ -24,7 +30,7 @@ export default function SmartBackground({ srcMobile, srcDesktop, alt = "Sfondo",
     } = getImageProps({
         ...common,
         src: srcDesktop,
-        priority: true // Importante per l'immagine Hero
+        priority
     })
 
     return (
@@ -33,6 +39,9 @@ export default function SmartBackground({ srcMobile, srcDesktop, alt = "Sfondo",
                 <source media="(min-width: 1024px)" srcSet={desktopSrcSet} />
                 <img
                     {...rest}
+                    fetchPriority={priority ? "high" : "auto"}
+                    loading={priority ? "eager" : "lazy"}
+                    decoding="async"
                     style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                 />
             </picture>

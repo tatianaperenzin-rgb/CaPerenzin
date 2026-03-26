@@ -1,23 +1,20 @@
 
 import { getDictionary } from "@/lib/dictionary"
 import Intro from "@/components/home/intro"
-import SectionA from "@/components/home/sectionA"
-import SectionB from "@/components/home/sectionB"
-import SectionC from "@/components/home/sectionC"
-import SectionD from "@/components/home/sectionD"
-import Test from "@/components/empty/test"
-import BubbleTest from "@/components/empty/bubbleTest"
-import TestD from "@/components/empty/testD"
-import SectionEF from "@/components/empty/SectionEF"
-import SectionG from "@/components/home/sectionG"
-import HorizontalScroll from "@/components/ui/horizontalScroll"
-import SectionH from "@/components/home/sectionH"
-import SectionIL from "@/components/empty/SectionIL"
-import SectionM from "@/components/home/sectionM"
-import SectionN from "@/components/home/sectionN"
-import SectionO from "@/components/home/sectionO"
-import SectionNO from "@/components/empty/sectionNO"
+import dynamic from 'next/dynamic'
 import SplashScreen from "@/components/ui/splashScreen"
+
+// Sections below the fold loaded dynamically
+const SectionA = dynamic(() => import('@/components/home/sectionA'))
+const SectionB = dynamic(() => import('@/components/home/sectionB'))
+const BubbleTest = dynamic(() => import('@/components/empty/bubbleTest'))
+const SectionEF = dynamic(() => import('@/components/empty/SectionEF'))
+const SectionG = dynamic(() => import('@/components/home/sectionG'))
+const HorizontalScroll = dynamic(() => import('@/components/ui/horizontalScroll'))
+const SectionH = dynamic(() => import('@/components/home/sectionH'))
+const SectionIL = dynamic(() => import('@/components/empty/SectionIL'))
+const SectionM = dynamic(() => import('@/components/home/sectionM'))
+const SectionNO = dynamic(() => import('@/components/empty/sectionNO'))
 
 
 export async function generateMetadata({ params }) {

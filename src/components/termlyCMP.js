@@ -1,7 +1,8 @@
 'use client'
 
-import { useEffect, useMemo, useRef } from 'react'
+import { useEffect, useMemo } from 'react'
 import { usePathname, useSearchParams } from 'next/navigation'
+import Script from 'next/script'
 
 const SCRIPT_SRC_BASE = 'https://app.termly.io'
 
@@ -18,22 +19,20 @@ export default function TermlyCMP({ autoBlock, masterConsentsOrigin, websiteUUID
         return src.toString()
     }, [autoBlock, masterConsentsOrigin, websiteUUID])
 
-    const isScriptAdded = useRef(false)
-
-    useEffect(() => {
-        if (isScriptAdded.current) return
-        const script = document.createElement('script')
-        script.src = scriptSrc
-        document.head.appendChild(script)
-        isScriptAdded.current = true
-    }, [scriptSrc])
-
     const pathname = usePathname()
     const searchParams = useSearchParams()
 
     useEffect(() => {
-        window.Termly?.initialize()
+        // Safe check se lo script ha terminato di caricarsi e re-inizializziamo qualora serva (Next.js Navigation)
+        if (typeof window !== 'undefined' && window.Termly) {
+            window.Termly.initialize?.()
+        }
     }, [pathname, searchParams])
 
-    return null
+    return (
+        <Script
+            src={scriptSrc}
+            strategy="afterInteractive"
+        />
+    )
 }

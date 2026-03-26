@@ -31,7 +31,7 @@ export default function Intro({ dictionary, lang }) {
                 srcMobile={dictionary.hero.srcMobile}
                 srcDesktop={dictionary.hero.srcDesk}
                 alt={dictionary.hero.scrAlt}
-
+                priority={true}
             />
             <div className="flex w-full bg-black/50 inset-0 absolute top-0 left-0" />
 

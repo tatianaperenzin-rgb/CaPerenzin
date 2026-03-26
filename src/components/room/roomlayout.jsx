@@ -227,6 +227,7 @@ export default function RoomLayout({ dictionary, dataRoom, lang, expandBookNav }
                                 srcDesktop={gallery.bkDesk}
                                 srcMobile={gallery.bkMobile}
                                 alt={gallery.alt}
+                                priority={true}
                             />
                             <div className="flex w-full bg-black/50 inset-0 absolute top-0 left-0" />
                         </>

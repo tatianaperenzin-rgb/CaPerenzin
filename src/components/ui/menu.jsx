@@ -168,6 +168,8 @@ export default function Menu({ setIsOpen, dictionary, dataRooms, lang, hero }) {
                                     fill
                                     alt="menu image"
                                     className="object-cover"
+                                    quality={60}
+                                    sizes="(max-width: 768px) 100vw, 50vw"
                                 />
                                 {/* OVERLAY NERO */}
                                 <div className="absolute inset-0 bg-black/20 z-10 pointer-events-none" />
