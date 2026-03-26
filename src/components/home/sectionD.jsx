@@ -106,7 +106,7 @@ export default function SectionD({ dictionary, lang, className }) {
                     {/* BLOCK HEADLINE */}
                     <div className="flex flex-col gap-7 ">
                         <div className="flex w-min">
-                            <MasterTitle className="text-[30px] 2xl:text-8xl xs:text-5xl md:text-7xl lg:text-7xl xl:text-8xl" tag="h2">
+                            <MasterTitle className="text-[25px] xs:text-[49xpx] en:xs:text-[40px] leading-none md:text-7xl lg:text-7xl xl:text-8xl 2xl:text-8xl " tag="h2">
                                 {lang === "it"
                                     ? dictionary.headlineD.replace("Toccare il", "Toccare\u00A0il")
                                     : dictionary.headlineD.replace("Touching the", "Touching\u00A0the")

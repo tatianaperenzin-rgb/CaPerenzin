@@ -25,6 +25,21 @@ export default function BookingNav({ dictionary, lang, bookNavOpen, setBookNavOp
         console.log("[BookingNav] Clicked Book. Date:", date, "Room:", room ? room.roomName : "Generic Search");
         const baseUrl = process.env.NEXT_PUBLIC_WP_URL || 'https://admin.caperenzin.it';
 
+        // GESTIONE MODALITA' PRENOTAZIONE: scegli tra 'bookOnWebSite' e 'bookBooking'
+        const BOOKING_MODE = 'bookBooking';
+
+        if (BOOKING_MODE === 'bookBooking') {
+            // Se siamo in modalità Booking.com, andiamo al link specifico se esiste, altrimenti a quello generico
+            if (room && room.bookingUrl) {
+                window.open(room.bookingUrl, '_blank');
+            } else {
+                // Link generico dell'hotel su Booking (recuperato dal precedente intro.jsx)
+                window.open('https://www.booking.com/hotel/it/ca-perenzin.it.html', '_blank');
+            }
+            setBookNavOpen(false);
+            return;
+        }
+
         if (!date?.from || !date?.to) {
             console.warn("[BookingNav] Dates missing!");
             // Se le date non sono selezionate, non facciamo nulla (o potremmo mostrare un avviso)

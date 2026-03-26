@@ -322,7 +322,8 @@
         "headline": "Ca'Perenzin",
         "adress": "Località Rive di S. Pietro, 10, 31020 Tarzo TV",
         "pIva": "P.iva 04668120266",
-        "CIN": "[CIN code]",
+        "CIN": "IT026084B5R94Y93ND",
+        "CIR": "CIR: 026084-AGR-00008",
         "titleSocial": "Follow our rhythm on",
         "urlIG": "",
         "urlFB": "",
@@ -420,13 +421,18 @@
                 "label": "All services",
                 "service": [
                     "Satellite TV",
-                    "Hairdryer",
                     "Mini-Bar",
-                    "Safe",
                     "Kettle",
-                    "Telephone",
                     "Air Conditioning",
-                    "Heating"
+                    "Heating",
+                    "Hairdryer and diffuser",
+                    "USB port",
+                    "Wardrobe",
+                    "Towels and bathrobe",
+                    "Slippers",
+                    "Shower cap",
+                    "Shower gel",
+                    "Shampoo"
                 ]
             },
             "description": "The heart is the organ that never rests, the one that gives rhythm to life. This room was designed with the same principle: to be the vital center of your stay. Wider and more generous in spaces, the Heart Room is thought for sharing. It is the place where laughter bounces off the walls, where you meet at the end of the day to tell each other the discoveries made in the hills. Here architecture favors union without sacrificing freedom of movement. It is a warm, vibrant space, where you feel like family — however you define this word.",
@@ -438,16 +444,17 @@
                 "quote": "— Your experience, coming soon."
             },
             "gallery": [
+                
                 {
                     "id": 0,
-                    "bkMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1774092852/heart_ph_05_fsxd0h.jpg",
-                    "bkDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1774093065/heart_desk_01_noPieghe_eqwe31.jpg",
+                    "bkMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1774092852/heart_ph_07_dc1vy0.jpg",
+                    "bkDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1774093065/heart_desk_04_hj2yob.jpg",
                     "alt": ""
                 },
                 {
                     "id": 1,
-                    "bkMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1774092852/heart_ph_07_dc1vy0.jpg",
-                    "bkDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1774093065/heart_desk_04_hj2yob.jpg",
+                    "bkMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1774092852/heart_ph_05_fsxd0h.jpg",
+                    "bkDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1774093065/heart_desk_01_noPieghe_eqwe31.jpg",
                     "alt": ""
                 },
                  {
@@ -483,7 +490,8 @@
             ],
             "icsUrl": "https://admin.caperenzin.it/?feed=mphb.ics&accommodation_id=25",
             "motopressId": "25",
-            "wpTypeId": "24"
+            "wpTypeId": "24",
+            "bookingUrl": "https://www.booking.com/hotel/it/ca-perenzin.it.html"
         },
         {
             "id": "roomTwo",
@@ -520,13 +528,18 @@
                 "label": "All services",
                 "service": [
                     "Satellite TV",
-                    "Hairdryer",
                     "Mini-Bar",
-                    "Safe",
                     "Kettle",
-                    "Telephone",
                     "Air Conditioning",
-                    "Heating"
+                    "Heating",
+                    "Hairdryer and diffuser",
+                    "USB port",
+                    "Wardrobe",
+                    "Towels and bathrobe",
+                    "Slippers",
+                    "Shower cap",
+                    "Shower gel",
+                    "Shampoo"
                 ]
             },
             "description": "There is a precise moment, just before the world wakes up, when the air has a different scent. The Breath Room was designed to capture that instant. Exposed to welcome the first light of day, this room is not just a place to sleep, but a space to expand the chest and slow the heartbeat. \n\nHere colors are light, fabrics impalpable and the boundary between inside and outside blurs. It is the perfect alcove for those seeking mental clarity, for those who want to start the day with a deep, clean, absolute breath.",
@@ -538,19 +551,20 @@
                 "quote": "— Your experience, coming soon."
             },
              "gallery": [
-                {
+                     {
                     "id": 0,
-                    "bkMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1774093243/breath_ph_03_noPieghe_ftrtod.jpg",
-                    "bkDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1774093303/breath_desk_03_noPieghe_fibbfh.jpg",
-                    "alt": ""
-                },
-                {
-                    "id": 1,
                     "bkMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1774093244/breath_ph_04_whrnj9.jpg",
                     "bkDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1774093304/breath_desk_04_noPieghe_dcv4dj.jpg",
                     "alt": ""
                 },
                
+                {
+                    "id": 1,
+                    "bkMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1774093243/breath_ph_03_noPieghe_ftrtod.jpg",
+                    "bkDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1774093303/breath_desk_03_noPieghe_fibbfh.jpg",
+                    "alt": ""
+                },
+           
                 {
                     "id": 2,
                     "bkMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1774093244/breath_ph_01_zohsbk.jpg",
@@ -566,7 +580,8 @@
             ],
             "icsUrl": "https://admin.caperenzin.it/?feed=mphb.ics&accommodation_id=19",
             "motopressId": "19",
-            "wpTypeId": "17"
+            "wpTypeId": "17",
+            "bookingUrl": "https://www.booking.com/hotel/it/ca-perenzin.it.html"
         },
         {
             "id": "roomThree",
@@ -607,13 +622,18 @@
                 "label": "All services",
                 "service": [
                     "Satellite TV",
-                    "Hairdryer",
                     "Mini-Bar",
-                    "Safe",
                     "Kettle",
-                    "Telephone",
                     "Air Conditioning",
-                    "Heating"
+                    "Heating",
+                    "Hairdryer and diffuser",
+                    "USB port",
+                    "Wardrobe",
+                    "Towels and bathrobe",
+                    "Slippers",
+                    "Shower cap",
+                    "Shower gel",
+                    "Shampoo"
                 ]
             },
             "description": "There are places made for looking out, and others designed for looking in. The Soul Room belongs to this second, rare category. It is a gathered, dense space, where the outside world stops knocking at the door. Here architecture becomes an embrace: warm materials, muffled acoustics and an atmosphere that naturally invites calm. It is the perfect room for those who need to stop. To read that book waiting for months, to write, or simply to find that inner voice that the daily routine has covered with noise.",
@@ -646,7 +666,8 @@
             ],
             "icsUrl": "https://admin.caperenzin.it/?feed=mphb.ics&accommodation_id=21",
             "motopressId": "21",
-            "wpTypeId": "20"
+            "wpTypeId": "20",
+            "bookingUrl": "https://www.booking.com/hotel/it/ca-perenzin.it.html"
         },
         {
             "id": "roomFour",
@@ -657,7 +678,7 @@
             "infoPills": [
                 {
                     "idOne": "person",
-                    "labelOne": "3 People",
+                    "labelOne": "2 People",
                     "idTwo": "room",
                     "labelTwo": "1 Room"
                 },
@@ -683,13 +704,18 @@
                 "label": "All services",
                 "service": [
                     "Satellite TV",
-                    "Hairdryer",
                     "Mini-Bar",
-                    "Safe",
                     "Kettle",
-                    "Telephone",
                     "Air Conditioning",
-                    "Heating"
+                    "Heating",
+                    "Hairdryer and diffuser",
+                    "USB port",
+                    "Wardrobe",
+                    "Towels and bathrobe",
+                    "Slippers",
+                    "Shower cap",
+                    "Shower gel",
+                    "Shampoo"
                 ]
             },
             "description": "There are places made for looking out, and others designed for looking in. The Soul Room belongs to this second, rare category. It is a gathered, dense space, where the outside world stops knocking at the door. Here architecture becomes an embrace: warm materials, muffled acoustics and an atmosphere that naturally invites calm. It is the perfect room for those who need to stop. To read that book waiting for months, to write, or simply to find that inner voice that the daily routine has covered with noise.",
@@ -728,7 +754,8 @@
             ],
             "icsUrl": "https://admin.caperenzin.it/?feed=mphb.ics&accommodation_id=23",
             "motopressId": "23",
-            "wpTypeId": "22"
+            "wpTypeId": "22",
+            "bookingUrl": "https://www.booking.com/hotel/it/ca-perenzin.it.html"
         }
     ],
     "experiences": {

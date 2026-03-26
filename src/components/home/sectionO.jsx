@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import BtnBase from "../ui/btnBase"
 import MasterTitle from "../ui/typography/masterTitle"
 import { FaInstagram } from "react-icons/fa"
@@ -9,6 +10,9 @@ import { FaFacebook } from "react-icons/fa"
 import { Icon } from '@iconify/react'
 import DataLive from "../ui/dataLive"
 import BookingNav from "../ui/booking/bookingNav"
+import SviluppoRuraleVeneto from "../ui/contribute/sviluppoRuraleVeneto"
+import CoFinanziatoEuropa from "../ui/contribute/coFinanziatoEuropa"
+
 
 export default function SectionO({ dictionary, lang, bookingDictionary }) {
 
@@ -69,11 +73,34 @@ export default function SectionO({ dictionary, lang, bookingDictionary }) {
 
     const AgencyTag = () => <p className={copyright}> Powered By <a className="hover:underline transition-all duration-300" href="https://digitalmedias.it/" target="_blank">{dictionary.agency}</a></p>
 
+    const regionalLogoClass = "w-16 h-16 md:h-10 md:h-10 object-contain aspect-square"
+
+    const RegionalLogo = () => (
+
+        <div className="flex gap-3 items-center mt-3 pb-7">
+            <CoFinanziatoEuropa className={`h-13 md:h-10`} />
+            <SviluppoRuraleVeneto className={`h-15 md:h-10`} />
+            <Image
+                src="/logo.repubblica.png"
+                alt="Logo Repubblica"
+                width={64}
+                height={64}
+                className={regionalLogoClass}
+            />
+            <Image
+                src="/regione.veneto.logo.png"
+                alt="Logo Regione Veneto"
+                width={64}
+                height={64}
+                className={regionalLogoClass}
+            />
+        </div>
+    )
 
     return (
         <footer className="flex flex-col [@media(max-width:376px)]:h-[140vh] [@media(max-width:380px)]:h-[120vh] h-[110vh] xxs:h-[100vh] xs:h-[100vh] mt-20 rounded-3xl xl:rounded-[40px] lg:h-dvh relative z-30 bg-background p-7 justify-end gap-15 md:p-20 pb-5 xs:pb-7 sticky top-0">
 
-            <div className="flex flex-col md:w-fit xl:hidden bg-amber-200/10 ">
+            <div className="flex flex-col md:w-fit xl:hidden ">
                 <MasterTitle className="py-7 md:py-0 xl:text-9xl" tag="div">
                     {dictionary?.headline}
                 </MasterTitle>
@@ -109,13 +136,14 @@ export default function SectionO({ dictionary, lang, bookingDictionary }) {
                             <p className={`${textClass}`}>
                                 {dictionary.pIva}
                             </p>
-                            <p className={`${textClass}`}>
+                            <p className={`  ${textClass}`}>
+                                {dictionary.CIR}
+                            </p>
+                            <p className={`  ${textClass}`}>
                                 {dictionary.CIN}
                             </p>
 
-                            <p className={`hidden xl:flex ${textClass}`}>
-                                {dictionary.regionalText}
-                            </p>
+
                         </div>
 
                         <div className="mt-7 xl:hidden">
@@ -141,7 +169,7 @@ export default function SectionO({ dictionary, lang, bookingDictionary }) {
                             </BtnBase>
                         </div>
                         {/* SOCIAL */}
-                        <div className="flex flex-col gap-3">
+                        <div className="flex flex-col gap-3 ">
                             <p className="">
                                 {dictionary.titleSocial}
                             </p>
@@ -152,8 +180,8 @@ export default function SectionO({ dictionary, lang, bookingDictionary }) {
                             </div>
                         </div>
 
-                        {/* POLICY BTN */}
-                        <div className="flex flex-col">
+                        {/* POLICY BTN  TAB*/}
+                        <div className="flex flex-col ">
                             <Link href={`/${lang}/cookie`} target="_blank" className={`${policyClass} hover:text-gold transition-all duration-300 block`}>
                                 {dictionary.cookie}
                             </Link>
@@ -165,8 +193,10 @@ export default function SectionO({ dictionary, lang, bookingDictionary }) {
                             </Link>
                         </div>
 
+                        <RegionalLogo />
+
                         {/* COPIRIGHT */}
-                        <div className={`flex flex-col ${textClass}`}>
+                        <div className={`flex flex-col md:mt-13 lg:mt-0 ${textClass}`}>
 
                             <p className={copyright}>
                                 <DataLive dictionary={dictionary} />
@@ -185,7 +215,7 @@ export default function SectionO({ dictionary, lang, bookingDictionary }) {
 
 
             {/* CONTINUE LAYOUT SMARTPHONE */}
-            <div className="flex flex-col gap-10 md:hidden ">
+            <div className="flex flex-col gap-3 md:gap-10 md:hidden ">
                 {/* SOCIAL */}
                 <div className="flex flex-col gap-3">
                     <p className="xs:text-xl">
@@ -200,7 +230,7 @@ export default function SectionO({ dictionary, lang, bookingDictionary }) {
                 </div>
 
                 {/* POLICY BTN */}
-                <div className="flex flex-col">
+                <div className="flex flex-col ">
                     <Link href={`/${lang}/cookie`} target="_blank" className={`${policyClass} hover:text-gold transition-all duration-300 block`}>
                         {dictionary.cookie}
                     </Link>
@@ -213,12 +243,11 @@ export default function SectionO({ dictionary, lang, bookingDictionary }) {
                 </div>
 
                 {/* COPIRIGHT */}
-                <div className={`flex flex-col ${textClass}`}>
+                <div className={`flex flex-col  ${textClass}`}>
 
 
-                    <p className={`  ${textClass}`}>
-                        {dictionary.regionalText}
-                    </p>
+
+                    <RegionalLogo />
 
                     <p className={copyright}>
                         <DataLive dictionary={dictionary} />
@@ -260,6 +289,9 @@ export default function SectionO({ dictionary, lang, bookingDictionary }) {
                                     {dictionary.pIva}
                                 </p>
                                 <p className={`${textClass}`}>
+                                    {dictionary.CIR}
+                                </p>
+                                <p className={` ${textClass}`}>
                                     {dictionary.CIN}
                                 </p>
                             </div>
@@ -313,7 +345,7 @@ export default function SectionO({ dictionary, lang, bookingDictionary }) {
 
 
                             {/* POLICY BTN */}
-                            <div className="flex flex-col text-right xl:pe-3">
+                            <div className="flex flex-col text-right xl:pe-3 ">
                                 <Link href={`/${lang}/cookie`} target="_blank" className={`${policyClass} hover:text-gold transition-all duration-300 block`}>
                                     {dictionary.cookie}
                                 </Link>
@@ -334,12 +366,10 @@ export default function SectionO({ dictionary, lang, bookingDictionary }) {
 
                 </div>
                 {/* COPIRIGHT  DESK*/}
-                <div className={`xl:flex w-full justify-between hidden mt-13 ${textClass}`}>
+                <div className={`xl:flex w-full justify-between hidden mt-13  ${textClass}`}>
 
                     <div className="flex flex-col gap-1">
-                        <p className={`${textClass}`}>
-                            {dictionary.regionalText}
-                        </p>
+                        <RegionalLogo />
 
                         <p className={copyright}>
                             <DataLive dictionary={dictionary} />
@@ -347,7 +377,7 @@ export default function SectionO({ dictionary, lang, bookingDictionary }) {
                     </div>
 
 
-                    <div className="flex flex-col gap-1 text-right">
+                    <div className="flex flex-col gap-1 text-right items-end justify-end">
                         {/*  <p className={copyright}>
                             Design & Coding: {dictionary.design}
                         </p> */}
@@ -355,7 +385,7 @@ export default function SectionO({ dictionary, lang, bookingDictionary }) {
                         <AgencyTag />
                     </div>
                 </div>
-            </div>
+            </div >
 
             {isBookingOpen && bookingDictionary && (
                 <div
@@ -373,7 +403,8 @@ export default function SectionO({ dictionary, lang, bookingDictionary }) {
                         />
                     </div>
                 </div>
-            )}
+            )
+            }
 
         </footer >
     )

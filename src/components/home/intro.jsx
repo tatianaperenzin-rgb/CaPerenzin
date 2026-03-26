@@ -54,7 +54,7 @@ export default function Intro({ dictionary, lang }) {
                         font-bold text-center md:text-balance
                         w-70 xs:w-100 md:w-auto
                         en:w-90 xs:en:w-md md:en:w-auto lg:en:w-auto
-                        mt-3
+                        mt-3 text-balance en:px-7 en:xxs:px-2
                         leading-5 xs:leading-6
                         text-sm it:xs:text-xl en:xs:text-lg
                                 it:md:text-xl en:md:text-xl
@@ -75,7 +75,7 @@ export default function Intro({ dictionary, lang }) {
                 {/* SECOND TEXT UNDER TITLE */}
                 <p className={`text-center font-muller text-balance
                         mt-10 lg:mt-6
-                        
+                        en:px-7
                         text-sm xs:text-base md:text-xl it:lg:text-lg it:xl:text-lg
                         en:lg:text-xl it:2xl:text-2xl en:2xl:text-2xl
                         max-h-0 overflow-hidden opacity-0
@@ -93,7 +93,7 @@ export default function Intro({ dictionary, lang }) {
                             initial={{ opacity: 0, y: 50 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.5, duration: 0.8 }}
-                            className="flex w-full lg:h-[86vh] xl:h-[86vh] 2xl:h-[85vh]  md:p-5 lg:p-4  justify-between items-end ">
+                            className="flex w-full md:h-dvh lg:pb-15 2xl:pb-20  md:p-5 lg:p-4  justify-between items-end  ">
 
                             <div className="flex flex-col gap-3 ">
                                 <h2 className="font-black text-xl lg:w-60">
@@ -127,7 +127,7 @@ export default function Intro({ dictionary, lang }) {
                     onClick={hendelView}
 
                     iconEnd={BsArrowDownRightCircle}
-                    className={`hidden lg:flex hover:bg-gold transition-all duration-300
+                    className={`hidden xl:flex hover:bg-gold transition-all duration-300
                             ${!isLargeView ? "" : "lg:hidden"}
                             ${!bookNavOpen ? "" : "lg:hidden"}
                             `}
@@ -135,6 +135,7 @@ export default function Intro({ dictionary, lang }) {
                 >
                     {dictionary.hero.ctaHome}
                 </BtnBase>
+
 
                 <BookingNav
                     dictionary={dictionary}

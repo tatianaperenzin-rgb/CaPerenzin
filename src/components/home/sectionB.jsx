@@ -9,7 +9,7 @@ export default function SectionB({ dictionary }) {
         <section className={`w-full flex justify-center items-center  
                         
                         mb-70 md:mb-90
-                        h-[30vh] xxs:h-[45vh] xs:h-[30vh] md:h-[5vh] lg:h-dvh `}>
+                        h-[30vh] xxs:h-[45vh] xs:h-[37vh] it:md:h-[5vh] en:md:h-[30vh] it:lg:h-dvh en:lg:h-dvh `}>
             <div className={`w-full max-w-7xl
                             px-12 xxs:px-20 xs:px-15 md:px-36 lg:px-55 xl:px-57 2xl:px-25`}>
 

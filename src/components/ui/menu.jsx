@@ -152,7 +152,7 @@ export default function Menu({ setIsOpen, dictionary, dataRooms, lang, hero }) {
                         </div>
                     </div>
 
-                    <div className="shadow-sm lg:shadow-lg relative flex w-full h-30 xxs:h-50 xs:h-60  md:h-80 lg:h-60 xl:h-100 md:my-10 lg:my-0 bg-gold rounded-xl xs:rounded-2xl md:rounded-3xl xl:rounded-[40px] overflow-hidden xl:mt-0 ">
+                    <div className="shadow-sm lg:shadow-lg relative flex w-full h-30 xxs:h-50 xs:h-60  md:h-80 lg:h-50 xl:h-80 2xl:h-100 md:my-10 lg:my-0 bg-gold rounded-xl xs:rounded-2xl md:rounded-3xl xl:rounded-[40px] overflow-hidden xl:mt-0 ">
                         <AnimatePresence mode="popLayout">
                             <motion.div
                                 key={bgImage}
