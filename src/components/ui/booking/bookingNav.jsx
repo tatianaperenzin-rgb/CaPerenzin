@@ -29,15 +29,18 @@ export default function BookingNav({ dictionary, lang, bookNavOpen, setBookNavOp
         const BOOKING_MODE = 'bookBooking';
 
         if (BOOKING_MODE === 'bookBooking') {
-            // Se siamo in modalità Booking.com, andiamo al link specifico se esiste, altrimenti a quello generico
-            if (room && room.bookingUrl) {
-                window.open(room.bookingUrl, '_blank');
-            } else {
-                // Link generico dell'hotel su Booking (recuperato dal precedente intro.jsx)
-                window.open('https://www.booking.com/hotel/it/ca-perenzin.it.html', '_blank');
+            if (room) {
+                // Se siamo dentro una stanza, andiamo al link di Booking
+                if (room.bookingUrl) {
+                    window.open(room.bookingUrl, '_blank');
+                } else {
+                    window.open('https://www.booking.com/hotel/it/ca-perenzin.it.html', '_blank');
+                }
+                setBookNavOpen(false);
+                return;
             }
-            setBookNavOpen(false);
-            return;
+            // Se room non c'è (siamo nella HOME / Intro), NON facciamo return e 
+            // lasciamo scorrere verso la logica interna "CASO 2: Ricerca Generica".
         }
 
         if (!date?.from || !date?.to) {

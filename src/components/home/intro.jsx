@@ -118,7 +118,7 @@ export default function Intro({ dictionary, lang }) {
             </motion.div>
 
             {/* BLOCK BTN CTA */}
-            <div className={`flex w-screen absolute
+            <div className={`flex w-screen absolute 
                              h-20 items-center justify-center
                              bottom-7 xs:bottom-12 md:bottom-10 lg:bottom-5
                              left-1/2 -translate-x-1/2
@@ -128,8 +128,8 @@ export default function Intro({ dictionary, lang }) {
 
                     iconEnd={BsArrowDownRightCircle}
                     className={`hidden xl:flex hover:bg-gold transition-all duration-300
-                            ${!isLargeView ? "" : "lg:hidden"}
-                            ${!bookNavOpen ? "" : "lg:hidden"}
+                            ${!isLargeView ? "" : "!hidden"}
+                            ${!bookNavOpen ? "" : "!hidden"}
                             `}
                     textClassName={`group-hover:text-foreground transition-all duration-300`}
                 >
