@@ -1,5 +1,5 @@
 "use client"
-import React, { useRef, useEffect, useState } from "react"
+import React, { useRef, useEffect, useState, useCallback } from "react"
 import { motion } from "framer-motion"
 
 export default function HorizontalScroll({ children }) {
@@ -10,8 +10,37 @@ export default function HorizontalScroll({ children }) {
     const [slideWidth, setSlideWidth] = useState(0)
 
     useEffect(() => {
-        // Al montaggio, calcoliamo la larghezza viewport corretta (senza scrollbar)
         setSlideWidth(document.documentElement.clientWidth)
+    }, [])
+
+    // Dopo il mount, nascondi i wrapper vuoti generati da Next.js RSC serialization
+    useEffect(() => {
+        if (!sliderRef.current) return
+        const wrappers = sliderRef.current.children
+        for (const wrapper of wrappers) {
+            // Se il wrapper non ha nessun element child visibile, nascondilo
+            if (wrapper.children.length === 0 || wrapper.innerHTML.trim() === '') {
+                wrapper.style.display = 'none'
+            }
+        }
+    })
+
+    const calcDimensions = useCallback(() => {
+        if (!sliderRef.current) return
+
+        const viewWidth = document.documentElement.clientWidth
+        setSlideWidth(viewWidth)
+
+        // Conta solo i wrapper visibili (non nascosti)
+        const visibleWrappers = Array.from(sliderRef.current.children)
+            .filter(w => w.style.display !== 'none')
+        const childCount = visibleWrappers.length
+
+        const DELAY = 150
+        const objectWidth = childCount * viewWidth
+        const windowHeight = window.innerHeight
+        const totalHeight = (objectWidth - viewWidth) + windowHeight + DELAY
+        setContainerHeight(totalHeight)
     }, [])
 
     useEffect(() => {
@@ -28,7 +57,6 @@ export default function HorizontalScroll({ children }) {
 
             if (scrollPos < 0) scrollPos = 0
 
-            // Usiamo clientWidth (viewport senza scrollbar)
             const viewWidth = document.documentElement.clientWidth
             const maxHorizontalScroll = sliderRef.current.scrollWidth - viewWidth
 
@@ -37,34 +65,22 @@ export default function HorizontalScroll({ children }) {
             sliderRef.current.style.transform = `translate3d(-${scrollPos}px, 0, 0)`
         }
 
-        const calcDimensions = () => {
-            if (sliderRef.current) {
-                const viewWidth = document.documentElement.clientWidth
-                setSlideWidth(viewWidth)
+        // Ritarda il calcolo dimensioni per aspettare che i wrapper vuoti siano nascosti
+        const timer = setTimeout(() => calcDimensions(), 100)
 
-                const childCount = React.Children.count(children)
-                // Larghezza totale = numero di slide * larghezza viewport
-                const objectWidth = childCount * viewWidth
-                const windowHeight = window.innerHeight
-
-                // Formula altezza totale
-                const totalHeight = (objectWidth - viewWidth) + windowHeight + DELAY
-                setContainerHeight(totalHeight)
-            }
-        }
-
-        calcDimensions()
         window.addEventListener("scroll", handleScroll)
         window.addEventListener("resize", calcDimensions)
 
         return () => {
+            clearTimeout(timer)
             window.removeEventListener("scroll", handleScroll)
             window.removeEventListener("resize", calcDimensions)
         }
-    }, [children])
+    }, [children, calcDimensions])
 
-    const childrenWithWidth = React.Children.map(children, child => (
+    const childrenWithWidth = React.Children.map(children, (child, i) => (
         <div
+            key={i}
             style={{ width: slideWidth ? `${slideWidth}px` : '100vw' }}
             className="h-full flex-shrink-0"
         >
@@ -80,7 +96,7 @@ export default function HorizontalScroll({ children }) {
             viewport={{ once: false, amount: 0.1 }}
             transition={{ duration: 0.8 }}
             className="w-full relative h-dvh"
-            style={{ height: `${containerHeight}px` }}
+            style={containerHeight ? { height: `${containerHeight}px` } : undefined}
         >
             <div className="sticky top-0 h-dvh w-full overflow-hidden flex items-center">
                 <div
