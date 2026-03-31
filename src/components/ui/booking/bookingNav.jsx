@@ -25,23 +25,6 @@ export default function BookingNav({ dictionary, lang, bookNavOpen, setBookNavOp
         console.log("[BookingNav] Clicked Book. Date:", date, "Room:", room ? room.roomName : "Generic Search");
         const baseUrl = process.env.NEXT_PUBLIC_WP_URL || 'https://admin.caperenzin.it';
 
-        // GESTIONE MODALITA' PRENOTAZIONE: scegli tra 'bookOnWebSite' e 'bookBooking'
-        const BOOKING_MODE = 'bookBooking';
-
-        if (BOOKING_MODE === 'bookBooking') {
-            if (room) {
-                // Se siamo dentro una stanza, andiamo al link di Booking
-                if (room.bookingUrl) {
-                    window.open(room.bookingUrl, '_blank');
-                } else {
-                    window.open('https://www.booking.com/hotel/it/ca-perenzin.it.html', '_blank');
-                }
-                setBookNavOpen(false);
-                return;
-            }
-            // Se room non c'è (siamo nella HOME / Intro), NON facciamo return e 
-            // lasciamo scorrere verso la logica interna "CASO 2: Ricerca Generica".
-        }
 
         if (!date?.from || !date?.to) {
             console.warn("[BookingNav] Dates missing!");
@@ -182,12 +165,13 @@ export default function BookingNav({ dictionary, lang, bookNavOpen, setBookNavOp
     const isOpen = alwaysOpen ? true : bookNavOpen
 
     return (
-        <div ref={wrapperRef} className={cn(`flex flex-col gap-3`, navClass)}>
+        <div ref={wrapperRef} className={cn(`flex flex-col gap-3 `, navClass)}>
 
 
             {!isOpen ? (
                 <div className="fade-in-out">
                     <BtnBase
+                        href={'https://www.booking.com/hotel/it/ca-perenzin.it.html'}
                         className={cn("hover:bg-background transition-all duration-300", btnClassName)}
                         textClassName={`group-hover:text-gold transition-all duration-300`}
                         onClick={expandBookNav}

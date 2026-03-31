@@ -22,7 +22,7 @@
         "goHome": "Back to Home",
         "notFoundText": "It seems you knocked on the wrong door... or maybe this room is still a secret!",
         "splashScreen": {
-            "title": "Ca' Perenzin",
+            "title": "Ca'Perenzin",
             "text": "Your relaxing experience is being prepared"
         }
     },
@@ -63,7 +63,7 @@
     "-----------------------------": "",
     "__TEXT.SECTION__B__": "",
     "------------------------------": "",
-    "textSectionB": "True luxury is stopping to gaze at something that changes constantly while remaining still. At the core of Ca'Perenzin lies the fireplace. Forget the glare of screens or ambient noise; here, only the warm glow of the fire dances, reshaping the shadows around you.",
+    "textSectionB": "True luxury is stopping to gaze at something that changes constantly while remaining still. At the core of Ca' Perenzin lies the fireplace. Forget the glare of screens or ambient noise; here, only the warm glow of the fire dances, reshaping the shadows around you.",
     "textSectionBtwo": "",
     "---------------------------------": "",
     "__TEXT.SECTION__D__": "",
@@ -319,14 +319,14 @@
         ]
     },
     "sectionO": {
-        "headline": "Ca'Perenzin",
+        "headline": "Ca' Perenzin",
         "adress": "Località Rive di S. Pietro, 10, 31020 Tarzo TV",
         "pIva": "P.iva 04668120266",
         "CIN": "IT026084B5R94Y93ND",
         "CIR": "CIR: 026084-AGR-00008",
         "titleSocial": "Follow our rhythm on",
-        "urlIG": "",
-        "urlFB": "",
+        "urlIG": "https://www.instagram.com/caperenzin",
+        "urlFB": "https://www.facebook.com/people/Caperenzin/61577528301835/",
         "cell": "+39 3333597947",
         "cellTwo": "+39 3486497297",
         "mail": "info@caperenzin.it",
@@ -339,7 +339,7 @@
         "cookie": "Cookie Policy",
         "policy": "Privacy Policy",
         "terms": "Terms & House Rules",
-        "copyright": "Ca'Perenzin. All rights reserved.",
+        "copyright": "Ca' Perenzin. All rights reserved.",
         "agency": "DigitalMediaSolutions",
         "design": "Elia Schneider",
         "regionalText": "[regional Text]"
@@ -347,7 +347,7 @@
     "contacts": {
         "headline": "Direct Line",
         "subHeadline": "We are listening",
-        "content": "Whether it is to plan a surprise, ask for details about the road or simply for a greeting before arrival, we are here. At Ca'Perenzin no call centers answer. The family answers.",
+        "content": "Whether it is to plan a surprise, ask for details about the road or simply for a greeting before arrival, we are here. At Ca' Perenzin no call centers answer. The family answers.",
         "buttons": [
             {
                 "id": "whatsApp",
@@ -395,7 +395,7 @@
             "infoPills": [
                 {
                     "idOne": "person",
-                    "labelOne": "2 People",
+                    "labelOne": "3 People",
                     "idTwo": "room",
                     "labelTwo": "1 Room"
                 },
@@ -420,6 +420,7 @@
                 "id": "service",
                 "label": "All services",
                 "service": [
+                   
                     "Satellite TV",
                     "Mini-Bar",
                     "Kettle",
@@ -439,7 +440,7 @@
             "price": "120",
             "feedback": {
                 "label": "They say about us",
-                "headline": "Ca'Perenzin",
+                "headline": "Ca' Perenzin",
                 "content": "This room is still a blank page. The silence is intact, the light awaits. Be the first to write the beginning of this story.",
                 "quote": "— Your experience, coming soon."
             },
@@ -527,6 +528,7 @@
                 "id": "service",
                 "label": "All services",
                 "service": [
+                    
                     "Satellite TV",
                     "Mini-Bar",
                     "Kettle",
@@ -546,22 +548,23 @@
             "price": "120",
             "feedback": {
                 "label": "They say about us",
-                "headline": "Ca'Perenzin",
+                "headline": "Ca' Perenzin",
                 "content": "This room is still a blank page. The silence is intact, the light awaits. Be the first to write the beginning of this story.",
                 "quote": "— Your experience, coming soon."
             },
              "gallery": [
-                     {
-                    "id": 0,
-                    "bkMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1774093244/breath_ph_04_whrnj9.jpg",
-                    "bkDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1774093304/breath_desk_04_noPieghe_dcv4dj.jpg",
-                    "alt": ""
-                },
+                
                
                 {
-                    "id": 1,
+                    "id": 0,
                     "bkMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1774093243/breath_ph_03_noPieghe_ftrtod.jpg",
                     "bkDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1774093303/breath_desk_03_noPieghe_fibbfh.jpg",
+                    "alt": ""
+                },
+                     {
+                    "id": 1,
+                    "bkMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1774093244/breath_ph_04_whrnj9.jpg",
+                    "bkDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1774093304/breath_desk_04_noPieghe_dcv4dj.jpg",
                     "alt": ""
                 },
            
@@ -621,6 +624,7 @@
                 "id": "service",
                 "label": "All services",
                 "service": [
+                    
                     "Satellite TV",
                     "Mini-Bar",
                     "Kettle",
@@ -640,7 +644,7 @@
             "price": "120",
             "feedback": {
                 "label": "They say about us",
-                "headline": "Ca'Perenzin",
+                "headline": "Ca' Perenzin",
                 "content": "This room is still a blank page. The silence is intact, the light awaits. Be the first to write the beginning of this story.",
                 "quote": "— Your experience, coming soon."
             },
@@ -703,6 +707,8 @@
                 "id": "service",
                 "label": "All services",
                 "service": [
+                    "No Phone",
+                    "No Safe",
                     "Satellite TV",
                     "Mini-Bar",
                     "Kettle",
@@ -722,21 +728,22 @@
             "price": "120",
             "feedback": {
                 "label": "They say about us",
-                "headline": "Ca'Perenzin",
+                "headline": "Ca' Perenzin",
                 "content": "This room is still a blank page. The silence is intact, the light awaits. Be the first to write the beginning of this story.",
                 "quote": "— Your experience, coming soon."
             },
              "gallery": [
+               
                 {
                     "id": 0,
-                    "bkMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1774093524/belssing_ph_02_dj9iy9.jpg",
-                    "bkDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1774093576/belssing_desk_01_hug5ez.jpg",
-                    "alt": ""
-                },
-                {
-                    "id": 1,
                     "bkMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1774093526/belssing_ph_04_ksbcoc.jpg",
                     "bkDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1774093578/belssing_desk_04_noPieghe_h4oswk.jpg",
+                    "alt": ""
+                },
+                 {
+                    "id": 1,
+                    "bkMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1774093524/belssing_ph_02_dj9iy9.jpg",
+                    "bkDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1774093576/belssing_desk_01_hug5ez.jpg",
                     "alt": ""
                 },
                 {
@@ -1311,7 +1318,7 @@
         "title": "PRIVACY NOTICE",
         "updated": "Last updated March 21, 2026",
         "intro": [
-            "This Privacy Notice for Ca'Perenzin (\"we,\" \"us,\" or \"our\"), describes how and why we might access, collect, store, use, and/or share (\"process\") your personal information when you use our services (\"Services\"), including when you:",
+            "This Privacy Notice for Ca' Perenzin (\"we,\" \"us,\" or \"our\"), describes how and why we might access, collect, store, use, and/or share (\"process\") your personal information when you use our services (\"Services\"), including when you:",
             "Questions or concerns? Reading this Privacy Notice will help you understand your privacy rights and choices. We are responsible for making decisions about how your personal information is processed. If you do not agree with our policies and practices, please do not use our Services."
         ],
         "sections": [
@@ -1380,7 +1387,7 @@
             },
             {
                 "title": "12. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?",
-                "content": "If you have questions or comments about this notice, you may contact us by post at:\n\nCa'Perenzin\nLocalità Rive di S. Pietro 10\nTarzo, Treviso 31020\nItaly\nPhone: (+39)3333597947"
+                "content": "If you have questions or comments about this notice, you may contact us by post at:\n\nCa' Perenzin\nLocalità Rive di S. Pietro 10\nTarzo, Treviso 31020\nItaly\nPhone: (+39)3333597947"
             },
             {
                 "title": "13. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?",
@@ -1394,11 +1401,11 @@
         "updated": "Last updated February 13, 2026",
         "intro": [
             "AGREEMENT TO OUR LEGAL TERMS",
-            "We are Ca'Perenzin (\"Company,\" \"we,\" \"us,\" \"our\"), a company registered in Italy at Località Rive di S. Pietro 10, Tarzo, Treviso 31020. Our VAT number is 04668120266.",
+            "We are Ca' Perenzin (\"Company,\" \"we,\" \"us,\" \"our\"), a company registered in Italy at Località Rive di S. Pietro 10, Tarzo, Treviso 31020. Our VAT number is 04668120266.",
             "We operate the website https://caperenzin.it (the \"Site\"), as well as any other related products and services that refer or link to these legal terms (the \"Legal Terms\") (collectively, the \"Services\").",
             "Ca' Perenzin offers accommodation and overnight stay services. The website allows users to check room availability, book stays, and manage extra hospitality-related services.",
             "You can contact us by phone at (+39)3333597947, email at info@caperenzin.it, or by mail to Località Rive di S. Pietro 10, Tarzo, Treviso 31020, Italy.",
-            "These Legal Terms constitute a legally binding agreement made between you, whether personally or on behalf of an entity (\"you\"), and Ca'Perenzin, concerning your access to and use of the Services. You agree that by accessing the Services, you have read, understood, and agreed to be bound by all of these Legal Terms. IF YOU DO NOT AGREE WITH ALL OF THESE LEGAL TERMS, THEN YOU ARE EXPRESSLY PROHIBITED FROM USING THE SERVICES AND YOU MUST DISCONTINUE USE IMMEDIATELY.",
+            "These Legal Terms constitute a legally binding agreement made between you, whether personally or on behalf of an entity (\"you\"), and Ca' Perenzin, concerning your access to and use of the Services. You agree that by accessing the Services, you have read, understood, and agreed to be bound by all of these Legal Terms. IF YOU DO NOT AGREE WITH ALL OF THESE LEGAL TERMS, THEN YOU ARE EXPRESSLY PROHIBITED FROM USING THE SERVICES AND YOU MUST DISCONTINUE USE IMMEDIATELY.",
             "Supplemental terms and conditions or documents that may be posted on the Services from time to time are hereby expressly incorporated herein by reference. We reserve the right, in our sole discretion, to make changes or modifications to these Legal Terms from time to time. We will alert you about any changes by updating the \"Last updated\" date of these Legal Terms, and you waive any right to receive specific notice of each such change. It is your responsibility to periodically review these Legal Terms to stay informed of updates. You will be subject to, and will be deemed to have been made aware of and to have accepted, the changes in any revised Legal Terms by your continued use of the Services after the date such revised Legal Terms are posted.",
             "All users who are minors in the jurisdiction in which they reside (generally under the age of 18) must have the permission of, and be directly supervised by, their parent or guardian to use the Services. If you are a minor, you must have your parent or guardian read and agree to these Legal Terms prior to you using the Services.",
             "We recommend that you print a copy of these Legal Terms for your records."
@@ -1458,7 +1465,7 @@
             },
             {
                 "title": "14. GOVERNING LAW",
-                "content": "These Legal Terms are governed by and interpreted following the laws of Italy, and the use of the United Nations Convention of Contracts for the International Sales of Goods is expressly excluded. If your habitual residence is in the EU, and you are a consumer, you additionally possess the protection provided to you by obligatory provisions of the law in your country to residence. Ca'Perenzin and yourself both agree to submit to the non-exclusive jurisdiction of the courts of Treviso , which means that you may make a claim to defend your consumer protection rights in regards to these Legal Terms in Italy, or in the EU country in which you reside."
+                "content": "These Legal Terms are governed by and interpreted following the laws of Italy, and the use of the United Nations Convention of Contracts for the International Sales of Goods is expressly excluded. If your habitual residence is in the EU, and you are a consumer, you additionally possess the protection provided to you by obligatory provisions of the law in your country to residence. Ca' Perenzin and yourself both agree to submit to the non-exclusive jurisdiction of the courts of Treviso , which means that you may make a claim to defend your consumer protection rights in regards to these Legal Terms in Italy, or in the EU country in which you reside."
             },
             {
                 "title": "15. DISPUTE RESOLUTION",
@@ -1518,7 +1525,7 @@
             },
             {
                 "title": "29. CONTACT US",
-                "content": "In order to resolve a complaint regarding the Services or to receive further information regarding use of the Services, please contact us at:\n\nCa'Perenzin\nLocalità Rive di S. Pietro 10\nTarzo, Treviso 31020\nItaly\nPhone: (+39)3333597947\ninfo@caperenzin.it"
+                "content": "In order to resolve a complaint regarding the Services or to receive further information regarding use of the Services, please contact us at:\n\nCa' Perenzin\nLocalità Rive di S. Pietro 10\nTarzo, Treviso 31020\nItaly\nPhone: (+39)3333597947\ninfo@caperenzin.it"
             }
         ],
         "footer": "This Terms and Conditions was created using Termly's Terms and Conditions Generator"
@@ -1527,14 +1534,14 @@
         "title": "COOKIE POLICY",
         "updated": "Last updated March 21, 2026",
         "intro": [
-            "This Cookie Policy explains how Ca'Perenzin (\"Company,\" \"we,\" \"us,\" and \"our\") uses cookies and similar technologies to recognize you when you visit our website at https://caperenzin.it (\"Website\"). It explains what these technologies are and why we use them, as well as your rights to control our use of them.",
+            "This Cookie Policy explains how Ca' Perenzin (\"Company,\" \"we,\" \"us,\" and \"our\") uses cookies and similar technologies to recognize you when you visit our website at https://caperenzin.it (\"Website\"). It explains what these technologies are and why we use them, as well as your rights to control our use of them.",
             "In some cases we may use cookies to collect personal information, or that becomes personal information if we combine it with other information."
         ],
         "sections": [
             {
                 "title": "What are cookies?",
                 "content": "Cookies are small data files that are placed on your computer or mobile device when you visit a website. Cookies are widely used by website owners in order to make their websites work, or to work more efficiently, as well as to provide reporting information.",
-                "extraContent": "Cookies set by the website owner (in this case, Ca'Perenzin) are called \"first-party cookies.\" Cookies set by parties other than the website owner are called \"third-party cookies.\" Third-party cookies enable third-party features or functionality to be provided on or through the website (e.g., advertising, interactive content, and analytics). The parties that set these third-party cookies can recognize your computer both when it visits the website in question and also when it visits certain other websites."
+                "extraContent": "Cookies set by the website owner (in this case, Ca' Perenzin) are called \"first-party cookies.\" Cookies set by parties other than the website owner are called \"third-party cookies.\" Third-party cookies enable third-party features or functionality to be provided on or through the website (e.g., advertising, interactive content, and analytics). The parties that set these third-party cookies can recognize your computer both when it visits the website in question and also when it visits certain other websites."
             },
             {
                 "title": "Why do we use cookies?",
@@ -1600,7 +1607,7 @@
             },
             {
                 "title": "Where can I get further information?",
-                "content": "If you have any questions about our use of cookies or other technologies, please email us at tatiana.perenzin@gmail.com or by post to: Ca'Perenzin, Tarzo, Treviso 31020, Italy. Phone: (+39)3333597947"
+                "content": "If you have any questions about our use of cookies or other technologies, please email us at tatiana.perenzin@gmail.com or by post to: Ca' Perenzin, Tarzo, Treviso 31020, Italy. Phone: (+39)3333597947"
             }
         ],
         "footer": ""

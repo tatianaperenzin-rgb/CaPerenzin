@@ -175,8 +175,12 @@ export default function SectionO({ dictionary, lang, bookingDictionary }) {
                             </p>
                             {/* ICONS */}
                             <div className="flex gap-2">
-                                <FaInstagram size={30} className={hoverIcon} />
-                                <FaFacebook size={30} className={hoverIcon} />
+                                <a href={dictionary.urlIG} target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                    <FaInstagram size={30} className={hoverIcon} />
+                                </a>
+                                <a href={dictionary.urlFB} target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                                    <FaFacebook size={30} className={hoverIcon} />
+                                </a>
                             </div>
                         </div>
 
@@ -223,8 +227,12 @@ export default function SectionO({ dictionary, lang, bookingDictionary }) {
                     </p>
                     {/* ICONS */}
                     <div className="flex gap-2">
-                        <FaInstagram size={30} />
-                        <FaFacebook size={30} />
+                        <a href={dictionary.urlIG} target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <FaInstagram size={30} className={hoverIcon} />
+                        </a>
+                        <a href={dictionary.urlFB} target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                            <FaFacebook size={30} className={hoverIcon} />
+                        </a>
                     </div>
 
                 </div>
@@ -305,8 +313,12 @@ export default function SectionO({ dictionary, lang, bookingDictionary }) {
                                 </p>
                                 {/* ICONS */}
                                 <div className="flex gap-2">
-                                    <FaInstagram size={30} className={hoverIcon} />
-                                    <FaFacebook size={30} className={hoverIcon} />
+                                    <a href={dictionary.urlIG} target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                        <FaInstagram size={30} className={hoverIcon} />
+                                    </a>
+                                    <a href={dictionary.urlFB} target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                                        <FaFacebook size={30} className={hoverIcon} />
+                                    </a>
                                 </div>
                             </div>
 

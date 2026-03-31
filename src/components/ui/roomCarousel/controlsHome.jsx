@@ -49,7 +49,7 @@ export default function ControlsHome({ dictionaty, lang, totalRoom, onNext, onBa
                                 className="bg-transparent shadow-none"
                                 onClick={onNext}
                             >
-                                <IoMdArrowRoundUp size={40} className="text-gold hidden md:block" />
+                                <IoMdArrowRoundUp size={40} className="text-gold rotate-270 lg:rotate-0" />
                             </BtnBase>
                             <p className="text-lg">
                                 {onSelect + 1}
@@ -70,7 +70,7 @@ export default function ControlsHome({ dictionaty, lang, totalRoom, onNext, onBa
                                 className="bg-transparent shadow-none"
                                 onClick={onBack}
                             >
-                                <IoMdArrowRoundDown size={40} className="text-gold hidden md:block" />
+                                <IoMdArrowRoundDown size={40} className="text-gold rotate-270 lg:rotate-0 " />
                             </BtnBase>
                         </div>
                     </div>

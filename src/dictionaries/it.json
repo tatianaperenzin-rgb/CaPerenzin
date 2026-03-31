@@ -22,7 +22,7 @@
         "goHome": "Torna alla Home",
         "notFoundText": "Sembra che tu abbia bussato alla porta sbagliata... o forse questa stanza è ancora segreta!",
         "splashScreen": {
-            "title": "Ca' Perenzin",
+            "title": "Ca'Perenzin",
             "text": "La tua esperienza rilassante è in preparazione"
         }
     },
@@ -63,7 +63,7 @@
     "-----------------------------": "",
     "__TEXT.SECTION__B__": "",
     "------------------------------": "",
-    "textSectionB": "Il vero lusso è fermarsi a guardare qualcosa che cambia sempre, senza muoversi mai. Il cuore pulsante di Ca'Perenzin è il suo focolare. Non troverete schermi accesi o rumori di fondo, ma solo la luce calda della fiamma che ridisegna le ombre della stanza.",
+    "textSectionB": "Il vero lusso è fermarsi a guardare qualcosa che cambia sempre, senza muoversi mai. Il cuore pulsante di Ca' Perenzin è il suo focolare. Non troverete schermi accesi o rumori di fondo, ma solo la luce calda della fiamma che ridisegna le ombre della stanza.",
     "textSectionBtwo": "",
     "---------------------------------": "",
     "__TEXT.SECTION__D__": "",
@@ -319,14 +319,14 @@
         ]
     },
     "sectionO": {
-        "headline": "Ca'Perenzin",
+        "headline": "Ca' Perenzin",
         "adress": "Località Rive di S. Pietro, 10, 31020 Tarzo TV",
         "pIva": "P.iva 04668120266",
         "CIN": "IT026084B5R94Y93ND",
         "CIR": "CIR: 026084-AGR-00008",
         "titleSocial": "Segui il nostro ritmo su",
-        "urlIG": "",
-        "urlFB": "",
+        "urlIG": "https://www.instagram.com/caperenzin",
+        "urlFB": "https://www.facebook.com/people/Caperenzin/61577528301835/",
         "cell": "+39 3333597947",
         "cellTwo": "+39 3486497297",
         "mail": "info@caperenzin.it",
@@ -339,7 +339,7 @@
         "cookie": "Cookie Policy",
         "policy": "Privacy Policy",
         "terms": "Termini & Regole della Casa",
-        "copyright": "Ca'Perenzin. Tutti i diritti riservati.",
+        "copyright": "Ca' Perenzin. Tutti i diritti riservati.",
         "agency": "DigitalMediaSolutions",
         "design": "Elia Schneider",
         "regionalText": "[regional Text]"
@@ -347,7 +347,7 @@
     "contacts": {
         "headline": "Il Filo diretto",
         "subHeadline": "Siamo in ascolto",
-        "content": "Che sia per pianificare una sorpresa, chiedere dettagli sulla strada o semplicemente per un saluto prima dell'arrivo, siamo qui. A Ca'Perenzin non rispondono call center. Risponde la famiglia.",
+        "content": "Che sia per pianificare una sorpresa, chiedere dettagli sulla strada o semplicemente per un saluto prima dell'arrivo, siamo qui. A Ca' Perenzin non rispondono call center. Risponde la famiglia.",
         "buttons": [
             {
                 "id": "whatsApp",
@@ -395,7 +395,7 @@
             "infoPills": [
                 {
                     "idOne": "person",
-                    "labelOne": "2 Persone",
+                    "labelOne": "3 Persone",
                     "idTwo": "room",
                     "labelTwo": "1 Camera"
                 },
@@ -420,6 +420,7 @@
                 "id": "service",
                 "label": "Tutti i servizi",
                 "service": [
+                  
                     "Tv satellitare",
                     "Mini-Bar",
                     "Bollitore",
@@ -439,7 +440,7 @@
             "price": "120",
             "feedback": {
                 "label": "Dicono di Noi",
-                "headline": "Ca'Perenzin",
+                "headline": "Ca' Perenzin",
                 "content": "Questa stanza è ancora una pagina bianca. Il silenzio è intatto, la luce attende. Siate voi i primi a scrivere l'inizio di questa storia.",
                 "quote": "— La vostra esperienza, presto qui."
             },
@@ -517,6 +518,7 @@
                 "id": "service",
                 "label": "Tutti i servizi",
                 "service": [
+                    
                     "Tv satellitare",
                     "Mini-Bar",
                     "Bollitore",
@@ -536,22 +538,23 @@
             "price": "120",
             "feedback": {
                 "label": "Dicono di Noi",
-                "headline": "Ca'Perenzin",
+                "headline": "Ca' Perenzin",
                 "content": "Questa stanza è ancora una pagina bianca. Il silenzio è intatto, la luce attende. Siate voi i primi a scrivere l'inizio di questa storia.",
                 "quote": "— La vostra esperienza, presto qui."
             },
             "gallery": [
                
-                {
-                    "id": 0,
-                    "bkMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1774093244/breath_ph_04_whrnj9.jpg",
-                    "bkDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1774093304/breath_desk_04_noPieghe_dcv4dj.jpg",
-                    "alt": ""
-                },
+             
                  {
-                    "id": 1,
+                    "id": 0,
                     "bkMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1774093243/breath_ph_03_noPieghe_ftrtod.jpg",
                     "bkDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1774093303/breath_desk_03_noPieghe_fibbfh.jpg",
+                    "alt": ""
+                },
+                   {
+                    "id": 1,
+                    "bkMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1774093244/breath_ph_04_whrnj9.jpg",
+                    "bkDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1774093304/breath_desk_04_noPieghe_dcv4dj.jpg",
                     "alt": ""
                 },
                
@@ -611,6 +614,7 @@
                 "id": "service",
                 "label": "Tutti i servizi",
                 "service": [
+                    
                     "Tv satellitare",
                     "Mini-Bar",
                     "Bollitore",
@@ -630,7 +634,7 @@
             "price": "120",
             "feedback": {
                 "label": "Dicono di Noi",
-                "headline": "Ca'Perenzin",
+                "headline": "Ca' Perenzin",
                 "content": "Questa stanza è ancora una pagina bianca. Il silenzio è intatto, la luce attende. Siate voi i primi a scrivere l'inizio di questa storia.",
                 "quote": "— La vostra esperienza, presto qui."
             },
@@ -693,6 +697,7 @@
                 "id": "service",
                 "label": "Tutti i servizi",
                 "service": [
+              
                     "Tv satellitare",
                     "Mini-Bar",
                     "Bollitore",
@@ -712,21 +717,22 @@
             "price": "120",
             "feedback": {
                 "label": "Dicono di Noi",
-                "headline": "Ca'Perenzin",
+                "headline": "Ca' Perenzin",
                 "content": "Questa stanza è ancora una pagina bianca. Il silenzio è intatto, la luce attende. Siate voi i primi a scrivere l'inizio di questa storia.",
                 "quote": "— La vostra esperienza, presto qui."
             },
             "gallery": [
+                
                 {
                     "id": 0,
-                    "bkMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1774093524/belssing_ph_02_dj9iy9.jpg",
-                    "bkDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1774093576/belssing_desk_01_hug5ez.jpg",
+                    "bkMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1774093526/belssing_ph_04_ksbcoc.jpg",
+                    "bkDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1774093578/belssing_desk_04_noPieghe_h4oswk.jpg",
                     "alt": ""
                 },
                 {
                     "id": 1,
-                    "bkMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1774093526/belssing_ph_04_ksbcoc.jpg",
-                    "bkDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1774093578/belssing_desk_04_noPieghe_h4oswk.jpg",
+                    "bkMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1774093524/belssing_ph_02_dj9iy9.jpg",
+                    "bkDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1774093576/belssing_desk_01_hug5ez.jpg",
                     "alt": ""
                 },
                 {
@@ -1302,7 +1308,7 @@
         "title": "INFORMATIVA SULLA PRIVACY",
         "updated": "Ultimo aggiornamento il 21 Marzo 2026",
         "intro": [
-            "Questa Informativa sulla Privacy per Ca'Perenzin (\"noi\", \"ci\" o \"nostro\"), descrive come e perché potremmo accedere, raccogliere, conservare, utilizzare e/o condividere (\"elaborare\") i tuoi dati personali quando utilizzi i nostri servizi (\"Servizi\"), incluso quando interagisci con noi:",
+            "Questa Informativa sulla Privacy per Ca' Perenzin (\"noi\", \"ci\" o \"nostro\"), descrive come e perché potremmo accedere, raccogliere, conservare, utilizzare e/o condividere (\"elaborare\") i tuoi dati personali quando utilizzi i nostri servizi (\"Servizi\"), incluso quando interagisci con noi:",
             "Domande o dubbi? La lettura di questa Informativa sulla Privacy ti aiuterà a comprendere i tuoi diritti e le tue scelte in materia di privacy. Siamo responsabili di prendere decisioni su come vengono elaborati i tuoi dati personali. Se non sei d'accordo con le nostre politiche e pratiche, ti preghiamo di non utilizzare i nostri Servizi."
         ],
         "sections": [
@@ -1343,7 +1349,7 @@
             },
             {
                 "title": "5. COME GESTIAMO GLI ACCESSI DAI SOCIAL MEDIA?",
-                "content": "In Breve: Se scegli di iscriverti ai Servizi tramite social, potremmo appropriarci dei vari account da te inseriti e delle eventuali info inserite.\nPuoi regolarmente sottoscriverti da social (Facebook, X, ecc.). Qualora acconsentissi, riporteremmo le informazioni che il gestore in questione renderà esaminabili dai tuoi consensi (che includono non solo le identità generiche come mail e profili ma anche amicizie, fotografie, contatti).\nTali input non vengono inviati senza il permesso, che verrà per questo indicato dalla presente e in sede separata al momento in cui l'user li utilizzerà a discapito d'altro metodo. Raccomandiamo altresì che, non essendo Ca'Perenzin portatrice e responsabile di tale gestione informativa dei terzi, si visualizzi la documentazione offerta dal social prescelto e d'operare il meglio che il vostro arbitrio voglia, tra preferenze varie o specifiche d'app che sono presenti o da apposito tool integrato."
+                "content": "In Breve: Se scegli di iscriverti ai Servizi tramite social, potremmo appropriarci dei vari account da te inseriti e delle eventuali info inserite.\nPuoi regolarmente sottoscriverti da social (Facebook, X, ecc.). Qualora acconsentissi, riporteremmo le informazioni che il gestore in questione renderà esaminabili dai tuoi consensi (che includono non solo le identità generiche come mail e profili ma anche amicizie, fotografie, contatti).\nTali input non vengono inviati senza il permesso, che verrà per questo indicato dalla presente e in sede separata al momento in cui l'user li utilizzerà a discapito d'altro metodo. Raccomandiamo altresì che, non essendo Ca' Perenzin portatrice e responsabile di tale gestione informativa dei terzi, si visualizzi la documentazione offerta dal social prescelto e d'operare il meglio che il vostro arbitrio voglia, tra preferenze varie o specifiche d'app che sono presenti o da apposito tool integrato."
             },
             {
                 "title": "6. I TUOI DATI VENGONO TRASFERITI ALL'ESTERO?",
@@ -1371,7 +1377,7 @@
             },
             {
                 "title": "12. COME METTERSI IN CONTATTO CON NOI IN MERITO A QUESTA INFORMATIVA?",
-                "content": "Qualsiasi perplessità vi s'affacci od anche dubbi su diciture qui redatte veniamo sempre ad incontravi per dirimerli a:\n\nCa'Perenzin\nLocalità Rive di S. Pietro 10\nTarzo, Treviso 31020\nItalia\nTelefono: (+39)3333597947"
+                "content": "Qualsiasi perplessità vi s'affacci od anche dubbi su diciture qui redatte veniamo sempre ad incontravi per dirimerli a:\n\nCa' Perenzin\nLocalità Rive di S. Pietro 10\nTarzo, Treviso 31020\nItalia\nTelefono: (+39)3333597947"
             },
             {
                 "title": "13. COME REVISIONARE, AGGIORNARE O ELIMINARE I DATI CHE ABBIAMO RACCOLTO?",
@@ -1385,11 +1391,11 @@
         "updated": "Last updated February 13, 2026",
         "intro": [
             "AGREEMENT TO OUR LEGAL TERMS",
-            "We are Ca'Perenzin (\"Company,\" \"we,\" \"us,\" \"our\"), a company registered in Italy at Località Rive di S. Pietro 10, Tarzo, Treviso 31020. Our VAT number is 04668120266.",
+            "We are Ca' Perenzin (\"Company,\" \"we,\" \"us,\" \"our\"), a company registered in Italy at Località Rive di S. Pietro 10, Tarzo, Treviso 31020. Our VAT number is 04668120266.",
             "We operate the website https://caperenzin.it (the \"Site\"), as well as any other related products and services that refer or link to these legal terms (the \"Legal Terms\") (collectively, the \"Services\").",
             "Ca' Perenzin offre servizi di alloggio e pernottamento. Il sito web permette agli utenti di consultare la disponibilità delle camere, prenotare soggiorni e gestire i servizi extra relativi all'ospitalità",
             "You can contact us by phone at (+39)3333597947, email at info@caperenzin.it, or by mail to Località Rive di S. Pietro 10, Tarzo, Treviso 31020, Italy.",
-            "These Legal Terms constitute a legally binding agreement made between you, whether personally or on behalf of an entity (\"you\"), and Ca'Perenzin, concerning your access to and use of the Services. You agree that by accessing the Services, you have read, understood, and agreed to be bound by all of these Legal Terms. IF YOU DO NOT AGREE WITH ALL OF THESE LEGAL TERMS, THEN YOU ARE EXPRESSLY PROHIBITED FROM USING THE SERVICES AND YOU MUST DISCONTINUE USE IMMEDIATELY.",
+            "These Legal Terms constitute a legally binding agreement made between you, whether personally or on behalf of an entity (\"you\"), and Ca' Perenzin, concerning your access to and use of the Services. You agree that by accessing the Services, you have read, understood, and agreed to be bound by all of these Legal Terms. IF YOU DO NOT AGREE WITH ALL OF THESE LEGAL TERMS, THEN YOU ARE EXPRESSLY PROHIBITED FROM USING THE SERVICES AND YOU MUST DISCONTINUE USE IMMEDIATELY.",
             "Supplemental terms and conditions or documents that may be posted on the Services from time to time are hereby expressly incorporated herein by reference. We reserve the right, in our sole discretion, to make changes or modifications to these Legal Terms from time to time. We will alert you about any changes by updating the \"Last updated\" date of these Legal Terms, and you waive any right to receive specific notice of each such change. It is your responsibility to periodically review these Legal Terms to stay informed of updates. You will be subject to, and will be deemed to have been made aware of and to have accepted, the changes in any revised Legal Terms by your continued use of the Services after the date such revised Legal Terms are posted.",
             "All users who are minors in the jurisdiction in which they reside (generally under the age of 18) must have the permission of, and be directly supervised by, their parent or guardian to use the Services. If you are a minor, you must have your parent or guardian read and agree to these Legal Terms prior to you using the Services.",
             "We recommend that you print a copy of these Legal Terms for your records."
@@ -1449,7 +1455,7 @@
             },
             {
                 "title": "14. GOVERNING LAW",
-                "content": "These Legal Terms are governed by and interpreted following the laws of Italy, and the use of the United Nations Convention of Contracts for the International Sales of Goods is expressly excluded. If your habitual residence is in the EU, and you are a consumer, you additionally possess the protection provided to you by obligatory provisions of the law in your country to residence. Ca'Perenzin and yourself both agree to submit to the non-exclusive jurisdiction of the courts of Treviso , which means that you may make a claim to defend your consumer protection rights in regards to these Legal Terms in Italy, or in the EU country in which you reside."
+                "content": "These Legal Terms are governed by and interpreted following the laws of Italy, and the use of the United Nations Convention of Contracts for the International Sales of Goods is expressly excluded. If your habitual residence is in the EU, and you are a consumer, you additionally possess the protection provided to you by obligatory provisions of the law in your country to residence. Ca' Perenzin and yourself both agree to submit to the non-exclusive jurisdiction of the courts of Treviso , which means that you may make a claim to defend your consumer protection rights in regards to these Legal Terms in Italy, or in the EU country in which you reside."
             },
             {
                 "title": "15. DISPUTE RESOLUTION",
@@ -1509,7 +1515,7 @@
             },
             {
                 "title": "29. CONTACT US",
-                "content": "In order to resolve a complaint regarding the Services or to receive further information regarding use of the Services, please contact us at:\n\nCa'Perenzin\nLocalità Rive di S. Pietro 10\nTarzo, Treviso 31020\nItaly\nPhone: (+39)3333597947\ninfo@caperenzin.it"
+                "content": "In order to resolve a complaint regarding the Services or to receive further information regarding use of the Services, please contact us at:\n\nCa' Perenzin\nLocalità Rive di S. Pietro 10\nTarzo, Treviso 31020\nItaly\nPhone: (+39)3333597947\ninfo@caperenzin.it"
             }
         ],
         "footer": "This Terms and Conditions was created using Termly's Terms and Conditions Generator"
@@ -1518,14 +1524,14 @@
         "title": "COOKIE POLICY",
         "updated": "Ultimo aggiornamento il 21 Marzo 2026",
         "intro": [
-            "La presente Cookie Policy spiega come Ca'Perenzin (\"Società\", \"noi\", \"ci\" e \"nostro\") utilizza i cookie e tecnologie simili per riconoscerti quando visiti il nostro sito web su https://caperenzin.it (\"Sito web\"). Spiega cosa sono queste tecnologie e perché le usiamo, oltre ai tuoi diritti di controllarne l'uso da parte nostra.",
+            "La presente Cookie Policy spiega come Ca' Perenzin (\"Società\", \"noi\", \"ci\" e \"nostro\") utilizza i cookie e tecnologie simili per riconoscerti quando visiti il nostro sito web su https://caperenzin.it (\"Sito web\"). Spiega cosa sono queste tecnologie e perché le usiamo, oltre ai tuoi diritti di controllarne l'uso da parte nostra.",
             "In alcuni casi potremmo usare i cookie per raccogliere informazioni personali, o che diventano informazioni personali se le combiniamo con altre informazioni."
         ],
         "sections": [
             {
                 "title": "Cosa sono i cookie?",
                 "content": "I cookie sono piccoli file di dati che vengono posizionati sul tuo computer o dispositivo mobile quando visiti un sito web. I cookie sono ampiamente usati dai proprietari dei siti web per farli funzionare, o farli funzionare in modo più efficiente, nonché per fornire informazioni di reportistica.",
-                "extraContent": "I cookie impostati dal proprietario del sito web (in questo caso, Ca'Perenzin) sono chiamati \"cookie di prima parte\". I cookie impostati da parti diverse dal proprietario del sito web sono chiamati \"cookie di terza parte\". I cookie di terza parte consentono di fornire caratteristiche o funzionalità di terze parti sul o attraverso il sito web (ad es., pubblicità, contenuti interattivi e analisi). Le parti che impostano questi cookie di terza parte possono riconoscere il tuo computer sia quando visita il sito web in questione sia quando visita certi altri siti web."
+                "extraContent": "I cookie impostati dal proprietario del sito web (in questo caso, Ca' Perenzin) sono chiamati \"cookie di prima parte\". I cookie impostati da parti diverse dal proprietario del sito web sono chiamati \"cookie di terza parte\". I cookie di terza parte consentono di fornire caratteristiche o funzionalità di terze parti sul o attraverso il sito web (ad es., pubblicità, contenuti interattivi e analisi). Le parti che impostano questi cookie di terza parte possono riconoscere il tuo computer sia quando visita il sito web in questione sia quando visita certi altri siti web."
             },
             {
                 "title": "Perché usiamo i cookie?",
@@ -1591,7 +1597,7 @@
             },
             {
                 "title": "Dove posso ricevere maggiori informazioni?",
-                "content": "Se hai altre domande sull'uso dei cookie o di altre tecnologie, ti preghiamo di contattarci all'indirizzo email tatiana.perenzin@gmail.com o via posta all'indirizzo: Ca'Perenzin, Tarzo, Treviso 31020, Italia. Telefono: (+39)3333597947"
+                "content": "Se hai altre domande sull'uso dei cookie o di altre tecnologie, ti preghiamo di contattarci all'indirizzo email tatiana.perenzin@gmail.com o via posta all'indirizzo: Ca' Perenzin, Tarzo, Treviso 31020, Italia. Telefono: (+39)3333597947"
             }
         ],
         "footer": ""

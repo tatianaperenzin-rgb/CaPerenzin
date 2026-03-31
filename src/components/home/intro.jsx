@@ -140,9 +140,12 @@ export default function Intro({ dictionary, lang }) {
                 <BookingNav
                     dictionary={dictionary}
                     lang={lang}
-                    bookNavOpen={bookNavOpen}
-                    setBookNavOpen={setBookNavOpen}
-                    expandBookNav={expandBookNav}
+
+                /* OPEN BAR  */
+
+                /* bookNavOpen={bookNavOpen}
+                setBookNavOpen={setBookNavOpen}
+                expandBookNav={expandBookNav} */
                 />
             </div>
         </BubbleFrame>
