@@ -375,7 +375,7 @@ export default function RoomLayout({ dictionary, dataRoom, lang, expandBookNav }
                                     transition={{ duration: 0.3 }}
                                     className="bg-gold rounded-xl overflow-hidden hidden lg:flex"
                                 >
-                                    <div className={`flex w-full  justify-between px-10 absolute bottom-15 left-0
+                                    <div className={`flex w-full  justify-between px-10 absolute bottom-15 lg:bottom-7 left-0
                                                     ${!bookNavOpenDesk ? "" : "justify-end"}
                                                     ${isGalleryDesk ? "pointer-events-none" : ""}`}>
                                         {/* NEXT ROOM */}
