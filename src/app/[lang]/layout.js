@@ -98,7 +98,7 @@ export async function generateMetadata({ params }) {
       template: `%s | ${dictionary.hero.BeBname}`,
     },
     description: dictionary.hero.heroIntroOne,
-    authors: [{ name: 'Elia Schneider', url: 'https://vostro-sito-o-portfolio.it' }],
+    authors: [{ name: 'CaPerenzin'}],
     keywords: ['B&B', 'Veneto', 'Luxury', 'Nature', 'Travel', "Ca'Perenzin", 'Tarzo', 'Prosecco Hills'],
     metadataBase: new URL('https://caperenzin.it'),
     alternates: {
