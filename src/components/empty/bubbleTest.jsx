@@ -119,8 +119,7 @@ export default function BubbleTest({ dictionary, lang }) {
             {/* Deve avere uno z-index superiore per coprire o interagire visivamente */}
             <section
                 ref={nextSectionRef}
-                className="relative z-10 h-[130vh] 
-                           mt-0 xs:mt-10 "
+                className="relative z-10 h-[130vh] mt-0 xs:mt-10"
             >
                 {/* BACKGROUND che appare/scompare */}
                 <div

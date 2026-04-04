@@ -82,21 +82,11 @@ export default function SectionM({ dictionary, lang }) {
     ]
 
     return (
-        <section className="flex w-full h-[110vh] lg:h-dvh items-center justify-center
-                        gap-10 px-3 xxs:px-5 md:px-7 lg:px-20 xl:px-35 2xl:px-40
-                        mb-30 xxs:mb-0
-                        ">
+        <section className="flex w-full h-[110vh] lg:h-dvh items-center justify-center gap-10 px-3 xxs:px-5 md:px-7 lg:px-20 xl:px-35 2xl:px-40 mb-30 xxs:mb-0 ">
 
             <div className="flex flex-col lg:flex-row gap-10 lg:gap-3 xl:gap-7 lg:overflow-auto">
                 {dataCards.map((card) => (
-                    <div key={card.id} className="flex flex-col
-                                                rounded-4xl xl:rounded-[40px]
-                                                w-full h-fit xs:h-70 md:h-80 
-                                                  lg:h-130 2xl:h-150 
-                                                relative
-                                                overflow-hidden justify-end
-                                                p-5
-                                                ">
+                    <div key={card.id} className="flex flex-col rounded-4xl xl:rounded-[40px] w-full h-fit xs:h-70 md:h-80 lg:h-130 2xl:h-150 relative overflow-hidden justify-end p-5 ">
 
                         <SmartBackground
                             srcDesktop={card.scrImg}
@@ -110,17 +100,14 @@ export default function SectionM({ dictionary, lang }) {
                         <div className="absolute inset-0  bg-black/50 lg:hidden" />
 
                         {/* HEADLINE ONLY DESK*/}
-                        <h2 className=" hidden lg:block font-black z-10 text-balance
-                                            md:text-3xl
-                                            xl:mb-3">
+                        <h2 className=" hidden lg:block font-black z-10 text-balance md:text-3xl xl:mb-3">
                             {card.headline}
                         </h2>
 
                         {/* INFO BLOCK */}
                         <div className="z-20">
                             {/* HEADLINE ONLY TABLET */}
-                            <h2 className=" hidden md:block lg:hidden font-black text-lg
-                                            md:text-3xl">
+                            <h2 className=" hidden md:block lg:hidden font-black text-lg md:text-3xl">
                                 {card.headline}
                             </h2>
 
@@ -128,10 +115,7 @@ export default function SectionM({ dictionary, lang }) {
                             <div className="flex flex-wrap py-3 gap-1.5">
                                 {card.pills.map((pill, index) => (
                                     <InfoPill key={index}
-                                        className="bg-foreground/80 font-muller font-bold
-                                                    py-1.5 xs:py-2 md:py-1.5
-                                                    px-2 xs:px-3  
-                                                    gap-1 "
+                                        className="bg-foreground/80 font-muller font-bold py-1.5 xs:py-2 md:py-1.5 px-2 xs:px-3 gap-1 "
                                     >
                                         {pill.icons}
                                         {pill.label}
@@ -144,9 +128,7 @@ export default function SectionM({ dictionary, lang }) {
                                 {card.headline}
                             </h2>
 
-                            <p className="font-muller text-sm xs:text-base lg:text-sm xl:text-base
-                                        py-3 text-balance
-                                        ">
+                            <p className="font-muller text-sm xs:text-base lg:text-sm xl:text-base py-3 text-balance ">
                                 {card.content}
                             </p>
 

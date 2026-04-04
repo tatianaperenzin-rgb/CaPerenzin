@@ -28,8 +28,7 @@ export default function SectionE({ dictionary, lang, startAnimation }) {
             />
             <section className="flex w-full h-[70vh] lg:h-dvh items-center justify-center z-20">
                 <div className="flex flex-col gap-3 xl:gap-8">
-                    <p className="text-xs xs:text-sm md:text-base lg:text-lg xl:text-xl
-                                xl:ms-[-70px]">
+                    <p className="text-xs xs:text-sm md:text-base lg:text-lg xl:text-xl xl:ms-[-70px]">
                         {dictionary.upTitle}
                     </p>
                     <MasterTitle className="w-min text-balance opacity-70" tag="h2">

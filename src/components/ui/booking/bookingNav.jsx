@@ -191,8 +191,7 @@ export default function BookingNav({ dictionary, lang, bookNavOpen, setBookNavOp
                             transition duration-300 delay-100  ease-in-out motion-reduce:duration-1
                             `}
                     onClick={(e) => { e.stopPropagation() }}>
-                    <div className="flex fade-in duration-800 delay-300 easi-in-out items-center
-                                     ">
+                    <div className="flex fade-in duration-800 delay-300 easi-in-out items-center ">
                         <DateRangeSelector
                             lang={lang}
                             date={date}

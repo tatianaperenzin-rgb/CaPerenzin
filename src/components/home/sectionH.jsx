@@ -41,17 +41,10 @@ export default function SectionH({ dictionary, lang }) {
 
 
                     {/* CONTENT */}
-                    <div className="flex flex-col
-                                    pe-6
-
-                                    ">
+                    <div className="flex flex-col pe-6 ">
 
                         {/* TITLE */}
-                        <h2 className="font-black text-background text-balance 
-                                    w-75 xs:w-110 md:w-150 lg:w-fit 2xl:w-full 
-                                     text-3xl xs:text-4xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl
-                                    lg:pt-0 xl:pt-30 2xl:pt-50
-                                    lg:text-right">
+                        <h2 className="font-black text-background text-balance w-75 xs:w-110 md:w-150 lg:w-fit 2xl:w-full text-3xl xs:text-4xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl lg:pt-0 xl:pt-30 2xl:pt-50 lg:text-right">
                             {dictionary.headline}
                         </h2>
 

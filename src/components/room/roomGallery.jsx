@@ -91,8 +91,7 @@ export default function RoomGallery({ dictionary, lang, dataRoom, setIsGallery }
                 textClassName="text-gold"
                 iconStart={LuLogOut}
                 iconClassName="text-gold rotate-180 size-4"
-                className="absolute top-5 left-3 bg-background shrink-0 h-10 xs:h-11 z-999 cursor-pointer
-                                    px-4 py-0 xs:px-5 xs:py-3 shadow-lg hover:shadow-xl transition-shadow border border-gold/20 lg:hidden"
+                className="absolute top-5 left-3 bg-background shrink-0 h-10 xs:h-11 z-999 cursor-pointer px-4 py-0 xs:px-5 xs:py-3 shadow-lg hover:shadow-xl transition-shadow border border-gold/20 lg:hidden"
             >
                 {dictionary.assetUi.exit}
             </BtnBase>

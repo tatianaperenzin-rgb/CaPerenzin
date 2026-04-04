@@ -12,19 +12,14 @@ export default function MeteoControl({ dictionary, lang, onChange, activeId, onC
     const textBtn = "transition-all duration-300 group-hover:text-foreground"
 
     return (
-        <div className={cn(`flex h-fit flex-col
-                            gap-5 md:gap-10`, className)}>
+        <div className={cn(`flex h-fit flex-col gap-5 md:gap-10`, className)}>
             {/* CTA */}
-            <p className="
-                it:w-40 it:xs:w-50 it:md:w-auto
-                
-                text-xs xs:text-base">
+            <p className="it:w-40 it:xs:w-50 it:md:w-auto text-xs xs:text-base">
                 {dictionary.ctaBtnD}!
             </p>
 
             {/* BTN BLOCK */}
-            <div className={cn(`flex flex-col flex-wrap md:flex-row
-                                gap-3 xs:gap-5`, btnClassName)}>
+            <div className={cn(`flex flex-col flex-wrap md:flex-row gap-3 xs:gap-5`, btnClassName)}>
                 <BtnBase
                     className={classBtn}
                     textClassName={textBtn}

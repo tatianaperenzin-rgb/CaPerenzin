@@ -28,8 +28,7 @@ export default function SectionI({ dictionary, lang, startAnimation }) {
             />
             <section className="flex w-full h-full lg:h-dvh items-center justify-center z-20">
                 <div className="flex ">
-                    <MasterTitle className="text-balance w-min whitespace-normal 
-                                    text-4xl xs:text-5xl md:text-7xl lg:text-8xl xl:text-8xl 2xl:text-9xl" tag="h2">
+                    <MasterTitle className="text-balance w-min whitespace-normal text-4xl xs:text-5xl md:text-7xl lg:text-8xl xl:text-8xl 2xl:text-9xl" tag="h2">
                         {lang === "it"
                             ? dictionary.headline.replace("un mondo", "un\u00A0mondo")
                             : dictionary.headline

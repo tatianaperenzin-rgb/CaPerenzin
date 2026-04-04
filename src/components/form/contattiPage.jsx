@@ -31,20 +31,12 @@ export default async function ContattiPage({ dictionary, lang }) {
             <div className="flex flex-col h-full lg:h-dvh w-full xl:flex-row xl:p-10">
 
                 {/* BOX TEXT E DATA */}
-                <div className="flex flex-col 
-                            h-[89vh] md:h-fit 
-                            w-full xl:w-1/2
-                            gap-20 xs:gap-30 
-                            p-7 md:p-10
-                            mt-17 xs:mt-25 md:mt-0 md:py-35 lg:py-0 lg:mt-30 xl:mt-10 2xl:mt-15">
+                <div className="flex flex-col h-[89vh] md:h-fit w-full xl:w-1/2 gap-20 xs:gap-30 p-7 md:p-10 mt-17 xs:mt-25 md:mt-0 md:py-35 lg:py-0 lg:mt-30 xl:mt-10 2xl:mt-15">
 
                     <div>
                         <MasterTitle>
                             <span
-                                className="w-50 md:w-100 xl:w-100
-                                        text-5xl md:text-6xl xl:text-7xl 2xl:text-8xl block
-                                        
-                            "
+                                className="w-50 md:w-100 xl:w-100 text-5xl md:text-6xl xl:text-7xl 2xl:text-8xl block "
                             >{dictionary.headline}</span>
                         </MasterTitle>
 
@@ -53,16 +45,10 @@ export default async function ContattiPage({ dictionary, lang }) {
                         >{dictionary.subHeadline}</p>
 
                         <p
-                            className="font-muller
-                                    py-7
-                                    xs:pe-20 md:pe-37 xl:pe-10 2xl:pe-30
-                                    md:text-lg"
+                            className="font-muller py-7 xs:pe-20 md:pe-37 xl:pe-10 2xl:pe-30 md:text-lg"
                         >{dictionary.content}</p>
 
-                        <div className="flex flex-wrap gap-3
-                                    xs:gap-4
-                                    xs:mt-10
-                                    pe-20">
+                        <div className="flex flex-wrap gap-3 xs:gap-4 xs:mt-10 pe-20">
                             {dictionary.buttons.map((item, i) => {
 
                                 const icons = extra[item.id]

@@ -54,18 +54,11 @@ export default function ContactPage({ dictionary, lang, dictionarySectionO, dict
             <div className="contents lg:sticky lg:top-0 lg:z-0 lg:flex lg:h-dvh lg:w-full lg:flex-row xl:px-[20px]">
 
                 {/* BOX TEXT E DATA */}
-                <div className="flex flex-col 
-                            h-screen md:h-dvh 
-                            w-full lg:w-1/2
-                            gap-10 xxs:gap-30 lg:gap-10 2xl:gap-20 
-                            p-7 md:ps-28 lg:ps-15
-                            pt-20 xxs:pt-0 lg:pt-27 2xl:pt-0
-                            justify-center">
+                <div className="flex flex-col h-screen md:h-dvh w-full lg:w-1/2 gap-10 xxs:gap-30 lg:gap-10 2xl:gap-20 p-7 md:ps-28 lg:ps-15 pt-20 xxs:pt-0 lg:pt-27 2xl:pt-0 justify-center">
 
                     <div className="">
                         <MasterTitle
-                            className="w-min
-                                        text-3xl xxs:text-5xl md:text-6xl lg:text-6xl 2xl:text-7xl"
+                            className="w-min text-3xl xxs:text-5xl md:text-6xl lg:text-6xl 2xl:text-7xl"
                         >
                             {dictionary.headline}
                         </MasterTitle>
@@ -75,15 +68,10 @@ export default function ContactPage({ dictionary, lang, dictionarySectionO, dict
                         >{dictionary.subHeadline}</p>
 
                         <p
-                            className="font-muller 
-                                    py-7 text-balance md:pe-20 lg:pe-0 xl:pe-20 
-                                    text-xs xs:text-base md:text-lg lg:text-sm xl:text-base"
+                            className="font-muller py-7 text-balance md:pe-20 lg:pe-0 xl:pe-20 text-xs xs:text-base md:text-lg lg:text-sm xl:text-base"
                         >{dictionary.content}</p>
 
-                        <div className="flex flex-wrap gap-3
-                                    xs:gap-4
-                                    xs:mt-10 lg:mt-0
-                                    pe-20 lg:pe-0">
+                        <div className="flex flex-wrap gap-3 xs:gap-4 xs:mt-10 lg:mt-0 pe-20 lg:pe-0">
                             {dictionary.buttons.map((item, i) => {
 
                                 const icons = extra[item.id]

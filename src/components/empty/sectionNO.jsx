@@ -79,8 +79,7 @@ export default function BubbleTest({ dictionary, lang }) {
                             height,  // L'altezza del box bianco cambia (dal basso verso l'alto grazie a items-start)
                             opacity
                         }}
-                        className="w-full rounded-3xl xl:rounded-[40px]
-                        shadow-2xl overflow-hidden relative"
+                        className="w-full rounded-3xl xl:rounded-[40px] shadow-2xl overflow-hidden relative"
                     >
                         {/* Contenuto del box che rimane fisso. 
                                      Usiamo un'altezza fissa calcolata (100vh - padding verticale) 
@@ -104,8 +103,7 @@ export default function BubbleTest({ dictionary, lang }) {
             {/* Deve avere uno z-index superiore per coprire o interagire visivamente */}
             <section
                 ref={nextSectionRef}
-                className="relative z-10 min-h-screen
-                           mt-50  "
+                className="relative z-10 min-h-screen mt-50  "
             >
                 {/* BACKGROUND che appare/scompare */}
                 <div

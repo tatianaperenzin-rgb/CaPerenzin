@@ -99,9 +99,7 @@ export default function SectionD({ dictionary, lang, className }) {
                 // =================================================
                 //  VISTA ZERO (MENU) - Se activeId è NULL
                 // =================================================
-                <div className="flex flex-col w-full h-full justify-center 
-                                px-10 xs:px-14 md:px-20 lg:px-30 2xl:px-50
-                                gap-20 xxs:gap-40 animate-fade-in">
+                <div className="flex flex-col w-full h-full justify-center px-10 xs:px-14 md:px-20 lg:px-30 2xl:px-50 gap-20 xxs:gap-40 animate-fade-in">
 
                     {/* BLOCK HEADLINE */}
                     <div className="flex flex-col gap-7 ">
@@ -113,11 +111,7 @@ export default function SectionD({ dictionary, lang, className }) {
                                 }
                             </MasterTitle>
                         </div>
-                        <p className="text-xs
-
-                                    xs:text-sm md:text-lg
-                                    it:w-62 it:xs:w-65 it:md:w-xl
-                                    en:w-xs en:md:w-2xl">
+                        <p className="text-xs xs:text-sm md:text-lg it:w-62 it:xs:w-65 it:md:w-xl en:w-xs en:md:w-2xl">
                             {dictionary.subHeadlineD}
                         </p>
                     </div>
@@ -132,8 +126,7 @@ export default function SectionD({ dictionary, lang, className }) {
                     />
 
                     {/* NOTE (Visibile solo nel menu) */}
-                    <p className="flex items-center text-center absolute bottom-5 left-0 w-full justify-center text-balance
-                                  text-[10px] xxs:-[7px] xs:text-[12px] md:text-xs px-15 md:px-30 text-gold opacity-50">
+                    <p className="flex items-center text-center absolute bottom-5 left-0 w-full justify-center text-balance text-[10px] xxs:-[7px] xs:text-[12px] md:text-xs px-15 md:px-30 text-gold opacity-50">
                         {dictionary.noteD}
                     </p>
                 </div>

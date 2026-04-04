@@ -30,15 +30,10 @@ export default function SectionG({ dictionary, lang }) {
 
 
                     {/* CONTENT */}
-                    <div className="flex flex-col 
-                                    pe-6 justify-end lg:justify-center xl:justify-end xl:pb-20
-                                    ">
+                    <div className="flex flex-col pe-6 justify-end lg:justify-center xl:justify-end xl:pb-20 ">
 
                         {/* TITLE */}
-                        <h2 className="font-black text-background text-balance
-                                    
-                                    text-3xl xs:text-4xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl
-                                    ">
+                        <h2 className="font-black text-background text-balance text-3xl xs:text-4xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl ">
                             {lang === "it"
                                 ? dictionary.headline.replace("La Verita", "La\u0A00verita")
                                 : dictionary.headline.replace("Truthis", "Truth\u0A00is")

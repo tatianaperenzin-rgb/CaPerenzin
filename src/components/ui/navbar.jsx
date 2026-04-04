@@ -24,6 +24,33 @@ export default function NavBar({ isOpen: controlledIsOpen, setIsOpen: controlled
     const { navState, experienceActive, setIsMenuOpen, roomInfoActive, isLargeView, bubbleTest, setBubbleTest } = useUI() // Prendi il valore dal contesto
     const pathname = usePathname()
 
+    useEffect(() => {
+        const purple = '#682e86';
+        const dark = '#1c1c1c';
+        const offWhite = '#f9f9fa';
+        const bronze = '#d08c31';
+        const neon = '#ccf000';
+
+        console.log(
+            `%c  Coded with ❤️ by Elia Schneider %c noLogoSoloBrand  `,
+            `color: ${offWhite}; background: ${purple}; padding: 8px 10px; font-weight: bold; border-radius: 10px 0 0 0;`,
+            `color: #000; background: ${neon}; padding: 8px 10px; font-weight: bold; border-radius: 0 10px 0 0;`
+        );
+        console.log(
+            `%c  Brand Designer & Creative Developer  `,
+            `color: ${offWhite}; background: ${dark}; padding: 5px 10px; font-weight: bold; border-left: 2px solid ${purple}; border-right: 2px solid ${neon}; display: block;`
+        );
+        console.log(
+            `%c 📸 IG: https://www.instagram.com/nologosolobrand/ %c 🎵 TK: https://www.tiktok.com/@nologosolobrand `,
+            `color: ${offWhite}; background: ${purple}; padding: 8px 10px; font-weight: bold;`,
+            `color: ${offWhite}; background: ${dark}; padding: 8px 10px; font-weight: bold;`
+        );
+        console.log(
+            `%c 🌐 Portfolio: https://schneiderelia.com/ `,
+            `color: ${offWhite}; background: ${purple}; padding: 8px 10px; font-weight: bold; border-radius: 0 0 10px 10px; display: block;`
+        );
+    }, []);
+
     const isMenu = controlledIsOpen !== undefined ? controlledIsOpen : internalIsOpen
 
     useEffect(() => {
