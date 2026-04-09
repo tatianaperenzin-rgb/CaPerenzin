@@ -25,7 +25,7 @@ import { useUI } from "@/hooks/contexUi"
 export default function RoomLayout({ dictionary, dataRoom, lang, expandBookNav }) {
 
     const { setRoomInfoActive } = useUI()
-    const gallery = dataRoom.gallery.find(g => g.id === 0)
+    const gallery = dataRoom.gallery.find(g => g.id === 0) || dataRoom.gallery[0]
     const router = useRouter()
 
     // Calculate Next Room
