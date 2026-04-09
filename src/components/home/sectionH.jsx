@@ -16,7 +16,7 @@ export default function SectionH({ dictionary, lang }) {
     return (
         // AGGIUNTO: w-screen (o min-w-full) e flex-shrink-0
         // Questo dice: "Io occupo tutto lo schermo e nessuno può schiacciarmi"
-        <section className="w-full h-full lg:h-dvh flex flex-col lg:flex-row justify-center items-center gap-5  p-2 md:p-5">
+        <section className="w-full h-full lg:h-dvh flex flex-col lg:flex-row justify-center items-center lg:gap-5  p-2 md:p-5">
 
             {/* CARD TWO IMG */}
             <div className={`relative overflow-hidden flex w-full h-full md:h-[65%] lg:h-full lg:w-1/2 bg-amber-900/60 rounded-3xl xl:rounded-[40px]
@@ -29,8 +29,19 @@ export default function SectionH({ dictionary, lang }) {
                 />
             </div>
 
+            <div className={`bg-red-400  overflow-hidden relative lg:hidden flex w-full bg-amber-900/60 rounded-3xl xl:rounded-[40px]
+                            ${isOpen ? "h-[20dvh] xxs:h-[25dvh] xs:h-[30dvh]" : "h-[40dvh] xxs:h-[45dvh] xs:h-[50dvh]xs:h-[50dvh] md:h-[65dvh] lg:h-[80dvh]"}
+                            `}>
+
+                <SmartBackground
+                    srcDesktop={dictionary?.scrImgDesk}
+                    srcMobile={dictionary?.scrImgPhone}
+                    scrAlt={dictionary?.scrAlt}
+                />
+            </div>
+
             {/* CARD ONE  TEXT */}
-            <div className={`flex w-full  md:h-1/2 lg:h-full lg:w-1/2 bg-gold rounded-3xl xl:rounded-[40px]
+            <div className={`flex w-full  md:h-1/2 lg:h-full lg:w-1/2 bg-gold rounded-3xl xl:rounded-[40px] mt-3 lg:mt-0
                             p-7 md:p-15 lg:p-10 
                             transition-all duration-300 ease-in-out
                             ${isOpen ? "h-[85%] lg:h-full" : "h-fit md:h-[35%] lg:h-full"}`}>
@@ -44,7 +55,7 @@ export default function SectionH({ dictionary, lang }) {
                     <div className="flex flex-col pe-6 ">
 
                         {/* TITLE */}
-                        <h2 className="font-black text-background text-balance w-75 xs:w-110 md:w-150 lg:w-fit 2xl:w-full text-3xl xs:text-4xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl lg:pt-0 xl:pt-30 2xl:pt-50 lg:text-right">
+                        <h2 className="font-black text-background text-balance w-75 xs:w-110 md:w-150 lg:w-fit 2xl:w-full text-3xl xs:text-4xl md:text-5xl lg:text-5xl xl:text-5xl 2xl:text-6xl lg:pt-0 xl:pt-30 2xl:pt-50 lg:text-right">
                             {dictionary.headline}
                         </h2>
 

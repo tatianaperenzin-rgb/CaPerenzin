@@ -16,7 +16,7 @@ export default function SectionG({ dictionary, lang }) {
     return (
         // AGGIUNTO: w-screen (o min-w-full) e flex-shrink-0
         // Questo dice: "Io occupo tutto lo schermo e nessuno può schiacciarmi"
-        <section className="w-full h-full lg:h-dvh  flex flex-col lg:flex-row justify-center items-center gap-5  p-2 md:p-5">
+        <section className="w-full h-full lg:h-dvh  flex flex-col lg:flex-row justify-center items-center lg:gap-5  p-2 md:p-5">
 
             {/* CARD ONE  TEXT */}
             <div className={`flex w-full lg:w-1/2 bg-gold rounded-3xl xl:rounded-[40px]
@@ -33,7 +33,7 @@ export default function SectionG({ dictionary, lang }) {
                     <div className="flex flex-col pe-6 justify-end lg:justify-center xl:justify-end xl:pb-20 ">
 
                         {/* TITLE */}
-                        <h2 className="font-black text-background text-balance text-3xl xs:text-4xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl ">
+                        <h2 className="font-black text-background text-balance text-3xl xs:text-4xl md:text-5xl lg:text-5xl xl:text-5xl 2xl:text-6xl ">
                             {lang === "it"
                                 ? dictionary.headline.replace("La Verita", "La\u0A00verita")
                                 : dictionary.headline.replace("Truthis", "Truth\u0A00is")
@@ -95,6 +95,18 @@ export default function SectionG({ dictionary, lang }) {
                     </div>
                 </div>
 
+
+
+            </div>
+            <div className={`bg-red-400  overflow-hidden relative lg:hidden flex w-full  bg-amber-900/60 rounded-3xl xl:rounded-[40px] mt-3
+                ${isOpen ? "h-[20dvh] xxs:h-[25dvh] xs:h-[30dvh]" : "h-[40dvh] xxs:h-[45dvh] xs:h-[50dvh]xs:h-[50dvh] md:h-[65dvh] lg:h-[80dvh]"}
+                `}>
+
+                <SmartBackground
+                    srcDesktop={dictionary?.scrImgDesk}
+                    srcMobile={dictionary?.scrImgPhone}
+                    scrAlt={dictionary?.scrAlt}
+                />
             </div>
 
             {/* CARD TWO IMG */}

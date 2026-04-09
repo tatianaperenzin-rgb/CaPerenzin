@@ -3,6 +3,9 @@ import { getDictionary } from "@/lib/dictionary"
 import Intro from "@/components/home/intro"
 import dynamic from 'next/dynamic'
 import SplashScreen from "@/components/ui/splashScreen"
+import StructuredData from "@/components/seo/StructuredData"
+import { getBaseSchema } from "@/lib/jsonLd"
+import SectionBplus from "@/components/home/sectionBplus"
 
 // Sections below the fold loaded dynamically
 const SectionA = dynamic(() => import('@/components/home/sectionA'))
@@ -40,10 +43,12 @@ export default async function Home({ params }) {
   return (
 
     <>
+      <StructuredData data={getBaseSchema(dictionary, lang)} />
       <SplashScreen dictionary={dictionary} />
       <Intro dictionary={dictionary} lang={lang} />
       <SectionA dictionary={dictionary} lang={lang} />
       <SectionB dictionary={dictionary} lang={lang} />
+      <SectionBplus dictionary={dictionary.sectionBplus} lang={lang}/>
 
       {/* >ROOM CAROUSEL + SECTION-D THROUGT */}
       <section id="room">
@@ -52,12 +57,19 @@ export default async function Home({ params }) {
 
       <SectionEF dictionary={dictionary} lang={lang} />
 
-      <section id="breakfast">
+     <section id="breakfast" className="hidden lg:flex">
         <HorizontalScroll>
           <SectionG dictionary={dictionary.sectionG} lang={lang} />
           <SectionH dictionary={dictionary.sectionH} lang={lang} />
         </HorizontalScroll>
+      </section> 
+      <section id="breakfast" className=" lg:hidden">
+        
+          <SectionG dictionary={dictionary.sectionG} lang={lang} />
+          <SectionH dictionary={dictionary.sectionH} lang={lang} />
+       
       </section>
+
 
       <SectionIL dictionary={dictionary} lang={lang} />
       <SectionM dictionary={dictionary.sectionM} lang={lang} />

@@ -92,6 +92,9 @@
             "srcVideo": "https://res.cloudinary.com/de124cxny/video/upload/v1773045962/rain_gdbas7.mp4"
         }
     },
+    "sectionBplus":{
+        "display": "Le nostre camere"
+    },
     "sectionE": {
         "upTitle": "DALL'ORTO ALLA TAVOLA",
         "title": "Risveglio Gourmet a km0",
@@ -445,16 +448,17 @@
                 "quote": "— La vostra esperienza, presto qui."
             },
             "gallery": [
+               
                 {
-                    "id": 0,
-                    "bkMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1774092852/heart_ph_07_dc1vy0.jpg",
-                    "bkDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1774093065/heart_desk_04_hj2yob.jpg",
-                    "alt": ""
-                },
-                {
-                    "id": 1,
+                    "id": 2,
                     "bkMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1774092852/heart_ph_05_fsxd0h.jpg",
                     "bkDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1774093065/heart_desk_01_noPieghe_eqwe31.jpg",
+                    "alt": ""
+                },
+                 {
+                    "id": 1,
+                    "bkMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1774092852/heart_ph_07_dc1vy0.jpg",
+                    "bkDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1774093065/heart_desk_04_hj2yob.jpg",
                     "alt": ""
                 },
                 

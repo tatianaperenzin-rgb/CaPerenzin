@@ -17,7 +17,7 @@ export default function SectionB({ dictionary }) {
                    Dagli le classi del font che vuoi (colore, grandezza, font-family).
                 */}
                 <TextReveal className={`text-white font-bold text-balance
-                                         text-xs xxs:text-base xs:text-lg md:text-lg  lg:text-lg xl:text-lg 2xl:text-2xl
+                                         text-xs xxs:text-sm xs:text-base md:text-md  lg:text-lg xl:text-lg 2xl:text-xl
                                         whitespace-pre-wrap
                                     `}
                     startOffset="0.4">

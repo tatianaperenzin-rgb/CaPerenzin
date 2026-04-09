@@ -100,7 +100,7 @@ export default function SectionM({ dictionary, lang }) {
                         <div className="absolute inset-0  bg-black/50 lg:hidden" />
 
                         {/* HEADLINE ONLY DESK*/}
-                        <h2 className=" hidden lg:block font-black z-10 text-balance md:text-3xl xl:mb-3">
+                        <h2 className=" hidden lg:block font-black z-10 text-balance md:text-3xl lg:text-2xl xl:mb-3">
                             {card.headline}
                         </h2>
 
@@ -124,11 +124,11 @@ export default function SectionM({ dictionary, lang }) {
                             </div>
 
                             {/* HEADLINE ONLY PHONE */}
-                            <h2 className=" font-black text-lg md:hidden ">
+                            <h2 className=" font-black text-md xs:text-lg md:hidden ">
                                 {card.headline}
                             </h2>
 
-                            <p className="font-muller text-sm xs:text-base lg:text-sm xl:text-base py-3 text-balance ">
+                            <p className="font-muller text-sm xs:text-base lg:text-sm  py-3 text-balance ">
                                 {card.content}
                             </p>
 

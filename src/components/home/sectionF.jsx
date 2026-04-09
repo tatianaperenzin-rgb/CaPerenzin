@@ -14,7 +14,7 @@ export default function SectionF({ dictionary, lang }) {
                             px-12 xxs:px-20 xs:px-15 md:px-30 lg:px-55 xl:px-57 2xl:px-25`}>
 
                 <TextReveal className={`text-white font-bold  text-balance
-                                        text-xs xxs:text-base xs:text-lg md:text-lg  lg:text-lg xl:text-lg 2xl:text-2xl
+                                        text-xs xxs:text-sm xs:text-base md:text-md  lg:text-lg xl:text-lg 2xl:text-xl
                                         whitespace-pre-wrap
                                     `}
                     startOffset="0.4">

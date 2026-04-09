@@ -92,6 +92,9 @@
             "srcVideo": "https://res.cloudinary.com/de124cxny/video/upload/v1773045962/rain_gdbas7.mp4"
         }
     },
+    "sectionBplus": {
+        "display": "Our rooms"
+    },
     "sectionE": {
         "upTitle": "FROM GARDEN TO TABLE",
         "title": "Gourmet Awakening at 0km",
@@ -116,7 +119,7 @@
             "three": "0km Eggs",
             "four": "Homemade Cakes"
         },
-        "scrImgDesk": "https://res.cloudinary.com/dp1xgwqau/image/upload/v1768512435/cake_01_vvqige.jpg",
+        "scrImgDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1771152914/caperenzin.colazione_twl0a5.jpg",
         "scrImgPhone": "",
         "scrAlt": "img",
         "readMore": "Read more",
@@ -129,7 +132,7 @@
             "paragraphTwo": "The heat coloring your cheeks. An infusion of positive energy in your hands. It is a primitive and rare luxury: enjoying the silence while the fire dances, feeling finally safe, protected from the whole world."
         },
         "labelBtn": "Reserve your breakfast",
-        "scrImgDesk": "https://res.cloudinary.com/dp1xgwqau/image/upload/v1768523670/cozy_fire_t4f4fo.jpg",
+        "scrImgDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1771153268/caperenzine.breakfast.fire_refvz2.jpg",
         "scrImgPhone": "",
         "scrAlt": "img",
         "readMore": "Read more",
@@ -446,16 +449,17 @@
             },
             "gallery": [
                 
+                
                 {
                     "id": 0,
-                    "bkMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1774092852/heart_ph_07_dc1vy0.jpg",
-                    "bkDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1774093065/heart_desk_04_hj2yob.jpg",
+                    "bkMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1774092852/heart_ph_05_fsxd0h.jpg",
+                    "bkDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1774093065/heart_desk_01_noPieghe_eqwe31.jpg",
                     "alt": ""
                 },
                 {
                     "id": 1,
-                    "bkMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1774092852/heart_ph_05_fsxd0h.jpg",
-                    "bkDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1774093065/heart_desk_01_noPieghe_eqwe31.jpg",
+                    "bkMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1774092852/heart_ph_07_dc1vy0.jpg",
+                    "bkDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1774093065/heart_desk_04_hj2yob.jpg",
                     "alt": ""
                 },
                  {

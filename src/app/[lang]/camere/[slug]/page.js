@@ -2,6 +2,8 @@
 import { getDictionary } from "@/lib/dictionary"
 import { notFound } from "next/navigation"
 import RoomLayout from "@/components/room/roomlayout"
+import StructuredData from "@/components/seo/StructuredData"
+import { getRoomSchema } from "@/lib/jsonLd"
 
 
 
@@ -50,6 +52,9 @@ export default async function Camere({ params }) {
     }
 
     return (
-        <RoomLayout dictionary={dictionary} dataRoom={dataRoom} lang={lang} />
+        <>
+            <StructuredData data={getRoomSchema(dataRoom, lang)} />
+            <RoomLayout dictionary={dictionary} dataRoom={dataRoom} lang={lang} />
+        </>
     )
 }

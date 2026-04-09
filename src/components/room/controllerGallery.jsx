@@ -41,7 +41,7 @@ export default function ControllerGallery({ dictionaty, lang, totalRoom, onNext,
                                  md:max-w-[390px] md:max-h-[390px]
                                 
                                 xl:max-w-[400px] xl:max-h-[400px]
-                                xl:mt-[-120px]
+                                xl:mt-[-120px] 2xl:mt-[-60px]
                                 rounded-full border-3 border-current
                                     justify-end `}>
 
@@ -54,7 +54,7 @@ export default function ControllerGallery({ dictionaty, lang, totalRoom, onNext,
                         {/* FRECCIA SU e num */}
                         <div className="flex justify-center items-center">
                             <BtnBase
-                                className="bg-transparent"
+                                className="bg-transparent shadow-none"
                                 onClick={onNext}
                             >
                                 <IoMdArrowRoundUp size={40} className="text-gold hidden md:block lg:rotate-270" />
@@ -75,7 +75,7 @@ export default function ControllerGallery({ dictionaty, lang, totalRoom, onNext,
                                 {totalRoom}
                             </p>
                             <BtnBase
-                                className="bg-transparent"
+                                className="bg-transparent shadow-none"
                                 onClick={onBack}
                             >
                                 <IoMdArrowRoundDown size={40} className="text-gold hidden md:block lg:rotate-270" />

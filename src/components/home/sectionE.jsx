@@ -31,7 +31,7 @@ export default function SectionE({ dictionary, lang, startAnimation }) {
                     <p className="text-xs xs:text-sm md:text-base lg:text-lg xl:text-xl xl:ms-[-70px]">
                         {dictionary.upTitle}
                     </p>
-                    <MasterTitle className="w-min text-balance opacity-70" tag="h2">
+                    <MasterTitle className="w-min text-balance opacity-70 " tag="h2">
                         {dictionary.title}
                     </MasterTitle>
                 </div>

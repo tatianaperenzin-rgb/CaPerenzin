@@ -7,7 +7,6 @@ import { Suspense } from "react";
 import NavBar from "@/components/ui/navbar";
 import { ContextUi } from "@/hooks/contexUi";
 import { BookingProvider } from "@/hooks/bookingContext";
-import StructuredData from "@/components/seo/StructuredData";
 
 const PPMonumentExtended = localFont({
   src: [
@@ -94,7 +93,7 @@ export async function generateMetadata({ params }) {
 
   return {
     title: {
-      default: dictionary.hero.BeBname,
+      default: "Ca'Perenzin | Luxury B&B in Veneto",
       template: `%s | ${dictionary.hero.BeBname}`,
     },
     description: dictionary.hero.heroIntroOne,
@@ -155,7 +154,6 @@ export default async function RootLayout({ children, params }) {
         suppressHydrationWarning={true}
         className={`${PPMonumentExtended.className} ${MullerNext.variable} font-sans antialiased `}
       >
-        <StructuredData description={dictionary.hero.heroIntroOne} />
 
         <ContextUi>
           <BookingProvider>
