@@ -3,7 +3,7 @@ import { getDictionary } from "@/lib/dictionary"
 import { notFound } from "next/navigation"
 import RoomLayout from "@/components/room/roomlayout"
 import StructuredData from "@/components/seo/StructuredData"
-import { getRoomSchema } from "@/lib/jsonLd"
+import { getRoomSchema } from "@/components/seo/jsonLd"
 
 
 
@@ -18,8 +18,10 @@ export async function generateMetadata({ params }) {
         }
     }
 
-    // Use a fallback description if dataRoom.description is not available or too short
-    const description = dataRoom.description || `Scopri la camera ${dataRoom.roomName} a Ca'Perenzin. Un soggiorno di lusso immerso nella natura.`
+    const baseDesc = dataRoom.description ? dataRoom.description.substring(0, 110) + "..." : `Scopri la camera ${dataRoom.roomName} a Ca'Perenzin.`;
+    const description = lang === 'it' 
+        ? `${baseDesc} Prenota la tua stanza nel nostro B&B di lusso tra Tarzo e Conegliano. Un alloggio esclusivo per relax e calma.`
+        : `${baseDesc} Book your room in our luxury B&B near Tarzo and Conegliano. An exclusive accommodation for relax and calmness.`;
 
     return {
         title: dataRoom.roomName,

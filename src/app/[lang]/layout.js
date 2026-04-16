@@ -7,6 +7,8 @@ import { Suspense } from "react";
 import NavBar from "@/components/ui/navbar";
 import { ContextUi } from "@/hooks/contexUi";
 import { BookingProvider } from "@/hooks/bookingContext";
+import StructuredData from "@/components/seo/StructuredData";
+import { getOrganizationSchema } from "@/components/seo/jsonLd";
 
 const PPMonumentExtended = localFont({
   src: [
@@ -91,14 +93,25 @@ export async function generateMetadata({ params }) {
   const { lang } = await params
   const dictionary = await getDictionary(lang)
 
+  const isIt = lang === 'it';
+  const defaultTitle = isIt 
+    ? "Ca'Perenzin | B&B di Lusso, Relax e Comfort tra Conegliano e Tarzo" 
+    : "Ca'Perenzin | Luxury B&B, Relax and Comfort near Conegliano and Tarzo";
+  const defaultDesc = isIt
+    ? "Scopri Ca'Perenzin, esclusivo B&B e alloggio di lusso a Tarzo, vicino a Conegliano. Un'oasi di pace per un soggiorno di puro relax, comfort e calma tra le Colline del Prosecco."
+    : "Discover Ca'Perenzin, an exclusive luxury B&B accommodation in Tarzo, near Conegliano. A peaceful oasis for pure relax, comfort, and calmness in the Prosecco Hills.";
+
   return {
     title: {
-      default: "Ca'Perenzin | Luxury B&B in Veneto",
+      default: defaultTitle,
       template: `%s | ${dictionary.hero.BeBname}`,
     },
-    description: dictionary.hero.heroIntroOne,
+    description: defaultDesc,
     authors: [{ name: 'CaPerenzin'}],
-    keywords: ['B&B', 'Veneto', 'Luxury', 'Nature', 'Travel', "Ca'Perenzin", 'Tarzo', 'Prosecco Hills'],
+    keywords: [
+      'B&B Conegliano', 'B&B Tarzo', 'Alloggio Conegliano', 'Alloggio Tarzo', 'Relax', 'Comfort', 
+      'Luxury', 'Calma', 'Colline del Prosecco', 'Veneto', 'Natura', "Ca'Perenzin"
+    ],
     metadataBase: new URL('https://caperenzin.it'),
     alternates: {
       canonical: `/${lang}`,
@@ -108,8 +121,8 @@ export async function generateMetadata({ params }) {
       },
     },
     openGraph: {
-      title: dictionary.hero.BeBname,
-      description: dictionary.hero.heroIntroOne,
+      title: defaultTitle,
+      description: defaultDesc,
       url: `https://caperenzin.it/${lang}`,
       siteName: "Ca'Perenzin",
       images: [
@@ -124,8 +137,8 @@ export async function generateMetadata({ params }) {
     },
     twitter: {
       card: 'summary_large_image',
-      title: dictionary.hero.BeBname,
-      description: dictionary.hero.heroIntroOne,
+      title: defaultTitle,
+      description: defaultDesc,
       images: ['https://res.cloudinary.com/dp1xgwqau/image/upload/v1766344542/madness_of_art_Cinematic_wide_shot_interior_looking_out_from__7cbe6a9f-3f9e-419f-936e-80959b105f6d_1_fmsrhc.png'],
     },
     robots: {
@@ -154,6 +167,7 @@ export default async function RootLayout({ children, params }) {
         suppressHydrationWarning={true}
         className={`${PPMonumentExtended.className} ${MullerNext.variable} font-sans antialiased `}
       >
+        <StructuredData data={getOrganizationSchema(dictionary, lang)} />
 
         <ContextUi>
           <BookingProvider>

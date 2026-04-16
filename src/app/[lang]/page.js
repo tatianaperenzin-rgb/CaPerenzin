@@ -3,8 +3,6 @@ import { getDictionary } from "@/lib/dictionary"
 import Intro from "@/components/home/intro"
 import dynamic from 'next/dynamic'
 import SplashScreen from "@/components/ui/splashScreen"
-import StructuredData from "@/components/seo/StructuredData"
-import { getBaseSchema } from "@/lib/jsonLd"
 import SectionBplus from "@/components/home/sectionBplus"
 
 // Sections below the fold loaded dynamically
@@ -25,7 +23,6 @@ export async function generateMetadata({ params }) {
   const dictionary = await getDictionary(lang)
 
   return {
-    description: dictionary.hero.heroIntroTwo,
     alternates: {
       canonical: `/${lang}`,
     }
@@ -43,7 +40,6 @@ export default async function Home({ params }) {
   return (
 
     <>
-      <StructuredData data={getBaseSchema(dictionary, lang)} />
       <SplashScreen dictionary={dictionary} />
       <Intro dictionary={dictionary} lang={lang} />
       <SectionA dictionary={dictionary} lang={lang} />
