@@ -28,6 +28,10 @@ export async function generateMetadata({ params }) {
         description: description,
         alternates: {
             canonical: `/${lang}/camere/${slug}`,
+            languages: {
+                'it': `/it/camere/${slug}`,
+                'en': `/en/camere/${slug}`,
+            },
         },
         openGraph: {
             title: dataRoom.roomName,

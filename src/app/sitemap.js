@@ -12,24 +12,12 @@ export default async function sitemap() {
   // Define your static routes mapped in your app folder
   const staticRoutes = [
     '',              // Home
-    '/camere',       // Rooms Page
     '/experiences',  // Experiences Page
     '/contatti',     // Contact Page
-    '/cookie',       // Cookie Policy
-    '/policy',       // Privacy Policy
-    '/termsofuse',   // Terms of Use
     '/booking'       // Booking Page
   ];
 
   const sitemapUrls = [];
-  
-  // Create a root url entry that points to the main domain
-  sitemapUrls.push({
-      url: baseUrl,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 1.0,
-  });
 
   // Iterate over languages and generate corresponding permalinks
   for (const lang of languages) {

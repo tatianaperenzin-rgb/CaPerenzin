@@ -13,6 +13,10 @@ export async function generateMetadata({ params }) {
         description: dictionary.hero.heroIntroOne,
         alternates: {
             canonical: `/${lang}/contatti`,
+            languages: {
+                'it': '/it/contatti',
+                'en': '/en/contatti',
+            },
         }
     }
 }

@@ -14,6 +14,10 @@ export async function generateMetadata({ params }) {
         description: dictionary.hero.heroIntroOne,
         alternates: {
             canonical: `/${lang}/booking`,
+            languages: {
+                'it': '/it/booking',
+                'en': '/en/booking',
+            },
         }
     }
 }

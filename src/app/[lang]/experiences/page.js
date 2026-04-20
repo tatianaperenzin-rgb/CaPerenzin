@@ -23,6 +23,10 @@ export async function generateMetadata({ params }) {
         description: seoDesc,
         alternates: {
             canonical: `/${lang}/experiences`,
+            languages: {
+                'it': '/it/experiences',
+                'en': '/en/experiences',
+            },
         }
     }
 }

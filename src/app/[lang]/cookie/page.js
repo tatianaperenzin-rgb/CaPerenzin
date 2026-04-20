@@ -9,6 +9,10 @@ export async function generateMetadata({ params }) {
         description: dictionary.hero.heroIntroOne,
         alternates: {
             canonical: `/${lang}/cookie`,
+        },
+        robots: {
+            index: false,
+            follow: true,
         }
     }
 }

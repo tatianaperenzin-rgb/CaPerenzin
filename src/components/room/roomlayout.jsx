@@ -28,11 +28,13 @@ export default function RoomLayout({ dictionary, dataRoom, lang, expandBookNav }
     const gallery = dataRoom.gallery.find(g => g.id === 0) || dataRoom.gallery[0]
     const router = useRouter()
 
-    // Calculate Next Room
+    // Calculate Next/Prev Room
     const rooms = dictionary.dataRooms
     const currentIndex = rooms.findIndex(r => r.slug === dataRoom.slug)
     const nextIndex = (currentIndex + 1) % rooms.length
+    const prevIndex = (currentIndex - 1 + rooms.length) % rooms.length
     const nextRoomSlug = rooms[nextIndex].slug
+    const prevRoomSlug = rooms[prevIndex].slug
 
     const [isInfo, setIsInfo] = useState(null)
 
@@ -378,19 +380,35 @@ export default function RoomLayout({ dictionary, dataRoom, lang, expandBookNav }
                                     <div className={`flex w-full  justify-between px-10 absolute bottom-15 lg:bottom-7 left-0
                                                     ${!bookNavOpenDesk ? "" : "justify-end"}
                                                     ${isGalleryDesk ? "pointer-events-none" : ""}`}>
-                                        {/* NEXT ROOM */}
+                                        {/* navigation ROOM */}
 
-                                        <BtnBase onClick={() => router.push(`/${lang}/camere/${nextRoomSlug}`)}
-                                            className={` ${!isGalleryDesk ? "" : "hidden"}
+                                        <div className="flex gap-3">
+                                            {/* prev ROOM */}
+                                            <BtnBase onClick={() => router.push(`/${lang}/camere/${prevRoomSlug}`)}
+                                                className={` ${!isGalleryDesk ? "" : "hidden"}
                                                         ${!bookNavOpenDesk ? "" : "hidden"}
                                             `}
-                                            iconEnd={BsArrowRight}
-                                            btnClass={`hover:bg-gold transition-all duration-300`}
-                                            textClassName="group-hover:text-foreground transition-all duration-300"
-                                            iconClassName={`group-hover:animate-pulse`}
-                                        >
-                                            {dictionary.assetUi.nextRoom}
-                                        </BtnBase>
+                                                iconStart={BsArrowRight}
+                                                btnClass={`hover:bg-gold transition-all duration-300`}
+                                                textClassName="group-hover:text-foreground transition-all duration-300"
+                                                iconClassName={`group-hover:animate-pulse rotate-180`}
+                                            >
+                                                {dictionary.assetUi.prevRoom}
+                                            </BtnBase>
+
+                                            {/* NEXT ROOM */}
+                                            <BtnBase onClick={() => router.push(`/${lang}/camere/${nextRoomSlug}`)}
+                                                className={` ${!isGalleryDesk ? "" : "hidden"}
+                                                        ${!bookNavOpenDesk ? "" : "hidden"}
+                                            `}
+                                                iconEnd={BsArrowRight}
+                                                btnClass={`hover:bg-gold transition-all duration-300`}
+                                                textClassName="group-hover:text-foreground transition-all duration-300"
+                                                iconClassName={`group-hover:animate-pulse`}
+                                            >
+                                                {dictionary.assetUi.nextRoom}
+                                            </BtnBase>
+                                        </div>
 
                                         {/* GALLEY */}
                                         <BtnBase onClick={hendelGalleryDesk}
@@ -441,8 +459,9 @@ export default function RoomLayout({ dictionary, dataRoom, lang, expandBookNav }
                         <BtnBase onClick={hendelGallery} className="bg-black border-1 border-gold/40 w-full " textClassName="text-foreground" iconStart={LuGalleryVertical} iconClassName="text-goldr">
                             {dictionary.assetUi.gallery}
                         </BtnBase>
-
+                        {/* 
                         <BookingNav
+                            navClass={``}
                             dictionary={dictionary}
                             lang={lang}
                             bookNavOpen={bookNavOpen}
@@ -450,7 +469,16 @@ export default function RoomLayout({ dictionary, dataRoom, lang, expandBookNav }
                             expandBookNav={expandBookNav}
                             alwaysOpen={true}
                             room={dataRoom}
-                        />
+                        /> */}
+                        <BtnBase
+                            href={'https://www.booking.com/hotel/it/ca-perenzin.it.html'}
+                            className={`hover:bg-background transition-all duration-300 bg-gold px-10`}
+                            textClassName={`group-hover:text-gold transition-all duration-300 font-medium text-foregound`}
+                            onClick={expandBookNav}
+                            iconClassName={`group-hover:text-gold transition-all duration-300`}
+                        >
+                            {dictionary.prenota}
+                        </BtnBase>
 
 
 
@@ -498,7 +526,7 @@ export default function RoomLayout({ dictionary, dataRoom, lang, expandBookNav }
                                 <div className="flex w-full  justify-between items-start pointer-events-auto z-50">
                                     {/* Wrapper per centrare la nav e avere la X a destra */}
                                     <div className="flex justify-center mt-3 xs:mt-0 md:mt-10">
-                                        <BookingNav
+                                        {/*       <BookingNav
                                             dictionary={dictionary}
                                             lang={lang}
                                             expandBookNav={expandBookNav}
@@ -506,7 +534,16 @@ export default function RoomLayout({ dictionary, dataRoom, lang, expandBookNav }
                                             navClass={`pointer-events-auto items-start`}
                                             alwaysOpen={true}
                                             room={dataRoom}
-                                        />
+                                        /> */}
+                                        <BtnBase
+                                            href={'https://www.booking.com/hotel/it/ca-perenzin.it.html'}
+                                            className={`hover:bg-background transition-all duration-300 bg-background px-10`}
+                                            textClassName={`group-hover:text-gold transition-all duration-300 font-medium text-foregound`}
+                                            onClick={expandBookNav}
+                                            iconClassName={`group-hover:text-gold transition-all duration-300`}
+                                        >
+                                            {dictionary.prenota}
+                                        </BtnBase>
                                     </div>
 
                                     {/* ICONA CHIUSURA */}
@@ -537,14 +574,23 @@ export default function RoomLayout({ dictionary, dataRoom, lang, expandBookNav }
                                 </div>
 
                                 {/* PRICE & NEXT */}
-                                <div className="flex flex-wrap w-full gap-2 mt-10 pointer-events-auto">
+                                <div className="flex flex-wrap w-full gap-3 mt-10 pointer-events-auto">
                                     <BtnBase className="bg-background" textClassName="text-foreground">
                                         Da €{dynamicPrice},00 /{dictionary.assetUi.night}
                                     </BtnBase>
-                                    <BtnBase onClick={() => router.push(`/${lang}/camere/${nextRoomSlug}`)}
-                                        iconEnd={BsArrowRight}>
-                                        {dictionary.assetUi.nextRoom}
-                                    </BtnBase>
+                                    <div className="flex gap-3">
+                                        {/*prev  */}
+                                        <BtnBase onClick={() => router.push(`/${lang}/camere/${prevRoomSlug}`)}
+                                            iconStart={BsArrowRight}
+                                            iconClassName={`rotate-180`}>
+                                            {dictionary.assetUi.prevRoom}
+                                        </BtnBase>
+                                        {/* next */}
+                                        <BtnBase onClick={() => router.push(`/${lang}/camere/${nextRoomSlug}`)}
+                                            iconEnd={BsArrowRight}>
+                                            {dictionary.assetUi.nextRoom}
+                                        </BtnBase>
+                                    </div>
                                 </div>
 
                                 <div className="h-20 xs:h-25 shrink-0" />

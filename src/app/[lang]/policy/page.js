@@ -10,6 +10,10 @@ export async function generateMetadata({ params }) {
         description: dictionary.hero.heroIntroOne,
         alternates: {
             canonical: `/${lang}/policy`,
+        },
+        robots: {
+            index: false,
+            follow: true,
         }
     }
 }
