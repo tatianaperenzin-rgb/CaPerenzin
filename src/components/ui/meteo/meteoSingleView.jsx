@@ -15,7 +15,7 @@ export default function MeteoSingleView({ data, dictionary, lang, onChange, acti
             <div className="flex flex-col h-dvh w-full justify-between z-20 py-30 xs:py-37 px-10 xs:px-14 md:px-20 lg:px-30 2xl:px-50">
 
                 <div className="flex flex-col gap-5 xs:gap-7">
-                    <MasterTitle>
+                    <MasterTitle tag="h2">
                         {data.headline}
                     </MasterTitle>
 

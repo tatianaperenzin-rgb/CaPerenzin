@@ -380,12 +380,12 @@ export default function RoomLayout({ dictionary, dataRoom, lang, expandBookNav }
                                     <div className={`flex w-full  justify-between px-10 absolute bottom-15 lg:bottom-7 left-0
                                                     ${!bookNavOpenDesk ? "" : "justify-end"}
                                                     ${isGalleryDesk ? "pointer-events-none" : ""}`}>
-                                        {/* navigation ROOM */}
 
-                                        <div className="flex gap-3">
+                                        {/* navigation ROOM (Nascondiamo Next e Prev se siamo in Gallery) */}
+                                        <div className={`flex gap-3 ${isGalleryDesk ? "hidden" : ""}`}>
                                             {/* prev ROOM */}
                                             <BtnBase onClick={() => router.push(`/${lang}/camere/${prevRoomSlug}`)}
-                                                className={` ${!isGalleryDesk ? "" : "hidden"}
+                                                className={` ${!isGalleryDesk ? "" : "hidden"} /* <-- NASCONDE SE GALLERIA APERTA */
                                                         ${!bookNavOpenDesk ? "" : "hidden"}
                                             `}
                                                 iconStart={BsArrowRight}
@@ -398,7 +398,7 @@ export default function RoomLayout({ dictionary, dataRoom, lang, expandBookNav }
 
                                             {/* NEXT ROOM */}
                                             <BtnBase onClick={() => router.push(`/${lang}/camere/${nextRoomSlug}`)}
-                                                className={` ${!isGalleryDesk ? "" : "hidden"}
+                                                className={` ${!isGalleryDesk ? "" : "hidden"} /* <-- NASCONDE SE GALLERIA APERTA */
                                                         ${!bookNavOpenDesk ? "" : "hidden"}
                                             `}
                                                 iconEnd={BsArrowRight}
@@ -410,7 +410,8 @@ export default function RoomLayout({ dictionary, dataRoom, lang, expandBookNav }
                                             </BtnBase>
                                         </div>
 
-                                        {/* GALLEY */}
+                                        {/* GALLERIA / USCITA */}
+                                        {/* 👇 Qui il bottone diventa "Uscita" se isGalleryDesk è vero! */}
                                         <BtnBase onClick={hendelGalleryDesk}
                                             className={`hover:bg-gold ${!bookNavOpenDesk ? "" : "hidden"} ${isGalleryDesk ? "pointer-events-auto" : ""}`}
                                             textClassName={`group-hover:text-foreground`}
@@ -421,11 +422,12 @@ export default function RoomLayout({ dictionary, dataRoom, lang, expandBookNav }
 
                                         <div className="flex gap-3">
                                             {/* PRICE */}
-                                            <BtnBase className={`bg-golden ${!isGalleryDesk ? "" : "hidden"}`}
+                                            <BtnBase className={`bg-golden ${!isGalleryDesk ? "" : "hidden"} /* <-- Nasconde prezzo in galleria */`}
                                                 textClassName="text-foreground">
                                                 Da €{dynamicPrice},00 /{dictionary.assetUi.night}
                                             </BtnBase>
-                                            {/* BOOKNAV */}
+                                            {/* BOOKNAV (PRENOTA) */}
+                                            {/* 👇 Il tasto Prenota rimane sempre visibile e cliccabile (pointer-events-auto) */}
                                             <BookingNav
                                                 dictionary={dictionary}
                                                 lang={lang}
@@ -436,6 +438,9 @@ export default function RoomLayout({ dictionary, dataRoom, lang, expandBookNav }
                                                 navClass={`${isGalleryDesk ? "pointer-events-auto" : ""}`}
                                             />
                                         </div>
+                                        {/* ========================================================================= */}
+                                        {/* 👆 FINE TRASFORMAZIONE BARRA */}
+                                        {/* ========================================================================= */}
                                     </div>
                                 </motion.div>
 

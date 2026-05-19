@@ -104,6 +104,7 @@ export default function IsActive({ dictionary, exp, lang, experienceLibrary, cla
                 srcDesktop={dataExperience?.srcDesk}
                 srcMobile={dataExperience?.srcMobile}
                 srcAlt={dataExperience?.srcAlt}
+                priority={true}
             />
             {/* OVERLAY BLACK GRADIENT */}
             <div className="absolute flex w-full inset-0 h-full bg-gradient-to-tr from-black/100 via-black/65 to-transparent z-10 pointer-events-none" />
@@ -118,7 +119,7 @@ export default function IsActive({ dictionary, exp, lang, experienceLibrary, cla
 
                 <div className="flex flex-col">
                     {/* HEADLINE */}
-                    <MasterTitle className="text-balance leading-tight text-3xl xs:text-4xl md:text-6xl w-[90%] xl:w-[70%]  lg:text-6xl xl:text-6xl 2xl:text-7xl">
+                    <MasterTitle tag="h2" className="text-balance leading-tight text-3xl xs:text-4xl md:text-6xl w-[90%] xl:w-[70%]  lg:text-6xl xl:text-6xl 2xl:text-7xl">
                         {!isActive ? experienceLibrary.experience[0].headline : dataExperience?.headline}
                     </MasterTitle>
 

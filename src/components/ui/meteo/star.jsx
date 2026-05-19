@@ -7,7 +7,7 @@ export default function Star({ dictionary, lang, onChange, activeId }) {
         <div className="flex flex-col h-svh lg:h-dvh w-full justify-around px-10 xs:px-14 md:px-20 lg:px-30 2xl:px-50">
 
             <div className="flex flex-col">
-                <MasterTitle>
+                <MasterTitle tag="h2">
                     {dictionary.headlineStar}
                 </MasterTitle>
 

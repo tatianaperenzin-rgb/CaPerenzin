@@ -46,7 +46,7 @@ export default function SplashScreen({ dictionary }) {
                 >
                     <div className="flex flex-col items-center gap-6 overflow-hidden">
                         <div className="relative">
-                            <MasterTitle className="opacity-30 text-foreground">
+                            <MasterTitle tag="div" className="opacity-30 text-foreground">
                                 {dictionary.assetUi.splashScreen.title}
                             </MasterTitle>
                             <motion.div
@@ -56,7 +56,7 @@ export default function SplashScreen({ dictionary }) {
                                 transition={{ duration: 2, ease: "easeInOut" }}
                                 onAnimationComplete={handleComplete}
                             >
-                                <MasterTitle>
+                                <MasterTitle tag="div">
                                     {dictionary.assetUi.splashScreen.title}
                                 </MasterTitle>
                             </motion.div>
