@@ -137,7 +137,7 @@ export async function generateMetadata({ params }) {
       siteName: "Ca'Perenzin",
       images: [
         {
-          url: "https://res.cloudinary.com/dp1xgwqau/image/upload/v1766344542/madness_of_art_Cinematic_wide_shot_interior_looking_out_from__7cbe6a9f-3f9e-419f-936e-80959b105f6d_1_fmsrhc.png",
+          url: "https://res.cloudinary.com/de124cxny/image/upload/v1771152468/caperenzin.home.desk_rqefja.jpg",
           width: 1200,
           height: 630,
         },
@@ -150,7 +150,7 @@ export async function generateMetadata({ params }) {
       title: defaultTitle,
       description: defaultDesc,
       images: [
-        "https://res.cloudinary.com/dp1xgwqau/image/upload/v1766344542/madness_of_art_Cinematic_wide_shot_interior_looking_out_from__7cbe6a9f-3f9e-419f-936e-80959b105f6d_1_fmsrhc.png",
+        "https://res.cloudinary.com/de124cxny/image/upload/v1771152468/caperenzin.home.desk_rqefja.jpg",
       ],
     },
     robots: {

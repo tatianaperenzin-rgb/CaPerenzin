@@ -13,7 +13,7 @@ export function getOrganizationSchema(dictionary, lang) {
       heroData.heroIntroOne ||
       "Luxury Stay in Tarzo, Treviso",
     url: `https://caperenzin.it/${lang}`,
-    logo: "https://res.cloudinary.com/dp1xgwqau/image/upload/v1766344542/madness_of_art_Cinematic_wide_shot_interior_looking_out_from__7cbe6a9f-3f9e-419f-936e-80959b105f6d_1_fmsrhc.png",
+    logo: "https://res.cloudinary.com/de124cxny/image/upload/v1771152468/caperenzin.home.desk_rqefja.jpg",
     image: [
       heroData.srcDesk ||
         "https://res.cloudinary.com/de124cxny/image/upload/v1771152468/caperenzin.home.desk_rqefja.jpg",

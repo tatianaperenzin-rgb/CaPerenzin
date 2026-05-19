@@ -158,7 +158,7 @@
             },
             "content": "From the Revine lakes where kitesurfers fly, to the ancient forests of Cansiglio and the peaks of the Dolomites. For those seeking the deep breath of happy fatigue.",
             "labelBtn": "Explore trails",
-            "scrImg": "https://res.cloudinary.com/dp1xgwqau/image/upload/v1770344548/surf_cardSize_xh9tis.jpg",
+            "scrImg": "https://res.cloudinary.com/de124cxny/image/upload/v1773048867/surf_cardSize_hnlufd.jpg",
             "altImg": ""
         },
         "cardTwo": {
@@ -169,7 +169,7 @@
             },
             "content": "Medieval villages like Cison and Follina, thousand-year-old castles and secret panoramic points like the Giant Bench. We will reveal the corners only locals know.",
             "labelBtn": "To Discovery",
-            "scrImg": "https://res.cloudinary.com/dp1xgwqau/image/upload/v1770344548/lion_cardSize_ltlasu.jpg",
+            "scrImg": "https://res.cloudinary.com/de124cxny/image/upload/v1773048903/lion_cardSize_vyjx48.jpg",
             "altImg": ""
         },
         "cardThree": {
@@ -180,15 +180,15 @@
             },
             "content": "Not just Prosecco. A journey through historic wineries, award-winning Perenzin cheeses and small artisan shops. For those who want to taste the history of these hills.",
             "labelBtn": "Enjoy Pleasures",
-            "scrImg": "https://res.cloudinary.com/dp1xgwqau/image/upload/v1770344548/soulTeast_cardSize_wn5svg.jpg",
+            "scrImg": "https://res.cloudinary.com/de124cxny/image/upload/v1773048900/soulTeast_cardSize_ev0rz3.jpg",
             "altImg": ""
         }
     },
     "sectionN": {
         "headline": "Far from the world, close to everything.",
         "subHeadline": "Click to plan your trip",
-        "scrImgPhone": "https://res.cloudinary.com/dp1xgwqau/image/upload/v1770342085/infoTravel_img_Phone_kv48ol.jpg",
-        "scrImgDesk": "https://res.cloudinary.com/dp1xgwqau/image/upload/v1770342086/infTravel_img_Desk_cfjonx.jpg",
+        "scrImgPhone": "https://res.cloudinary.com/de124cxny/image/upload/v1773049081/infoTravel_img_Phone_r3uon7.jpg",
+        "scrImgDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1773049085/infTravel_img_Desk_n7oity.jpg",
         "altImg": "",
         "labelBtn": [
             {
