@@ -17,6 +17,7 @@ npm run lint     # eslint
 Non ci sono test automatici. Repo GitHub: `tatianaperenzin-rgb/CaPerenzin` (branch `main`).
 Hosting: **Netlify** (deploy dal branch `main`).
 Git: push con l'account GitHub `tatianaperenzin-rgb`; autore dei commit **Elia Schneider** (configurato in locale nel repo).
+**Un solo ramo: `main`.** Niente branch di lavoro: si committa e si pusha sempre lì.
 
 ## Dove si lavora: VS Code (locale) e Claude Code sul web (cloud)
 
@@ -28,27 +29,33 @@ di incontro è GitHub.**
 | Dove girano i file | disco locale | container nel cloud, clone del repo fatto all'avvio |
 | Visibilità | Claude vede il disco e `localhost:3000` | Claude vede **solo** quello che è su GitHub |
 | Durata | permanente | temporanea: a fine sessione il container viene buttato via |
-| Branch | `main` (o altro, a scelta) | un branch di lavoro dedicato, assegnato a ogni sessione (es. `main-q4e1eh`) |
 
 Conseguenze pratiche:
 - **Le modifiche fatte in locale e non pushate, dalla sessione web non si vedono.** Prima di far lavorare
-  Claude sul web: `git push` da VS Code, o almeno allinearsi con `git pull`.
+  Claude sul web: `git push` da VS Code. E dopo che ha lavorato: `git pull origin main` sul PC, altrimenti
+  al commit successivo le due copie divergono.
 - **Nella sessione web committare e pushare non è opzionale:** è l'unico modo di non perdere il lavoro,
   perché il container sparisce. Vale comunque la regola "nessun commit/push senza richiesta esplicita":
   a fine lavoro va chiesto.
 - **La sessione web non è la stessa chat di quella locale.** La memoria condivisa fra le due sono
   `CLAUDE.md` e `STATUS.md`: per questo vanno tenuti aggiornati.
-- **Pushare dalla sessione web non pubblica il sito.** Netlify fa il deploy solo da `main`: finché il
-  branch di lavoro non viene unito a `main`, caperenzin.it non cambia. Il merge è una decisione di Elia
-  (pull request su GitHub, oppure merge in locale).
+- **Ogni push su `main` fa partire il deploy Netlify**, da qualsiasi postazione. Non c'è un ramo di
+  sicurezza in cui guardare prima di pubblicare: `npm run build` prima di ogni push non è una formalità.
 
-Per provare in locale il lavoro fatto dalla sessione web:
+**Firma dei commit fatti dalla sessione web.** GitHub li mostra "Verified" solo se il *committer* è
+`Claude <noreply@anthropic.com>`. L'*autore* però è un campo separato e resta Elia, così nella
+cronologia si legge chi ha voluto la modifica e si distingue da quelle scritte a mano:
 ```bash
-git fetch origin
-git checkout <branch-di-lavoro>     # es. main-q4e1eh
-git pull origin <branch-di-lavoro>
+git config user.name  "Claude"                 # committer (serve per la firma)
+git config user.email "noreply@anthropic.com"
+git commit --author="Elia Schneider (Claude) <elyssch@gmail.com>" -m "..."
+```
+L'opzione `--author` va ripetuta a ogni commit: non esiste un equivalente in `git config`.
+
+Per aggiornare la copia locale con il lavoro fatto dalla sessione web:
+```bash
+git pull origin main
 npm run dev
-git checkout main                   # per tornare alla versione pubblica
 ```
 
 ## Stack
