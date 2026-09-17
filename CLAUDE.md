@@ -18,6 +18,39 @@ Non ci sono test automatici. Repo GitHub: `tatianaperenzin-rgb/CaPerenzin` (bran
 Hosting: **Netlify** (deploy dal branch `main`).
 Git: push con l'account GitHub `tatianaperenzin-rgb`; autore dei commit **Elia Schneider** (configurato in locale nel repo).
 
+## Dove si lavora: VS Code (locale) e Claude Code sul web (cloud)
+
+Il progetto si può portare avanti da due posti diversi. **Non sono collegati fra loro: l'unico punto
+di incontro è GitHub.**
+
+| | VS Code sul PC di Elia | Claude Code sul web |
+|---|---|---|
+| Dove girano i file | disco locale | container nel cloud, clone del repo fatto all'avvio |
+| Visibilità | Claude vede il disco e `localhost:3000` | Claude vede **solo** quello che è su GitHub |
+| Durata | permanente | temporanea: a fine sessione il container viene buttato via |
+| Branch | `main` (o altro, a scelta) | un branch di lavoro dedicato, assegnato a ogni sessione (es. `main-q4e1eh`) |
+
+Conseguenze pratiche:
+- **Le modifiche fatte in locale e non pushate, dalla sessione web non si vedono.** Prima di far lavorare
+  Claude sul web: `git push` da VS Code, o almeno allinearsi con `git pull`.
+- **Nella sessione web committare e pushare non è opzionale:** è l'unico modo di non perdere il lavoro,
+  perché il container sparisce. Vale comunque la regola "nessun commit/push senza richiesta esplicita":
+  a fine lavoro va chiesto.
+- **La sessione web non è la stessa chat di quella locale.** La memoria condivisa fra le due sono
+  `CLAUDE.md` e `STATUS.md`: per questo vanno tenuti aggiornati.
+- **Pushare dalla sessione web non pubblica il sito.** Netlify fa il deploy solo da `main`: finché il
+  branch di lavoro non viene unito a `main`, caperenzin.it non cambia. Il merge è una decisione di Elia
+  (pull request su GitHub, oppure merge in locale).
+
+Per provare in locale il lavoro fatto dalla sessione web:
+```bash
+git fetch origin
+git checkout <branch-di-lavoro>     # es. main-q4e1eh
+git pull origin <branch-di-lavoro>
+npm run dev
+git checkout main                   # per tornare alla versione pubblica
+```
+
 ## Stack
 - Next.js 16 (App Router) + React 19, **JavaScript** (no TypeScript), `reactCompiler: true`
 - Tailwind CSS 4 (configurato in `src/app/globals.css`, nessun `tailwind.config`) + componenti shadcn/ui in `src/components/ui/uiShadcn/`
