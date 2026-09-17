@@ -1,6 +1,6 @@
 
 
-import { getDictionary } from "@/lib/dictionary"
+import { getDictionary, clientDictionary } from "@/lib/dictionary"
 import { checkAvailability } from "@/lib/availability"
 import SearchPage from "@/components/search/searchPage"
 
@@ -37,6 +37,6 @@ export default async function BookingPage({ params, searchParams }) {
 
 
     return (
-        <SearchPage dictionary={dictionary} lang={lang} checkIn={checkIn} checkOut={checkOut} guests={guests} availableRooms={availableRooms} />
+        <SearchPage dictionary={clientDictionary(dictionary)} lang={lang} checkIn={checkIn} checkOut={checkOut} guests={guests} availableRooms={availableRooms} />
     )
 }

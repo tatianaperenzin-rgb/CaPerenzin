@@ -14,6 +14,11 @@ import { BsArrowUpRightCircle } from "react-icons/bs"
 import { AiOutlineLine } from 'react-icons/ai'
 import { cn } from "@/lib/utility"
 
+// Sistema di prenotazione WordPress collegato?
+// false = il pulsante Prenota apre solo Booking.com, senza espandere la barra date/ospiti
+// true  = il pulsante Prenota espande la barra e prenota tramite WordPress
+const BOOKING_SYSTEM_ACTIVE = false
+
 export default function BookingNav({ dictionary, lang, bookNavOpen, setBookNavOpen, expandBookNav, btnClassName, navClass, classBtnBooktoNavBook, alwaysOpen, room, buttonLabel }) {
 
     const { date, setDate, guests, setGuests } = useBooking()
@@ -171,10 +176,10 @@ export default function BookingNav({ dictionary, lang, bookNavOpen, setBookNavOp
             {!isOpen ? (
                 <div className="fade-in-out">
                     <BtnBase
-                        href={'https://www.booking.com/hotel/it/ca-perenzin.it.html'}
+                        href={BOOKING_SYSTEM_ACTIVE ? undefined : 'https://www.booking.com/hotel/it/ca-perenzin.it.html'}
                         className={cn("hover:bg-background transition-all duration-300", btnClassName)}
                         textClassName={`group-hover:text-gold transition-all duration-300`}
-                        onClick={expandBookNav}
+                        onClick={BOOKING_SYSTEM_ACTIVE ? expandBookNav : undefined}
                         iconClassName={`group-hover:text-gold transition-all duration-300`}
                         iconEnd={!isOpen ? BsArrowUpRightCircle : null}>
                         {dictionary.prenota}

@@ -18,7 +18,15 @@ import { LuLogOut } from "react-icons/lu"
 export default function NavBar({ isOpen: controlledIsOpen, setIsOpen: controlledSetIsOpen, disableMenuOverlay = false, dictionary, lang
 }) {
 
-    const [internalIsOpen, setInternalIsOpen] = useState(false)
+    // Se arrivo da un cambio lingua fatto dal menu, il menu resta aperto
+    const [internalIsOpen, setInternalIsOpen] = useState(() =>
+        typeof window !== "undefined" && sessionStorage.getItem("langSwitch") === "menu"
+    )
+
+    // Il segnale di cambio lingua si usa una sola volta (letto anche dallo SplashScreen)
+    useEffect(() => {
+        sessionStorage.removeItem("langSwitch")
+    }, [])
     const [bookNavOpen, setBookNavOpen] = useState(false)
 
     const { navState, experienceActive, setIsMenuOpen, roomInfoActive, isLargeView, bubbleTest, setBubbleTest } = useUI() // Prendi il valore dal contesto

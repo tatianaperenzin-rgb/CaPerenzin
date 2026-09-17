@@ -2,7 +2,7 @@
 
 import React, { useState, Fragment, useEffect, useRef } from "react"
 import { motion, AnimatePresence } from "framer-motion"
-import { useRouter } from "next/navigation"
+import { useRouter, useSearchParams } from "next/navigation"
 import BubbleFrame from "@/components/ui/bubbleFrame"
 import BtnBase from "@/components/ui/btnBase"
 import SmartBackground from "../image/smartBackround"
@@ -36,7 +36,17 @@ export default function RoomLayout({ dictionary, dataRoom, lang, expandBookNav }
     const nextRoomSlug = rooms[nextIndex].slug
     const prevRoomSlug = rooms[prevIndex].slug
 
-    const [isInfo, setIsInfo] = useState(null)
+    // Stato info salvato nell'URL (?info=1) così resta aperto anche cambiando lingua
+    const searchParams = useSearchParams()
+    const [isInfo, setIsInfo] = useState(searchParams.get("info") === "1")
+    const toggleInfo = () => {
+        const next = !isInfo
+        setIsInfo(next)
+        const url = new URL(window.location.href)
+        if (next) url.searchParams.set("info", "1")
+        else url.searchParams.delete("info")
+        window.history.replaceState(null, "", url)
+    }
 
     const bubbleRef = useRef(null)
 
@@ -298,7 +308,7 @@ export default function RoomLayout({ dictionary, dataRoom, lang, expandBookNav }
                             </div>
 
                             {/* BUTTON ACCES ROOM DESK */}
-                            <BtnBase onClick={() => setIsInfo(!isInfo)}
+                            <BtnBase onClick={toggleInfo}
                                 className={`transition-all duration-300 hidden lg:flex hover:bg-gold shadow-xl border-2 border-gold ${!isInfo ? "" : "lg:hidden"}`}
                                 textClassName="group-hover:text-foreground transition-all duration-300 "
                             >
@@ -422,7 +432,7 @@ export default function RoomLayout({ dictionary, dataRoom, lang, expandBookNav }
 
                                         <div className="flex gap-3">
                                             {/* PRICE */}
-                                            <BtnBase className={`bg-golden ${!isGalleryDesk ? "" : "hidden"} /* <-- Nasconde prezzo in galleria */`}
+                                            <BtnBase className={`bg-golden cursor-default ${!isGalleryDesk ? "" : "hidden"} /* <-- Nasconde prezzo in galleria */`}
                                                 textClassName="text-foreground">
                                                 Da €{dynamicPrice},00 /{dictionary.assetUi.night}
                                             </BtnBase>
@@ -580,7 +590,7 @@ export default function RoomLayout({ dictionary, dataRoom, lang, expandBookNav }
 
                                 {/* PRICE & NEXT */}
                                 <div className="flex flex-wrap w-full gap-3 mt-10 pointer-events-auto">
-                                    <BtnBase className="bg-background" textClassName="text-foreground">
+                                    <BtnBase className="bg-background cursor-default" textClassName="text-foreground">
                                         Da €{dynamicPrice},00 /{dictionary.assetUi.night}
                                     </BtnBase>
                                     <div className="flex gap-3">

@@ -1,5 +1,5 @@
 
-import { getDictionary } from "@/lib/dictionary"
+import { getDictionary, clientDictionary } from "@/lib/dictionary"
 import Intro from "@/components/home/intro"
 import dynamic from 'next/dynamic'
 import SplashScreen from "@/components/ui/splashScreen"
@@ -35,7 +35,8 @@ export default async function Home({ params }) {
   //params mi da l'url con la lingua
 
   const { lang } = await params
-  const dictionary = await getDictionary(lang)
+  // dizionario senza termini/privacy/cookie/esperienze (non usati in home)
+  const dictionary = clientDictionary(await getDictionary(lang))
 
   return (
 

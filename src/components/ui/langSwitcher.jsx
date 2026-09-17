@@ -1,6 +1,6 @@
 "use client"
 
-import { usePathname, useParams, } from "next/navigation"
+import { usePathname, useParams, useSearchParams } from "next/navigation"
 import { useState } from "react"
 import Link from "next/link"
 
@@ -11,6 +11,7 @@ export default function LangSwitcher({ isMenuOpen }) {
     //leggiamo dove siamo 
     const params = useParams()
     const pathName = usePathname()
+    const searchParams = useSearchParams()
 
     //leggiamo la llingu acorrente
     const currentLang = params.lang || "it"
@@ -26,7 +27,9 @@ export default function LangSwitcher({ isMenuOpen }) {
         //cambiar la parte 1 dopo lo / cioe la parte 2 
         segment[1] = locale
         //ricreo l'url cambiando da it in en o viceversa
-        return segment.join("/")
+        // manteniamo i parametri (es. ?info=1 nella camera, date nel booking)
+        const query = searchParams.toString()
+        return segment.join("/") + (query ? `?${query}` : "")
     }
 
     const handleClick = () => {
@@ -52,7 +55,11 @@ export default function LangSwitcher({ isMenuOpen }) {
             </button>
 
             <Link href={redirectPathName(nextLang)}
-                onClick={() => setIsOpen(false)}
+                onClick={() => {
+                    setIsOpen(false)
+                    // segnale per la pagina nuova: niente splash e menu riaperto se era aperto
+                    sessionStorage.setItem("langSwitch", isMenuOpen ? "menu" : "page")
+                }}
                 className={`cursor-pointer ${isOpen ? "block" : "hidden"}
                 hover:text-black
                 text-sm xs:text-base`}>

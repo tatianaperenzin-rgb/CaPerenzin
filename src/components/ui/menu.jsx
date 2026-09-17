@@ -9,6 +9,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { BsArrowDownRightCircle } from "react-icons/bs"
 import { RiDoorLockFill } from "react-icons/ri"
+import cloudinaryLoader from "@/lib/cloudinaryLoader"
 
 export default function Menu({ setIsOpen, dictionary, dataRooms, lang, hero }) {
 
@@ -169,6 +170,7 @@ export default function Menu({ setIsOpen, dictionary, dataRooms, lang, hero }) {
                                     alt="menu image"
                                     className="object-cover"
                                     quality={60}
+                                    loader={cloudinaryLoader}
                                     sizes="(max-width: 768px) 100vw, 50vw"
                                 />
                                 {/* OVERLAY NERO */}

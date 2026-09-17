@@ -1,6 +1,7 @@
 "use client"
 
 import { getImageProps } from "next/image"
+import cloudinaryLoader from "@/lib/cloudinaryLoader"
 
 export default function SmartBackground({ srcMobile, srcDesktop, alt = "Sfondo", className = "", priority = false }) {
 
@@ -9,7 +10,8 @@ export default function SmartBackground({ srcMobile, srcDesktop, alt = "Sfondo",
         alt, 
         fill: true, 
         sizes: "(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw",
-        quality: 65 
+        quality: 65,
+        loader: cloudinaryLoader // ottimizza Cloudinary, non Next
     }
 
     // Fallback: se manca il mobile, usiamo il desktop

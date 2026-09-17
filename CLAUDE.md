@@ -22,7 +22,7 @@ Git: push con l'account GitHub `tatianaperenzin-rgb`; autore dei commit **Elia S
 - Next.js 16 (App Router) + React 19, **JavaScript** (no TypeScript), `reactCompiler: true`
 - Tailwind CSS 4 (configurato in `src/app/globals.css`, nessun `tailwind.config`) + componenti shadcn/ui in `src/components/ui/uiShadcn/`
 - Animazioni: GSAP, Framer Motion, Lenis, Embla Carousel
-- Media su Cloudinary (`res.cloudinary.com` abilitato in `next.config.mjs`)
+- Media su Cloudinary. Le immagini Cloudinary sono ottimizzate **da Cloudinary**, non da Next: usare `loader={cloudinaryLoader}` (`@/lib/cloudinaryLoader`) con `next/image`/`getImageProps` (già dentro `SmartBackground`), oppure `cloudinaryLoader({ src, width, quality })` per un `<img>` semplice. Le immagini locali in `public/` restano all'ottimizzatore di Next
 - Email contatti: Resend + reCAPTCHA v3 · Mappa: Google Maps · Cookie banner: Termly
 - Alias import: `@/*` → `src/*`
 
@@ -55,6 +55,9 @@ File nella root che **non fanno parte di Next.js** ma sono materiale da incollar
 - I testi **non** si scrivono nei componenti: stanno in `src/dictionaries/it.json` e `en.json`,
   caricati con `getDictionary(lang)` (solo lato server) e passati ai componenti come prop `dictionary`.
 - **Ogni modifica di testo va fatta in entrambi i file**, mantenendo le stesse chiavi e la stessa struttura.
+- **Passaggio ai componenti client:** usare `clientDictionary(dictionary)` (da `@/lib/dictionary`) invece del dizionario intero.
+  Toglie le sezioni pesanti `terms`, `privacy`, `cookie`, `experiences`, che altrimenti finiscono nell'HTML di ogni pagina.
+  Se un componente client ne ha bisogno: `clientDictionary(dictionary, ["experiences"])`.
 - Le chiavi tipo `"----"` o `"__TEXT.SECTION__A__"` sono solo separatori visivi: non usarle e non rimuoverle.
 - Varianti CSS per lingua disponibili: `it:` e `en:` (definite in `globals.css`).
 
@@ -73,6 +76,9 @@ Se cambia un ID in WordPress va aggiornato in **entrambi i JSON** e in `WP_SLUG_
 3. Prenotazione di una camera → `ui/booking/bookingNav.jsx` chiama `/api/wp-booking`, che legge l'HTML delle pagine
    WordPress per estrarre nonce e campi hidden; poi il browser invia un POST al checkout WordPress in una nuova scheda.
 4. La lingua viene passata a WordPress con cookie/campo `customer_lang`.
+
+**Stato attuale:** WordPress non è collegato. In `ui/booking/bookingNav.jsx` la costante `BOOKING_SYSTEM_ACTIVE = false`
+fa sì che il pulsante "Prenota" apra solo Booking.com senza espandere la barra. Con `true` torna il flusso sopra.
 
 Lo step 3 dipende dal markup HTML di MotoPress: **non modificarlo senza testare una prenotazione reale end-to-end**.
 Qualsiasi cambio lato WordPress (plugin, tema, slug) può romperlo.

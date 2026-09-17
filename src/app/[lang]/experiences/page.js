@@ -1,5 +1,5 @@
 
-import { getDictionary } from "@/lib/dictionary"
+import { getDictionary, clientDictionary } from "@/lib/dictionary"
 import Experience from "@/components/experience/experience"
 import StructuredData from "@/components/seo/StructuredData"
 import { getExperienceSchema } from "@/components/seo/jsonLd"
@@ -40,7 +40,7 @@ export default async function Experiences({ params }) {
     return (
         <>
             <StructuredData data={getExperienceSchema(exp, lang)} />
-            <Experience dictionary={dictionary} exp={exp} lang={lang} />
+            <Experience dictionary={clientDictionary(dictionary, ["experiences"])} exp={exp} lang={lang} />
         </>
     )
 }

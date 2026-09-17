@@ -1,5 +1,5 @@
 
-import { getDictionary } from "@/lib/dictionary"
+import { getDictionary, clientDictionary } from "@/lib/dictionary"
 import ContactPage from "@/components/contacts/contactPage"
 
 
@@ -33,6 +33,6 @@ export default async function Contatti({ params }) {
     }
 
     return (
-        <ContactPage dictionary={dictionary} lang={lang} dictionarySectionO={sectionODict} bookingDictionary={dictionaryFull} dictionaryForm={dictionaryFull.form} />
+        <ContactPage dictionary={dictionary} lang={lang} dictionarySectionO={sectionODict} bookingDictionary={clientDictionary(dictionaryFull)} dictionaryForm={dictionaryFull.form} />
     )
 }

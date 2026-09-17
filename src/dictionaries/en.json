@@ -94,7 +94,9 @@
         }
     },
     "sectionBplus": {
-        "display": "Our rooms"
+        "display": "Our rooms",
+        "subHeadline": "Four rooms, four ways to inhabit the silence. Choose the one that feels like you.",
+        "note": ""
     },
     "sectionE": {
         "upTitle": "FROM GARDEN TO TABLE",
@@ -449,50 +451,40 @@
                 "quote": "— Your experience, coming soon."
             },
             "gallery": [
-                
-                
+               
                 {
                     "id": 0,
-                    "bkMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1774092852/heart_ph_05_fsxd0h.jpg",
-                    "bkDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1774093065/heart_desk_01_noPieghe_eqwe31.jpg",
-                    "alt": ""
-                },
-                {
-                    "id": 1,
-                    "bkMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1774092852/heart_ph_07_dc1vy0.jpg",
-                    "bkDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1774093065/heart_desk_04_hj2yob.jpg",
+                    "bkMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1789643034/heart_ph_05_no_bed_mbarkz.jpg",
+                    "bkDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1789643034/heart_desk_01_no_bed_xoglux.jpg",
                     "alt": ""
                 },
                  {
+                    "id": 1,
+                    "bkMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1789643034/heart_ph_07_no_bed_opd0bt.jpg",
+                    "bkDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1789643036/heart_desk_04_no_bed_yjbwh0.jpg",
+                    "alt": ""
+                },
+                
+                
+                 {
                     "id": 2,
-                    "bkMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1774092851/heart_ph_01_noPieghe_jrplz3.jpg",
-                    "bkDesk": "",
+                    "bkMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1774092850/heart_ph_03_u9ynfq.jpg",
+                    "bkDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1789643035/heart_desk_02_no_bed_zvvvyt.jpg",
                     "alt": ""
                 },
                  {
                     "id": 3,
-                    "bkMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1774092850/heart_ph_03_u9ynfq.jpg",
-                    "bkDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1774093066/heart_desk_02_noPieghe_br0loa.jpg",
-                    "alt": ""
-                },
-                 {
-                    "id": 4,
                     "bkMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1774092850/heart_ph_02_e5nq9f.jpg",
                     "bkDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1774093066/heart_desk_03_bwfkgz.jpg",
                     "alt": ""
                 },
                  {
-                    "id": 5,
+                    "id": 4,
                     "bkMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1774092852/heart_ph_06_oteyes.jpg",
-                    "bkDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1774093065/heart_desk_06_noPieghe_fmt3yt.jpg",
-                    "alt": ""
-                },
-                 {
-                    "id": 6,
-                    "bkMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1774092851/heart_ph_04_jmgb4e.jpg",
-                    "bkDesk": "",
+                    "bkDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1789643035/heart_desk_06_no_bad_ueucoq.jpg",
                     "alt": ""
                 }
+                
             ],
             "icsUrl": "https://admin.caperenzin.it/?feed=mphb.ics&accommodation_id=25",
             "motopressId": "25",
@@ -563,14 +555,14 @@
                
                 {
                     "id": 0,
-                    "bkMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1774093243/breath_ph_03_noPieghe_ftrtod.jpg",
-                    "bkDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1774093303/breath_desk_03_noPieghe_fibbfh.jpg",
+                    "bkMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1789643954/breath_ph_03_no_bad_ieaiyz.jpg",
+                    "bkDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1789643955/breath_desk_03_no_bad_cbk0x8.jpg",
                     "alt": ""
                 },
                      {
                     "id": 1,
                     "bkMobile": "https://res.cloudinary.com/de124cxny/image/upload/v1774093244/breath_ph_04_whrnj9.jpg",
-                    "bkDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1774093304/breath_desk_04_noPieghe_dcv4dj.jpg",
+                    "bkDesk": "https://res.cloudinary.com/de124cxny/image/upload/v1789643955/breath_desk_04_no_bad_oiia59.jpg",
                     "alt": ""
                 },
            

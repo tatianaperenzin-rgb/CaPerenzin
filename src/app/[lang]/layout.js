@@ -1,6 +1,6 @@
 import "@/app/globals.css";
 import localFont from "next/font/local";
-import { getDictionary } from "@/lib/dictionary";
+import { getDictionary, clientDictionary } from "@/lib/dictionary";
 import TermlyCMP from "@/components/termlyCMP";
 import { Suspense } from "react";
 import NavBar from "@/components/ui/navbar";
@@ -181,7 +181,7 @@ export default async function RootLayout({ children, params }) {
 
         <ContextUi>
           <BookingProvider>
-            <NavBar dictionary={dictionary} lang={lang} />
+            <NavBar dictionary={clientDictionary(dictionary)} lang={lang} />
 
             <main className="relative w-full min-h-screen flex flex-col">
               {children}

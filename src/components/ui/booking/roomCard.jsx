@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react"
 import BtnBase from "@/components/ui/btnBase"
 import { HiOutlineArrowNarrowRight } from "react-icons/hi"
+import cloudinaryLoader from "@/lib/cloudinaryLoader"
 
 export default function RoomCard({ room, dictionary, lang }) {
     const [dynamicPrice, setDynamicPrice] = useState(room.price)
@@ -29,7 +30,7 @@ export default function RoomCard({ room, dictionary, lang }) {
             <div className="aspect-video w-full overflow-hidden rounded-2xl relative">
                 {room.gallery?.[0]?.bkDesk && (
                     <img
-                        src={room.gallery[0].bkDesk}
+                        src={cloudinaryLoader({ src: room.gallery[0].bkDesk, width: 1080, quality: 65 })}
                         alt={room.roomName}
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 shadow-2xl"
                     />

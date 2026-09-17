@@ -5,9 +5,13 @@ import { motion, AnimatePresence } from "framer-motion"
 import MasterTitle from "@/components/ui/typography/masterTitle"
 
 export default function SplashScreen({ dictionary }) {
-    const [show, setShow] = useState(true)
+    // Dopo un cambio lingua non rimostriamo lo splash
+    const [show, setShow] = useState(() =>
+        !(typeof window !== "undefined" && sessionStorage.getItem("langSwitch"))
+    )
 
     useEffect(() => {
+        if (!show) return
         // Check session storage
         // const hasShown = typeof window !== "undefined" ? sessionStorage.getItem("splashShown") : null
         // if (hasShown) {
@@ -22,7 +26,7 @@ export default function SplashScreen({ dictionary }) {
             document.body.style.overflow = ""
             document.documentElement.style.overflow = ""
         }
-    }, [])
+    }, [show])
 
     const handleComplete = () => {
         // Unlock scroll and set session
@@ -31,7 +35,7 @@ export default function SplashScreen({ dictionary }) {
             document.body.style.overflow = ""
             document.documentElement.style.overflow = ""
             sessionStorage.setItem("splashShown", "true")
-        }, 270)
+        }, 120)
     }
 
     return (
@@ -41,7 +45,7 @@ export default function SplashScreen({ dictionary }) {
                 <motion.div
                     initial={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    transition={{ duration: 1, ease: "easeInOut" }}
+                    transition={{ duration: 0.5, ease: "easeInOut" }}
                     className="fixed inset-0 z-99999 flex flex-col items-center justify-center bg-background text-foreground overflow-hidden"
                 >
                     <div className="flex flex-col items-center gap-6 overflow-hidden">
@@ -53,7 +57,7 @@ export default function SplashScreen({ dictionary }) {
                                 className="absolute top-0 left-0 overflow-hidden text-gold whitespace-nowrap"
                                 initial={{ width: 0 }}
                                 animate={{ width: "100%" }}
-                                transition={{ duration: 2, ease: "easeInOut" }}
+                                transition={{ duration: 1, ease: "easeInOut" }}
                                 onAnimationComplete={handleComplete}
                             >
                                 <MasterTitle tag="div">
