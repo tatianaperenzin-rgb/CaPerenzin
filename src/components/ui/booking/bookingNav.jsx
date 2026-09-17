@@ -27,7 +27,6 @@ export default function BookingNav({ dictionary, lang, bookNavOpen, setBookNavOp
     const [isLoading, setIsLoading] = useState(false)
 
     const handleBook = async () => {
-        console.log("[BookingNav] Clicked Book. Date:", date, "Room:", room ? room.roomName : "Generic Search");
         const baseUrl = process.env.NEXT_PUBLIC_WP_URL || 'https://admin.caperenzin.it';
 
 
@@ -75,7 +74,6 @@ export default function BookingNav({ dictionary, lang, bookNavOpen, setBookNavOp
                     })
 
                     // Aggiungi ospiti se non già presenti nei campi hidden
-                    console.log("Lingua inviata a WordPress:", lang)
                     const addField = (name, value) => {
                         if (!hiddenFields[name]) {
                             const input = document.createElement('input')

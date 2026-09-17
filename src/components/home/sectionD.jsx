@@ -82,7 +82,6 @@ export default function SectionD({ dictionary, lang, className }) {
     // FIX: Qui passiamo 'id' come argomento e settiamo QUELLO
     const handleClick = (id) => {
         setActiveId(id)
-        console.log("Apro vista:", id)
     }
 
     // Seleziono i dati giusti in base al click

@@ -39,7 +39,6 @@ export function BookingProvider({ children }) {
         // Only save if there is some data to save
         if (date?.from || guests !== 2) {
             sessionStorage.setItem("booking_params", JSON.stringify(dateBooking))
-            console.log("Context: date_saved_in_session", dateBooking)
         }
     }, [date, guests])
 

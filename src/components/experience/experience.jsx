@@ -45,7 +45,6 @@ export default function Experience({ dictionary, exp, lang }) {
         return () => setExperienceActive(false)
     }, [isActive, setExperienceActive])
 
-    console.log("who is pressen?", isActive)
 
     const [isOpen, setIsOpen] = useState(null)
     const wrapperRef = useRef(null)
@@ -74,13 +73,11 @@ export default function Experience({ dictionary, exp, lang }) {
     const hendelClick = (id) => {
         setIsActive(id)
         setIsOpen(false)
-        console.log("button pressed ID:", id)
     }
 
     const toggleExp = () => setIsOpen(!isOpen)
 
     const activeExperience = exp.buttons.find(exp => exp.id === isActive)
-    console.log("how exp is active now:", activeExperience)
 
     function TypeExp({ className }) {
         return (

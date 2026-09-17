@@ -1,6 +1,19 @@
 
 import { NextResponse } from 'next/server';
 
+// Accettiamo solo calendari del nostro WordPress: senza questo controllo chiunque
+// potrebbe usare questa API per far scaricare al server un indirizzo qualsiasi (SSRF)
+const ALLOWED_HOST = new URL(process.env.NEXT_PUBLIC_WP_URL || 'https://admin.caperenzin.it').hostname;
+
+function isAllowedIcsUrl(value) {
+    try {
+        const url = new URL(value);
+        return url.protocol === 'https:' && url.hostname === ALLOWED_HOST;
+    } catch {
+        return false;
+    }
+}
+
 export async function GET(request) {
     const { searchParams } = new URL(request.url);
     const icsUrl = searchParams.get('icsUrl');
@@ -9,10 +22,13 @@ export async function GET(request) {
         return NextResponse.json({ error: 'ICS URL required' }, { status: 400 });
     }
 
+    if (!isAllowedIcsUrl(icsUrl)) {
+        return NextResponse.json({ error: 'ICS URL not allowed' }, { status: 400 });
+    }
+
     try {
         const response = await fetch(icsUrl, {
-            next: { revalidate: 60 },
-            cache: 'no-store'
+            next: { revalidate: 60 } // calendario ricaricato al massimo ogni minuto
         });
 
         if (!response.ok) {

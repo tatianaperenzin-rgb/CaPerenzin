@@ -17,7 +17,6 @@ export default function Intro({ dictionary, lang }) {
 
     const expandBookNav = () => {
         setBookNavOpen(!bookNavOpen)
-        console.log("CLIK", bookNavOpen)
     }
 
     const hendelView = () => {

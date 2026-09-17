@@ -16,7 +16,6 @@ export async function GET(request) {
             cache: 'no-store' // Prezzi sempre aggiornati
         });
 
-        console.log("[room-price] Status API:", res.status);
 
         if (!res.ok) {
             const errorText = await res.text();
@@ -25,20 +24,16 @@ export async function GET(request) {
         }
 
         const rates = await res.json();
-        console.log("[room-price] Rates scaricate:", rates.length, "tariffe trovate");
-        console.log("[room-price] Cerco accommodation_type_id:", roomId);
 
         // Cerchiamo la tariffa filtrando per l'ID del tipo di alloggio
         const matchingRate = rates.find(rate =>
             String(rate.accommodation_type_id) === String(roomId)
         );
 
-        console.log("[room-price] Tariffa trovata:", matchingRate ? "SI" : "NO");
 
         let price = null;
         if (matchingRate && matchingRate.season_prices && matchingRate.season_prices.length > 0) {
             price = matchingRate.season_prices[0].base_price;
-            console.log("[room-price] Prezzo estratto:", price);
         }
 
         return NextResponse.json({ price });

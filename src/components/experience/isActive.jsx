@@ -59,7 +59,6 @@ export default function IsActive({ dictionary, exp, lang, experienceLibrary, cla
 
     const hendelClick = (id) => {
         setIsActive(id)
-        console.log("ID", id)
     }
 
     const showTips = () => {
@@ -90,7 +89,6 @@ export default function IsActive({ dictionary, exp, lang, experienceLibrary, cla
         }
     }, [experienceLibrary])
 
-    console.log("DATA", dataExperience)
 
     const classTips = "font-muller text-sm text-balance"
 

@@ -53,7 +53,6 @@ export async function GET(request) {
         const children = searchParams.get('children') || '0';
         // Log richiesto dall'utente per vedere la lingua selezionata nel terminale
         const lang = searchParams.get('lang');
-        console.log(`[wp-booking] Booking Request - Lingua: ${lang}, RoomType: ${wpTypeId}`);
 
         if (!checkIn || !checkOut) {
             // Se non ci sono date, restituisci solo il nonce di ricerca (step 1)
@@ -70,7 +69,6 @@ export async function GET(request) {
         // === STEP 2: Fetch la pagina dei risultati per ottenere il form di prenotazione ===
         const resultsUrl = `${baseUrl}/risultati-di-ricerca?mphb-checkout-nonce=${searchNonce}&_wp_http_referer=${encodeURIComponent(referer)}&mphb_room_type_id=${roomTypeId}&mphb_check_in_date=${checkIn}&mphb_check_out_date=${checkOut}&mphb_adults=${adults}&mphb_children=${children}`;
 
-        console.log("[wp-booking] Fetching risultati:", resultsUrl);
 
         // Salviamo i cookies dalla prima richiesta per mantenere la sessione
         const cookies = roomPageRes.headers.get('set-cookie') || '';
@@ -85,7 +83,6 @@ export async function GET(request) {
         });
 
         if (!resultsRes.ok) {
-            console.log("[wp-booking] Risultati status:", resultsRes.status);
             return NextResponse.json({
                 step: 1,
                 searchNonce,
@@ -168,9 +165,7 @@ export async function GET(request) {
         });
 
         if (selectedForm) {
-            console.log("[wp-booking] MATCH ESATTO TROVATO!");
         } else {
-            console.log("[wp-booking] Nessun match esatto. Cerco form GENERICO...");
             // Se non troviamo il form specifico, cerchiamo il form di checkout GENERICO
             // Lo riconosciamo perché ha 'mphb-checkout-nonce' ma NON 'mphb-checkout-recommendation-nonce'
 
@@ -180,11 +175,9 @@ export async function GET(request) {
             );
 
             if (genericForm) {
-                console.log("[wp-booking] Uso form GENERICO e inietto i dettagli stanza...");
                 selectedForm = { ...genericForm }; // Copia superficiale
                 selectedForm.hiddenFields = { ...genericForm.hiddenFields }; // Copia hidden fields
             } else {
-                console.log("[wp-booking] FALLBACK al primo form disponibile (nessun generico trovato)");
                 selectedForm = { ...bookingForms[0] };
                 selectedForm.hiddenFields = { ...bookingForms[0].hiddenFields };
             }
@@ -192,7 +185,6 @@ export async function GET(request) {
             // INIEZIONE CHIAVE: Forziamo la prenotazione di QUESTA stanza
             const detailKey = `mphb_rooms_details[${roomTypeId}]`;
             selectedForm.hiddenFields[detailKey] = "1";
-            console.log(`[wp-booking] Iniettato campo: ${detailKey} = 1`);
         }
 
 

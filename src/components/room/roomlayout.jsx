@@ -105,13 +105,10 @@ export default function RoomLayout({ dictionary, dataRoom, lang, expandBookNav }
     useEffect(() => {
         const fetchPrice = async () => {
             try {
-                console.log("[RoomLayout] Fetching prezzo per:", dataRoom.roomName, "| wpTypeId:", dataRoom.wpTypeId);
                 const res = await fetch(`/api/room-price?id=${dataRoom.wpTypeId}`);
                 const data = await res.json();
-                console.log("[RoomLayout] Risposta API:", data);
                 if (data.price) {
                     setDynamicPrice(data.price);
-                    console.log(`[RoomLayout] Prezzo aggiornato: ${data.price}`);
                 } else {
                     console.warn("[RoomLayout] Nessun prezzo ricevuto, uso fallback:", dataRoom.price);
                 }
@@ -171,7 +168,9 @@ export default function RoomLayout({ dictionary, dataRoom, lang, expandBookNav }
         return () => setRoomInfoActive(false)
     }, [shouldShowCart, isInfo, setRoomInfoActive])
 
-    function PillInfo() {
+    // Funzioni di render (non componenti): dichiarate qui dentro come componenti venivano
+    // ricreate a ogni render e React smontava/rimontava le pillole ogni volta
+    function renderPillInfo() {
 
         const icons = {
             person: <IoPersonSharp />,
@@ -216,7 +215,7 @@ export default function RoomLayout({ dictionary, dataRoom, lang, expandBookNav }
         )
     }
 
-    function ServiceDotList() {
+    function renderServiceDotList() {
         return (
             <ul className={`font-muller mt-4 lg:mt-0 text-sm list-disc pl-5 columns-2 lg:columns-3 gap-8 ${!isService ? "hidden" : "block"}`}>
                 {dataRoom.service.service.map((item, index) => (
@@ -315,7 +314,7 @@ export default function RoomLayout({ dictionary, dataRoom, lang, expandBookNav }
                                 {dictionary.assetUi.entryRoom}
                             </BtnBase>
 
-                            <PillInfo />
+                            {renderPillInfo()}
 
                             {/* PILL INFO ALL SERVICE ONLY FOR DESK */}
                             {isInfo && !isGalleryDesk && (
@@ -336,7 +335,7 @@ export default function RoomLayout({ dictionary, dataRoom, lang, expandBookNav }
                                                     className="w-120 bg-gold rounded-xl overflow-hidden shadow-lg"
                                                 >
                                                     <div className="flex p-3">
-                                                        <ServiceDotList />
+                                                        {renderServiceDotList()}
                                                     </div>
                                                 </motion.div>
                                             )}
@@ -585,7 +584,7 @@ export default function RoomLayout({ dictionary, dataRoom, lang, expandBookNav }
                                         {dataRoom.service.label}
                                     </InfoPill>
 
-                                    {isService && <ServiceDotList />}
+                                    {isService && renderServiceDotList()}
                                 </div>
 
                                 {/* PRICE & NEXT */}

@@ -54,13 +54,15 @@ export default async function Home({ params }) {
 
       <SectionEF dictionary={dictionary} lang={lang} />
 
-     <section id="breakfast" className="hidden lg:flex">
+      {/* Ancora unica per il link del menu /#breakfast (le due sezioni sotto sono desktop e mobile) */}
+      <div id="breakfast" />
+     <section className="hidden lg:flex">
         <HorizontalScroll>
           <SectionG dictionary={dictionary.sectionG} lang={lang} />
           <SectionH dictionary={dictionary.sectionH} lang={lang} />
         </HorizontalScroll>
       </section> 
-      <section id="breakfast" className=" lg:hidden">
+      <section className=" lg:hidden">
         
           <SectionG dictionary={dictionary.sectionG} lang={lang} />
           <SectionH dictionary={dictionary.sectionH} lang={lang} />

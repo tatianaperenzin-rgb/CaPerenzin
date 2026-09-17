@@ -11,23 +11,16 @@ _Nessun lavoro in corso._
 ## Problemi aperti
 
 ### Priorità alta
-- [ ] **Email contatti: input non sanificato** – `src/hooks/sendEmail.js` inserisce `name`, `email`, `phone`, `message` direttamente nell'HTML dell'email. Fare escape dei valori.
-- [ ] **reCAPTCHA senza secret** – se `RECAPTCHA_SECRET_KEY` manca, il codice logga e prosegue comunque verso Google. Rendere esplicito il comportamento.
-- [ ] **Flusso `api/wp-booking` fragile** – basato su scraping HTML di MotoPress. Valutare alternativa più robusta o almeno un controllo periodico.
 
 ### Performance (valutati, non fatti)
 - [ ] Font: 11 file PP Monument dichiarati, corsivi/Thin poco usati – deciso di lasciarli per ora
 - Icone: 3 librerie (react-icons, iconify, lucide) volute, servono tutte
 
 ### Pulizia codice
-- [ ] `roomlayout.jsx`: `PillInfo` e `ServiceDotList` sono componenti dichiarati dentro il render (3 errori eslint preesistenti, possono resettare lo stato)
 - [ ] Componenti mai importati: `contacts/contactForm.jsx`, `empty/test.jsx`, `empty/testD.jsx`, `form/contattiPage.jsx`, `icons/icons.jsx`, `smoothScroll.jsx`
 - [ ] `src/app/layotu.js` – refuso di "layout", verificare e rimuovere
 - [ ] Cartella `src/components/empty/` con nome fuorviante (contiene componenti usati dalla home)
-- [ ] `console.log` di debug attivi in produzione (bookingNav, api/room-price, api/wp-booking, bookingContext, sendEmail)
 - [ ] `ui/booking/bookingNav.jsx`: campi `mphb_children` e `mphb_rooms_details[0][adults]` aggiunti due volte
-- [ ] Home `[lang]/page.js`: due sezioni con lo stesso `id="breakfast"` (desktop e mobile)
-- [ ] `api/room-availability`: `next: { revalidate: 60 }` e `cache: 'no-store'` insieme si contraddicono
 - [ ] `fix_hydration.ps1` nella root: script usato una volta, valutare rimozione
 - [ ] File WordPress sparsi nella root (`email_*_template.html`, `*.css`, `wordpress_loader.html`) → spostare in una cartella dedicata (es. `wordpress/`)
 - [ ] File d'esempio Next.js inutilizzati in `public/` (`file.svg`, `globe.svg`, `next.svg`, `vercel.svg`, `window.svg`)
@@ -41,6 +34,7 @@ _Nessun lavoro in corso._
 - [ ] Netlify CLI non installata / progetto non collegato (serve solo per log deploy, variabili, anteprime).
 
 ## Domande / decisioni in sospeso
+- **Quando riapriamo WordPress / MotoPress:** il flusso `api/wp-booking` legge l'HTML delle pagine MotoPress per ricavare nonce e form di checkout (scraping): un aggiornamento del plugin o del tema può romperlo. Valutare l'API ufficiale MotoPress e testare una prenotazione reale end-to-end prima di mettere `BOOKING_SYSTEM_ACTIVE = true`. Allineare anche la capienza camere
 - Soul Room: 3ª foto della galleria senza versione desktop (it/en)
 - Cloudinary: controllare i crediti di trasformazione in dashboard dopo il deploy
 - `sectionBplus.subHeadline`: inserita bozza di mini copy (it/en) da confermare · `sectionBplus.note` ancora vuota
@@ -49,6 +43,13 @@ _Nessun lavoro in corso._
 - I template email nella root sono allineati con quelli attivi su WordPress?
 
 ## Completato
+- 2026-09-17 – Modulo contatti: il mittente senza indirizzo veniva rifiutato da Resend (le email del form non partivano). Ora `from` = `Contatto dal sito Ca Perenzin <info@caperenzin.it>` (dominio verificato su Resend, stesso mittente di WP Mail SMTP). Test reale: Resend "Delivered" a info@caperenzin.it, replyTo corretto, HTML inserito mostrato come testo. Confermato arrivo in Gmail, posta in arrivo (non spam)
+- 2026-09-17 – Modulo contatti (`hooks/sendEmail.js`): campi ripuliti prima di entrare nell'HTML dell'email, validazione lato server (obbligatori, lunghezze, formato email), `replyTo` corretto (prima `reply_to` veniva ignorato), errori di Resend ora gestiti (prima il form diceva "inviato" anche se l'invio falliva)
+- 2026-09-17 – reCAPTCHA: senza `RECAPTCHA_SECRET_KEY` l'invio viene bloccato esplicitamente; parametri inviati a Google con encoding corretto
+- 2026-09-17 – `api/room-availability`: accetta solo calendari dell'host WordPress (protezione SSRF) e cache coerente (`revalidate: 60`, tolto `no-store` che la annullava)
+- 2026-09-17 – Rimossi 26 `console.log` di debug (tenuti quelli della firma in `navbar.jsx`)
+- 2026-09-17 – Home: tolto il doppio `id="breakfast"`, ora un'unica ancora prima delle due sezioni (il link del menu su mobile puntava alla sezione desktop nascosta)
+- 2026-09-17 – `roomlayout.jsx`: `PillInfo`/`ServiceDotList` trasformati in funzioni di render (non più ricreati a ogni render), 0 errori eslint nel file
 - 2026-09-17 – Immagini camere: deciso di lasciare invariate Blessing e Soul (incluse le loro foto noPieghe). Sostituzioni fatte solo per Heart e Breath
 - 2026-09-17 – Breath Room: foto noPieghe sostituite con versioni "no_bad" (ph_03, desk_03, desk_04) in it.json ed en.json
 - 2026-09-17 – Heart Room: galleria inglese resa identica all'italiana (tolte heart_ph_01_noPieghe e heart_ph_04, solo mobile). Ora tutte le gallery it/en coincidono
