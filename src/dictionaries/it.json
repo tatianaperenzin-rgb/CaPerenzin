@@ -332,7 +332,7 @@
         "urlIG": "https://www.instagram.com/caperenzin",
         "urlFB": "https://www.facebook.com/people/Caperenzin/61577528301835/",
         "cell": "+39 3333597947",
-        "cellTwo": "+39 3486497297",
+        "cellTwo": "+39 3486487297",
         "mail": "info@caperenzin.it",
         "menu": [
             "Camere",
@@ -399,7 +399,7 @@
             "infoPills": [
                 {
                     "idOne": "person",
-                    "labelOne": "3 Persone",
+                    "labelOne": "2 Persone",
                     "idTwo": "room",
                     "labelTwo": "1 Camera"
                 },
@@ -417,7 +417,7 @@
                 },
                 {
                     "id": "mq",
-                    "label": "23"
+                    "label": "circa 20"
                 }
             ],
             "service": {
@@ -487,6 +487,7 @@
             "icsUrl": "https://admin.caperenzin.it/?feed=mphb.ics&accommodation_id=25",
             "motopressId": "25",
             "wpTypeId": "24",
+            "bed": { "type": "Double", "count": 1 },
             "bookingUrl": "https://www.booking.com/hotel/it/ca-perenzin.it.html"
         },
         {
@@ -498,7 +499,7 @@
             "infoPills": [
                 {
                     "idOne": "person",
-                    "labelOne": "3 Persone",
+                    "labelOne": "2 Persone",
                     "idTwo": "room",
                     "labelTwo": "1 Camera"
                 },
@@ -508,7 +509,7 @@
                 },
                 {
                     "id": "mq",
-                    "label": "23"
+                    "label": "circa 22"
                 },
                 {
                     "id": "view",
@@ -579,6 +580,7 @@
             "icsUrl": "https://admin.caperenzin.it/?feed=mphb.ics&accommodation_id=19",
             "motopressId": "19",
             "wpTypeId": "17",
+            "bed": { "type": "Double", "count": 1 },
             "bookingUrl": "https://www.booking.com/hotel/it/ca-perenzin.it.html"
         },
         {
@@ -590,7 +592,7 @@
             "infoPills": [
                 {
                     "idOne": "person",
-                    "labelOne": "2 Persone",
+                    "labelOne": "1 Persona",
                     "idTwo": "room",
                     "labelTwo": "1 Camera"
                 },
@@ -612,7 +614,7 @@
                 },
                 {
                     "id": "mq",
-                    "label": "18"
+                    "label": "circa 14"
                 }
             ],
             "service": {
@@ -666,6 +668,7 @@
             "icsUrl": "https://admin.caperenzin.it/?feed=mphb.ics&accommodation_id=21",
             "motopressId": "21",
             "wpTypeId": "20",
+            "bed": { "type": "Double", "count": 1 },
             "bookingUrl": "https://www.booking.com/hotel/it/ca-perenzin.it.html"
         },
         {
@@ -673,7 +676,7 @@
             "slug": "blessingroom",
             "roomName": "Blessing Room",
             "roomSubName": "Lo spazio senza confini",
-            "carousellContent": "Libertà di movimento e assenza di barriere architettoniche. Una suite tripla luminosa al piano terra, dove il comfort abbraccia ogni esigenza della famiglia.",
+            "carousellContent": "Libertà di movimento e assenza di barriere architettoniche. Una suite doppia luminosa al piano terra, dove il comfort abbraccia ogni esigenza della famiglia.",
             "infoPills": [
                 {
                     "idOne": "person",
@@ -695,7 +698,7 @@
                 },
                 {
                     "id": "mq",
-                    "label": "21"
+                    "label": "circa 18"
                 }
             ],
             "service": {
@@ -756,6 +759,7 @@
             "icsUrl": "https://admin.caperenzin.it/?feed=mphb.ics&accommodation_id=23",
             "motopressId": "23",
             "wpTypeId": "22",
+            "bed": { "type": "Double", "count": 1 },
             "bookingUrl": "https://www.booking.com/hotel/it/ca-perenzin.it.html"
         }
         

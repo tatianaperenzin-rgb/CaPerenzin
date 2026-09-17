@@ -332,7 +332,7 @@
         "urlIG": "https://www.instagram.com/caperenzin",
         "urlFB": "https://www.facebook.com/people/Caperenzin/61577528301835/",
         "cell": "+39 3333597947",
-        "cellTwo": "+39 3486497297",
+        "cellTwo": "+39 3486487297",
         "mail": "info@caperenzin.it",
         "menu": [
             "Rooms",
@@ -399,7 +399,7 @@
             "infoPills": [
                 {
                     "idOne": "person",
-                    "labelOne": "3 People",
+                    "labelOne": "2 People",
                     "idTwo": "room",
                     "labelTwo": "1 Room"
                 },
@@ -417,7 +417,7 @@
                 },
                 {
                     "id": "mq",
-                    "label": "23"
+                    "label": "approx. 20"
                 }
             ],
             "service": {
@@ -497,6 +497,7 @@
             "icsUrl": "https://admin.caperenzin.it/?feed=mphb.ics&accommodation_id=25",
             "motopressId": "25",
             "wpTypeId": "24",
+            "bed": { "type": "Double", "count": 1 },
             "bookingUrl": "https://www.booking.com/hotel/it/ca-perenzin.it.html"
         },
         {
@@ -508,7 +509,7 @@
             "infoPills": [
                 {
                     "idOne": "person",
-                    "labelOne": "3 People",
+                    "labelOne": "2 People",
                     "idTwo": "room",
                     "labelTwo": "1 Room"
                 },
@@ -518,7 +519,7 @@
                 },
                 {
                     "id": "mq",
-                    "label": "23"
+                    "label": "approx. 22"
                 },
                 {
                     "id": "view",
@@ -589,6 +590,7 @@
             "icsUrl": "https://admin.caperenzin.it/?feed=mphb.ics&accommodation_id=19",
             "motopressId": "19",
             "wpTypeId": "17",
+            "bed": { "type": "Double", "count": 1 },
             "bookingUrl": "https://www.booking.com/hotel/it/ca-perenzin.it.html"
         },
         {
@@ -600,7 +602,7 @@
             "infoPills": [
                 {
                     "idOne": "person",
-                    "labelOne": "2 People",
+                    "labelOne": "1 Person",
                     "idTwo": "room",
                     "labelTwo": "1 Room"
                 },
@@ -622,7 +624,7 @@
                 },
                 {
                     "id": "mq",
-                    "label": "18"
+                    "label": "approx. 14"
                 }
             ],
             "service": {
@@ -676,6 +678,7 @@
             "icsUrl": "https://admin.caperenzin.it/?feed=mphb.ics&accommodation_id=21",
             "motopressId": "21",
             "wpTypeId": "20",
+            "bed": { "type": "Double", "count": 1 },
             "bookingUrl": "https://www.booking.com/hotel/it/ca-perenzin.it.html"
         },
         {
@@ -683,7 +686,7 @@
             "slug": "blessingroom",
             "roomName": "Blessing Room",
             "roomSubName": "The space without borders",
-            "carousellContent": "Freedom of movement and absence of architectural barriers. A bright triple suite on the ground floor, where comfort embraces every family need.",
+            "carousellContent": "Freedom of movement and absence of architectural barriers. A bright double suite on the ground floor, where comfort embraces every family need.",
             "infoPills": [
                 {
                     "idOne": "person",
@@ -705,7 +708,7 @@
                 },
                 {
                     "id": "mq",
-                    "label": "21"
+                    "label": "approx. 18"
                 }
             ],
             "service": {
@@ -767,6 +770,7 @@
             "icsUrl": "https://admin.caperenzin.it/?feed=mphb.ics&accommodation_id=23",
             "motopressId": "23",
             "wpTypeId": "22",
+            "bed": { "type": "Double", "count": 1 },
             "bookingUrl": "https://www.booking.com/hotel/it/ca-perenzin.it.html"
         }
     ],

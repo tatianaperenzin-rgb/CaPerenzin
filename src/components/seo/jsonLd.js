@@ -59,12 +59,12 @@ export function getRoomSchema(dataRoom, lang) {
     url: `https://caperenzin.it/${lang}/camere/${dataRoom.slug}`,
     bed: {
       "@type": "BedDetails",
-      typeOfBed: "Double",
-      numberOfBeds: "1",
+      typeOfBed: dataRoom.bed?.type || "Double",
+      numberOfBeds: String(dataRoom.bed?.count || 1),
     },
     occupancy: {
       "@type": "QuantitativeValue",
-      value: 2,
+      value: parseInt(dataRoom.infoPills?.[0]?.labelOne) || 2,
     },
   };
 }
