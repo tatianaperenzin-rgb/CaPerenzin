@@ -3,10 +3,18 @@
 Stato del progetto: lavori in corso, problemi aperti, decisioni in sospeso.
 Struttura e regole stabili sono in [CLAUDE.md](CLAUDE.md).
 
-_Ultimo aggiornamento: 2026-09-17 – analisi iniziale del progetto_
+_Ultimo aggiornamento: 2026-09-17 – fine sessione (ultimo commit `e27c082`)_
 
 ## In corso
 _Nessun lavoro in corso._
+
+## Da riprendere alla prossima sessione
+- [ ] **Verificare online dopo il deploy** (commit `e27c082`): inviare un messaggio vero dalla pagina Contatti di caperenzin.it (unico test con reCAPTCHA reale) e controllare che arrivi in Gmail
+- [ ] **Netlify:** controllare che `RESEND_KEY` e `RECAPTCHA_SECRET_KEY` siano impostate (senza la chiave reCAPTCHA il modulo ora si blocca)
+- [ ] **Titolo "Le nostre camere"** (`sectionBplus.jsx`): la classe `mt-[-70]` è senza unità e Tailwind non la applica (es. `mt-[-70px]`)
+- [ ] **Pulizia radice:** spostare i file WordPress (`email_*_template.html`, `motopress-mail-template.css`, `wp-checkout-custom.css`, `wordpress_loader.html`, `public/email-preview.html`) in una cartella `wordpress/`
+- [ ] **Documentazione:** riscrivere `README.md` (cos'è il sito, avvio, testi nei JSON, WordPress/Cloudinary/Netlify, rimando a CLAUDE.md) e togliere `.vercel` da `.gitignore`
+- [ ] **Codice inutilizzato:** rimuovere i componenti mai importati, `src/app/layotu.js`, `fix_hydration.ps1`, file d'esempio in `public/`
 
 ## Problemi aperti
 
