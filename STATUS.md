@@ -25,6 +25,7 @@ _Nessun lavoro in corso._
 - Icone: 3 librerie (react-icons, iconify, lucide) volute, servono tutte
 
 ### Pulizia codice
+- [ ] `sectionO.jsx:76` – `regionalLogoClass` ha `md:h-10` due volte e manca `md:w-10`: da tablet in su i due PNG dei loghi stanno in una cassetta 64×40 invece che 40×40 (non si deformano, ma sono più distanziati del previsto)
 - [ ] Componenti mai importati: `contacts/contactForm.jsx`, `empty/test.jsx`, `empty/testD.jsx`, `form/contattiPage.jsx`, `icons/icons.jsx`, `smoothScroll.jsx`
 - [ ] `src/app/layotu.js` – refuso di "layout", verificare e rimuovere
 - [ ] Cartella `src/components/empty/` con nome fuorviante (contiene componenti usati dalla home)
@@ -51,6 +52,7 @@ _Nessun lavoro in corso._
 - I template email nella root sono allineati con quelli attivi su WordPress?
 
 ## Completato
+- 2026-09-21 – Footer, logo "Sviluppo Rurale Veneto": l'emblema (albero) non si vedeva, restava solo il testo. `RegionalLogo` è montato tre volte (smartphone/tablet/desktop) e tutte e tre le copie del logo dichiaravano il gradiente con lo stesso `id="SVGID_1_"` (nome generico dell'export Illustrator): `url(#SVGID_1_)` risolveva sempre alla prima copia del documento, che al breakpoint corrente è nascosta, e l'emblema restava senza colore. Ora l'id è generato con `React.useId()` (`sviluppoRuraleVeneto.jsx`). Verificato nella pagina viva a 390/820/1440 px; `npm run build` passa
 - 2026-09-17 – Modulo contatti: il mittente senza indirizzo veniva rifiutato da Resend (le email del form non partivano). Ora `from` = `Contatto dal sito Ca Perenzin <info@caperenzin.it>` (dominio verificato su Resend, stesso mittente di WP Mail SMTP). Test reale: Resend "Delivered" a info@caperenzin.it, replyTo corretto, HTML inserito mostrato come testo. Confermato arrivo in Gmail, posta in arrivo (non spam)
 - 2026-09-17 – Modulo contatti (`hooks/sendEmail.js`): campi ripuliti prima di entrare nell'HTML dell'email, validazione lato server (obbligatori, lunghezze, formato email), `replyTo` corretto (prima `reply_to` veniva ignorato), errori di Resend ora gestiti (prima il form diceva "inviato" anche se l'invio falliva)
 - 2026-09-17 – reCAPTCHA: senza `RECAPTCHA_SECRET_KEY` l'invio viene bloccato esplicitamente; parametri inviati a Google con encoding corretto
