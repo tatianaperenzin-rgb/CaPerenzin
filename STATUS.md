@@ -19,6 +19,7 @@ _Nessun lavoro in corso._
 ## Problemi aperti
 
 ### Priorità alta
+- [ ] **Immagine rotta sul sito online:** `breath_desk_02_pvhjxk` (Breath Room, `gallery[2].bkDesk` in it.json ed en.json, riga 578) è stata cancellata per errore da Cloudinary il 2026-09-21 durante la pulizia delle foto orfane. Va ricaricata su Cloudinary con lo stesso public_id (cartella "Breath Room"): l'URL nei dizionari contiene un numero di versione ma Cloudinary lo tratta come anti-cache, quindi non serve toccare il codice. Copia originale sul PC di Elia. Nessun backup recuperabile: piano Free, l'API risponde "Resource not found". Verifica incrociata fatta: è l'unico riferimento rotto su 74 immagini citate dal sito
 
 ### Performance (valutati, non fatti)
 - [ ] Font: 11 file PP Monument dichiarati, corsivi/Thin poco usati – deciso di lasciarli per ora
@@ -51,6 +52,7 @@ _Nessun lavoro in corso._
 - I template email nella root sono allineati con quelli attivi su WordPress?
 
 ## Completato
+- 2026-09-21 – Cloudinary: cancellate 11 foto orfane delle camere Heart e Breath (le versioni con il letto singolo, sostituite a settembre). Restavano pubbliche e indicizzate da Google Immagini pur non essendo più citate dal sito: togliere il riferimento non cancella il file, e Google le toglie solo quando l'URL smette di rispondere. Cancellate con `invalidate` per svuotare anche la cache CDN. Nota: le foto caricate su Booking.com e Google Business sono copie separate, lì vanno sostituite a mano
 - 2026-09-21 – Footer, targa CSR: la striscia dei 4 loghi è ora un unico link che apre `public/targa-csr-caperenzin.pdf` in una nuova scheda (`target="_blank"` + `rel="noopener noreferrer"`, nessuna rotta: è un file statico). Richiesta di Impresa Verde Treviso-Belluno via Digital Media Solutions. Etichetta per screen reader nella chiave `footer.regionalText` (it/en), che era un segnaposto `[regional Text]` mai usato. Aggiunta una leggera opacità all'hover, prima i loghi non davano nessun segnale di essere cliccabili
 - 2026-09-21 – Footer, spaziatura dei 4 loghi: in `sectionO.jsx:76` `regionalLogoClass` aveva `md:h-10` scritto due volte e non aveva `md:w-10`, così da tablet in su i due PNG stavano in una cassetta 64×40 invece che 40×40. Ora i quattro loghi sono allineati in modo coerente
 - 2026-09-21 – Footer, logo "Sviluppo Rurale Veneto": l'emblema (albero) non si vedeva, restava solo il testo. `RegionalLogo` è montato tre volte (smartphone/tablet/desktop) e tutte e tre le copie del logo dichiaravano il gradiente con lo stesso `id="SVGID_1_"` (nome generico dell'export Illustrator): `url(#SVGID_1_)` risolveva sempre alla prima copia del documento, che al breakpoint corrente è nascosta, e l'emblema restava senza colore. Ora l'id è generato con `React.useId()` (`sviluppoRuraleVeneto.jsx`). Verificato nella pagina viva a 390/820/1440 px; `npm run build` passa
