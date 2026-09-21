@@ -73,7 +73,7 @@ export default function SectionO({ dictionary, lang, bookingDictionary }) {
 
     const AgencyTag = () => <p className={copyright}> Powered By <a className="hover:underline transition-all duration-300" href="https://digitalmedias.it/" target="_blank">{dictionary.agency}</a></p>
 
-    const regionalLogoClass = "w-16 h-16 md:h-10 md:h-10 object-contain aspect-square"
+    const regionalLogoClass = "w-16 h-16 md:w-10 md:h-10 object-contain aspect-square"
 
     const RegionalLogo = () => (
 
