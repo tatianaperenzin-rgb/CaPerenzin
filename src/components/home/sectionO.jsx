@@ -75,9 +75,17 @@ export default function SectionO({ dictionary, lang, bookingDictionary }) {
 
     const regionalLogoClass = "w-16 h-16 md:w-10 md:h-10 object-contain aspect-square"
 
+    // La striscia dei quattro loghi è un unico link alla targa informativa del
+    // progetto cofinanziato (PDF statico in public/), come richiesto dal bando
     const RegionalLogo = () => (
 
-        <div className="flex gap-3 items-center mt-3 pb-7">
+        <a
+            href="/targa-csr-caperenzin.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={dictionary.regionalText}
+            className="flex gap-3 items-center mt-3 pb-7 w-fit hover:opacity-70 transition-opacity duration-300"
+        >
             <CoFinanziatoEuropa className={`h-13 md:h-10`} />
             <SviluppoRuraleVeneto className={`h-15 md:h-10`} />
             <Image
@@ -94,7 +102,7 @@ export default function SectionO({ dictionary, lang, bookingDictionary }) {
                 height={64}
                 className={regionalLogoClass}
             />
-        </div>
+        </a>
     )
 
     return (

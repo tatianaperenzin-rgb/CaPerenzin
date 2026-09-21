@@ -87,6 +87,10 @@ src/lib/                   dictionary.js, availability.js, utility.js (cn)
 ```
 Nota: `src/components/empty/` NON contiene componenti vuoti – `bubbleTest`, `SectionEF`, `SectionIL`, `sectionNO` sono usati dalla home.
 
+`public/targa-csr-caperenzin.pdf` è la targa informativa del progetto cofinanziato: è un obbligo del bando
+(richiesta di Impresa Verde Treviso-Belluno, settembre 2026) e la striscia dei 4 loghi nel footer deve
+puntarci. Non rimuoverlo e non cambiargli nome senza avvisare.
+
 File nella root che **non fanno parte di Next.js** ma sono materiale da incollare in WordPress:
 `email_*_template.html`, `motopress-mail-template.css`, `wp-checkout-custom.css`, `wordpress_loader.html`.
 
